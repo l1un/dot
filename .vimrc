@@ -1,20 +1,23 @@
+" Updated 4/22/17 - Pathogen, Nerdtree, Comments, JavaScript, ... 
+" Pathogen
+
+execute pathogen#infect()
+
+" Toggle Nerdtree.
+
+nnoremap <F4> :NERDTreeToggle<CR>
+
+" Autostart Line Numbers
+
 set number
-set linebreak
-set showbreak=+++
-set textwidth=100
-set showmatch
-set visualbell
-set hlsearch
-set smartcase
-set ignorecase
-set incsearch
-set autoindent
-set shiftwidth=4
-set smartindent
-set smarttab
-set softtabstop=4
-set ruler
-set undolevels=1000
-set backspace=indent,eol,start
-nmap oo o<Esc>k
-colorscheme darkblue
+filetype plugin on
+
+" New Line Below / Keep Cursor on Same Line
+
+map <Enter> o<ESC>k	
+
+" Indentation without tabs (preference)
+
+set expandtab
+set shiftwidth=2
+set softtabstop=2
