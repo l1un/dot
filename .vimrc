@@ -1,4 +1,5 @@
-" Updated 4/22/17 - Pathogen, Nerdtree, Comments, JavaScript, ... 
+" Updated 4/23/17 - Test Auto indent / Complete Command 
+"
 " Pathogen
 
 execute pathogen#infect()
@@ -21,3 +22,9 @@ map <Enter> o<ESC>k
 set expandtab
 set shiftwidth=2
 set softtabstop=2
+
+" Auto indent and compete Curly Brackets
+
+set autoindent
+set cindent
+inoremap { {<CR>}<up><end><CR>
