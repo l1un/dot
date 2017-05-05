@@ -1,5 +1,5 @@
-" Updated 4/23/17 - Test Auto indent / Complete Command 
-"
+" Updated 5/5/17 - Change line number color and indentation settings. 
+
 " Pathogen
 
 execute pathogen#infect()
@@ -13,18 +13,21 @@ nnoremap <F4> :NERDTreeToggle<CR>
 set number
 filetype plugin on
 
+" change line color 
+
+highlight LineNr ctermfg=grey 
+
 " New Line Below / Keep Cursor on Same Line
 
 map <Enter> o<ESC>k	
 
 " Indentation without tabs (preference)
 
-set expandtab
-set shiftwidth=2
-set softtabstop=2
+set noexpandtab
+set shiftwidth=4
+set softtabstop=4
 
 " Auto indent and compete Curly Brackets
 
-set autoindent
 set cindent
 inoremap { {<CR>}<up><end><CR>
