@@ -1,6 +1,6 @@
 #### Change Log
 
-#### [0.0.1]
+#### [0.1.6] - 2017-5-7
 
 - Added Vundle to .vimrc
 - You Complete Me (YCM) / config via Vundle.
