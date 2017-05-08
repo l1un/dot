@@ -1,6 +1,10 @@
 #### Change Log
 
 
+#### [0.1.75] - 2017-5-8
+
+- Added gem and curl.
+
 #### [0.1.7] - 2017-5-8
 
 - Testing text width and text width highlighting.
