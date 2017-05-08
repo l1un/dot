@@ -60,3 +60,13 @@ map <Enter> o<ESC>k
 set noexpandtab
 set shiftwidth=4
 set softtabstop=4
+
+" Width to wrap
+
+set tw=72 
+
+" Dark Grey highlight when beyond word wrap
+augroup vimrc_autocmds
+      autocmd BufEnter * highlight OverLength ctermbg=darkgrey guibg=#592929
+        autocmd BufEnter * match OverLength /\%74v.*/
+augroup END
