@@ -1,4 +1,5 @@
-" Updated 5/5/7 - Added Vundle
+" Updated 5/5/13 - Added, Syntastic, added standardjs and html tidy, removed Overflow HL, removed Pathogen,
+" removed NerdTree, various other edits..  
 
 set nocompatible              " be iMproved, required
 filetype off                  " required
@@ -11,7 +12,16 @@ call vundle#begin()
 " "call vundle#begin('~/some/path/here')
 "
 " " let Vundle manage Vundle, required
+"
 Plugin 'VundleVim/Vundle.vim'
+
+" Syntastic
+"
+Plugin 'scrooloose/syntastic'
+
+" Nerd Commments
+
+Plugin 'scrooloose/nerdcommenter'
 
 " Add You Complete Me
 
@@ -36,7 +46,7 @@ Plugin 'Valloric/YouCompleteMe'
 
 " Pathogen
 
-execute pathogen#infect()
+"execute pathogen#infect()
 
 " Toggle Nerdtree.
 
@@ -58,15 +68,59 @@ map <Enter> o<ESC>k
 " Indentation without tabs (preference)
 
 set noexpandtab
-set shiftwidth=4
-set softtabstop=4
+set shiftwidth=2
+set softtabstop=2
 
 " Width to wrap
 
 set tw=72 
 
-" Dark Grey highlight when beyond word wrap
-augroup vimrc_autocmds
-      autocmd BufEnter * highlight OverLength ctermbg=darkgrey guibg=#592929
-        autocmd BufEnter * match OverLength /\%74v.*/
-augroup END
+" Tern enable keyboard shortcuts
+
+let g:tern_map_keys=1
+
+" Tern show argument hints
+
+let g:tern_show_argument_hints='on_hold'
+
+" Syntastic 
+
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
+
+" Automatically load errors to location list 
+
+let g:syntastic_always_populate_loc_list = 1
+
+" Checks for errors on loading file
+
+let g:syntastic_auto_loc_list = 1
+
+" Check for erros on open file
+
+let g:syntastic_check_on_open = 1
+
+" Disable check for errors on save
+
+let g:syntastic_check_on_wq = 0
+
+" Enables error signs
+
+let g:sytastic_enable_signs = 1
+
+" Current syntastic Checkers
+
+let g:syntastic_javascript_checkers = ['standard']
+
+
+let g:syntastic_html_checkers = ['tidy']
+
+" Vanilla autocomplete brackets
+
+ino " ""<left>
+ino ' ''<left>
+ino ( ()<left>
+ino [ []<left>
+ino { {}<left>
+ino {<CR> {<CR>}<ESC>O

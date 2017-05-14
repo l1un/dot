@@ -1,5 +1,14 @@
 #### Change Log
 
+#### [0.1.8] - 2017-5-13
+
+.vimrc - 
+
+- Added, Syntastic
+- added standardjs and html tidy
+- removed Overflow HL
+- removed Pathogen
+
 
 #### [0.1.75] - 2017-5-8
 
