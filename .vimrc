@@ -1,5 +1,4 @@
-" Updated 5/5/13 - Added, Syntastic, added standardjs and html tidy, removed Overflow HL, removed Pathogen,
-" removed NerdTree, various other edits..  
+" Updated 5/5/13 - Added, Syntastic, added standardjs and html tidy, removed Overflow HL, removed Pathogen, removed NerdTree, various other edits..  
 
 set nocompatible              " be iMproved, required
 filetype off                  " required
@@ -16,7 +15,7 @@ call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
 
 " Syntastic
-"
+
 Plugin 'scrooloose/syntastic'
 
 " Nerd Commments
@@ -44,14 +43,6 @@ Plugin 'Valloric/YouCompleteMe'
 " " see :h vundle for more details or wiki for FAQ
 " " Put your non-Plugin stuff after this line
 
-" Pathogen
-
-"execute pathogen#infect()
-
-" Toggle Nerdtree.
-
-nnoremap <F4> :NERDTreeToggle<CR>
-
 " Autostart Line Numbers
 
 set number
@@ -75,14 +66,6 @@ set softtabstop=2
 
 set tw=72 
 
-" Tern enable keyboard shortcuts
-
-let g:tern_map_keys=1
-
-" Tern show argument hints
-
-let g:tern_show_argument_hints='on_hold'
-
 " Syntastic 
 
 set statusline+=%#warningmsg#
@@ -91,7 +74,7 @@ set statusline+=%*
 
 " Automatically load errors to location list 
 
-let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_always_populate_loc_list = 0
 
 " Checks for errors on loading file
 
@@ -113,8 +96,14 @@ let g:sytastic_enable_signs = 1
 
 let g:syntastic_javascript_checkers = ['standard']
 
-
 let g:syntastic_html_checkers = ['tidy']
+
+" Syntastic psuedo icons
+
+let g:syntastic_error_symbol = '✗✗'
+let g:syntastic_style_error_symbol = '✠✠'
+let g:syntastic_warning_symbol = '∆∆'
+let g:syntastic_style_warning_symbol = '≈≈'
 
 " Vanilla autocomplete brackets
 

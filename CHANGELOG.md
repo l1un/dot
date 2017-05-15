@@ -1,5 +1,13 @@
 #### Change Log
 
+
+#### [0.1.8] - 2017-5-15
+
+.vimrc
+
+- Remove old/unused lines from previous plugins / settings.
+- Misc.
+
 #### [0.1.8] - 2017-5-13
 
 .vimrc - 
