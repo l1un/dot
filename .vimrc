@@ -1,4 +1,5 @@
-" Updated 5/5/13 - Added, Syntastic, added standardjs and html tidy, removed Overflow HL, removed Pathogen, removed NerdTree, various other edits..  
+" Updated 5/5/18 - Changed expandtab for standardjs / syntastic error
+" checking comapatibility.
 
 set nocompatible              " be iMproved, required
 filetype off                  " required
@@ -58,7 +59,7 @@ map <Enter> o<ESC>k
 
 " Indentation without tabs (preference)
 
-set noexpandtab
+set expandtab
 set shiftwidth=2
 set softtabstop=2
 
@@ -71,6 +72,10 @@ set tw=72
 set statusline+=%#warningmsg#
 set statusline+=%{SyntasticStatuslineFlag()}
 set statusline+=%*
+
+" Change location list height
+
+let g:syntastic_loc_list_height=2
 
 " Automatically load errors to location list 
 
