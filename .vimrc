@@ -1,4 +1,4 @@
-" Updated 5/5/18 - Changed expandtab for standardjs / syntastic error
+" Updated 5/31/17 - Changed expandtab for standardjs / syntastic error
 " checking comapatibility.
 
 set nocompatible              " be iMproved, required

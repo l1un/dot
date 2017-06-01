@@ -1,11 +1,15 @@
 #### Change Log
 
+#### [0.2.1] - 2017-5-31
+
+- misc. 
+
+
 #### [0.2] - 2017-5-18
 
 .vimrc
 
-- Change noexpandtab to expandtab for standardjs and syntastic error
-  checking compatibility.
+- Change noexpandtab to expandtab for standardjs and syntastic error checking compatibility.
 -
 
 #### [0.1.9] - 2017-5-15
