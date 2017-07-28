@@ -1,5 +1,4 @@
-" Updated 5/31/17 - Changed expandtab for standardjs / syntastic error
-" checking comapatibility.
+" Updated 7/28/17 - Add Open Help in New Tab + Minor clean-up.
 
 set nocompatible              " be iMproved, required
 filetype off                  " required
@@ -122,3 +121,8 @@ ino ( ()<left>
 ino [ []<left>
 ino { {}<left>
 ino {<CR> {<CR>}<ESC>O
+
+" Open help in new tab
+
+cabbrev help tab help
+cabbrev h tab h
