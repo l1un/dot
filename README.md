@@ -1,1 +1,4 @@
 # dotfiles
+
+- Vim
+- others soon
