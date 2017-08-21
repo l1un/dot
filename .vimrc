@@ -1,4 +1,4 @@
-" Updated 7/28/17 - Add Open Help in New Tab + Minor clean-up.
+" Updated 7/28/17 - Add Open Help in New Tab. Minor clean-up. 
 
 set nocompatible              " be iMproved, required
 filetype off                  " required
@@ -7,11 +7,10 @@ filetype off                  " required
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 
-" " alternatively, pass a path where Vundle should install plugins
-" "call vundle#begin('~/some/path/here')
-"
-" " let Vundle manage Vundle, required
-"
+" alternatively, pass a path where Vundle should install plugins
+" call vundle#begin('~/some/path/here')
+" let Vundle manage Vundle, required
+
 Plugin 'VundleVim/Vundle.vim'
 
 " Syntastic
@@ -29,6 +28,18 @@ Plugin 'Valloric/YouCompleteMe'
 " Vim Instant Markdown
 
 Plugin 'suan/vim-instant-markdown'
+
+" Monokai
+
+Plugin 'crusoexia/vim-monokai'
+
+" vim-javascript
+
+Plugin 'pangloss/vim-javascript'
+
+" vim-javascript-lib companion
+
+Plugin 'crusoexia/vim-javascript-lib'
 
 " " All of your Plugins must be added before the following line
  call vundle#end()            " required
@@ -126,3 +137,7 @@ ino {<CR> {<CR>}<ESC>O
 
 cabbrev help tab help
 cabbrev h tab h
+
+" Colors
+syntax on
+colorscheme monokai
