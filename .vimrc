@@ -121,7 +121,7 @@ let g:syntastic_javascript_checkers = ['standard']
 
 let g:syntastic_html_checkers = ['tidy']
 
-" Syntastic psuedo icons
+" Syntastic Pseudo Icons and ++ 
 
 let g:syntastic_error_symbol = '✗✗'
 let g:syntastic_style_error_symbol = '✠✠'
