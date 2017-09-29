@@ -1,5 +1,11 @@
 #### Change Log
 
+#### [0.2.4] - 2017-9-29
+
+- Added new `cd` aliases to .bash_aliases.
+- Added new `cp` file aliases to .bash_aliases.
+- Added .bashrc to VCS.
+
 #### [0.2.1] - 2017-5-31
 
 - misc. 
@@ -10,7 +16,6 @@
 .vimrc
 
 - Change noexpandtab to expandtab for standardjs and syntastic error checking compatibility.
--
 
 #### [0.1.9] - 2017-5-15
 
