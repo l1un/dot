@@ -4,9 +4,9 @@
 - emacs (generic)
 - curl
 - Ruby (generic) 
+- ssh config (example)
 
 ##### todo
-- ssh (maybe)
 - gulp (maybe)
 - yarn (maybe)
 - node / npm (maybe)

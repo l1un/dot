@@ -1,5 +1,5 @@
 #########
-# Aliases
+# Aliases (testing) 
 #########
 
 # Sets lsl to list all by time modified | less
@@ -15,5 +15,4 @@ alias cd-dot="cd /var/www/html/dotfiles"
 
 # Copy files to directories
 
-alias cp-bash_aliases="cp .bash_aliases /var/www/html/dotfiles/.bash_aliases"
-alias cp-bashrc="cp .bashrc /var/www/html/dotfiles/.bashrc"
+alias cp-dotfiles="cp {.bash_aliases,.bashrc} /var/www/html/dotfiles/"

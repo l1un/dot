@@ -1,0 +1,9 @@
+# Usually rename this file to <config> and move to .ssh folder
+
+# hostname-alias-1
+
+Host hostname-alias-1
+HostName <host.address.example.number> ex. <000.000.000.000> 
+User <user-name>
+Port <port-number>
+IdentityFile ~/.ssh/<identity-file.rsa>
