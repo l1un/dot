@@ -71,7 +71,8 @@ filetype plugin on
 
 highlight LineNr ctermfg=grey 
 
-" New Line Below / Keep Cursor on Same Line
+" New Line Below /2 Keep Cursor on Same Line
+" This may need to be changed 
 
 map <Enter> o<ESC>k	
 
@@ -129,7 +130,7 @@ let g:syntastic_warning_symbol = '∆∆'
 let g:syntastic_style_warning_symbol = '≈≈'
 
 " Vanilla autocomplete brackets
-
+" Syntastic ???
 ino " ""<left>
 ino ' ''<left>
 ino ( ()<left>

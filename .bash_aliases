@@ -1,5 +1,5 @@
 #########
-# Aliases (testing) 
+# Aliases
 #########
 
 # Sets lsl to list all by time modified | less
@@ -13,6 +13,6 @@ alias cd-journ="cd /var/www/html/fCC/p1xt/fCC-p1xt/daily-journal"
 alias cd-alg="cd /var/www/html/fCC/roadmap/basic-algorithm-scripting"
 alias cd-dot="cd /var/www/html/dotfiles"
 
-# Copy files to directories
+# Copy VCS dotfiles to VCS directory. 
 
-alias cp-dotfiles="cp {.bash_aliases,.bashrc} /var/www/html/dotfiles/"
+alias cp-dot="cp {.bash_aliases,.bashrc,.vimrc} /var/www/html/dotfiles/"

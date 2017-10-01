@@ -1,5 +1,10 @@
 #### Change Log
 
+#### [0.2.5] - 2017-10-1
+- Update .bash_aliases with cp-dot (refactor)
+- Added ssh-config-example
+- Update documentation.
+
 #### [0.2.4] - 2017-9-29
 
 - Added new `cd` aliases to .bash_aliases.
