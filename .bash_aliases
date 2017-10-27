@@ -7,7 +7,7 @@ alias lsl="ls -alt | less"
 
 # Change directory aliases
 
-alias cd-pap="cd /var/www/html/pap/wp-content/themes/pap-child"
+alias cd-pap="cd /var/www/html/pap/"
 alias cd-html="cd /var/www/html"
 alias cd-journ="cd /var/www/html/01110101-01101110-01100001-01110010-01111001/p1xt/daily-journal"
 alias cd-alg="cd /var/www/html/01110101-01101110-01100001-01110010-01111001/fCC-map/basic-algorithm-scripting"
