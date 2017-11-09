@@ -118,7 +118,8 @@ let g:sytastic_enable_signs = 1
 
 let g:syntastic_javascript_checkers = ['standard']
 
-let g:syntastic_html_checkers = ['w3']
+" Chained for on-demand ':SyntasticCheck <checker>'(auto slowing down system)
+let g:syntastic_html_checkers = ['tidy, w3, validator']
 
 " Syntastic Pseudo Icons and ++ 
 
