@@ -1,5 +1,3 @@
-" Updated 7/28/17 - Add Open Help in New Tab. Minor clean-up. 
-
 set nocompatible              " be iMproved, required
 filetype off                  " required
 
@@ -120,7 +118,7 @@ let g:sytastic_enable_signs = 1
 
 let g:syntastic_javascript_checkers = ['standard']
 
-let g:syntastic_html_checkers = ['tidy']
+let g:syntastic_html_checkers = ['w3']
 
 " Syntastic Pseudo Icons and ++ 
 
