@@ -1,0 +1,23 @@
+{
+  "name": "test",
+  "version": "1.0.0",
+  "description": "",
+  "standard": {
+    "globals": [
+      "describe",
+      "context",
+      "before",
+      "beforeEach",
+      "after",
+      "afterEach",
+      "it",
+      "expect"
+    ]
+  }
+  "main": "test.js",
+  "scripts": {
+    "test": "mocha" 
+  },
+  "author": "",
+  "license": "ISC"
+}
