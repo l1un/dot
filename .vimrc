@@ -154,3 +154,8 @@ inoremap <expr> ]  strpart(getline('.'), col('.')-1, 1) == "]" ? "\<Right>" : "]
 " Map " and ' to skip over the existing ones if closing.
 inoremap <expr> ' strpart(getline('.'), col('.')-1, 1) == "\'" ? "\<Right>" : "\'\'\<Left>"
 inoremap <expr> " strpart(getline('.'), col('.')-1, 1) == "\"" ? "\<Right>" : "\"\"\<Left>"
+
+" Change <leader> to ',' instead of '\'
+let mapleader=","
+
+"set timeout timeoutlen=1500 <--- option for some kb's / circz

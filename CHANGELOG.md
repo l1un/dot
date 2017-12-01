@@ -1,5 +1,10 @@
 #### Change Log
 
+#### 0.3 - 2017-12-1
+- Changed <leader> in .vimrc
+- Updated README
+- see commit -m's for prior minor updates
+
 #### [0.2.5] - 2017-10-1
 - Update .bash_aliases with cp-dot (refactor)
 - Added ssh-config-example

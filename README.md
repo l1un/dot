@@ -1,12 +1,16 @@
-#### .dotfiles
+#### .dotfiles, config, templates, etc.
 - Bash
 - Vim
-- emacs (generic)
+- SSH 
 - curl
-- Ruby (generic) 
-- ssh config (example)
+- tern-project 
+- package.json (Standard JS / Mocha)
 
-##### todo
-- gulp (maybe)
-- yarn (maybe)
-- node / npm (maybe)
+##### todo maybe 
+- gulpfile
+- yarn
+- node
+- npm
+- ruby (blank)
+- emacs (blank)
+- ???
