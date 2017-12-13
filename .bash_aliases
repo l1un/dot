@@ -10,26 +10,42 @@ alias lsl="ls -alt | less"
 ##########################
 
 # html (localhost) dir
-alias cd-html="cd /var/www/html"
+alias ..hTml="cd /var/www/html"
+
+# Desktop
+alias ..Desk="cd ~/Desktop"
+
+# Downloads
+alias ..Loads="cd ~/Downloads"
+
+# Documents
+alias ..Ments="cd ~/Documents"
 
 # pap dir
-alias cd-pap="cd /var/www/html/pap/"
+alias ..pAp="cd /var/www/html/pap/"
 
-# journal dir
-alias cd-journ="cd /var/www/html/01110101-01101110-01100001-01110010-01111001/p1xt/daily-journal"
+# unary  dir
+alias ..uNary="cd /var/www/html/01110101-01101110-01100001-01110010-01111001"
 
 # basic alg dir
-alias cd-bAlg="cd /var/www/html/01110101-01101110-01100001-01110010-01111001/fCC-map/basic-algorithm-scripting"
+alias ..bAlg="cd /var/www/html/01110101-01101110-01100001-01110010-01111001/fCC-map/basic-algorithm-scripting"
 
 # intermediat alg dir
-alias cd-iAlg="cd /var/www/html/01110101-01101110-01100001-01110010-01111001/fCC-map/intermediate-agorithm-scripting"
+alias ..iAlg="cd /var/www/html/01110101-01101110-01100001-01110010-01111001/fCC-map/intermediate-agorithm-scripting"
 
 # dotfiles dir (versioned)
-alias cd-dot="cd /var/www/html/dotfiles"
+alias ..dOt="cd /var/www/html/dotfiles"
+
+# up 1 dir
+alias ..="cd ../"
+# up 2 dirs
+alias ...="cd ../../"
+# up 3 dirs
+alias ....="cd ../../../"
 
 ##################
 # Copy directories 
 ##################
 
-# main dotfiles to VCS directory
+# copy main dotfiles to VCS directory
 alias cp-dot="cp {.bash_aliases,.bashrc,.vimrc} /var/www/html/dotfiles/"
