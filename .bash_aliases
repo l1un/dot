@@ -3,8 +3,7 @@
 #######
 
 # current workflow
-alias ..wIki="cd
-/var/www/html/01110101-01101110-01100001-01110010-01111001/fCC-map/front-end-projects/wikipedia-viewer"
+alias ..wIki="cd /var/www/html/01110101-01101110-01100001-01110010-01111001/fCC-map/front-end-projects/wikipedia-viewer"
 
 #########
 # Aliases
