@@ -89,6 +89,8 @@ set tw=72
 set statusline+=%#warningmsg#
 set statusline+=%{SyntasticStatuslineFlag()}
 set statusline+=%*
+set laststatus=2
+set statusline=%f "tail of filename
 
 " Change location list height
 
