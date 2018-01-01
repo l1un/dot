@@ -19,6 +19,9 @@ alias lsl="ls -alt | less"
 # html (localhost) dir
 alias ..hTml="cd /var/www/html"
 
+# ydk (localhost) dir
+alias ..yDk="cd /var/www/html/01110101-01101110-01100001-01110010-01111001/ydkjs"
+
 # Desktop
 alias ..Desk="cd ~/Desktop"
 
