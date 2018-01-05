@@ -175,3 +175,6 @@ endfunction
 
 " type <leader>n to open rename file dialog
 map <leader>n :call RenameFile()<cr>
+
+" add spaces to nerd/sexy comments (Standard JS no-warn msg)
+let NERDSpaceDelims=1
