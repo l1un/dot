@@ -34,6 +34,9 @@ filetype plugin indent on    " required
 
 " --- END plugins / vundle ---
 
+"  ++ search
+set incsearch
+
 " ++ line numbers
 " autostart Line Numbers
 set number
@@ -98,7 +101,7 @@ colorscheme monokai
 let mapleader=","
 "set timeout timeoutlen=1500 <-- try if too fast 
 
-" ++ rename files within vim  
+" ++ rename files within vim (<leader>n to rename)
 function! RenameFile()
     let old_name = expand('%')
     let new_name = input('New file name: ', expand('%'), 'file')
