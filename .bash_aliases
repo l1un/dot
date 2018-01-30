@@ -15,18 +15,18 @@ alias lsl="ls -alt | less"
 
 # ++ cd dirs 
 # desktop
-alias ..desk="cd ~/desktop"
+alias ..desk="cd ~/Desktop"
 # downloads
-alias ..down="cd ~/downloads"
+alias ..down="cd ~/Downloads"
 # documents
-alias ..docs="cd ~/documents"
+alias ..docs="cd ~/Documents"
 
 # html (localhost)
 alias ..html="cd /var/www/html"
 # ydk (localhost)
 alias ..ydk="cd /var/www/html/unary/ydkjs"
 # pap
-alias ..pap="cd /var/www/html/pap/"
+alias ..pap="cd /var/www/html/PAP/"
 # unary
 alias ..unary="cd /var/www/html/unary"
 # basic algs
