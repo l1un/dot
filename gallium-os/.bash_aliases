@@ -35,4 +35,4 @@ alias ..dOt="cd ~/Documents/dotfiles/gallium-os"
 
 # ++ cp dirs
 # copy main dotfiles to VCS directory
-alias cp-dot="cp {.bash_aliases,.bashrc} ~/Documents/dotfiles/gallium-os"
+alias cp-dot="cp {~/.bash_aliases,~/.bashrc,~/.vimrc} ~/Documents/dotfiles/gallium-os"

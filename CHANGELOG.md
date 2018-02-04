@@ -1,12 +1,17 @@
 #### Change Log
 
+#### 0.4.1 - 2-3-2017
+- add GalliumOS updated .vimrc
+- other minor tweaks
+
 #### 0.4 - 2-3-2017
 - create dir for unit tests, ssh, gulp + mv related files
 - add GalliumOS keyboard mapping files for chromebooks (xkb)
 
 resources:
-[Reddit: GalliumOS - "Help with keyboard mapping"](https://www.reddit.com/r/GalliumOS/comments/7fj1wl/help_with_keyboard_mapping/)
-[Stack Exchange: "Use setxkbmap to swap the Left Shift and Left Control"](https://unix.stackexchange.com/questions/65507/use-setxkbmap-to-swap-the-left-shift-and-left-control/65600)
+
+- [Reddit: GalliumOS - "Help with keyboard mapping"](https://www.reddit.com/r/GalliumOS/comments/7fj1wl/help_with_keyboard_mapping/)
+- [Stack Exchange: "Use setxkbmap to swap the Left Shift and Left Control"](https://unix.stackexchange.com/questions/65507/use-setxkbmap-to-swap-the-left-shift-and-left-control/65600)
 
 #### 0.3 - 2017-12-1
 - Changed <leader> in .vimrc
