@@ -1,0 +1,5 @@
+partial modifier_keys
+xkb_symbols "swap_l_super_esc" {
+    replace key <ESC>  { [ Super_L ] };
+    replace key <LWIN> { [ Escape ] };
+};				
