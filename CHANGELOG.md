@@ -1,5 +1,9 @@
 #### Change Log
 
+#### 0.4.3 - 2-4-2017
+- add GalliumOS config notes and other updates
+- other organization and refactoring
+
 #### 0.4.1 - 2-3-2017
 - add GalliumOS updated .vimrc
 - other minor tweaks
