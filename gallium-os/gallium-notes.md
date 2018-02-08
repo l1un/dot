@@ -11,7 +11,7 @@
 
 - 1c. compile `xkbcomp -I$HOME/.xkb ~/.xkb/keymap/mykbd $DISPLAY`
 
-- 1d. optional script (in test) to check if `xinput list` has changed, if
+- 1d.  ADD DETAILS HERE optional script (in test) to check if `xinput list` has changed, if
 true: recompile keyboard layout, sleep for 5 seconds, then check again..
 
 ```Shell
