@@ -1,6 +1,7 @@
 # ++ temp
 # workflow
 alias ..wIki="cd /var/www/html/unary/fCC-map/front-end-projects/wikipedia-viewer"
+alias ..cHat="cd /var/www/html/chatter"
 
 # ++ commands
 # up 1 dir
@@ -27,6 +28,8 @@ alias ..html="cd /var/www/html"
 alias ..ydk="cd /var/www/html/unary/ydkjs"
 # pap
 alias ..pap="cd /var/www/html/PAP/"
+# p theme
+alias ..pThm="cd /var/www/html/PAP/wp-content/themes/pap-child"
 # unary
 alias ..unary="cd /var/www/html/unary"
 # basic algs
