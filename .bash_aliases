@@ -15,13 +15,6 @@ alias ....="cd ../../../"
 alias lsl="ls -alt | less"
 
 # ++ cd dirs 
-# desktop
-alias ..desk="cd ~/Desktop"
-# downloads
-alias ..down="cd ~/Downloads"
-# documents
-alias ..docs="cd ~/Documents"
-
 # html (localhost)
 alias ..html="cd /var/www/html"
 # ydk (localhost)
