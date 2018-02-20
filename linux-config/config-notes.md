@@ -7,8 +7,5 @@
 ###### www, permissions, servers
 
 ##### wordpress ownership swap for file ownership / updates etc.
-`sudo chown -R <username>:www-data <dir>/` and `sudo chown -R www-data:www-data <dir>/`
-
-
-
-
+- to edit files: `sudo chown -R <username>:www-data <dir>/`
+- to run dashboard: `sudo chown -R www-data:www-data <dir>/`
