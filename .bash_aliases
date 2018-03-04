@@ -1,7 +1,8 @@
 # ++ temp
 # workflow
-alias ..wIki="cd /var/www/html/unary/fCC-map/front-end-projects/wikipedia-viewer"
+alias ..wIki="cd /var/www/html/unary/fcc-map/front-end-projects/wikipedia-viewer"
 alias ..cHat="cd /var/www/html/chatter"
+alias ..taisk="cd /var/www/html/taisk/taisk"
 
 # ++ commands
 # up 1 dir
@@ -26,11 +27,11 @@ alias ..pThm="cd /var/www/html/PAP/wp-content/themes/pap-child"
 # unary
 alias ..unary="cd /var/www/html/unary"
 # basic algs
-alias ..bAlg="cd /var/www/html/unary/fCC-map/basic-algorithm-scripting"
+alias ..bAlg="cd /var/www/html/unary/fcc-map/basic-algorithm-scripting"
 # intermediate algs 
-alias ..iAlg="cd /var/www/html/unary/fCC-map/intermediate-algorithm-scripting"
+alias ..iAlg="cd /var/www/html/unary/fcc-map/intermediate-algorithm-scripting"
 # advanced algs
-alias ..aAlg="cd /var/www/html/unary/fCC-map/advanced-algorithm-scripting"
+alias ..aAlg="cd /var/www/html/unary/fcc-map/advanced-algorithm-scripting"
 # dotfiles (vcs)
 alias ..dOt="cd /var/www/html/dotfiles"
 
