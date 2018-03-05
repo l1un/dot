@@ -25,6 +25,8 @@ Plugin 'crusoexia/vim-javascript-lib'
 Plugin 'will133/vim-dirdiff'
 " Auto Pairs
 Plugin 'jiangmiao/auto-pairs'
+" vim-jsx
+Plugin 'mxw/vim-jsx'
 
 " --- plugins above here ---
 

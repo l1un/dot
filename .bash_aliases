@@ -3,6 +3,7 @@
 alias ..wIki="cd /var/www/html/unary/fcc-map/front-end-projects/wikipedia-viewer"
 alias ..cHat="cd /var/www/html/chatter"
 alias ..taisk="cd /var/www/html/taisk/taisk"
+alias ..rEact="cd /var/www/html/unary/js-parent/frameworks-js/react-js"
 
 # ++ commands
 # up 1 dir
@@ -19,7 +20,7 @@ alias lsl="ls -alt | less"
 # html (localhost)
 alias ..html="cd /var/www/html"
 # ydk (localhost)
-alias ..ydk="cd /var/www/html/unary/ydkjs"
+alias ..iDkjs="cd /var/www/html/unary/idkjs"
 # pap
 alias ..pap="cd /var/www/html/PAP/"
 # p theme
@@ -33,8 +34,8 @@ alias ..iAlg="cd /var/www/html/unary/fcc-map/intermediate-algorithm-scripting"
 # advanced algs
 alias ..aAlg="cd /var/www/html/unary/fcc-map/advanced-algorithm-scripting"
 # dotfiles (vcs)
-alias ..dOt="cd /var/www/html/dotfiles"
+alias ..dOt="cd /var/www/html/dot-config"
 
 # ++ cp dirs
 # copy main dotfiles to VCS directory
-alias cp-dot="cp {.bash_aliases,.bashrc,.vimrc} /var/www/html/dotfiles/"
+alias cp-dot="cp {.bash_aliases,.bashrc,.vimrc} /var/www/html/dot-config/"
