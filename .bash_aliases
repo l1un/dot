@@ -2,7 +2,7 @@
 # workflow
 alias ..wIki="cd /var/www/html/unary/fcc-map/front-end-projects/wikipedia-viewer"
 alias ..cHat="cd /var/www/html/chatter"
-alias ..taisk="cd /var/www/html/taisk/taisk"
+alias ..Alg="cd /var/www/html/alg-tests"
 alias ..rEact="cd /var/www/html/unary/js-parent/frameworks-js/react-js"
 
 # ++ commands
@@ -28,11 +28,11 @@ alias ..pThm="cd /var/www/html/PAP/wp-content/themes/pap-child"
 # unary
 alias ..unary="cd /var/www/html/unary"
 # basic algs
-alias ..bAlg="cd /var/www/html/unary/fcc-map/basic-algorithm-scripting"
+alias ..bAlg="cd /var/www/html/unary/fcc-map/algorithms-fcc/basic-algorithm-scripting"
 # intermediate algs 
-alias ..iAlg="cd /var/www/html/unary/fcc-map/intermediate-algorithm-scripting"
+alias ..iAlg="cd /var/www/html/unary/fcc-map/algorithms-fcc/intermediate-algorithm-scripting"
 # advanced algs
-alias ..aAlg="cd /var/www/html/unary/fcc-map/advanced-algorithm-scripting"
+alias ..aAlg="cd /var/www/html/unary/fcc-map/algorithms-fcc/advanced-algorithm-scripting"
 # dotfiles (vcs)
 alias ..dOt="cd /var/www/html/dot-config"
 
