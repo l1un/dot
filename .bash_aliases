@@ -2,7 +2,7 @@
 # workflow
 alias ..wIki="cd /var/www/html/unary/fcc-map/front-end-projects/wikipedia-viewer"
 alias ..cHat="cd /var/www/html/chatter"
-alias ..Alg="cd /var/www/html/alg-tests"
+alias ..Alg="cd /var/www/html/unary/fcc-map/algorithms-fcc/alg-tests"
 alias ..rEact="cd /var/www/html/unary/js-parent/frameworks-js/react-js"
 
 # ++ commands
