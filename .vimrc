@@ -56,7 +56,7 @@ set shiftwidth=2
 set softtabstop=2
 
 " ++ width / wrap 
-set tw=72 
+set tw=79 
 
 " ++ Syntastic 
 set statusline+=%#warningmsg#
