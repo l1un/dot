@@ -25,3 +25,8 @@ ex. `wlp4s0`
 
 - slurm
   - `slurm -z -i <interface-name>`
+
+###### shutter fix (Mint 18x at least)
+
+- after installing shutter to use the editor:
+  - `sudo apt-get install libgoo-canvas-perl gnome-web-photo`
