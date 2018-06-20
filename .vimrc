@@ -121,9 +121,17 @@ endfunction
 " type <leader>n to open rename file dialog
 map <leader>n :call RenameFile()<cr>
 
-" ++ comments
+" ++ scrooloose comments
 " add spaces to nerd/sexy comments (Standard JS no-warn msg)
 let NERDSpaceDelims=1
+
+" ++ nerdtree <F2> toggle
+map <F2> :NERDTreeToggle<CR>
+let NERDTreeWinSize=32
+let NERDTreeWinPos="left"
+let NERDTreeShowHidden=1
+let NERDTreeAutoDeleteBuffer=1
+let NERDTreeAutoDeleteBuffer=1
 
 " ++ unused / saved for later
 " *if used to block comment and escape chars...
