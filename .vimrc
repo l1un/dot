@@ -27,6 +27,10 @@ Plugin 'will133/vim-dirdiff'
 Plugin 'jiangmiao/auto-pairs'
 " vim-jsx
 Plugin 'mxw/vim-jsx'
+" Nerdtree
+Plugin 'scrooloose/nerdtree'
+" lightline
+Plugin 'itchyny/lightline.vim'
 
 " --- plugins above here ---
 
