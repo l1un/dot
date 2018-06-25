@@ -7,8 +7,10 @@ set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 
 Plugin 'VundleVim/Vundle.vim'
+" Ale
+Plugin 'w0rp/ale'
 " Syntastic
-Plugin 'scrooloose/syntastic'
+" Plugin 'scrooloose/syntastic'
 " Nerd Commments
 Plugin 'scrooloose/nerdcommenter'
 " Add You Complete Me
@@ -62,36 +64,41 @@ set softtabstop=2
 " ++ width / wrap 
 set tw=79 
 
-" ++ Syntastic 
 set statusline+=%#warningmsg#
-set statusline+=%{SyntasticStatuslineFlag()}
 set statusline+=%*
 set laststatus=2
 set statusline=%f "tail of filename
+" Ale
+let g:ale_linters = {
+\ 'javascript': ['eslint']
+\}
 
-" change location list height
-let g:syntastic_loc_list_height=2
-" automatically load errors to location list 
-let g:syntastic_always_populate_loc_list = 0
-" checks for errors on loading file
-let g:syntastic_auto_loc_list = 1
-" check for erros on open file
-let g:syntastic_check_on_open = 1
-" disable check for errors on save
-let g:syntastic_check_on_wq = 0
-" enables error signs
-let g:sytastic_enable_signs = 1
+" ++ Syntastic 
+" set statusline+=%{SyntasticStatuslineFlag()}
 
-" current syntastic Checkers
-let g:syntastic_javascript_checkers = ['standard']
-" chained for on-demand ':SyntasticCheck <checker>'(auto was slow)
-let g:syntastic_html_checkers = ['tidy, w3, validator']
+" " change location list height
+" let g:syntastic_loc_list_height=2
+" " automatically load errors to location list 
+" let g:syntastic_always_populate_loc_list = 0
+" " checks for errors on loading file
+" let g:syntastic_auto_loc_list = 1
+" " check for erros on open file
+" let g:syntastic_check_on_open = 1
+" " disable check for errors on save
+" let g:syntastic_check_on_wq = 0
+" " enables error signs
+" let g:sytastic_enable_signs = 1
 
-" syntastic Pseudo Icons and ++ 
-let g:syntastic_error_symbol = '✗✗'
-let g:syntastic_style_error_symbol = '✠✠'
-let g:syntastic_warning_symbol = '∆∆'
-let g:syntastic_style_warning_symbol = '≈≈'
+" " current syntastic Checkers
+" let g:syntastic_javascript_checkers = ['eslint']
+" " chained for on-demand ':SyntasticCheck <checker>'(auto was slow)
+" let g:syntastic_html_checkers = ['tidy, w3, validator']
+
+" " syntastic Pseudo Icons and ++ 
+" let g:syntastic_error_symbol = '✗✗'
+" let g:syntastic_style_error_symbol = '✠✠'
+" let g:syntastic_warning_symbol = '∆∆'
+" let g:syntastic_style_warning_symbol = '≈≈'
 
 " ++ help behaviour
 " open help in new tab
