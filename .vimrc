@@ -1,7 +1,7 @@
 set nocompatible              " be iMproved, required
 filetype off                  " required
 
-" ++ plugins / vundle
+" plugins / vundle
 " runtime path to include Vundle and init
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
@@ -36,44 +36,56 @@ Plugin 'itchyny/lightline.vim'
 
 " --- plugins above here ---
 
-" ++ Vundle
+" Vundle
 call vundle#end()            " required
 filetype plugin indent on    " required
 
 " --- END plugins / vundle ---
 
-"  ++ search
+" search
 set incsearch
 
-" ++ line numbers
+" line numbers
 " autostart Line Numbers
 set number
 filetype plugin on
 " change line number color 
 highlight LineNr ctermfg=grey 
 
-" ++ break / enter
+" break / enter
 " new line below / cursor stays 
 map <Enter> o<ESC>k	
 
-" ++ indent 
+" indent 
 set expandtab
 set shiftwidth=2
 set softtabstop=2
 
-" ++ width / wrap 
-set tw=79 
+" width / wrap -fix html wrapping 
+set tw=0
+set wrap
+set linebreak
+set nolist " list disables linebreak
 
 set statusline+=%#warningmsg#
 set statusline+=%*
 set laststatus=2
 set statusline=%f "tail of filename
 " Ale
+"React  https://jaxbot.me/articles/setting-up-vim-for-react-js-jsx-02-03-2015
+let g:jsx_ext_required = 0 " Allow JSX in normal JS files
+let g:ale_statusline_format = ['error', 'warning %d', '']
 let g:ale_linters = {
-\ 'javascript': ['eslint']
+\  'javascript': ['stylelint', 'eslint'],
+\  'css': ['stylelint', 'eslint'],
 \}
+" Ale symbols
+" let g:ale_sign_error = '⚠️' "Less aggressive than the default '>>'
+let g:ale_sign_warning = '💡'
+" let g:ale_echo_msg_warning_str = 'Warning 📣'
+" let g:ale_echo_msg_error_str = '❧ Error'
 
-" ++ Syntastic 
+" Syntastic 
 " set statusline+=%{SyntasticStatuslineFlag()}
 
 " " change location list height
@@ -100,21 +112,21 @@ let g:ale_linters = {
 " let g:syntastic_warning_symbol = '∆∆'
 " let g:syntastic_style_warning_symbol = '≈≈'
 
-" ++ help behaviour
+" help behaviour
 " open help in new tab
 cabbrev help tab help
 cabbrev h tab h
 
-" ++ colors / aesthetics
+" colors / aesthetics
 syntax on
 colorscheme monokai
 
-" ++ leader key
+" leader key
 " change <leader> to ',' instead of '\'
 let mapleader=","
 "set timeout timeoutlen=1500 <-- try if too fast 
 
-" ++ rename files within vim (<leader>n to rename)
+" rename files within vim (<leader>n to rename)
 function! RenameFile()
   let old_name = expand('%')
   let new_name = input('New file name: ', expand('%'), 'file')
@@ -128,11 +140,11 @@ endfunction
 " type <leader>n to open rename file dialog
 map <leader>n :call RenameFile()<cr>
 
-" ++ scrooloose comments
+" scrooloose comments
 " add spaces to nerd/sexy comments (Standard JS no-warn msg)
 let NERDSpaceDelims=1
 
-" ++ nerdtree <F2> toggle
+" nerdtree <F2> toggle
 map <F2> :NERDTreeToggle<CR>
 let NERDTreeWinSize=32
 let NERDTreeWinPos="left"
@@ -140,7 +152,7 @@ let NERDTreeShowHidden=1
 let NERDTreeAutoDeleteBuffer=1
 let NERDTreeAutoDeleteBuffer=1
 
-" ++ unused / saved for later
+" unused / saved for later
 " *if used to block comment and escape chars...
 if 0
 i
