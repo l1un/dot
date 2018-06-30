@@ -29,8 +29,6 @@ Plugin 'will133/vim-dirdiff'
 Plugin 'jiangmiao/auto-pairs'
 " vim-jsx
 Plugin 'mxw/vim-jsx'
-" Nerdtree
-Plugin 'scrooloose/nerdtree'
 " lightline
 Plugin 'itchyny/lightline.vim'
 
@@ -143,14 +141,6 @@ map <leader>n :call RenameFile()<cr>
 " scrooloose comments
 " add spaces to nerd/sexy comments (Standard JS no-warn msg)
 let NERDSpaceDelims=1
-
-" nerdtree <F2> toggle
-map <F2> :NERDTreeToggle<CR>
-let NERDTreeWinSize=32
-let NERDTreeWinPos="left"
-let NERDTreeShowHidden=1
-let NERDTreeAutoDeleteBuffer=1
-let NERDTreeAutoDeleteBuffer=1
 
 " unused / saved for later
 " *if used to block comment and escape chars...
