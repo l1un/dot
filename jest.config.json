@@ -1,0 +1,11 @@
+{
+  "verbose": true,
+  "moduleFileExtensions": [
+    "js",
+    "jsx"
+  ],
+  "moduleNameMapper": {
+    "appTest": "<rootDir>src/app/app.js",
+    "testFile": "<rootDir>src/app/testFile.js"
+  }
+}

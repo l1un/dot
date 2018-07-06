@@ -4,13 +4,10 @@ module.exports = {
     "es6": true,
     "jest": true
   },
-  "extends": [
-    "eslint:recommended",
-    "plugin:react/recommended"
-  ],
+  "extends": "eslint:recommended",
   "parserOptions": {
     "ecmaFeatures": {
-        "jsx": true
+      "jsx": true
     },
     "ecmaVersion": 2018,
     "sourceType": "module"
@@ -20,20 +17,25 @@ module.exports = {
   ],
   "rules": {
     "indent": [
-        "error",
-        2
+     "error",
+     2
     ],
     "linebreak-style": [
-        "error",
-        "unix"
+      "error",
+      "unix"
     ],
     "quotes": [
-        "error",
-        "single"
+      "error",
+      "single"
     ],
     "semi": [
-        "error",
-        "always"
+      "error",
+      "always"
     ]
+  },
+  "globals": {
+    "__dirname": false,
+    "module": false,
+    "require": false
   }
 };
