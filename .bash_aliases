@@ -1,4 +1,3 @@
-# temp
 # workflow
 alias ..wIki="cd /var/www/html/unary/fcc-map/front-end-projects/wikipedia-viewer"
 alias ..cHat="cd /var/www/html/chatter"
@@ -39,4 +38,10 @@ alias ..dOt="cd /var/www/html/dot-config"
 
 # cp dirs
 # copy main dotfiles to VCS directory
-alias cpDot="cp {.bash_aliases,.bashrc,.vimrc} /var/www/html/dot-config/"
+alias cPdot="cp {.bash_aliases,.bashrc,.vimrc} /var/www/html/dot-config/"
+
+# open new terminal windows in same directory
+alias gNUterm="gnome-terminal"
+alias tDDterm="gnome-terminal --window-with-profile=tdd-new"
+alias dEVterm="gnome-terminal --window-with-profile=tdd-old"
+alias aPIterm="gnome-terminal --window-with-profile=api"
