@@ -38,10 +38,11 @@ alias ..dOt="cd /var/www/html/dot-config"
 
 # cp dirs
 # copy main dotfiles to VCS directory
-alias cPdot="cp {.bash_aliases,.bashrc,.vimrc} /var/www/html/dot-config/"
+alias cpdot="cp {.bash_aliases,.bashrc,.vimrc,.config/terminator/config} /var/www/html/dot-config/"
 
 # open new terminal windows in same directory
-alias gNUterm="gnome-terminal"
-alias tDDterm="gnome-terminal --window-with-profile=tdd-new"
-alias dEVterm="gnome-terminal --window-with-profile=tdd-old"
-alias aPIterm="gnome-terminal --window-with-profile=api"
+alias ++gnome="gnome-terminal"
+alias ++dev="gnome-terminal --window-with-profile=dev"
+alias ++blue="gnome-terminal --window-with-profile=blue"
+alias ++red="gnome-terminal --window-with-profile=red"
+alias ++white="gnome-terminal --window-with-profile=white"
