@@ -1,10 +1,15 @@
 module.exports = {
   "env": {
+    "node": true,
     "browser": true,
     "es6": true,
     "jest": true
   },
-  "extends": "eslint:recommended",
+  "extends": [
+    "eslint:recommended",
+    "plugin:import/errors",
+    "plugin:import/warnings"
+  ],
   "parserOptions": {
     "ecmaFeatures": {
       "jsx": true
