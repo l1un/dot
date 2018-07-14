@@ -38,7 +38,7 @@ alias ..dOt="cd /srv/www/html/dot-config"
 
 # cp dirs
 # copy main dotfiles to VCS directory
-alias cpdot="cp {.bash_aliases,.bashrc,.tern-config,.vimrc,.config/terminator/config} /srv/www/html/dot-config/"
+alias cpdot="cp {.bash_aliases,.bashrc,.tern-config,.vimrc} /srv/www/html/dot-config/ && cp .config/terminator/config /srv/www/html/dot-config/.config/terminator/config"
 
 # open new terminal windows in same directory
 alias ++gnome="gnome-terminal"
