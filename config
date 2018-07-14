@@ -1,0 +1,55 @@
+[global_config]
+  handle_size = 1
+[keybindings]
+[layouts]
+  [[default]]
+    [[[child0]]]
+      fullscreen = False
+      last_active_term = d3348842-c684-4eeb-8ba4-fa3f896a77db
+      last_active_window = True
+      maximised = True
+      order = 0
+      parent = ""
+      position = 0:0
+      size = 1366, 717
+      title = aiuser@ail450 ~
+      type = Window
+    [[[child1]]]
+      order = 0
+      parent = child0
+      position = 673
+      ratio = 0.493045387994
+      type = HPaned
+    [[[child2]]]
+      order = 0
+      parent = child1
+      position = 619
+      ratio = 0.864016736402
+      type = VPaned
+    [[[terminal3]]]
+      order = 0
+      parent = child2
+      profile = default
+      type = Terminal
+      uuid = f2ce74fd-4c5d-408a-980b-6f505a345033
+      command = cd /var/www/html/build-envs/webpack-template && npm run test:watch; bash
+    [[[terminal4]]]
+      order = 1
+      parent = child2
+      profile = default
+      type = Terminal
+      uuid = 7b6a13ed-b04f-41ec-a0ed-b498b1f0696e
+      command = cd /var/www/html/build-envs/webpack-template && npm run develop; bash
+    [[[terminal5]]]
+      order = 1
+      parent = child1
+      profile = default
+      type = Terminal
+      uuid = d3348842-c684-4eeb-8ba4-fa3f896a77db
+      command = cd /var/www/html/build-envs/webpack-template; bash
+[plugins]
+[profiles]
+  [[default]]
+    background_image = None
+    scrollbar_position = hidden
+    show_titlebar = False

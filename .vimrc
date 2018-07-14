@@ -88,6 +88,8 @@ let g:ale_sign_warning = '∆∆'
 let g:ale_fixers = {
 \  'javascript': ['eslint'],
 \}
+" Ale completion
+let g:ale_completion_enabled = 1
 
 " help behaviour
 " open help in new tab
@@ -123,3 +125,7 @@ let NERDSpaceDelims=1
 
 " buffer workflow - ',b to list buffers and prep :b'
 nnoremap <Leader>b :ls<CR>:b<Space>
+
+" test fzf completion
+inoremap <expr> <c-x><c-k> fzf#vim#complete('cat /usr/share/dict/words')
+
