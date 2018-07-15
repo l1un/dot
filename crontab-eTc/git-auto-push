@@ -1,0 +1,5 @@
+# git auto-push dot 
+@reboot sleep 60 && cd /srv/www/html/dot-config && ./git.run
+
+# git auto-push tech doc
+@reboot sleep 90 && cd /srv/www/html/tech-doc && ./git.run

@@ -1,7 +1,7 @@
 # workflow
 alias ..wIki="cd /srv/www/html/unary/fcc-map/front-end-projects/wikipedia-viewer"
 alias ..cHat="cd /srv/www/html/chatter"
-alias ..tEchd="cd /srv/www/html/fcc-quick/fcc-tech-doc-page"
+alias ..tEchd="cd /srv/www/html/tech-doc"
 alias ..wEbpk="cd /srv/www/html/build-envs/webpack-template"
 alias ..mOon="cd /srv/www/html/moondev9.github.io"
 
