@@ -1,9 +1,9 @@
 # workflow
-alias ..wIki="cd /srv/www/html/unary/fcc-map/front-end-projects/wikipedia-viewer"
 alias ..cHat="cd /srv/www/html/chatter"
 alias ..tEchd="cd /srv/www/html/tech-doc"
 alias ..wEbpk="cd /srv/www/html/build-envs/webpack-template"
 alias ..mOon="cd /srv/www/html/moondev9.github.io"
+alias ..dAirc="cd /srv/www/html/derek-adaptable-info"
 
 # commands
 # up 1 dir
@@ -21,10 +21,6 @@ alias lsl="ls -alt | less"
 alias ..html="cd /srv/www/html/"
 # ydk (localhost)
 alias ..iDkjs="cd /srv/www/html/unary/idkjs"
-# pap
-alias ..pap="cd /srv/www/html/PAP/"
-# p theme
-alias ..pThm="cd /srv/www/html/PAP/wp-content/themes/pap-child"
 # unary
 alias ..unary="cd /srv/www/html/unary"
 # basic algs

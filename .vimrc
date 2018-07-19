@@ -5,7 +5,7 @@ filetype off                  " required
 " runtime path to include Vundle and init
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
-
+" vundle
 Plugin 'VundleVim/Vundle.vim'
 " Ale
 Plugin 'w0rp/ale'
@@ -125,7 +125,12 @@ let NERDSpaceDelims=1
 
 " buffer workflow - ',b to list buffers and prep :b'
 nnoremap <Leader>b :ls<CR>:b<Space>
+" lightline directory path
+let g:lightline = {
+      \ 'active': {
+      \   'left': [ [ 'mode', 'paste' ], [ 'readonly', 'absolutepath', 'modified' ] ],
+      \ }
+      \ }
 
 " test fzf completion
-inoremap <expr> <c-x><c-k> fzf#vim#complete('cat /usr/share/dict/words')
-
+" inoremap <expr> <c-x><c-k> fzf#vim#complete('cat /usr/share/dict/words')
