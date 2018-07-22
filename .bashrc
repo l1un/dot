@@ -94,7 +94,7 @@ alias l='ls -CF'
 
 # Add an "alert" alias for long running commands.  Use like so:
 #   sleep 10; alert
-alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo error)" "$(history|tail -n1|sed -e '\''s/^\s*[0-9]\+\s*//;s/[;&|]\s*alert$//'\'')"'
+# alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo error)" "$(history|tail -n1|sed -e '\''s/^\s*[0-9]\+\s*//;s/[;&|]\s*alert$//'\'')"'
 
 # Alias definitions.
 # You may want to put all your additions into a separate file like
@@ -116,6 +116,8 @@ if ! shopt -oq posix; then
   fi
 fi
 
+# START USER ADDITIONS
+
 # SCRIPT
 
 export NPM_PACKAGES="/home/o12/.npm-packages"
@@ -126,11 +128,19 @@ export PATH="$NPM_PACKAGES/bin:$PATH"
 unset MANPATH  # delete if you already modified MANPATH elsewhere in your config
 export MANPATH="$NPM_PACKAGES/share/man:$(manpath)"
 
-# START USER ADDITIONS
 
 # set vim as default
-export VISUAL=vim
-export EDITOR="$VISUAL"
+# export VISUAL=vim
+# export EDITOR="$VISUAL"
 
 # turn on vi mode
 set -o vi
+
+# function to change dirs and ls
+cdl() {
+  cd "$@"
+  ls -al
+}
+
+# quick change dirs
+shopt -s autocd
