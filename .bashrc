@@ -130,11 +130,11 @@ export MANPATH="$NPM_PACKAGES/share/man:$(manpath)"
 
 
 # set vim as default
-# export VISUAL=vim
-# export EDITOR="$VISUAL"
+export VISUAL=vim
+export EDITOR="$VISUAL"
 
 # turn on vi mode
-set -o vi
+# set -o vi
 
 # function to change dirs and ls
 cdl() {
@@ -144,3 +144,17 @@ cdl() {
 
 # quick change dirs
 shopt -s autocd
+
+# Codi wrapper
+# Usage: codi [filetype] [filename]
+# codi() {
+ # local syntax="${1:-python}"
+ # shift
+ # vim -c \
+   # "let g:startify_disable_at_vimenter = 1 |\
+   # set bt=nofile ls=0 noru nonu nornu |\
+   # hi ColorColumn ctermbg=NONE |\
+   # hi VertSplit ctermbg=NONE |\
+   # hi NonText ctermfg=0 |\
+   # Codi $syntax" "$@"
+# }

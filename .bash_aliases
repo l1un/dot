@@ -15,6 +15,8 @@ alias ....="cd ../../../"
 
 # sets lsl to list all by time modified | less
 alias lsl="ls -alt | less"
+# list all files and directories ONLY
+alias llA="find . -maxdepth 1 -printf '%p\t\n'"
 
 # cd dirs 
 # srv (localhost)

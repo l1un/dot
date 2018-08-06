@@ -32,6 +32,8 @@ Plugin 'itchyny/lightline.vim'
 " fzf
 Plugin 'junegunn/fzf'
 Plugin 'junegunn/fzf.vim'
+" codi (code scratchpad)
+Plugin 'metakirby5/codi.vim'
 
 " --- plugins above here ---
 
@@ -75,7 +77,7 @@ set statusline=%f "tail of filename
 let g:jsx_ext_required = 0 " Allow JSX in normal JS files
 let g:ale_statusline_format = ['error', 'warning %d', '']
 let g:ale_linters = {
-\  'javascript': ['stylelint', 'eslint'],
+\  'javascript': ['stylelint', 'eslint', 'prettier'],
 \  'css': ['stylelint', 'eslint'],
 \}
 " Ale symbols
@@ -131,6 +133,13 @@ let g:lightline = {
       \   'left': [ [ 'mode', 'paste' ], [ 'readonly', 'absolutepath', 'modified' ] ],
       \ }
       \ }
+" codi options
+" codi on right
+" let g:codi#rightsplit = 0
+" width on open
+let g:codi#width = 70 
+" default align left
+let g:codi#rightalign = 0 
 
 " test fzf completion
 " inoremap <expr> <c-x><c-k> fzf#vim#complete('cat /usr/share/dict/words')
