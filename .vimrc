@@ -135,7 +135,7 @@ let g:lightline = {
       \ }
 " codi options
 " codi on right
-" let g:codi#rightsplit = 0
+let g:codi#rightsplit = 0
 " width on open
 let g:codi#width = 70 
 " default align left
