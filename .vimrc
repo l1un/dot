@@ -72,7 +72,7 @@ set statusline+=%#warningmsg#
 set statusline+=%*
 set laststatus=2
 set statusline=%f "tail of filename
-" Ale
+" Worp Ale
 "React  https://jaxbot.me/articles/setting-up-vim-for-react-js-jsx-02-03-2015
 let g:jsx_ext_required = 0 " Allow JSX in normal JS files
 let g:ale_statusline_format = ['error', 'warning %d', '']
@@ -121,13 +121,16 @@ endfunction
 " type <leader>n to open rename file dialog
 map <leader>n :call RenameFile()<cr>
 
-" scrooloose comments
+" ++ scrooloose comments
 " add spaces to nerd/sexy comments (Standard JS no-warn msg)
 let NERDSpaceDelims=1
 
 " buffer workflow - ',b to list buffers and prep :b'
 nnoremap <Leader>b :ls<CR>:b<Space>
-" lightline directory path
+" instant markdown autostart
+" let g:instant_markdown_autostart = 0
+
+" ++ lightline directory path
 let g:lightline = {
       \ 'active': {
       \   'left': [ [ 'mode', 'paste' ], [ 'readonly', 'absolutepath', 'modified' ] ],

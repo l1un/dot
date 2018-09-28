@@ -1,5 +1,5 @@
 [global_config]
-  handle_size = 1
+  handle_size = 3
   inactive_color_offset = 0.935064935065
 [keybindings]
 [layouts]
