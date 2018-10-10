@@ -1,37 +1,26 @@
 [global_config]
   handle_size = 3
   inactive_color_offset = 0.935064935065
+  suppress_multiple_term_dialog = True
 [keybindings]
 [layouts]
   [[default]]
     [[[child0]]]
       fullscreen = False
-      last_active_term = f2ce74fd-4c5d-408a-980b-6f505a345033
+      last_active_term = d3348842-c684-4eeb-8ba4-fa3f896a77db
       last_active_window = True
       maximised = True
       order = 0
       parent = ""
       position = 0:0
       size = 1366, 714
-      title = aiuser@ail450 ~
+      title = T/o12@e45 ~
       type = Window
     [[[child1]]]
       order = 0
       parent = child0
       position = 672
       ratio = 0.493030080704
-      type = HPaned
-    [[[child10]]]
-      order = 1
-      parent = child6
-      position = 212
-      ratio = 0.316890881913
-      type = HPaned
-    [[[child12]]]
-      order = 1
-      parent = child10
-      position = 229
-      ratio = 0.502192982456
       type = HPaned
     [[[child2]]]
       order = 0
@@ -42,45 +31,33 @@
     [[[child3]]]
       order = 0
       parent = child2
-      position = 620
-      ratio = 0.958268933539
+      position = 618
+      ratio = 0.955177743431
       type = VPaned
     [[[child6]]]
       order = 1
       parent = child2
-      position = 31
-      ratio = 0.516666666667
+      position = 32
+      ratio = 0.533333333333
       type = VPaned
-    [[[child7]]]
-      order = 0
-      parent = child6
-      position = 335
-      ratio = 0.500747384155
-      type = HPaned
-    [[[terminal11]]]
-      order = 0
-      parent = child10
-      profile = default
-      type = Terminal
-      uuid = 3d15e39a-03f8-4405-87ba-de3f57909fcc
-    [[[terminal13]]]
-      order = 0
-      parent = child12
-      profile = default
-      type = Terminal
-      uuid = f56bb2a4-e89e-4eb3-9457-f2994a580851
-    [[[terminal14]]]
-      order = 1
-      parent = child12
-      profile = default
-      type = Terminal
-      uuid = dd18e725-5c18-4257-8f98-cc92a2b90907
-    [[[terminal15]]]
+    [[[child9]]]
       order = 1
       parent = child1
+      position = 683
+      ratio = 0.960618846695
+      type = VPaned
+    [[[terminal10]]]
+      order = 0
+      parent = child9
       profile = default
       type = Terminal
       uuid = d3348842-c684-4eeb-8ba4-fa3f896a77db
+    [[[terminal11]]]
+      order = 1
+      parent = child9
+      profile = tool
+      type = Terminal
+      uuid = 62e31af2-ae78-43fc-8a4f-e787771bb3c8
     [[[terminal4]]]
       order = 0
       parent = child3
@@ -93,18 +70,18 @@
       profile = b/tdd
       type = Terminal
       uuid = 8f7c8002-a417-40de-87f0-db88cc766580
-    [[[terminal8]]]
+    [[[terminal7]]]
       order = 0
-      parent = child7
-      profile = tool
-      type = Terminal
-      uuid = 4970d4c3-86b0-415a-9c68-493b73b292a5
-    [[[terminal9]]]
-      order = 1
-      parent = child7
+      parent = child6
       profile = tool
       type = Terminal
       uuid = 0f418fd1-d941-4722-ac43-c5201dcb9ecb
+    [[[terminal8]]]
+      order = 1
+      parent = child6
+      profile = default
+      type = Terminal
+      uuid = dd18e725-5c18-4257-8f98-cc92a2b90907
 [plugins]
 [profiles]
   [[default]]
