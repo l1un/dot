@@ -19,8 +19,8 @@
     [[[child1]]]
       order = 0
       parent = child0
-      position = 672
-      ratio = 0.493030080704
+      position = 683
+      ratio = 0.501100513573
       type = HPaned
     [[[child2]]]
       order = 0
@@ -31,14 +31,14 @@
     [[[child3]]]
       order = 0
       parent = child2
-      position = 618
-      ratio = 0.955177743431
+      position = 616
+      ratio = 0.952086553323
       type = VPaned
     [[[child6]]]
       order = 1
       parent = child2
-      position = 32
-      ratio = 0.533333333333
+      position = 33
+      ratio = 0.55
       type = VPaned
     [[[child9]]]
       order = 1

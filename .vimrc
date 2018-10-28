@@ -34,6 +34,8 @@ Plugin 'junegunn/fzf'
 Plugin 'junegunn/fzf.vim'
 " codi (code scratchpad)
 Plugin 'metakirby5/codi.vim'
+" surround.vim
+Plugin 'tpope/vim-surround'
 
 " --- plugins above here ---
 
