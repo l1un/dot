@@ -1,87 +1,108 @@
 [global_config]
-  handle_size = 3
-  inactive_color_offset = 0.935064935065
+  borderless = True
+  focus = system
+  geometry_hinting = True
+  handle_size = 1
+  inactive_color_offset = 0.902597402597
   suppress_multiple_term_dialog = True
 [keybindings]
 [layouts]
-  [[default]]
+  [[full]]
     [[[child0]]]
       fullscreen = False
-      last_active_term = d3348842-c684-4eeb-8ba4-fa3f896a77db
+      last_active_term = 0f418fd1-d941-4722-ac43-c5201dcb9ecb
       last_active_window = True
       maximised = True
       order = 0
       parent = ""
       position = 0:0
-      size = 1366, 714
+      size = 1366, 741
       title = T/o12@e45 ~
       type = Window
     [[[child1]]]
       order = 0
       parent = child0
-      position = 683
-      ratio = 0.501100513573
+      position = 684
+      ratio = 0.501098901099
       type = HPaned
     [[[child2]]]
       order = 0
       parent = child1
-      position = 650
-      ratio = 0.914205344585
+      position = 380
+      ratio = 0.513513513514
       type = VPaned
-    [[[child3]]]
+    [[[terminal3]]]
       order = 0
       parent = child2
-      position = 616
-      ratio = 0.952086553323
-      type = VPaned
-    [[[child6]]]
+      profile = default
+      type = Terminal
+      uuid = 0f418fd1-d941-4722-ac43-c5201dcb9ecb
+    [[[terminal4]]]
       order = 1
       parent = child2
-      position = 33
-      ratio = 0.55
-      type = VPaned
-    [[[child9]]]
+      profile = default
+      type = Terminal
+      uuid = dd18e725-5c18-4257-8f98-cc92a2b90907
+    [[[terminal5]]]
       order = 1
       parent = child1
-      position = 683
-      ratio = 0.960618846695
-      type = VPaned
-    [[[terminal10]]]
-      order = 0
-      parent = child9
       profile = default
       type = Terminal
       uuid = d3348842-c684-4eeb-8ba4-fa3f896a77db
-    [[[terminal11]]]
+  [[default]]
+    [[[child0]]]
+      fullscreen = False
+      last_active_term = 0f418fd1-d941-4722-ac43-c5201dcb9ecb
+      last_active_window = True
+      maximised = False
+      order = 0
+      parent = ""
+      position = 683:0
+      size = 683, 741
+      title = T/o12@e45 ~
+      type = Window
+    [[[child1]]]
+      order = 0
+      parent = child0
+      position = 26
+      ratio = 0.0352303523035
+      type = VPaned
+    [[[child3]]]
       order = 1
-      parent = child9
-      profile = tool
+      parent = child1
+      position = 644
+      ratio = 0.90576652602
+      type = VPaned
+    [[[child5]]]
+      order = 1
+      parent = child3
+      position = 0
+      ratio = 0.0
+      type = VPaned
+    [[[terminal2]]]
+      order = 0
+      parent = child1
+      profile = b/tdd
       type = Terminal
-      uuid = 62e31af2-ae78-43fc-8a4f-e787771bb3c8
+      uuid = f2ce74fd-4c5d-408a-980b-6f505a345033
     [[[terminal4]]]
       order = 0
       parent = child3
       profile = default
       type = Terminal
-      uuid = f2ce74fd-4c5d-408a-980b-6f505a345033
-    [[[terminal5]]]
-      order = 1
-      parent = child3
-      profile = b/tdd
-      type = Terminal
-      uuid = 8f7c8002-a417-40de-87f0-db88cc766580
-    [[[terminal7]]]
-      order = 0
-      parent = child6
-      profile = tool
-      type = Terminal
       uuid = 0f418fd1-d941-4722-ac43-c5201dcb9ecb
-    [[[terminal8]]]
-      order = 1
-      parent = child6
+    [[[terminal6]]]
+      order = 0
+      parent = child5
       profile = default
       type = Terminal
-      uuid = dd18e725-5c18-4257-8f98-cc92a2b90907
+      uuid = 72215522-752f-4cba-b484-5aaf932c7893
+    [[[terminal7]]]
+      order = 1
+      parent = child5
+      profile = tool
+      type = Terminal
+      uuid = a0714d09-63d8-446e-bb5c-7102d3d1acd1
 [plugins]
 [profiles]
   [[default]]

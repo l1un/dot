@@ -45,7 +45,7 @@ filetype plugin indent on    " required
 
 " --- END plugins / vundle ---
 
-" search
+" search and see regEx matches while typing
 set incsearch
 
 " line numbers
