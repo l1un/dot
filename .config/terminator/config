@@ -7,6 +7,36 @@
   suppress_multiple_term_dialog = True
 [keybindings]
 [layouts]
+  [[default]]
+    [[[child0]]]
+      fullscreen = False
+      last_active_term = ed836c39-bbbf-497f-bd8b-1a3485c31425
+      last_active_window = True
+      maximised = False
+      order = 0
+      parent = ""
+      position = 682:101
+      size = 642, 427
+      title = o12@e45: ~
+      type = Window
+    [[[child1]]]
+      order = 0
+      parent = child0
+      position = 213
+      ratio = 0.5
+      type = VPaned
+    [[[terminal2]]]
+      order = 0
+      parent = child1
+      profile = default
+      type = Terminal
+      uuid = ed836c39-bbbf-497f-bd8b-1a3485c31425
+    [[[terminal3]]]
+      order = 1
+      parent = child1
+      profile = default
+      type = Terminal
+      uuid = 4f434a8b-c69a-4296-ba41-f8a7eba68ba1
   [[full]]
     [[[child0]]]
       fullscreen = False
@@ -17,7 +47,7 @@
       parent = ""
       position = 0:0
       size = 1366, 741
-      title = T/o12@e45 ~
+      title = fullDev ~
       type = Window
     [[[child1]]]
       order = 0
@@ -49,7 +79,7 @@
       profile = default
       type = Terminal
       uuid = d3348842-c684-4eeb-8ba4-fa3f896a77db
-  [[default]]
+  [[half]]
     [[[child0]]]
       fullscreen = False
       last_active_term = 0f418fd1-d941-4722-ac43-c5201dcb9ecb
@@ -57,21 +87,21 @@
       maximised = False
       order = 0
       parent = ""
-      position = 683:0
+      position = 0:0
       size = 683, 741
-      title = T/o12@e45 ~
+      title = halfDev ~
       type = Window
     [[[child1]]]
       order = 0
       parent = child0
-      position = 26
-      ratio = 0.0352303523035
+      position = 25
+      ratio = 0.0337837837838
       type = VPaned
     [[[child3]]]
       order = 1
       parent = child1
-      position = 644
-      ratio = 0.90576652602
+      position = 587
+      ratio = 0.822128851541
       type = VPaned
     [[[child5]]]
       order = 1
@@ -100,7 +130,7 @@
     [[[terminal7]]]
       order = 1
       parent = child5
-      profile = tool
+      profile = default
       type = Terminal
       uuid = a0714d09-63d8-446e-bb5c-7102d3d1acd1
 [plugins]
@@ -113,6 +143,7 @@
     background_color = "#ffffff"
     cursor_color = "#aaaaaa"
     foreground_color = "#000000"
+    palette = "#000000:#888a85:#2e3436:#c4a000:#3465a4:#75507b:#204a87:#d3d7cf:#555753:#d3d7cf:#555753:#fce94f:#729fcf:#ad7fa8:#3465a4:#eeeeec"
     scrollbar_position = hidden
     show_titlebar = False
   [[tool]]
