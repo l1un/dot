@@ -15,26 +15,26 @@
       maximised = False
       order = 0
       parent = ""
-      position = 682:101
-      size = 642, 427
+      position = 683:0
+      size = 683, 741
       title = o12@e45: ~
       type = Window
     [[[child1]]]
       order = 0
       parent = child0
-      position = 213
-      ratio = 0.5
+      position = 556
+      ratio = 0.751351351351
       type = VPaned
     [[[terminal2]]]
       order = 0
       parent = child1
-      profile = default
+      profile = trans
       type = Terminal
       uuid = ed836c39-bbbf-497f-bd8b-1a3485c31425
     [[[terminal3]]]
       order = 1
       parent = child1
-      profile = default
+      profile = trans
       type = Terminal
       uuid = 4f434a8b-c69a-4296-ba41-f8a7eba68ba1
   [[full]]
@@ -100,14 +100,8 @@
     [[[child3]]]
       order = 1
       parent = child1
-      position = 587
-      ratio = 0.822128851541
-      type = VPaned
-    [[[child5]]]
-      order = 1
-      parent = child3
-      position = 0
-      ratio = 0.0
+      position = 595
+      ratio = 0.833333333333
       type = VPaned
     [[[terminal2]]]
       order = 0
@@ -121,15 +115,9 @@
       profile = default
       type = Terminal
       uuid = 0f418fd1-d941-4722-ac43-c5201dcb9ecb
-    [[[terminal6]]]
-      order = 0
-      parent = child5
-      profile = default
-      type = Terminal
-      uuid = 72215522-752f-4cba-b484-5aaf932c7893
-    [[[terminal7]]]
+    [[[terminal5]]]
       order = 1
-      parent = child5
+      parent = child3
       profile = default
       type = Terminal
       uuid = a0714d09-63d8-446e-bb5c-7102d3d1acd1
@@ -150,5 +138,13 @@
     background_color = "#300a24"
     cursor_color = "#aaaaaa"
     foreground_color = "#ffffff"
+    scrollbar_position = hidden
+    show_titlebar = False
+  [[trans]]
+    background_darkness = 0.51
+    background_type = transparent
+    cursor_color = "#aaaaaa"
+    foreground_color = "#ffffff"
+    icon_bell = False
     scrollbar_position = hidden
     show_titlebar = False

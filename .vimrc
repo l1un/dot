@@ -138,6 +138,7 @@ let g:lightline = {
       \   'left': [ [ 'mode', 'paste' ], [ 'readonly', 'absolutepath', 'modified' ] ],
       \ }
       \ }
+
 " codi options
 " codi on right
 let g:codi#rightsplit = 0
@@ -148,3 +149,7 @@ let g:codi#rightalign = 0
 
 " test fzf completion
 " inoremap <expr> <c-x><c-k> fzf#vim#complete('cat /usr/share/dict/words')
+"
+" test autoread
+" set autoread
+" au CursorHold,CursorHoldI * checktime
