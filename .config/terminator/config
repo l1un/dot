@@ -15,15 +15,15 @@
       maximised = False
       order = 0
       parent = ""
-      position = 683:0
+      position = 0:0
       size = 683, 741
       title = o12@e45: ~
       type = Window
     [[[child1]]]
       order = 0
       parent = child0
-      position = 556
-      ratio = 0.751351351351
+      position = 619
+      ratio = 0.836486486486
       type = VPaned
     [[[terminal2]]]
       order = 0
@@ -34,7 +34,7 @@
     [[[terminal3]]]
       order = 1
       parent = child1
-      profile = trans
+      profile = default
       type = Terminal
       uuid = 4f434a8b-c69a-4296-ba41-f8a7eba68ba1
   [[full]]
@@ -141,7 +141,7 @@
     scrollbar_position = hidden
     show_titlebar = False
   [[trans]]
-    background_darkness = 0.51
+    background_darkness = 0.42
     background_type = transparent
     cursor_color = "#aaaaaa"
     foreground_color = "#ffffff"
