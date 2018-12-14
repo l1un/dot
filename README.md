@@ -12,7 +12,96 @@
 `xkb`
 `setxkbmap`
 
+###### structure
+```
+.
+├── .babelrc
+├── bash
+│   ├── .bash_aliases
+│   ├── .bashrc
+│   └── notes.md
+├── .bash_aliases
+├── .bashrc
+├── CHANGELOG.md
+├── .config
+│   └── terminator
+│       └── config
+├── crontab
+│   └── git-auto-push
+├── .curlrc
+├── .emacs
+├── .eslintrc.js
+├── gallium-os
+│   ├── .bash_aliases
+│   ├── .bashrc
+│   ├── gallium-notes.md
+│   ├── .vimrc
+│   └── xkb
+│       ├── chromebook_minimal
+│       ├── chromebook_minimal_vim
+│       ├── mykbd
+│       ├── vimSwap
+│       ├── .xkb
+│       │   ├── keymap
+│       │   │   └── mykbd
+│       │   ├── recomp.sh
+│       │   └── symbols
+│       │       └── vimSwap
+│       └── xkb-notes.md
+├── .gemrc
+├── git
+│   └── template.txt
+├── git.run
+├── gulp
+│   ├── latest-gulpfile.babel.js
+│   └── old-test-gulpfile.js
+├── misc-notes.txt
+├── nix
+│   ├── bash-etc
+│   │   ├── redirect-pipe-sort-uniq.sh
+│   │   ├── shell-scripts.md
+│   │   └── shortcuts-bash.md
+│   ├── config-notes.md
+│   ├── curl-GET-jq-etc.md
+│   └── test.txt
+├── README.md
+├── ssh
+│   └── ssh-config-example
+├── tdd-bdd
+│   ├── jest.config.json
+│   ├── mocha-standardJS-example-packagage.json
+│   └── notes-unit-testing.md
+├── .tern-config
+├── .tern-project
+├── update-changelog.sh
+├── update-node-packages.sh
+├── update-tree.sh
+├── vim
+│   ├── plugins-vim
+│   │   └── vim-jsx
+│   │       └── xml.vim
+│   ├── shortcuts-vim.md
+│   └── vimium-notes-vim.md
+├── .vimrc
+└── webpack
+    ├── webpack.common.js
+    ├── webpack.dev.js
+    └── webpack.prod.js
+
+19 directories, 53 files
+last generated: Fri Dec 14 08:47:47 PST 2018
+```
+###### packages
+null
+###### notes
+null
 ###### changelog
+`2018.12.14`
+  - adjust terminator config again
+  - add shell scripts (for replication and use)
+  - add tree / notes sections
+  - update this README / changelog
+
 `2018.12.13`
 - update and clean-up README
 

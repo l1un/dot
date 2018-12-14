@@ -10,37 +10,25 @@
   [[default]]
     [[[child0]]]
       fullscreen = False
-      last_active_term = ed836c39-bbbf-497f-bd8b-1a3485c31425
+      last_active_term = a0714d09-63d8-446e-bb5c-7102d3d1acd1
       last_active_window = True
       maximised = False
       order = 0
       parent = ""
-      position = 0:0
+      position = 683:0
       size = 683, 741
-      title = o12@e45: ~
+      title = halfDev ~
       type = Window
-    [[[child1]]]
+    [[[terminal1]]]
       order = 0
       parent = child0
-      position = 619
-      ratio = 0.836486486486
-      type = VPaned
-    [[[terminal2]]]
-      order = 0
-      parent = child1
       profile = trans
       type = Terminal
-      uuid = ed836c39-bbbf-497f-bd8b-1a3485c31425
-    [[[terminal3]]]
-      order = 1
-      parent = child1
-      profile = default
-      type = Terminal
-      uuid = 4f434a8b-c69a-4296-ba41-f8a7eba68ba1
-  [[full]]
+      uuid = a0714d09-63d8-446e-bb5c-7102d3d1acd1
+  [[dev]]
     [[[child0]]]
       fullscreen = False
-      last_active_term = 0f418fd1-d941-4722-ac43-c5201dcb9ecb
+      last_active_term = d3348842-c684-4eeb-8ba4-fa3f896a77db
       last_active_window = True
       maximised = True
       order = 0
@@ -61,19 +49,43 @@
       position = 380
       ratio = 0.513513513514
       type = VPaned
-    [[[terminal3]]]
+    [[[child3]]]
       order = 0
       parent = child2
-      profile = default
-      type = Terminal
-      uuid = 0f418fd1-d941-4722-ac43-c5201dcb9ecb
-    [[[terminal4]]]
+      position = 190
+      ratio = 0.501319261214
+      type = VPaned
+    [[[child6]]]
       order = 1
       parent = child2
-      profile = default
+      position = 180
+      ratio = 0.50139275766
+      type = VPaned
+    [[[terminal4]]]
+      order = 0
+      parent = child3
+      profile = trans
+      type = Terminal
+      uuid = 0f418fd1-d941-4722-ac43-c5201dcb9ecb
+    [[[terminal5]]]
+      order = 1
+      parent = child3
+      profile = b/tdd
+      type = Terminal
+      uuid = a65ebbbb-e294-4050-8e50-98ec3983cc4e
+    [[[terminal7]]]
+      order = 0
+      parent = child6
+      profile = tool
       type = Terminal
       uuid = dd18e725-5c18-4257-8f98-cc92a2b90907
-    [[[terminal5]]]
+    [[[terminal8]]]
+      order = 1
+      parent = child6
+      profile = default
+      type = Terminal
+      uuid = 51244fab-8d40-49c4-a790-34038874a83e
+    [[[terminal9]]]
       order = 1
       parent = child1
       profile = default
@@ -141,7 +153,7 @@
     scrollbar_position = hidden
     show_titlebar = False
   [[trans]]
-    background_darkness = 0.42
+    background_darkness = 0.51
     background_type = transparent
     cursor_color = "#aaaaaa"
     foreground_color = "#ffffff"
