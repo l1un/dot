@@ -96,6 +96,12 @@ null
 ###### notes
 null
 ###### changelog
+`2018.12.14.1`
+  - remove scripts from here (rethought)
+  - terminator config
+  - .bashrc $HOME addendum
+
+
 `2018.12.14`
   - adjust terminator config again
   - add shell scripts (for replication and use)

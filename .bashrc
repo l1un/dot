@@ -158,3 +158,6 @@ shopt -s autocd
    # hi NonText ctermfg=0 |\
    # Codi $syntax" "$@"
 # }
+
+# shell scripts
+export PATH="$HOME/bin:$PATH"
