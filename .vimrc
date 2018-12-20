@@ -147,6 +147,10 @@ let g:codi#width = 70
 " default align left
 let g:codi#rightalign = 0 
 
+" going with hybrid numbers atm
+set relativenumber
+" set nu! rnu!
+
 " test fzf completion
 " inoremap <expr> <c-x><c-k> fzf#vim#complete('cat /usr/share/dict/words')
 "

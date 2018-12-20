@@ -134,7 +134,7 @@ export VISUAL=vim
 export EDITOR="$VISUAL"
 
 # turn on vi mode
-# set -o vi
+set -o vi
 
 # function to change dirs and ls
 cdl() {
