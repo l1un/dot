@@ -8,6 +8,8 @@
 `vim`
 `SSH`
 `tern` 
+`terminator`
+`tmux`
 `webpack`
 `xkb`
 `setxkbmap`
@@ -73,9 +75,7 @@
 │   └── notes-unit-testing.md
 ├── .tern-config
 ├── .tern-project
-├── update-changelog.sh
-├── update-node-packages.sh
-├── update-tree.sh
+├── .tmux.conf
 ├── vim
 │   ├── plugins-vim
 │   │   └── vim-jsx
@@ -88,14 +88,20 @@
     ├── webpack.dev.js
     └── webpack.prod.js
 
-19 directories, 53 files
-last generated: Fri Dec 14 08:47:47 PST 2018
+19 directories, 51 files
+last generated: Wed Dec 26 15:54:10 PST 2018
 ```
 ###### packages
 null
 ###### notes
 null
 ###### changelog
+`2018.12.26.1`
+  - add `.tmux.conf`
+  - bash and terminator upates 
+  - update this RM, tree, cl
+
+
 `2018.12.14.1`
   - remove scripts from here (rethought)
   - terminator config
