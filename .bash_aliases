@@ -1,11 +1,3 @@
-# workflow
-alias cHatter="/srv/www/html/chatter"
-alias tEchdoc="/srv/www/html/tech-doc"
-alias wEbpack="/srv/www/html/build-envs/webpack-template"
-alias mOon="/srv/www/html/moondev9.github.io"
-alias dAirc="/srv/www/html/derek-adaptable-info"
-
-# commands
 # up 1 dir
 alias ..="cd ../"
 # up 2 dirs
@@ -21,16 +13,8 @@ alias llA="find . -maxdepth 1 -printf '%p\t\n'"
 # cd dirs 
 # srv (localhost)
 alias hTml="/srv/www/html/"
-# ydk (localhost)
-alias iDkjs="/srv/www/html/unary/idkjs"
 # unary
 alias uNary="/srv/www/html/unary"
-# basic algs
-alias bAlg="/srv/www/html/unary/fcc-map/algorithms-fcc/basic-algorithm-scripting"
-# intermediate algs 
-alias iAlg="/srv/www/html/unary/fcc-map/algorithms-fcc/intermediate-algorithm-scripting"
-# advanced algs
-alias aAlg="/srv/www/html/unary/fcc-map/algorithms-fcc/advanced-algorithm-scripting"
 # dotfiles (vcs)
 alias dOt="/srv/www/html/dot-config"
 

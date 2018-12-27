@@ -116,9 +116,7 @@ if ! shopt -oq posix; then
   fi
 fi
 
-# START USER ADDITIONS
-
-# SCRIPT
+# ADDITIONS ##################################
 
 export NPM_PACKAGES="/home/o12/.npm-packages"
 export NODE_PATH="$NPM_PACKAGES/lib/node_modules${NODE_PATH:+:$NODE_PATH}"
@@ -128,22 +126,24 @@ export PATH="$NPM_PACKAGES/bin:$PATH"
 unset MANPATH  # delete if you already modified MANPATH elsewhere in your config
 export MANPATH="$NPM_PACKAGES/share/man:$(manpath)"
 
+# change dirs and ls function
+cdl() {
+  cd "$@"
+  ls -al
+}
 
-# set vim as default
+# set vim as default editor
 export VISUAL=vim
 export EDITOR="$VISUAL"
 
 # turn on vi mode
 set -o vi
 
-# function to change dirs and ls
-cdl() {
-  cd "$@"
-  ls -al
-}
-
-# quick change dirs
+# quick change dirs (no need to type "cd")
 shopt -s autocd
+
+# shell scripts
+export PATH="$HOME/bin:$PATH"
 
 # Codi wrapper
 # Usage: codi [filetype] [filename]
@@ -158,6 +158,3 @@ shopt -s autocd
    # hi NonText ctermfg=0 |\
    # Codi $syntax" "$@"
 # }
-
-# shell scripts
-export PATH="$HOME/bin:$PATH"
