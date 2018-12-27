@@ -96,6 +96,11 @@ null
 ###### notes
 null
 ###### changelog
+`2018.12.27.1`
+  - edit `.bashrc` (organize + remove unused)
+  - update `.bash_aliases` with git commands
+
+
 `2018.12.26.1`
   - add `.tmux.conf`
   - bash and terminator upates 
