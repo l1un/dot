@@ -26,3 +26,7 @@ alias cpdot="cp {.bash_aliases,.bashrc,.tern-config,.vimrc} /srv/www/html/dot-co
 alias ++gnome="gnome-terminal"
 alias ++dev="gnome-terminal --window-with-profile=dev"
 alias ++tdd="gnome-terminal --window-with-profile=tdd"
+
+# speed-up git workflow
+alias gitQuick="git add . && git commit -m 'quick edit (via alias)' && git push"
+alias gitPush="git add . && git commit -v && git push"
