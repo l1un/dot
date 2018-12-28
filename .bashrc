@@ -126,10 +126,14 @@ export PATH="$NPM_PACKAGES/bin:$PATH"
 unset MANPATH  # delete if you already modified MANPATH elsewhere in your config
 export MANPATH="$NPM_PACKAGES/share/man:$(manpath)"
 
-# change dirs and ls function
+# change dirs + ls all long 
 cdl() {
   cd "$@"
   ls -al
+}
+# mkdir + move there
+mkdircd() {
+  mkdir -p "$1" && cd "$1"
 }
 
 # set vim as default editor

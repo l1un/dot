@@ -96,6 +96,10 @@ null
 ###### notes
 null
 ###### changelog
+`2018.12.28.1`
+  - add mkdircd() to `.bashrc`
+
+
 `2018.12.27.1`
   - edit `.bashrc` (organize + remove unused)
   - update `.bash_aliases` with git commands
