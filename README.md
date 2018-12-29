@@ -99,6 +99,10 @@ null
 ###### notes
 null
 ###### changelog
+`2018.12.28.4`
+  - remove redundant CL since it's here for now
+
+
 `2018.12.28.3`
   - new alias `.bash_aliases`
 
