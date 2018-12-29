@@ -50,6 +50,9 @@
 │       │   └── symbols
 │       │       └── vimSwap
 │       └── xkb-notes.md
+├── gatsby
+│   ├── .eslintrc.js
+│   └── package.json
 ├── .gemrc
 ├── git
 │   └── template.txt
@@ -88,14 +91,20 @@
     ├── webpack.dev.js
     └── webpack.prod.js
 
-19 directories, 51 files
-last generated: Wed Dec 26 15:54:10 PST 2018
+20 directories, 53 files
+last generated: Fri Dec 28 15:56:44 PST 2018
 ```
 ###### packages
 null
 ###### notes
 null
 ###### changelog
+`2018.12.28.2`
+  - create gatsby directory
+  - add gatsby config files `package.json` & `.eslintrc.js` (standard, react)
+  - update tree
+
+
 `2018.12.28.1`
   - add mkdircd() to `.bashrc`
 
