@@ -13,10 +13,12 @@ alias llA="find . -maxdepth 1 -printf '%p\t\n'"
 # cd dirs 
 # srv (localhost)
 alias hTml="/srv/www/html/"
+# gatsby
+alias gAtsby="/srv/www/html/gatsby/"
 # unary
 alias uNary="/srv/www/html/unary"
 # dotfiles (vcs)
-alias dOt="/srv/www/html/dot-config"
+alias dOtconfig="/srv/www/html/dot-config"
 
 # cp dirs
 # copy main dotfiles to VCS directory

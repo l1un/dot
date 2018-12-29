@@ -99,6 +99,10 @@ null
 ###### notes
 null
 ###### changelog
+`2018.12.28.3`
+  - new alias `.bash_aliases`
+
+
 `2018.12.28.2`
   - create gatsby directory
   - add gatsby config files `package.json` & `.eslintrc.js` (standard, react)
