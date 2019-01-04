@@ -36,6 +36,8 @@ Plugin 'junegunn/fzf.vim'
 Plugin 'metakirby5/codi.vim'
 " surround.vim
 Plugin 'tpope/vim-surround'
+" repeat.vim
+Plugin 'tpope/vim-repeat'
 
 " --- plugins above here ---
 
