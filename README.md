@@ -18,19 +18,27 @@
 ```
 .
 ├── .babelrc
-├── bash
-│   ├── .bash_aliases
-│   ├── .bashrc
-│   └── notes.md
 ├── .bash_aliases
 ├── .bashrc
-├── CHANGELOG.md
 ├── .config
 │   └── terminator
 │       └── config
 ├── crontab
 │   └── git-auto-push
 ├── .curlrc
+├── doc
+│   └── nix
+│       ├── bash
+│       │   ├── .bash_aliases
+│       │   ├── .bashrc
+│       │   ├── notes.md
+│       │   ├── redirect-pipe-sort-uniq.sh
+│       │   ├── shell-scripts.md
+│       │   └── shortcuts-bash.md
+│       ├── curl-GET-jq-etc.md
+│       ├── default-shell-apps.md
+│       ├── older-config-notes.md
+│       └── test.txt
 ├── .emacs
 ├── .eslintrc.js
 ├── gallium-os
@@ -61,14 +69,6 @@
 │   ├── latest-gulpfile.babel.js
 │   └── old-test-gulpfile.js
 ├── misc-notes.txt
-├── nix
-│   ├── bash-etc
-│   │   ├── redirect-pipe-sort-uniq.sh
-│   │   ├── shell-scripts.md
-│   │   └── shortcuts-bash.md
-│   ├── config-notes.md
-│   ├── curl-GET-jq-etc.md
-│   └── test.txt
 ├── README.md
 ├── ssh
 │   └── ssh-config-example
@@ -92,13 +92,20 @@
     └── webpack.prod.js
 
 20 directories, 53 files
-last generated: Fri Dec 28 15:56:44 PST 2018
+last generated: Fri Jan  4 13:30:43 PST 2019
 ```
 ###### packages
 null
 ###### notes
 null
 ###### changelog
+`2019.01.04.1`
+  - fzf add in `.bashrc`
+  - add vim-repeat `.vimrc`
+  - update tree
+  - create shell app notes + organize
+
+
 `2018.12.28.4`
   - remove redundant CL since it's here for now
 
