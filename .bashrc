@@ -162,3 +162,5 @@ export PATH="$HOME/bin:$PATH"
    # hi NonText ctermfg=0 |\
    # Codi $syntax" "$@"
 # }
+
+[ -f ~/.fzf.bash ] && source ~/.fzf.bash
