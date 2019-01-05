@@ -99,8 +99,8 @@ let g:ale_completion_enabled = 1
 
 " help behaviour
 " open help in new tab
-cabbrev help tab help
-cabbrev h tab h
+" cabbrev help tab help
+" cabbrev h tab h
 
 " colors / aesthetics
 syntax on

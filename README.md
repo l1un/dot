@@ -99,6 +99,11 @@ null
 ###### notes
 null
 ###### changelog
+`2019.01.04.2`
+  - improve default shell app notes
+  - fix path for `z` in `.bashrc`
+
+
 `2019.01.04.1`
   - fzf add in `.bashrc`
   - add vim-repeat `.vimrc`

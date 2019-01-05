@@ -163,4 +163,8 @@ export PATH="$HOME/bin:$PATH"
    # Codi $syntax" "$@"
 # }
 
+# added via fzf install script (comment manually added)
 [ -f ~/.fzf.bash ] && source ~/.fzf.bash
+
+# testing z
+. /usr/local/bin/z.sh

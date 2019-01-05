@@ -1,17 +1,34 @@
-###### default apps 
+###### defaults 
 
-`bat` - https://github.com/sharkdp/bat
+`bat` - color cat
 
-`fzf` - https://github.com/junegunn/fzf
+https://github.com/sharkdp/bat
 
-`rg` - https://github.com/BurntSushi/ripgrep
+---
 
-`z` - https://github.com/rupa/z
-- install (no *brew)
+`fzf` - fuzzy - command line + vim
+
+https://github.com/junegunn/fzf
+
+---
+
+`rg` - ripgrep - command line + vim
+
+https://github.com/BurntSushi/ripgrep
+
+---
+
+`z` - tab autocompete db
 ```
+# install (avoid *brew bs)
+
 git clone https://github.com/rupa/z/ ~/tmp/z
 chmod +x ~/tmp/z/z.sh
 mv ~/tmp/z/z.sh /usr/local/bin/
 mv ~/tmp/z/z.1 /usr/local/share/man/man1
 rm -rf ~/tmp/z
+
+# then add '. usr/local/bin/z.sh' to .bashrc
+
 ```
+https://github.com/rupa/z
