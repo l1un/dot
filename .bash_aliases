@@ -21,7 +21,10 @@ alias dot="/srv/www/html/dot-config"
 
 # cp dirs
 # copy main dotfiles to vc directory
-alias cpd="cp {.bash_aliases,.bashrc,.tern-config,.vimrc} /srv/www/html/dot-config/ && cp .config/terminator/config /srv/www/html/dot-config/.config/terminator/config"
+alias cpd="
+cp {.bash_aliases,.bashrc,.vimrc,.tmux.conf} /srv/www/html/dot-config/ && \
+cp .config/terminator/config /srv/www/html/dot-config/cat-spec/.config/terminator/config && \
+cp .config/gtk-3.0/gtk.css /srv/www/html/dot-config/cat-spec/.config/gtk-3.0"
 
 # open tdd terminal window same directory
 alias tdd="gnome-terminal --window-with-profile=tdd"

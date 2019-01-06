@@ -168,3 +168,6 @@ export PATH="$HOME/bin:$PATH"
 
 # testing z
 . /usr/local/bin/z.sh
+
+# termtosvg
+export PATH="/home/o12/.local/bin:$PATH"

@@ -159,3 +159,6 @@ set relativenumber
 " test autoread
 " set autoread
 " au CursorHold,CursorHoldI * checktime
+
+" quick edit .vimrc <leader>vrc
+nnoremap <silent> <Leader>vrc :tabnew<CR>:e ~/.vimrc<CR>

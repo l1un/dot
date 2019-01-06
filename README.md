@@ -17,88 +17,101 @@
 ###### structure
 ```
 .
-├── .babelrc
 ├── .bash_aliases
 ├── .bashrc
-├── .config
-│   └── terminator
-│       └── config
-├── crontab
-│   └── git-auto-push
-├── .curlrc
+├── cat-spec
+│   ├── .babelrc
+│   ├── .config
+│   │   ├── gtk-3.0
+│   │   │   └── gtk.css
+│   │   └── terminator
+│   │       └── config
+│   ├── crontab
+│   │   └── git-auto-push
+│   ├── .curlrc
+│   ├── gatsby
+│   │   ├── .eslintrc.js
+│   │   └── package.json
+│   ├── gulp
+│   │   ├── latest-gulpfile.babel.js
+│   │   └── old-test-gulpfile.js
+│   ├── ssh
+│   │   └── ssh-config-example
+│   ├── tdd-bdd
+│   │   ├── jest.config.json
+│   │   └── mocha-standardJS-example-packagage.json
+│   ├── .tern-config
+│   ├── .tern-project
+│   ├── vim
+│   │   └── plugins-vim
+│   │       └── vim-jsx
+│   │           └── xml.vim
+│   └── webpack
+│       ├── webpack.common.js
+│       ├── webpack.dev.js
+│       └── webpack.prod.js
 ├── doc
-│   └── nix
-│       ├── bash
-│       │   ├── .bash_aliases
-│       │   ├── .bashrc
-│       │   ├── notes.md
-│       │   ├── redirect-pipe-sort-uniq.sh
-│       │   ├── shell-scripts.md
-│       │   └── shortcuts-bash.md
-│       ├── curl-GET-jq-etc.md
-│       ├── default-shell-apps.md
-│       ├── older-config-notes.md
-│       └── test.txt
-├── .emacs
+│   ├── gallium-doc
+│   │   └── gallium-notes.md
+│   ├── git-doc
+│   │   └── template.txt
+│   ├── nix-doc
+│   │   ├── bash
+│   │   │   ├── .bash_aliases
+│   │   │   ├── .bashrc
+│   │   │   ├── notes.md
+│   │   │   ├── redirect-pipe-sort-uniq.sh
+│   │   │   ├── shell-scripts.md
+│   │   │   └── shortcuts-bash.md
+│   │   ├── curl-GET-jq-etc.md
+│   │   ├── default-shell-apps.md
+│   │   ├── misc-notes.txt
+│   │   ├── older-config-notes.md
+│   │   └── test.txt
+│   ├── tdd-bdd-doc
+│   │   └── notes-unit-testing.md
+│   └── vim-doc
+│       ├── shortcuts-vim.md
+│       └── vimium-notes-vim.md
 ├── .eslintrc.js
-├── gallium-os
-│   ├── .bash_aliases
-│   ├── .bashrc
-│   ├── gallium-notes.md
-│   ├── .vimrc
-│   └── xkb
-│       ├── chromebook_minimal
-│       ├── chromebook_minimal_vim
-│       ├── mykbd
-│       ├── vimSwap
-│       ├── .xkb
-│       │   ├── keymap
-│       │   │   └── mykbd
-│       │   ├── recomp.sh
-│       │   └── symbols
-│       │       └── vimSwap
-│       └── xkb-notes.md
-├── gatsby
-│   ├── .eslintrc.js
-│   └── package.json
-├── .gemrc
-├── git
-│   └── template.txt
-├── git.run
-├── gulp
-│   ├── latest-gulpfile.babel.js
-│   └── old-test-gulpfile.js
-├── misc-notes.txt
+├── os-spec
+│   └── gallium-os
+│       ├── .bash_aliases
+│       ├── .bashrc
+│       ├── .vimrc
+│       └── xkb
+│           ├── chromebook_minimal
+│           ├── chromebook_minimal_vim
+│           ├── mykbd
+│           ├── vimSwap
+│           ├── .xkb
+│           │   ├── keymap
+│           │   │   └── mykbd
+│           │   ├── recomp.sh
+│           │   └── symbols
+│           │       └── vimSwap
+│           └── xkb-notes.md
 ├── README.md
-├── ssh
-│   └── ssh-config-example
-├── tdd-bdd
-│   ├── jest.config.json
-│   ├── mocha-standardJS-example-packagage.json
-│   └── notes-unit-testing.md
-├── .tern-config
-├── .tern-project
 ├── .tmux.conf
-├── vim
-│   ├── plugins-vim
-│   │   └── vim-jsx
-│   │       └── xml.vim
-│   ├── shortcuts-vim.md
-│   └── vimium-notes-vim.md
-├── .vimrc
-└── webpack
-    ├── webpack.common.js
-    ├── webpack.dev.js
-    └── webpack.prod.js
+└── .vimrc
 
-20 directories, 53 files
-last generated: Fri Jan  4 13:30:43 PST 2019
+26 directories, 51 files
+last generated: Sat Jan  5 21:40:49 PST 2019
 ```
 ###### packages
 null
 ###### notes
 null
 ###### changelog
+`2019.01.05.1`
+  - significant clean-up and organization
+  - extensive `.tmux.conf` created and added 
+  - add `gtk.css` (fix blank line in gnome-terminal)
+  - updates to `.vimrc` and `.bash_aliases`
+  - update RM / structure (tree) accordingly
+  - remove unused including `.gemrc` and `git.run`
+
+
 `2019.01.04.2`
   - improve default shell app notes
   - fix path for `z` in `.bashrc`
