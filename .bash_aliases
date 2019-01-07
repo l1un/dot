@@ -40,3 +40,6 @@ alias vrc="vim ~/.vimrc"
 alias brc="vim ~/.bashrc"
 # quick edit .bash_aliases
 alias bali="vim ~/.bash_aliases"
+
+# start tmux in split with name option
+alias tmuxs="~/bin/tmux-split"

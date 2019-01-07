@@ -42,6 +42,7 @@
 │   │   └── mocha-standardJS-example-packagage.json
 │   ├── .tern-config
 │   ├── .tern-project
+│   ├── tmux-split.sh
 │   ├── vim
 │   │   └── plugins-vim
 │   │       └── vim-jsx
@@ -95,14 +96,18 @@
 ├── .tmux.conf
 └── .vimrc
 
-26 directories, 51 files
-last generated: Sat Jan  5 21:40:49 PST 2019
+26 directories, 52 files
+last generated: Mon Jan  7 13:43:24 PST 2019
 ```
 ###### packages
 null
 ###### notes
 null
 ###### changelog
+`2019.01.07.1`
+  - tmux.conf and open script, bash aliases, gtk css
+
+
 `2019.01.05.1`
   - significant clean-up and organization
   - extensive `.tmux.conf` created and added 
