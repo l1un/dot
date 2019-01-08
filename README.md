@@ -19,7 +19,7 @@
 .
 ├── .bash_aliases
 ├── .bashrc
-├── cat-spec
+├── by-cat
 │   ├── .babelrc
 │   ├── crontab
 │   │   └── git-auto-push
@@ -37,7 +37,9 @@
 │   │   └── mocha-standardJS-example-packagage.json
 │   ├── .tern-config
 │   ├── .tern-project
-│   ├── tmux-split.sh
+│   ├── tmux
+│   │   ├── tmuxopen
+│   │   └── tmux-split.sh
 │   ├── vim
 │   │   └── plugins-vim
 │   │       └── vim-jsx
@@ -46,6 +48,23 @@
 │       ├── webpack.common.js
 │       ├── webpack.dev.js
 │       └── webpack.prod.js
+├── by-os
+│   └── gallium-os
+│       ├── .bash_aliases
+│       ├── .bashrc
+│       ├── .vimrc
+│       └── xkb
+│           ├── chromebook_minimal
+│           ├── chromebook_minimal_vim
+│           ├── mykbd
+│           ├── vimSwap
+│           ├── .xkb
+│           │   ├── keymap
+│           │   │   └── mykbd
+│           │   ├── recomp.sh
+│           │   └── symbols
+│           │       └── vimSwap
+│           └── xkb-notes.md
 ├── CHANGELOG.md
 ├── config
 ├── doc
@@ -73,30 +92,12 @@
 │       └── vimium-notes-vim.md
 ├── .eslintrc.js
 ├── gtk.css
-├── os-spec
-│   ├── gallium-os
-│   │   ├── .bash_aliases
-│   │   ├── .bashrc
-│   │   ├── .vimrc
-│   │   └── xkb
-│   │       ├── chromebook_minimal
-│   │       ├── chromebook_minimal_vim
-│   │       ├── mykbd
-│   │       ├── vimSwap
-│   │       ├── .xkb
-│   │       │   ├── keymap
-│   │       │   │   └── mykbd
-│   │       │   ├── recomp.sh
-│   │       │   └── symbols
-│   │       │       └── vimSwap
-│   │       └── xkb-notes.md
-│   └── tmuxopen
 ├── README.md
 ├── .tmux.conf
 └── .vimrc
 
-23 directories, 54 files
-last generated: Tue Jan  8 12:43:28 PST 2019
+24 directories, 54 files
+last generated: Tue Jan  8 13:00:45 PST 2019
 ```
 ###### packages
 ```
@@ -106,7 +107,7 @@ devDependencies
 dependencies
 
 
-auto-generated: Tue Jan  8 12:43:28 PST 2019
+auto-generated: Tue Jan  8 13:00:45 PST 2019
 ```
 ###### notes
 [CHANGELOG.MD](CHANGELOG.MD)

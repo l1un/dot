@@ -1,4 +1,8 @@
 ###### changelog
+`2019.01.08.3`
+  - minor rename, moves
+
+
 `2019.01.08.2`
   - `.bash_alias` update for enhanced workflow
 
