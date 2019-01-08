@@ -110,4 +110,4 @@ dependencies
 auto-generated: Tue Jan  8 13:00:45 PST 2019
 ```
 ###### notes
-[CHANGELOG.MD](CHANGELOG.MD)
+[CHANGELOG.md](CHANGELOG.md)
