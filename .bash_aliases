@@ -23,10 +23,17 @@ alias cdunar="/srv/www/html/unary"
 alias cddotc="/srv/www/html/dot-config"
 
 # ----------------- copy ----------------------------------- 
+getvimrc="~/.vimrc"
+getbashrc="~/.bashrc"
+getbashal="~/.bash_aliases"
+gettmuxc="~/.tmux.conf"
+gettermc="~/.config/terminator/config"
+getgtkcss="~/.config/gtk-3.0/gtk.css"
 
 # copy dotfiles to vc directory
 alias cpdotc="
-cp {.bash_aliases,.bashrc,.vimrc,.tmux.conf} /srv/www/html/dot-config/ && cp .config/terminator/config /srv/www/html/dot-config/cat-spec/.config/terminator/config && cp .config/gtk-3.0/gtk.css /srv/www/html/dot-config/cat-spec/.config/gtk-3.0"
+cp $getvimrc $getbashrc $getbashal $gettmuxc $gettermc $getgtkcss \
+/srv/www/html/dot-config/"
 
 # ----------------- git ----------------------------------- 
 
