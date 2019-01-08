@@ -29,11 +29,11 @@ getbashal="~/.bash_aliases"
 gettmuxc="~/.tmux.conf"
 gettermc="~/.config/terminator/config"
 getgtkcss="~/.config/gtk-3.0/gtk.css"
+todotcon="/srv/www/html/dot-config"
 
 # copy dotfiles to vc directory
 alias cpdotc="
-cp $getvimrc $getbashrc $getbashal $gettmuxc $gettermc $getgtkcss \
-/srv/www/html/dot-config/"
+cp $getvimrc $getbashrc $getbashal $gettmuxc $gettermc $getgtkcss $todotcon"
 
 # ----------------- git ----------------------------------- 
 

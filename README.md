@@ -104,6 +104,13 @@ null
 ###### notes
 null
 ###### changelog
+`2019.01.07.2`
+  - `.bash_alias` updates
+  - `.tmux.conf` updates
+  - tmux script to open with custom config 
+  - remove .config dir, add files to root
+
+
 `2019.01.07.1`
   - tmux.conf and open script, bash aliases, gtk css
 
