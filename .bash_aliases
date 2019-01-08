@@ -23,6 +23,8 @@ alias cdunar="/srv/www/html/unary"
 alias cddotc="/srv/www/html/dot-config"
 
 # ----------------- copy ----------------------------------- 
+# TODO: create improved script / function with this + vc scripts
+# variables to get / point
 getvimrc="~/.vimrc"
 getbashrc="~/.bashrc"
 getbashal="~/.bash_aliases"
@@ -63,4 +65,4 @@ alias tmuxs="~/bin/tmuxopen"
 # ----------------- combo ---------------------------------- 
 
 # copy dotfiles, got to dir (vcs), add, commit, push
-alias pushdot="cpdotc && cddotc && gitpush"
+alias pushdot="cpdotc && cddotc && ~/bin/pushup"

@@ -1,7 +1,11 @@
 ###### changelog
+`2019.01.08.2`
+  - `.bash_alias` update for enhanced workflow
+
+
 `2019.01.08.1`
-  - `tmux.conf` updates including shortcut to broadcast to panes
-  - set up root (edit README, add CHANGELOG) with new script / workflow enhancement
+  - `tmux.conf` shortcut to broadcast to panes
+  - set up root with new script / workflow enhancement
 
 
 `2019.01.07.2`
@@ -119,7 +123,7 @@
 - misc. 
 
 `2017.5.18`
-- vimrc: change noexpandtab to expandtab for standardjs and syntastic error checking compatibility
+- vimrc: change noexpandtab to expandtab for standardjs / syntastic 
 
 `2017.5.15`
 - vimrc: remove old/unused lines from previous plugins / settings
