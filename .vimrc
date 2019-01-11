@@ -1,7 +1,7 @@
 set nocompatible              " be iMproved, required
 filetype off                  " required
 
-" plugins / vundle
+" plugins / vundle (vim +PluginInstall +qall)
 " runtime path to include Vundle and init
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
@@ -161,4 +161,7 @@ set relativenumber
 " au CursorHold,CursorHoldI * checktime
 
 " quick edit .vimrc <leader>vrc
-nnoremap <silent> <Leader>vrc :tabnew<CR>:e ~/.vimrc<CR>
+nnoremap <silent> <Leader>V :tabnew<CR>:e ~/.vimrc<CR>
+
+" quick edit notes <leader>vrc
+nnoremap <silent> <Leader>N :tabnew<CR>:e ~/notes.txt<CR>

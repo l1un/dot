@@ -44,7 +44,7 @@ alias gitquick="git add . && git commit -m 'quick edit (via alias)' && git push"
 # quick verbose add, commit, push 
 alias gitpush="git add . && git commit -v && git push"
 
-# ----------------- configs -------------------------------- 
+# ----------------- quick open common files -------------------------- 
 
 # quick edit .vimrc
 alias vimrc="vim ~/.vimrc"
@@ -53,7 +53,9 @@ alias bashrc="vim ~/.bashrc"
 # quick edit .bash_aliases
 alias bashal="vim ~/.bash_aliases"
 # quick edit .tmux.conf
-alias tmuxc="vim ~/.tmux-conf"
+alias tmuxc="vim ~/.tmux.conf"
+# quick edit notes.txt
+alias notes="vim ~/notes.txt"
 
 # ----------------- shell ---------------------------------- 
 
@@ -65,4 +67,4 @@ alias tmuxs="~/bin/tmuxopen"
 # ----------------- combo ---------------------------------- 
 
 # copy dotfiles, got to dir (vcs), add, commit, push
-alias pushdot="cpdotc && cddotc && ~/bin/pushup"
+alias updatedotfiles="cpdotc && cddotc && ~/bin/update-project-push"
