@@ -1,4 +1,8 @@
 ###### changelog
+`2019.01.12.2`
+  - `.vimrc` edit
+
+
 `2019.01.12.1`
   - misc config edits 
 

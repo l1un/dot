@@ -155,10 +155,6 @@ set relativenumber
 
 " test fzf completion
 " inoremap <expr> <c-x><c-k> fzf#vim#complete('cat /usr/share/dict/words')
-"
-" test autoread
-" set autoread
-" au CursorHold,CursorHoldI * checktime
 
 " quick edit .vimrc <leader>vrc
 nnoremap <silent> <Leader>V :tabnew<CR>:e ~/.vimrc<CR>
