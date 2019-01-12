@@ -17,7 +17,7 @@
       parent = ""
       position = 0:0
       size = 683, 741
-      title = tErm: ~
+      title = deFault: ~
       type = Window
     [[[terminal1]]]
       order = 0

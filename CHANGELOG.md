@@ -1,4 +1,8 @@
 ###### changelog
+`2019.01.12.1`
+  - misc config edits 
+
+
 `2019.01.11.1`
   - remove vimwiki from `.bashrc`
   - update `.bash_aliases`

@@ -135,11 +135,11 @@ nnoremap <Leader>b :ls<CR>:b<Space>
 " let g:instant_markdown_autostart = 0
 
 " ++ lightline directory path
-let g:lightline = {
-      \ 'active': {
-      \   'left': [ [ 'mode', 'paste' ], [ 'readonly', 'absolutepath', 'modified' ] ],
-      \ }
-      \ }
+" let g:lightline = {
+      " \ 'active': {
+      " \   'left': [ [ 'mode', 'paste' ], [ 'readonly', 'absolutepath', 'modified' ] ],
+      " \ }
+      " \ }
 
 " codi options
 " codi on right
