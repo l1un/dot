@@ -19,55 +19,40 @@
 .
 ├── .bash_aliases
 ├── .bashrc
-├── by-cat
-│   ├── .babelrc
-│   ├── crontab
-│   │   └── git-auto-push
-│   ├── .curlrc
-│   ├── gatsby
-│   │   ├── .eslintrc.js
-│   │   └── package.json
-│   ├── gulp
-│   │   ├── latest-gulpfile.babel.js
-│   │   └── old-test-gulpfile.js
-│   ├── ssh
-│   │   └── ssh-config-example
-│   ├── tdd-bdd
-│   │   ├── jest.config.json
-│   │   └── mocha-standardJS-example-packagage.json
-│   ├── .tern-config
-│   ├── .tern-project
-│   ├── tmux
-│   │   ├── tmuxopen
-│   │   └── tmux-split.sh
-│   ├── vim
-│   │   └── plugins-vim
-│   │       └── vim-jsx
-│   │           └── xml.vim
-│   └── webpack
-│       ├── webpack.common.js
-│       ├── webpack.dev.js
-│       └── webpack.prod.js
-├── by-os
-│   └── gallium-os
-│       ├── .bash_aliases
-│       ├── .bashrc
-│       ├── .vimrc
-│       └── xkb
-│           ├── chromebook_minimal
-│           ├── chromebook_minimal_vim
-│           ├── mykbd
-│           ├── vimSwap
-│           ├── .xkb
-│           │   ├── keymap
-│           │   │   └── mykbd
-│           │   ├── recomp.sh
-│           │   └── symbols
-│           │       └── vimSwap
-│           └── xkb-notes.md
 ├── CHANGELOG.md
 ├── config
-├── doc
+├── .eslintrc.js
+├── gtk.css
+├── misc
+│   ├── cat
+│   │   ├── .babelrc
+│   │   ├── crontab
+│   │   │   └── git-auto-push
+│   │   ├── .curlrc
+│   │   ├── gatsby
+│   │   │   ├── .eslintrc.js
+│   │   │   └── package.json
+│   │   ├── gulp
+│   │   │   ├── latest-gulpfile.babel.js
+│   │   │   └── old-test-gulpfile.js
+│   │   ├── ssh
+│   │   │   └── ssh-config-example
+│   │   ├── tdd-bdd
+│   │   │   ├── jest.config.json
+│   │   │   └── mocha-standardJS-example-packagage.json
+│   │   ├── .tern-config
+│   │   ├── .tern-project
+│   │   ├── tmux
+│   │   │   ├── tmuxopen
+│   │   │   └── tmux-split.sh
+│   │   ├── vim
+│   │   │   └── plugins-vim
+│   │   │       └── vim-jsx
+│   │   │           └── xml.vim
+│   │   └── webpack
+│   │       ├── webpack.common.js
+│   │       ├── webpack.dev.js
+│   │       └── webpack.prod.js
 │   ├── gallium-doc
 │   │   └── gallium-notes.md
 │   ├── git-doc
@@ -85,29 +70,35 @@
 │   │   ├── misc-notes.txt
 │   │   ├── older-config-notes.md
 │   │   └── test.txt
+│   ├── os
+│   │   └── gallium-os
+│   │       └── xkb
+│   │           ├── chromebook_minimal
+│   │           ├── chromebook_minimal_vim
+│   │           ├── mykbd
+│   │           ├── vimSwap
+│   │           ├── .xkb
+│   │           │   ├── keymap
+│   │           │   │   └── mykbd
+│   │           │   ├── recomp.sh
+│   │           │   └── symbols
+│   │           │       └── vimSwap
+│   │           └── xkb-notes.md
 │   ├── tdd-bdd-doc
 │   │   └── notes-unit-testing.md
 │   └── vim-doc
 │       ├── shortcuts-vim.md
 │       └── vimium-notes-vim.md
-├── .eslintrc.js
-├── gtk.css
 ├── README.md
 ├── .tmux.conf
 └── .vimrc
 
-24 directories, 54 files
-last generated: Sat Jan 12 11:04:53 PST 2019
+24 directories, 51 files
+last generated: Sat Jan 12 20:42:10 PST 2019
 ```
 ###### packages
 ```
-devDependencies
-
-
-dependencies
-
-
-auto-generated: Sat Jan 12 11:04:53 PST 2019
+null
 ```
 ###### notes
 [CHANGELOG.md](CHANGELOG.md)
