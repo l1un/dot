@@ -94,11 +94,11 @@
 └── .vimrc
 
 24 directories, 51 files
-last generated: Sat Jan 12 20:42:10 PST 2019
+last generated: Mon Jan 14 12:24:32 PST 2019
 ```
 ###### packages
 ```
 null
 ```
 ###### notes
-[CHANGELOG.md](CHANGELOG.md)
+###### [changelog](CHANGELOG.md)

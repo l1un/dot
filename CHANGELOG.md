@@ -1,4 +1,8 @@
 ###### changelog
+`2019.01.14.1`
+  - add alias to js tutorial working on
+
+
 `2019.01.12.4`
   - clean
 

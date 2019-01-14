@@ -22,6 +22,8 @@ alias gatsby="/srv/www/html/gatsby/"
 alias unary="/srv/www/html/unary"
 # dot-config (vcs) 
 alias dotconfig="/srv/www/html/dot-config"
+# modern js 
+alias jstut="/srv/www/html/javascript-tutorial-en"
 
 # ----------------- copy ----------------------------------- 
 # TODO: create improved script / function with this + vc scripts
