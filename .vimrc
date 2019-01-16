@@ -158,6 +158,18 @@ set relativenumber
 
 " quick edit .vimrc <leader>vrc
 nnoremap <silent> <Leader>V :tabnew<CR>:e ~/.vimrc<CR>
-
 " quick edit notes <leader>vrc
 nnoremap <silent> <Leader>N :tabnew<CR>:e ~/notes.txt<CR>
+
+" ----- in test -------------->
+
+" oo to insert new line below / no insert mode
+nmap oo o<Esc>k
+" OO to insert new line above / no insert mode
+nmap OO O<Esc>j
+
+" disable auto insert new comment line
+autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
+
+" turn off YCM preview on top
+set completeopt-=preview

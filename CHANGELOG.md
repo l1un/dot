@@ -1,4 +1,8 @@
 ###### changelog
+`2019.01.15.1`
+  - `.vimrc`, and ..
+
+
 `2019.01.14.1`
   - add alias to js tutorial working on
 
