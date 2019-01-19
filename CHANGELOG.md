@@ -1,4 +1,8 @@
 ###### changelog
+`2019.01.19.2`
+  - add rsync alias to copy to scripts
+
+
 `2019.01.19.1`
   - `.vimrc` edits *debug duplicate line numbers
 

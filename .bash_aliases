@@ -37,8 +37,11 @@ getgtkcss="~/.config/gtk-3.0/gtk.css"
 todotcon="/srv/www/html/dot-config"
 
 # copy dotfiles to vc directory
-alias cpdotc="
+alias cpdotfiles="
 cp $getvimrc $getbashrc $getbashal $gettmuxc $gettermc $getgtkcss $todotcon"
+# copy shell scripts to vc directory with excludes
+alias cpshellscripts="
+rsync -av --exclude=searchai ~/bin/ /srv/www/html/shell-scripts/"
 
 # ----------------- git ----------------------------------- 
 
@@ -70,4 +73,4 @@ alias tmuxs="~/bin/tmuxopen"
 # ----------------- combo ---------------------------------- 
 
 # copy dotfiles, got to dir (vcs), add, commit, push
-alias updatedotfiles="cpdotc && dotconfig && ~/bin/update-project-push"
+alias updatedotfiles="cpdotfiles && dotconfig && ~/bin/update-project-push"
