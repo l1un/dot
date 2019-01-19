@@ -36,6 +36,8 @@ Plugin 'metakirby5/codi.vim'
 Plugin 'tpope/vim-surround'
 " repeat.vim
 Plugin 'tpope/vim-repeat'
+" indent lines
+Plugin 'thaerkh/vim-indentguides'
 " --- plugins above here ---
 
 " Vundle
@@ -91,9 +93,9 @@ let g:ale_fixers = {
 \}
 " FIXME: issues with line number duplication
 " hide Ale gutter 
-let g:ale_set_signs = 0
+" let g:ale_set_signs = 0
 " always show Ale gutter 
-" let g:ale_sign_column_always = 1
+let g:ale_sign_column_always = 1
 
 " Ale completion
 " let g:ale_completion_enabled = 1
@@ -174,3 +176,6 @@ autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
 
 " turn off YCM preview on top
 set completeopt-=preview
+
+" indent guides hide '$' at end of lines etc...
+set listchars=""

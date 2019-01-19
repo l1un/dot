@@ -1,4 +1,8 @@
 ###### changelog
+`2019.01.19.1`
+  - `.vimrc` edits *debug duplicate line numbers
+
+
 `2019.01.18.1`
   - `.vimrc` - remove dirdiff (unused)
   - `.vimrc` - hide ALE gutter (duplicating line numbers issue) FIXME 
