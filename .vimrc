@@ -21,8 +21,6 @@ Plugin 'crusoexia/vim-monokai'
 Plugin 'pangloss/vim-javascript'
 " vim-javascript-lib companion
 Plugin 'crusoexia/vim-javascript-lib'
-" DirDiff
-Plugin 'will133/vim-dirdiff'
 " Auto Pairs
 Plugin 'jiangmiao/auto-pairs'
 " vim-jsx
@@ -38,7 +36,6 @@ Plugin 'metakirby5/codi.vim'
 Plugin 'tpope/vim-surround'
 " repeat.vim
 Plugin 'tpope/vim-repeat'
-
 " --- plugins above here ---
 
 " Vundle
@@ -85,17 +82,21 @@ let g:ale_linters = {
 \  'css': ['stylelint', 'eslint'],
 \}
 " Ale symbols
-let g:ale_sign_error = '✗✗'
-let g:ale_sign_warning = '∆∆'
-" let g:ale_echo_msg_warning_str = 'Warning'
-" let g:ale_echo_msg_error_str = '❧ Error'
+let g:ale_sign_error = '✗'
+let g:ale_sign_warning = '∆'
 
 " Ale fixing
 let g:ale_fixers = {
 \  'javascript': ['eslint'],
 \}
+" FIXME: issues with line number duplication
+" hide Ale gutter 
+let g:ale_set_signs = 0
+" always show Ale gutter 
+" let g:ale_sign_column_always = 1
+
 " Ale completion
-let g:ale_completion_enabled = 1
+" let g:ale_completion_enabled = 1
 
 " help behaviour
 " open help in new tab
