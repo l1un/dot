@@ -1,4 +1,9 @@
 ###### changelog
+`2019.01.25.1`
+  - `.vimrc` updates including notes to gist, ycm, code guides
+  - `.bashalias` updates including notes to gist
+
+
 `2019.01.19.2`
   - add rsync alias to copy to scripts
 

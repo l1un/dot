@@ -61,7 +61,7 @@ alias bashal="vim ~/.bash_aliases"
 # quick edit .tmux.conf
 alias tmuxc="vim ~/.tmux.conf"
 # quick edit notes.txt
-alias notes="vim ~/notes.txt"
+alias notes="vim ~/notes/88c8f4f99bb6bbd510ef1461ec06044f/notes.txt"
 
 # ----------------- shell ---------------------------------- 
 

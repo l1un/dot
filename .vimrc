@@ -160,9 +160,9 @@ set relativenumber
 " inoremap <expr> <c-x><c-k> fzf#vim#complete('cat /usr/share/dict/words')
 
 " quick edit .vimrc <leader>vrc
-nnoremap <silent> <Leader>V :tabnew<CR>:e ~/.vimrc<CR>
+nnoremap <silent> <Leader>vimrc :tabnew<CR>:e ~/.vimrc<CR>
 " quick edit notes <leader>vrc
-nnoremap <silent> <Leader>N :tabnew<CR>:e ~/notes.txt<CR>
+nnoremap <silent> <Leader>notes :tabnew<CR>:e ~/notes/88c8f4f99bb6bbd510ef1461ec06044f/notes.txt<CR>
 
 " ----- in test -------------->
 
@@ -179,3 +179,7 @@ set completeopt-=preview
 
 " indent guides hide '$' at end of lines etc...
 set listchars=""
+
+" ycm color
+highlight Pmenu ctermfg=Green ctermbg=Black
+highlight PmenuSel ctermfg=Black ctermbg=Green
