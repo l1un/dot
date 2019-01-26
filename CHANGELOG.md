@@ -1,4 +1,8 @@
 ###### changelog
+`2019.01.26.1`
+  - `.bash_alias` alias edit, `.vimrc` shortcut edit 
+
+
 `2019.01.25.1`
   - `.vimrc` updates including notes to gist, ycm, code guides
   - `.bashalias` updates including notes to gist

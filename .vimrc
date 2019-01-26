@@ -160,9 +160,9 @@ set relativenumber
 " inoremap <expr> <c-x><c-k> fzf#vim#complete('cat /usr/share/dict/words')
 
 " quick edit .vimrc <leader>vrc
-nnoremap <silent> <Leader>vimrc :tabnew<CR>:e ~/.vimrc<CR>
+nnoremap <silent> <Leader>vrc :tabnew<CR>:e ~/.vimrc<CR>
 " quick edit notes <leader>vrc
-nnoremap <silent> <Leader>notes :tabnew<CR>:e ~/notes/88c8f4f99bb6bbd510ef1461ec06044f/notes.txt<CR>
+nnoremap <silent> <Leader>note :tabnew<CR>:e ~/notes/88c8f4f99bb6bbd510ef1461ec06044f/notes.txt<CR>
 
 " ----- in test -------------->
 
