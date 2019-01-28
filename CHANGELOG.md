@@ -1,4 +1,8 @@
 ###### changelog
+`2019.01.28.1`
+  - null
+
+
 `2019.01.26.1`
   - `.bash_alias` alias edit, `.vimrc` shortcut edit 
 
