@@ -1,4 +1,17 @@
 ###### changelog
+`2019.02.01.2`
+  - update tree
+
+
+`2019.02.01.1`
+  - adds for ultisnips to `.vimrc`
+  - add generic js, angular, etc. snippets file
+
+
+`2019.01.31.1`
+  - null
+
+
 `2019.01.28.1`
   - null
 

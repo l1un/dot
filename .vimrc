@@ -36,8 +36,12 @@ Plugin 'metakirby5/codi.vim'
 Plugin 'tpope/vim-surround'
 " repeat.vim
 Plugin 'tpope/vim-repeat'
-" indent lines
+" indent guides
 Plugin 'thaerkh/vim-indentguides'
+" utltisnips 
+Plugin 'SirVer/ultisnips'
+Plugin 'honza/vim-snippets'
+
 " --- plugins above here ---
 
 " Vundle
@@ -164,8 +168,6 @@ nnoremap <silent> <Leader>vrc :tabnew<CR>:e ~/.vimrc<CR>
 " quick edit notes <leader>vrc
 nnoremap <silent> <Leader>note :tabnew<CR>:e ~/notes/88c8f4f99bb6bbd510ef1461ec06044f/notes.txt<CR>
 
-" ----- in test -------------->
-
 " oo to insert new line below / no insert mode
 nmap oo o<Esc>k
 " OO to insert new line above / no insert mode
@@ -183,3 +185,7 @@ set listchars=""
 " ycm color
 highlight Pmenu ctermfg=Green ctermbg=Black
 highlight PmenuSel ctermfg=Black ctermbg=Green
+
+" ultisnips 
+let g:UltiSnipsExpandTrigger="<c-e>"
+let g:UltiSnipsSnippetDirectories=["~/.vim/my-snippets/UltiSnips"]
