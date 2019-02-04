@@ -1,4 +1,12 @@
 ###### changelog
+`2019.02.04.2`
+  - remove `javascript-snippets` file (not using these)
+
+
+`2019.02.04.1`
+  - remove custom js snips from `.vimrc` (going with vim-snippets for now)
+
+
 `2019.02.01.2`
   - update tree
 

@@ -188,4 +188,3 @@ highlight PmenuSel ctermfg=Black ctermbg=Green
 
 " ultisnips 
 let g:UltiSnipsExpandTrigger="<c-e>"
-let g:UltiSnipsSnippetDirectories=["~/.vim/my-snippets/UltiSnips"]

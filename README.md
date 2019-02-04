@@ -23,7 +23,6 @@
 ├── config
 ├── .eslintrc.js
 ├── gtk.css
-├── javascript.snippets
 ├── misc
 │   ├── cat
 │   │   ├── .babelrc
@@ -94,8 +93,8 @@
 ├── .tmux.conf
 └── .vimrc
 
-24 directories, 52 files
-last generated: Fri Feb  1 19:06:06 PST 2019
+24 directories, 51 files
+last generated: Mon Feb  4 09:45:41 PST 2019
 ```
 ###### packages
 ```
