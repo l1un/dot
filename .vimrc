@@ -188,3 +188,26 @@ highlight PmenuSel ctermfg=Black ctermbg=Green
 
 " ultisnips 
 let g:UltiSnipsExpandTrigger="<c-e>"
+
+" save code folding after closing / reopening files
+autocmd BufWinLeave *.* mkview
+autocmd BufWinEnter *.* silent loadview
+
+" macros in insert mode
+
+" console.log()
+inoremap CC <Esc>@c
+" object
+inoremap OO <Esc>@o
+" array
+inoremap AA <Esc>@a
+" function
+inoremap FF <Esc>@f
+" loop
+inoremap LL <Esc>@l
+" semicolon
+inoremap SS <Esc>@s
+" comma
+inoremap MM <Esc>@m
+" key / prop
+inoremap KK <Esc>@k

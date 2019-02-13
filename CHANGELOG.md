@@ -1,4 +1,9 @@
 ###### changelog
+`2019.02.12.1`
+  - `.vimrc` autocmd for saving folded status
+  - `.vimrc` insert mode macros added (js) 
+
+
 `2019.02.04.2`
   - remove `javascript-snippets` file (not using these)
 
