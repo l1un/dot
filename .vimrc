@@ -1,7 +1,8 @@
 set nocompatible              " be iMproved, required
 filetype off                  " required
 
-" plugins / vundle (vim +PluginInstall +qall)
+" plugins / vundle 
+" vim +PluginInstall +qall
 " runtime path to include Vundle and init
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
@@ -49,6 +50,20 @@ call vundle#end()            " required
 filetype plugin indent on    " required
 
 " --- END plugins / vundle ---
+
+" --- vimscript testing area --------------------------------------------------
+
+" welcome
+echo "\r"
+echom "     ♥ unconditional love ♥"
+echom "     ♥ infinite gratitude ♥"
+echom "     ♥ infinite compassion ♥"
+echo "\r"
+
+" map <c-u> in inset to upercase (nice for constants)
+imap <c-u> <esc>viw~A
+
+" -----------------------------------------------------------------------------
 
 " search and see regEx matches while typing
 set incsearch
@@ -99,7 +114,7 @@ let g:ale_fixers = {
 " hide Ale gutter 
 " let g:ale_set_signs = 0
 " always show Ale gutter 
-let g:ale_sign_column_always = 1
+let g:ale_sign_column_always = 0
 
 " Ale completion
 " let g:ale_completion_enabled = 1
@@ -139,7 +154,7 @@ let NERDSpaceDelims=1
 " buffer workflow - ',b to list buffers and prep :b'
 nnoremap <Leader>b :ls<CR>:b<Space>
 " instant markdown autostart
-" let g:instant_markdown_autostart = 0
+let g:instant_markdown_autostart = 0
 
 " ++ lightline directory path
 " let g:lightline = {
@@ -156,9 +171,10 @@ let g:codi#width = 70
 " default align left
 let g:codi#rightalign = 0 
 
-" going with hybrid numbers atm
+" hybrid numbers  (set nu! rnu!)
 set relativenumber
-" set nu! rnu!
+" trying this with hybrid numbers
+set numberwidth=1
 
 " test fzf completion
 " inoremap <expr> <c-x><c-k> fzf#vim#complete('cat /usr/share/dict/words')
@@ -194,20 +210,21 @@ autocmd BufWinLeave *.* mkview
 autocmd BufWinEnter *.* silent loadview
 
 " macros in insert mode
-
 " console.log()
-inoremap CC <Esc>@c
+inoremap @C <Esc>@c
 " object
-inoremap OO <Esc>@o
+inoremap @O <Esc>@o
 " array
-inoremap AA <Esc>@a
+inoremap @A <Esc>@a
 " function
-inoremap FF <Esc>@f
+inoremap @F <Esc>@f
 " loop
-inoremap LL <Esc>@l
+inoremap @L <Esc>@l
 " semicolon
-inoremap SS <Esc>@s
+inoremap @S <Esc>@s
 " comma
-inoremap MM <Esc>@m
+inoremap @M <Esc>@m
 " key / prop
-inoremap KK <Esc>@k
+inoremap @K <Esc>@k
+" temp lit 
+inoremap @T <Esc>@t

@@ -1,4 +1,8 @@
 ###### changelog
+`2019.02.16.1`
+  - `.vimrc` vimscript testing, macros, <c-u> insert mode (const helper)
+
+
 `2019.02.12.1`
   - `.vimrc` autocmd for saving folded status
   - `.vimrc` insert mode macros added (js) 
