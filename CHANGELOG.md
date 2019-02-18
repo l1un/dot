@@ -1,4 +1,9 @@
 ###### changelog
+`2019.02.18.3`
+  - `.vimrc` - echo file/path on open
+  - `.vimrc` - add tmux, bashrc, bashalias quickedits (mirror bash shortcuts)
+
+
 `2019.02.18.2`
   - `.vimrc` update quick edits (ev)vimrc (en)notes
   - `.vimrc` remove indent guides, add indent line plugins

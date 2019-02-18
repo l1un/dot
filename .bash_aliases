@@ -53,15 +53,15 @@ alias gitpush="git add . && git commit -v && git push"
 # ----------------- quick open common files -------------------------- 
 
 # quick edit .vimrc
-alias vrc="vim ~/.vimrc"
+alias ev="vim ~/.vimrc"
 # quick edit .bashrc
-alias brc="vim ~/.bashrc"
+alias ebc="vim ~/.bashrc"
 # quick edit .bash_aliases
-alias bali="vim ~/.bash_aliases"
+alias eba="vim ~/.bash_aliases"
 # quick edit .tmux.conf
-alias tmxc="vim ~/.tmux.conf"
+alias et="vim ~/.tmux.conf"
 # quick edit notes.txt
-alias note="vim ~/notes/88c8f4f99bb6bbd510ef1461ec06044f/notes.txt"
+alias en="vim ~/notes/88c8f4f99bb6bbd510ef1461ec06044f/notes.txt"
 
 # ----------------- shell ---------------------------------- 
 

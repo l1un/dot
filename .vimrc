@@ -56,9 +56,9 @@ filetype plugin indent on    " required
 
 " --- vimscript testing area --------------------------------------------------
 
-" welcome
+" welcome --> display path on new open
 echo "\r"
-echom "♥♥♥ unconditional love ♥♥♥ infinite gratitude ♥♥♥ infinite compassion ♥♥♥"
+echom "editing -->" @%  
 echo "\r"
 
 " map <c-u> in inset to upercase (nice for constants)
@@ -180,13 +180,23 @@ set numberwidth=1
 " test fzf completion
 " inoremap <expr> <c-x><c-k> fzf#vim#complete('cat /usr/share/dict/words')
 
-" quick edit .vimrc <leader>vrc
-nnoremap <silent> <Leader>ev :tabnew<CR>:e $MYVIMRC<CR>
-" quick edit notes <leader>vrc
-nnoremap <silent> <Leader>en :tabnew<CR>:e ~/notes/88c8f4f99bb6bbd510ef1461ec06044f/notes.txt<CR>
+" quick edit/manage files ------------------------------------------------------
 
+" quick edit .vimrc
+nnoremap <silent> <Leader>ev :tabnew<CR>:e $MYVIMRC<CR>
 " source vimrc 
-nnoremap <silent> <Leader>so :so ~/.vimrc<CR>
+nnoremap <silent> <Leader>so :so $MYVIMRC<CR>
+
+" quick edit notes (vcs to gist)
+nnoremap <silent> <Leader>en :tabnew<CR>:e ~/notes/88c8f4f99bb6bbd510ef1461ec06044f/notes.txt<CR>
+" quick edit tmux
+nnoremap <silent> <Leader>et :tabnew<CR>:e ~/.tmux.conf<CR>
+" quick edit bash aliases
+nnoremap <silent> <Leader>eba :tabnew<CR>:e ~/.bash_aliases<CR>
+" quick edit bashrc
+nnoremap <silent> <Leader>ebc :tabnew<CR>:e ~/.bashrc<CR>
+
+" ------------------------------------------------------------------------------
 
 " oo to insert new line below / no insert mode
 noremap oo o<Esc>k
