@@ -1,4 +1,9 @@
 ###### changelog
+`2019.02.18.2`
+  - `.vimrc` update quick edits (ev)vimrc (en)notes
+  - `.vimrc` remove indent guides, add indent line plugins
+
+
 `2019.02.18.1`
   - `vimrc` all maps changed to non recursive (debug + best practice)
 

@@ -38,7 +38,10 @@ Plugin 'tpope/vim-surround'
 " repeat.vim
 Plugin 'tpope/vim-repeat'
 " indent guides
-Plugin 'thaerkh/vim-indentguides'
+" Plugin 'thaerkh/vim-indentguides'
+" indent line
+Plugin 'Yggdroot/indentLine'
+
 " utltisnips 
 Plugin 'SirVer/ultisnips'
 Plugin 'honza/vim-snippets'
@@ -55,13 +58,11 @@ filetype plugin indent on    " required
 
 " welcome
 echo "\r"
-echom "     ♥ unconditional love ♥"
-echom "     ♥ infinite gratitude ♥"
-echom "     ♥ infinite compassion ♥"
+echom "♥♥♥ unconditional love ♥♥♥ infinite gratitude ♥♥♥ infinite compassion ♥♥♥"
 echo "\r"
 
 " map <c-u> in inset to upercase (nice for constants)
-imap <c-u> <esc>viw~A
+inoremap <c-u> <esc>viw~A
 
 " -----------------------------------------------------------------------------
 
@@ -180,9 +181,12 @@ set numberwidth=1
 " inoremap <expr> <c-x><c-k> fzf#vim#complete('cat /usr/share/dict/words')
 
 " quick edit .vimrc <leader>vrc
-nnoremap <silent> <Leader>vrc :tabnew<CR>:e ~/.vimrc<CR>
+nnoremap <silent> <Leader>ev :tabnew<CR>:e $MYVIMRC<CR>
 " quick edit notes <leader>vrc
-nnoremap <silent> <Leader>note :tabnew<CR>:e ~/notes/88c8f4f99bb6bbd510ef1461ec06044f/notes.txt<CR>
+nnoremap <silent> <Leader>en :tabnew<CR>:e ~/notes/88c8f4f99bb6bbd510ef1461ec06044f/notes.txt<CR>
+
+" source vimrc 
+nnoremap <silent> <Leader>so :so ~/.vimrc<CR>
 
 " oo to insert new line below / no insert mode
 noremap oo o<Esc>k
@@ -195,8 +199,12 @@ autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
 " turn off YCM preview on top
 set completeopt-=preview
 
-" indent guides hide '$' at end of lines etc...
+" indent guides/lines hide '$' at end of lines etc...
 set listchars=""
+" let g:indentLine_setColors = 233 
+let g:indentLine_color_term = 236 
+" let g:indentLine_bgcolor_term = 235 
+" let g:indentLine_char = '|'
 
 " ycm color
 highlight Pmenu ctermfg=Green ctermbg=Black
