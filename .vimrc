@@ -77,7 +77,7 @@ highlight LineNr ctermfg=grey
 
 " break / enter
 " new line below / cursor stays 
-map <Enter> o<ESC>k	
+noremap <Enter> o<ESC>k	
 
 " indent 
 set expandtab
@@ -145,7 +145,7 @@ function! RenameFile()
 endfunction
 
 " type <leader>n to open rename file dialog
-map <leader>n :call RenameFile()<cr>
+noremap <leader>n :call RenameFile()<cr>
 
 " ++ scrooloose comments
 " add spaces to nerd/sexy comments (Standard JS no-warn msg)
@@ -185,9 +185,9 @@ nnoremap <silent> <Leader>vrc :tabnew<CR>:e ~/.vimrc<CR>
 nnoremap <silent> <Leader>note :tabnew<CR>:e ~/notes/88c8f4f99bb6bbd510ef1461ec06044f/notes.txt<CR>
 
 " oo to insert new line below / no insert mode
-nmap oo o<Esc>k
+noremap oo o<Esc>k
 " OO to insert new line above / no insert mode
-nmap OO O<Esc>j
+noremap OO O<Esc>j
 
 " disable auto insert new comment line
 autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
@@ -211,20 +211,20 @@ autocmd BufWinEnter *.* silent loadview
 
 " macros in insert mode
 " console.log()
-inoremap @C <Esc>@c
+inoremap @@c <Esc>@c
 " object
-inoremap @O <Esc>@o
+inoremap @@o <Esc>@o
 " array
-inoremap @A <Esc>@a
-" function
-inoremap @F <Esc>@f
+inoremap @@a <Esc>@a
+" function@
+inoremap @@f <Esc>@f
 " loop
-inoremap @L <Esc>@l
-" semicolon
-inoremap @S <Esc>@s
+inoremap @@l <Esc>@l
+" semicolo@N
+inoremap @@s <Esc>@s
 " comma
-inoremap @M <Esc>@m
+inoremap @@m <Esc>@m
 " key / prop
-inoremap @K <Esc>@k
+inoremap @@k <Esc>@k
 " temp lit 
-inoremap @T <Esc>@t
+inoremap @@t <Esc>@t

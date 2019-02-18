@@ -1,4 +1,8 @@
 ###### changelog
+`2019.02.18.1`
+  - `vimrc` all maps changed to non recursive (debug + best practice)
+
+
 `2019.02.16.1`
   - `.vimrc` vimscript testing, macros, <c-u> insert mode (const helper)
 
