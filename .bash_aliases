@@ -28,17 +28,18 @@ alias jstut="/srv/www/html/javascript-tutorial-en"
 # ----------------- copy ----------------------------------- 
 # TODO: create improved script / function with this + vc scripts
 # variables to get / point
-getvimrc="~/.vimrc"
-getbashrc="~/.bashrc"
-getbashal="~/.bash_aliases"
-gettmuxc="~/.tmux.conf"
+getvc="~/.vimrc"
+getbc="~/.bashrc"
+getba="~/.bash_aliases"
+gettm="~/.tmux.conf"
 gettermc="~/.config/terminator/config"
 getgtkcss="~/.config/gtk-3.0/gtk.css"
+getsnips="~/.vim/ultisnips/*"
 todotcon="/srv/www/html/dot-config"
 
 # copy dotfiles to vc directory
 alias cpdotfiles="
-cp $getvimrc $getbashrc $getbashal $gettmuxc $gettermc $getgtkcss $todotcon"
+cp $getvc $getbc $getba $getm $gettermc $getgtkcss $getsnips $todotcon"
 # copy shell scripts to vc directory with excludes
 alias cpshellscripts="
 rsync -av --exclude=searchai ~/bin/ /srv/www/html/shell-scripts/"

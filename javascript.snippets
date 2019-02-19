@@ -1,0 +1,16 @@
+# eslint shebang
+snippet nc "eslint.. no-console" b
+/* eslint-disable no-console */
+endsnippet
+
+# simple console log
+snippet cl "console log"
+console.log($1)
+endsnippet
+
+# simple named function
+snippet fn "named function"
+function ${1:func}($2) {
+  $3
+}
+endsnippet

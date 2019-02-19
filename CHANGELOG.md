@@ -1,7 +1,18 @@
 ###### changelog
+`2019.02.19.2`
+  - test / confirm updates
+
+
+`2019.02.19.1`
+  - `.vimrc` organize + many adds
+  - add snippets for ultisnips 
+  - `.bash_alias` update vars for vcs etc.
+
+
 `2019.02.18.3`
-  - `.vimrc` - echo file/path on open
+  - `.vimrc` - echo relative file/path on open
   - `.vimrc` - add tmux, bashrc, bashalias quickedits (mirror bash shortcuts)
+  - `.bash_alias` - update quick edits / sync with vim quick edit commands 
 
 
 `2019.02.18.2`
