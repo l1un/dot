@@ -39,7 +39,7 @@ todotcon="/srv/www/html/dot-config"
 
 # copy dotfiles to vc directory
 alias cpdotfiles="
-cp $getvc $getbc $getba $getm $gettermc $getgtkcss $getsnips $todotcon"
+cp $getvc $getbc $getba $gettm $gettermc $getgtkcss $getsnips $todotcon"
 # copy shell scripts to vc directory with excludes
 alias cpshellscripts="
 rsync -av --exclude=searchai ~/bin/ /srv/www/html/shell-scripts/"

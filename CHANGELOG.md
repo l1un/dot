@@ -1,4 +1,8 @@
 ###### changelog
+`2019.02.19.3`
+  - fix gettm var in `.bash_alias`
+
+
 `2019.02.19.2`
   - test / confirm updates
 
