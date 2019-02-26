@@ -24,6 +24,8 @@ alias unary="/srv/www/html/unary"
 alias dotconfig="/srv/www/html/dot-config"
 # modern js 
 alias jstut="/srv/www/html/javascript-tutorial-en"
+# ultisnips 
+alias snips="~/.vim/ultisnips/"
 
 # ----------------- copy ----------------------------------- 
 # TODO: create improved script / function with this + vc scripts

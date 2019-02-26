@@ -1,4 +1,8 @@
 ###### changelog
+`2019.02.25.1`
+  - misc.
+
+
 `2019.02.19.3`
   - fix gettm var in `.bash_alias`
 

@@ -91,11 +91,12 @@
 │       ├── shortcuts-vim.md
 │       └── vimium-notes-vim.md
 ├── README.md
+├── text.snippets
 ├── .tmux.conf
 └── .vimrc
 
-24 directories, 52 files
-last generated: Tue Feb 19 12:48:45 PST 2019
+24 directories, 53 files
+last generated: Mon Feb 25 19:23:18 PST 2019
 ```
 ###### packages
 ```
