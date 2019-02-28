@@ -1,4 +1,9 @@
 ###### changelog
+`2019.02.28.1`
+  - `.vimrc` add / test notes.vim
+  - `.vimrc` add undofile / undodir config
+
+
 `2019.02.25.1`
   - misc.
 

@@ -43,6 +43,8 @@ Plugin 'Yggdroot/indentLine'
 " utltisnips 
 Plugin 'SirVer/ultisnips'
 Plugin 'honza/vim-snippets'
+" notes.vim
+Plugin 'samerickson/notes.vim'
 
 " call vundle
 call vundle#end()            " required
@@ -99,6 +101,10 @@ filetype plugin indent on    " required
       autocmd BufWinEnter *.* silent loadview
     augroup END
 
+    " persistent undo config
+    set undofile
+    set undodir=~/.vim/undodir/
+
 " }
 
 " remapping etc. {
@@ -142,6 +148,7 @@ filetype plugin indent on    " required
     cabbrev help tab help
     cabbrev h tab h
 
+    " goto EOL in insertmode
     inoremap AA <c-o>A
 
 " }
