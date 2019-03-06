@@ -27,6 +27,8 @@ Plugin 'crusoexia/vim-javascript-lib'
 Plugin 'jiangmiao/auto-pairs'
 " vim-jsx
 Plugin 'mxw/vim-jsx'
+" vim-json
+Plugin 'elzr/vim-json'
 " lightline
 Plugin 'itchyny/lightline.vim'
 " fzf
@@ -43,8 +45,6 @@ Plugin 'Yggdroot/indentLine'
 " utltisnips 
 Plugin 'SirVer/ultisnips'
 Plugin 'honza/vim-snippets'
-" notes.vim
-Plugin 'samerickson/notes.vim'
 
 " call vundle
 call vundle#end()            " required
@@ -54,6 +54,8 @@ filetype plugin indent on    " required
 " built-in config
 
 " colors, aesthetics, setup {
+    " FIXME: auto follow directory - works for now, (???)
+    set autochdir
 
     " welcome --> display path on new open
     " echo '\r'
@@ -102,8 +104,8 @@ filetype plugin indent on    " required
     augroup END
 
     " persistent undo config
-    set undofile
-    set undodir=~/.vim/undodir/
+    " set undofile
+    " set undodir=~/.vim/undodir/
 
 " }
 
@@ -188,6 +190,15 @@ filetype plugin indent on    " required
     " type <leader>n to open rename file dialog
     noremap <leader>n :call RenameFile()<cr>
 
+    " run node in split
+    function! RunFileInNode()
+      let input_file = expand('%')
+      exec ':set splitbelow | new | r! node' input_file
+    endfunction
+
+    " type <leader>r to run node file in split
+    noremap <leader>r :call RunFileInNode()<cr>
+
 " } 
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -201,6 +212,7 @@ filetype plugin indent on    " required
     let g:ale_linters = {
     \  'javascript': ['stylelint', 'eslint', 'prettier'],
     \  'css': ['stylelint', 'eslint'],
+    \  'mdl': ['alex', 'markdownlint', 'prettier'],
     \}
 
     " Ale symbols
@@ -229,6 +241,7 @@ filetype plugin indent on    " required
     " indent guides/lines hide '$' at end of lines etc...
     set listchars=""
     let g:indentLine_color_term = 236
+    let g:vim_json_syntax_conceal = 0 " disable in JSON
     " let g:indentLine_setColors = 233
     " let g:indentLine_bgcolor_term = 235
     " let g:indentLine_char = '|'
@@ -238,7 +251,7 @@ filetype plugin indent on    " required
 " instant markdown {
 
     " instant markdown autostart
-    let g:instant_markdown_autostart = 1
+    let g:instant_markdown_autostart = 0
 
 " }
 
