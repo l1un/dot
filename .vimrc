@@ -40,6 +40,8 @@ Plugin 'metakirby5/codi.vim'
 Plugin 'tpope/vim-surround'
 " repeat.vim
 Plugin 'tpope/vim-repeat'
+" fugitive.vim
+Plugin 'tpope/vim-fugitive'
 " indent line
 Plugin 'Yggdroot/indentLine'
 " utltisnips 
@@ -67,6 +69,9 @@ filetype plugin indent on    " required
 
     " search and see regEx matches while typing
     set incsearch
+
+    " ignoring case for now...
+    set ignorecase
 
     " autostart Line Numbers
     set number
@@ -212,7 +217,6 @@ filetype plugin indent on    " required
     let g:ale_linters = {
     \  'javascript': ['stylelint', 'eslint', 'prettier'],
     \  'css': ['stylelint', 'eslint'],
-    \  'mdl': ['alex', 'markdownlint', 'prettier'],
     \}
 
     " Ale symbols
@@ -257,12 +261,21 @@ filetype plugin indent on    " required
 
 " lightline {
 
-  " ++ lightline directory path
-  " let g:lightline = {
-        " \ 'active': {
-        " \   'left': [ [ 'mode', 'paste' ], [ 'readonly', 'absolutepath', 'modified' ] ],
-        " \ }
-        " \ }
+  " lightline relative paths (requires fugitive)
+  let g:lightline = {
+        \ 'component_function': {
+        \   'filename': 'LightlineFilename',
+        \ }
+        \ }
+
+  function! LightlineFilename()
+    let root = fnamemodify(get(b:, 'git_dir'), ':h')
+    let path = expand('%:p')
+    if path[:len(root)-1] ==# root
+      return path[len(root)+1:]
+    endif
+    return expand('%')
+  endfunction 
 
 " }
 

@@ -1,4 +1,10 @@
 ###### changelog
+`2019.03.09.1`
+  - add fugitive to vimrc
+  - add function to vimrc to show relative path (require fugitive)
+  - other misc.
+
+
 `2019.03.06.1`
   - misc.
 
