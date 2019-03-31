@@ -144,7 +144,7 @@ export EDITOR="$VISUAL"
 set -o vi
 
 # quick change dirs (no need to type "cd")
-shopt -s autocd
+# shopt -s autocd
 
 # shell scripts
 export PATH="$HOME/bin:$PATH"

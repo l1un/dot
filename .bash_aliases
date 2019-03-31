@@ -15,17 +15,17 @@ alias lla="find . -maxdepth 1 -printf '%p\t\n'"
 
 # changed these as they work for cd and path
 # srv (localhost)
-alias html="/srv/www/html/"
-# gatsby
-alias gatsby="/srv/www/html/gatsby/"
-# unary
-alias unary="/srv/www/html/unary"
-# dot-config (vcs) 
-alias dotconfig="/srv/www/html/dot-config"
-# modern js 
-alias jstut="/srv/www/html/javascript-tutorial-en"
-# ultisnips 
-alias snips="~/.vim/ultisnips/"
+# alias html="/srv/www/html/"
+# # gatsby
+# alias gatsby="/srv/www/html/gatsby/"
+# # unary
+# alias unary="/srv/www/html/unary"
+# # dot-config (vcs) 
+# alias dotconfig="/srv/www/html/dot-config"
+# # modern js 
+# alias jstut="/srv/www/html/javascript-tutorial-en"
+# # ultisnips 
+# alias snips="~/.vim/ultisnips/"
 
 # ----------------- copy ----------------------------------- 
 # TODO: create improved script / function with this + vc scripts
@@ -76,4 +76,4 @@ alias tmuxs="~/bin/tmuxopen"
 # ----------------- combo ---------------------------------- 
 
 # copy dotfiles, got to dir (vcs), add, commit, push
-alias updatedotfiles="cpdotfiles && dotconfig && ~/bin/update-project-push"
+alias dotsync="cpdotfiles && cd /srv/www/html/dot-config && ~/bin/update-project-push"

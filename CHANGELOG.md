@@ -1,4 +1,21 @@
 ###### changelog
+`2019.03.31.4`
+  - add changes here (markdown w/ bullets works well...)
+
+
+`2019.03.31.3`
+  - add changes here (markdown w/ bullets works well...)
+
+
+`2019.03.31.2`
+  - add changes here (markdown w/ bullets works well...)
+
+
+`2019.03.31.1`
+  - disable auto cd / aliases `.bashrc` and `.bashaliases`
+  - other minor updates
+
+
 `2019.03.09.1`
   - add fugitive to vimrc
   - add function to vimrc to show relative path (require fugitive)

@@ -45,8 +45,8 @@ Plugin 'tpope/vim-fugitive'
 " indent line
 Plugin 'Yggdroot/indentLine'
 " utltisnips 
-Plugin 'SirVer/ultisnips'
-Plugin 'honza/vim-snippets'
+" Plugin 'SirVer/ultisnips'
+" Plugin 'honza/vim-snippets'
 
 " call vundle
 call vundle#end()            " required
@@ -175,7 +175,7 @@ filetype plugin indent on    " required
     " quick edit bashrc
     nnoremap <silent> <Leader>ebc :tabnew<CR>:e ~/.bashrc<CR>
     " quick edit snippets
-    nnoremap <silent> <Leader>es :UltiSnipsEdit<CR>
+    " nnoremap <silent> <Leader>es :UltiSnipsEdit<CR>
 
 " }
 
@@ -289,11 +289,11 @@ filetype plugin indent on    " required
 " ultisnips {
 
     " set directory
-    let g:UltiSnipsSnippetDirectories = ['/home/o12/.vim/ultisnips']
+    " let g:UltiSnipsSnippetDirectories = ['/home/o12/.vim/ultisnips']
     " expand completion
-    let g:UltiSnipsExpandTrigger="<c-e>"
+    " let g:UltiSnipsExpandTrigger="<c-e>"
     " open :UltiSnipsEdit in split
-    let g:UltiSnipsEditSplit="vertical"
+    " let g:UltiSnipsEditSplit="vertical"
 
 " }
 
