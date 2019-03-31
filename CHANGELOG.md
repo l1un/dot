@@ -1,4 +1,8 @@
 ###### changelog
+`2019.03.31.5`
+  - disable ultisnippets
+
+
 `2019.03.31.4`
   - add changes here (markdown w/ bullets works well...)
 
