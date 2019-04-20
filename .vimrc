@@ -321,7 +321,7 @@ filetype plugin indent on    " required
 " }
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" testing etc. 
+" TODO: clean-up or integrate
 
 " autocommand groups 
 " augroup testgroup
