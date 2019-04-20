@@ -1,4 +1,10 @@
 ###### changelog
+`2019.04.20.1`
+  - clean-up `.bashrc` + add extendend globs
+  - congfig `netrw` in `.vimrc`
+  - misc.
+
+
 `2019.03.31.5`
   - disable ultisnippets
 
