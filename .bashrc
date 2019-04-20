@@ -116,60 +116,53 @@ if ! shopt -oq posix; then
   fi
 fi
 
-# ADDITIONS ##################################
+# ADDS ------------------------------------------------------------------------
 
 export NPM_PACKAGES="/home/o12/.npm-packages"
 export NODE_PATH="$NPM_PACKAGES/lib/node_modules${NODE_PATH:+:$NODE_PATH}"
 export PATH="$NPM_PACKAGES/bin:$PATH"
+
 # Unset manpath so we can inherit from /etc/manpath via the `manpath`
 # command
 unset MANPATH  # delete if you already modified MANPATH elsewhere in your config
 export MANPATH="$NPM_PACKAGES/share/man:$(manpath)"
-
-# change dirs + ls all long 
-cdl() {
-  cd "$@"
-  ls -al
-}
-# mkdir + move there
-mkdircd() {
-  mkdir -p "$1" && cd "$1"
-}
-
-# set vim as default editor
-export VISUAL=vim
-export EDITOR="$VISUAL"
-
-# turn on vi mode
-set -o vi
-
-# quick change dirs (no need to type "cd")
-# shopt -s autocd
-
-# shell scripts
+ 
+# scripts dir
 export PATH="$HOME/bin:$PATH"
-
-# Codi wrapper
-# Usage: codi [filetype] [filename]
-# codi() {
- # local syntax="${1:-python}"
- # shift
- # vim -c \
-   # "let g:startify_disable_at_vimenter = 1 |\
-   # set bt=nofile ls=0 noru nonu nornu |\
-   # hi ColorColumn ctermbg=NONE |\
-   # hi VertSplit ctermbg=NONE |\
-   # hi NonText ctermfg=0 |\
-   # Codi $syntax" "$@"
-# }
-
-# added via fzf install script (comment manually added)
-[ -f ~/.fzf.bash ] && source ~/.fzf.bash
-
-# testing z
-. /usr/local/bin/z.sh
 
 # termtosvg
 export PATH="/home/o12/.local/bin:$PATH"
 
+# yarn
 export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
+
+# -------------------------------------------------------------------------------
+
+# cd; ls -al
+cdl() {
+  cd "$@"
+  ls -al
+}
+
+# mkdir; cd
+mkdircd() {
+  mkdir -p "$1" && cd "$1"
+}
+
+# -------------------------------------------------------------------------------
+
+# vim default editor
+export VISUAL=vim
+export EDITOR="$VISUAL"
+
+# vi bash mode
+set -o vi
+
+# via fzf install
+[ -f ~/.fzf.bash ] && source ~/.fzf.bash
+
+# z database
+. /usr/local/bin/z.sh
+
+# extend globs / regexes
+shopt -s extglob

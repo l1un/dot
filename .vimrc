@@ -16,7 +16,7 @@ Plugin 'scrooloose/nerdcommenter'
 " Add You Complete Me
 Plugin 'Valloric/YouCompleteMe'
 " Vim Instant Markdown
-Plugin 'suan/vim-instant-markdown'
+" Plugin 'suan/vim-instant-markdown'
 " Monokai
 Plugin 'crusoexia/vim-monokai'
 " vim-javascript
@@ -108,6 +108,17 @@ filetype plugin indent on    " required
       autocmd BufWinEnter *.* silent loadview
     augroup END
 
+    " netrw
+    let g:netrw_banner = 0
+    let g:netrw_liststyle = 3
+    let g:netrw_browse_split = 4
+    let g:netrw_altv = 1
+    let g:netrw_winsize = 25
+    " augroup ProjectDrawer
+      " autocmd!
+      " autocmd VimEnter * :Vexplore
+    " augroup END
+
     " persistent undo config
     " set undofile
     " set undodir=~/.vim/undodir/
@@ -174,6 +185,8 @@ filetype plugin indent on    " required
     nnoremap <silent> <Leader>eba :tabnew<CR>:e ~/.bash_aliases<CR>
     " quick edit bashrc
     nnoremap <silent> <Leader>ebc :tabnew<CR>:e ~/.bashrc<CR>
+    " open netrw
+    nnoremap <silent> <Leader>dw :Vexplore<CR>
     " quick edit snippets
     " nnoremap <silent> <Leader>es :UltiSnipsEdit<CR>
 
