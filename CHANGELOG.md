@@ -1,4 +1,8 @@
 ###### changelog
+`2019.04.25.1`
+  - add xdotool func for quick in-shell profile change
+
+
 `2019.04.20.2`
   - rm redundant CL entries
   - update comment to test script
