@@ -149,6 +149,12 @@ mkdircd() {
   mkdir -p "$1" && cd "$1"
 }
 
+# quick change profiles in ba sh using xdotool + nth profile arg
+chp() {
+  # TODO: debugg --clearmodifiers for tmux, vim etc.
+  xdotool key Shift+F10 r "$1"
+}
+
 # -------------------------------------------------------------------------------
 
 # vim default editor
