@@ -139,22 +139,28 @@ export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
 # -------------------------------------------------------------------------------
 
 # cd; ls -al
-cdl() {
+cd_ls() {
   cd "$@"
   ls -al
 }
 
 # mkdir; cd
-mkdircd() {
+mkdir_cd() {
   mkdir -p "$1" && cd "$1"
 }
 
 # quick change profiles in ba sh using xdotool + nth profile arg
-chp() {
+change_bash_profile() {
   # TODO: debugg --clearmodifiers for tmux, vim etc.
   xdotool key Shift+F10 r "$1"
 }
 
+# copy last command to file
+save_last_command() {
+  # fc (fix command) -l (list) -n (do not prefix command numbers)
+  # $1 = path to file to append output
+  fc -ln -1 | sed '1s/^[[:space:]]*//' >> "${1}"
+}
 # -------------------------------------------------------------------------------
 
 # vim default editor
