@@ -1,4 +1,8 @@
 ###### changelog
+`2019.04.26.1`
+  - add changes
+
+
 `2019.04.25.1`
   - add xdotool func for quick in-shell profile change
 
