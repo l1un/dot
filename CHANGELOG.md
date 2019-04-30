@@ -1,4 +1,8 @@
 ###### changelog
+`2019.04.30.1`
+  - add vim-tmux-navigator to `.vimrc`
+
+
 `2019.04.26.2`
   - add copy-last-command function to `.bashrc`
   - verbosify other function names per current convention
