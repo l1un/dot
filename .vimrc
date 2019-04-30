@@ -44,6 +44,8 @@ Plugin 'tpope/vim-repeat'
 Plugin 'tpope/vim-fugitive'
 " indent line
 Plugin 'Yggdroot/indentLine'
+" tmux vim split pane sync
+Plugin 'christoomey/vim-tmux-navigator'
 " utltisnips 
 " Plugin 'SirVer/ultisnips'
 " Plugin 'honza/vim-snippets'
