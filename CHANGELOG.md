@@ -1,4 +1,9 @@
 ###### changelog
+`2019.05.01.1`
+  - add the python.vim file, missed last push
+  - whitespace remove
+
+
 `2019.04.30.3`
   - ALE - shellcheck add / config, shell language, bash linting
   - YCM - Python setup + config
