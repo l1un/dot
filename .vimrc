@@ -46,28 +46,43 @@ Plugin 'tpope/vim-fugitive'
 Plugin 'Yggdroot/indentLine'
 " tmux vim split pane sync
 Plugin 'christoomey/vim-tmux-navigator'
-" utltisnips 
+" python indent
+Plugin 'vim-scripts/indentpython.vim'
+" utltisnips
 " Plugin 'SirVer/ultisnips'
 " Plugin 'honza/vim-snippets'
 
 " call vundle
 call vundle#end()            " required
 filetype plugin indent on    " required
+" filetype indent on
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" built-in config
+" global / file configs {
+
+    set tabstop=2
+    set softtabstop=2
+    set shiftwidth=2
+
+    " python at ~/.vim/ftplugin/python.vim
+    " https://vim.fandom.com/wiki/Keep_your_vimrc_file_clean
+
+" }
 
 " colors, aesthetics, setup {
-    " FIXME: auto follow directory - works for now, (???)
+
+    " auto follow directory
     set autochdir
 
     " welcome --> display path on new open
     " echo '\r'
-    " echom 'editing -->' @%  
+    " echom 'editing -->' @%
     " echo '\r'
 
     syntax on
     colorscheme monokai
+
+    set encoding=utf-8
 
     " search and see regEx matches while typing
     set incsearch
@@ -79,20 +94,15 @@ filetype plugin indent on    " required
     set number
     " filetype plugin on
 
-    " change line number color 
-    highlight LineNr ctermfg=grey 
+    " change line number color
+    highlight LineNr ctermfg=grey
 
     " hybrid numbers  (set nu! rnu!)
     set relativenumber
     " trying this with hybrid numbers
     set numberwidth=1
 
-    " indent 
-    set expandtab
-    set shiftwidth=2
-    set softtabstop=2
-
-    " width / wrap -fix html wrapping 
+    " width / wrap -fix html wrapping
     set tw=0
     set wrap
     set linebreak
@@ -102,6 +112,15 @@ filetype plugin indent on    " required
     set statusline+=%*
     set laststatus=2
     set statusline=%f "tail of filename
+
+    " test whitespace
+    highlight ExtraWhitespace ctermbg=red guibg=red
+    match ExtraWhitespace /\s\+$/
+    autocmd BufWinEnter * match ExtraWhitespace /\s\+$/
+    autocmd InsertEnter * match ExtraWhitespace /\s\+\%#\@<!$/
+    autocmd InsertLeave * match ExtraWhitespace /\s\+$/
+    autocmd BufWinLeave * call clearmatches()
+
 
     " save code folding after closing / reopening files
     augroup savefolding
@@ -133,10 +152,10 @@ filetype plugin indent on    " required
     let mapleader=","
     " <localleader> to ',,'
     let maplocalleader=",,"
-    "set timeout timeoutlen=1500 <-- try if too fast 
+    "set timeout timeoutlen=1500 <-- try if too fast
 
     " break / enter
-    " new line below / cursor stays 
+    " new line below / cursor stays
     noremap <Enter> o<ESC>k
 
     " oo to insert new line below / no insert mode
@@ -153,7 +172,7 @@ filetype plugin indent on    " required
     nnoremap L $
     vnoremap L $
 
-    " jk exit insert 
+    " jk exit insert
     inoremap jk <Esc>
     " temp unmap escape
     inoremap <Esc> <nop>
@@ -177,7 +196,7 @@ filetype plugin indent on    " required
 
     " quick edit .vimrc
     nnoremap <silent> <Leader>ev :tabnew<CR>:e $MYVIMRC<CR>
-    " source vimrc 
+    " source vimrc
     nnoremap <silent> <Leader>so :so $MYVIMRC<CR>
     " quick edit notes (vcs to gist)
     nnoremap <silent> <Leader>en :tabnew<CR>:e ~/notes/88c8f4f99bb6bbd510ef1461ec06044f/notes.txt<CR>
@@ -219,7 +238,7 @@ filetype plugin indent on    " required
     " type <leader>r to run node file in split
     noremap <leader>r :call RunFileInNode()<cr>
 
-" } 
+" }
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " plugin config
@@ -232,6 +251,7 @@ filetype plugin indent on    " required
     let g:ale_linters = {
     \  'javascript': ['stylelint', 'eslint', 'prettier'],
     \  'css': ['stylelint', 'eslint'],
+    \  'sh': ['language_server', 'shellcheck'],
     \}
 
     " Ale symbols
@@ -243,7 +263,7 @@ filetype plugin indent on    " required
     \  'javascript': ['eslint'],
     \}
 
-    " always show Ale gutter 
+    " always show Ale gutter
     let g:ale_sign_column_always = 0
 
 " }
@@ -290,11 +310,11 @@ filetype plugin indent on    " required
       return path[len(root)+1:]
     endif
     return expand('%')
-  endfunction 
+  endfunction
 
 " }
 
-" nerd comments { 
+" nerd comments {
 
     " add spaces to nerd/sexy comments (Standard JS no-warn msg)
     let NERDSpaceDelims=1
@@ -312,7 +332,7 @@ filetype plugin indent on    " required
 
 " }
 
-" ycm {
+" you complete me (ycm) {
 
     " turn off ycm preview on top
     set completeopt-=preview
@@ -320,19 +340,22 @@ filetype plugin indent on    " required
     highlight Pmenu ctermfg=Green ctermbg=Black
     highlight PmenuSel ctermfg=Black ctermbg=Green
 
+    " let g:ycm_server_python_interpreter='/usr/bin/python'
+    " let g:ycm_global_ycm_extra_conf='~/.ycm_extra_conf.py'
+    let g:ycm_python_binary_path='python'
 " }
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " TODO: clean-up or integrate
 
-" autocommand groups 
+" autocommand groups
 " augroup testgroup
     " autocmd!
     " autocmd BufWrite * :echom 'foo'
     " autocmd BufWrite * :echom 'bar'
 " augroup END
 
-" comments test 
+" comments test
 " autocmd FileType javascript nnoremap <localleader>c I//<Space><esc>
 
 " quick abbrev test

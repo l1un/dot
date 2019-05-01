@@ -1,4 +1,10 @@
 ###### changelog
+`2019.04.30.3`
+  - ALE - shellcheck add / config, shell language, bash linting
+  - YCM - Python setup + config
+  - `.vimrc` + `ftplugin/python.vim` - lint, whitepace, au, buf etc.
+
+
 `2019.04.30.2`
   - add lynx configs
   - spring cleaning
