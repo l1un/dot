@@ -1,7 +1,6 @@
-# Usually rename this file to <config> and move to .ssh folder
+# rename <config> and move to .ssh folder
 
-# hostname-alias-1
-
+# hostname-alias-1 example
 Host hostname-alias-1
 HostName <host.address.example.number> ex. <000.000.000.000> 
 User <user-name>
