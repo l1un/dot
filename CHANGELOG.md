@@ -1,4 +1,9 @@
 ###### changelog
+`2019.04.30.2`
+  - add lynx configs
+  - spring cleaning
+
+
 `2019.04.30.1`
   - add vim-tmux-navigator to `.vimrc`
 
