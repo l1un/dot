@@ -10,23 +10,11 @@
       "passKeys": ""
     },
     {
-      "pattern": "http://vim-adventures.com",
-      "passKeys": ""
-    },
-    {
-      "pattern": "https?://vim-adventures.com",
-      "passKeys": ""
-    },
-    {
       "pattern": "https://vim-adventures.com/*",
       "passKeys": ""
     },
     {
       "pattern": "http://smblott.org/keyboard.html",
-      "passKeys": ""
-    },
-    {
-      "pattern": "https?://adaptable.info/*",
       "passKeys": ""
     },
     {

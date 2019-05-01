@@ -1,4 +1,4 @@
-##### dot-config 
+##### dot-config
 `babel`
 `bash`
 `curl`
@@ -7,9 +7,10 @@
 `gtk`
 `json`
 `lynx`
+`python.vim`
 `setxkbmap`
 `ssh`
-`tern` 
+`tern`
 `terminator`
 `tmux`
 `ultisnips`
@@ -81,14 +82,14 @@
 │       ├── webpack.common.js
 │       ├── webpack.dev.js
 │       └── webpack.prod.js
+├── python.vim
 ├── README.md
-├── text.snippets
 ├── .tmux.conf
 ├── vimium-options.json
 └── .vimrc
 
 19 directories, 46 files
-last generated: Tue Apr 30 23:47:20 PDT 2019
+last generated: Wed May  1 00:02:46 PDT 2019
 ```
 ###### packages
 ```
@@ -98,7 +99,7 @@ devDependencies
 dependencies
 
 
-auto-generated: Tue Apr 30 23:47:20 PDT 2019
+auto-generated: Wed May  1 00:02:46 PDT 2019
 ```
 ###### notes
 ###### [changelog](CHANGELOG.md)

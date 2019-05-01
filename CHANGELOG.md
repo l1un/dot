@@ -4,219 +4,157 @@
   - YCM - Python setup + config
   - `.vimrc` + `ftplugin/python.vim` - lint, whitepace, au, buf etc.
 
-
 `2019.04.30.2`
   - add lynx configs
   - spring cleaning
 
-
 `2019.04.30.1`
   - add vim-tmux-navigator to `.vimrc`
-
 
 `2019.04.26.2`
   - add copy-last-command function to `.bashrc`
   - verbosify other function names per current convention
 
-
 `2019.04.26.1`
   - TEST: add changes
-
 
 `2019.04.25.1`
   - add xdotool func for quick in-shell profile change
 
-
 `2019.04.20.2`
   - rm redundant CL entries
   - update comment to test script
-
 
 `2019.04.20.1`
   - clean-up `.bashrc` + add extendend globs
   - congfig `netrw` in `.vimrc`
   - misc.
 
-
 `2019.03.31.5`
   - disable ultisnippets
-
 
 `2019.03.31.1`
   - disable auto cd / aliases `.bashrc` and `.bashaliases`
   - other minor updates
-
 
 `2019.03.09.1`
   - add fugitive to vimrc
   - add function to vimrc to show relative path (require fugitive)
   - other misc.
 
-
-`2019.03.06.1`
-  - misc.
-
-
 `2019.02.28.1`
   - `.vimrc` add / test notes.vim
   - `.vimrc` add undofile / undodir config
 
-
-`2019.02.25.1`
-  - misc.
-
-
 `2019.02.19.3`
   - fix gettm var in `.bash_alias`
-
 
 `2019.02.19.2`
   - test / confirm updates
 
-
 `2019.02.19.1`
   - `.vimrc` organize + many adds
-  - add snippets for ultisnips 
+  - add snippets for ultisnips
   - `.bash_alias` update vars for vcs etc.
-
 
 `2019.02.18.3`
   - `.vimrc` - echo relative file/path on open
   - `.vimrc` - add tmux, bashrc, bashalias quickedits (mirror bash shortcuts)
-  - `.bash_alias` - update quick edits / sync with vim quick edit commands 
-
+  - `.bash_alias` - update quick edits / sync with vim quick edit commands
 
 `2019.02.18.2`
   - `.vimrc` update quick edits (ev)vimrc (en)notes
   - `.vimrc` remove indent guides, add indent line plugins
 
-
 `2019.02.18.1`
   - `vimrc` all maps changed to non recursive (debug + best practice)
-
 
 `2019.02.16.1`
   - `.vimrc` vimscript testing, macros, <c-u> insert mode (const helper)
 
-
 `2019.02.12.1`
   - `.vimrc` autocmd for saving folded status
-  - `.vimrc` insert mode macros added (js) 
-
+  - `.vimrc` insert mode macros added (js)
 
 `2019.02.04.2`
   - remove `javascript-snippets` file (not using these)
 
-
 `2019.02.04.1`
   - remove custom js snips from `.vimrc` (going with vim-snippets for now)
 
-
 `2019.02.01.2`
   - update tree
-
 
 `2019.02.01.1`
   - adds for ultisnips to `.vimrc`
   - add generic js, angular, etc. snippets file
 
-
-`2019.01.31.1`
-  - null
-
-
-`2019.01.28.1`
-  - null
-
-
 `2019.01.26.1`
-  - `.bash_alias` alias edit, `.vimrc` shortcut edit 
-
+  - `.bash_alias` alias edit, `.vimrc` shortcut edit
 
 `2019.01.25.1`
   - `.vimrc` updates including notes to gist, ycm, code guides
   - `.bashalias` updates including notes to gist
 
-
 `2019.01.19.2`
   - add rsync alias to copy to scripts
-
 
 `2019.01.19.1`
   - `.vimrc` edits *debug duplicate line numbers
 
-
 `2019.01.18.1`
   - `.vimrc` - remove dirdiff (unused)
-  - `.vimrc` - hide ALE gutter (duplicating line numbers issue) FIXME 
-
+  - `.vimrc` - hide ALE gutter (duplicating line numbers issue) FIXME
 
 `2019.01.15.1`
   - `.vimrc`, and ..
 
-
 `2019.01.14.1`
   - add alias to js tutorial working on
-
 
 `2019.01.12.4`
   - clean
 
-
-`2019.01.12.3`
-  - test
-
-
 `2019.01.12.2`
   - `.vimrc` edit
 
-
 `2019.01.12.1`
-  - misc config edits 
-
+  - misc config edits
 
 `2019.01.11.1`
   - remove vimwiki from `.bashrc`
   - update `.bash_aliases`
 
-
 `2019.01.08.3`
   - minor rename, moves
 
-
 `2019.01.08.2`
   - `.bash_alias` update for enhanced workflow
-
 
 `2019.01.08.1`
   - `tmux.conf` shortcut to broadcast to panes
   - set up root with new script / workflow enhancement
 
-
 `2019.01.07.2`
   - `.bash_alias` updates
   - `.tmux.conf` updates
-  - tmux script to open with custom config 
+  - tmux script to open with custom config
   - remove .config dir, add files to root
-
 
 `2019.01.07.1`
   - tmux.conf and open script, bash aliases, gtk css
 
-
 `2019.01.05.1`
   - significant clean-up and organization
-  - extensive `.tmux.conf` created and added 
+  - extensive `.tmux.conf` created and added
   - add `gtk.css` (fix blank line in gnome-terminal)
   - updates to `.vimrc` and `.bash_aliases`
   - update RM / structure (tree) accordingly
   - remove unused including `.gemrc` and `git.run`
 
-
 `2019.01.04.2`
   - improve default shell app notes
   - fix path for `z` in `.bashrc`
-
 
 `2019.01.04.1`
   - fzf add in `.bashrc`
@@ -224,41 +162,33 @@
   - update tree
   - create shell app notes + organize
 
-
 `2018.12.28.4`
   - remove redundant CL since it's here for now
 
-
 `2018.12.28.3`
   - new alias `.bash_aliases`
-
 
 `2018.12.28.2`
   - create gatsby directory
   - add gatsby config files `package.json` & `.eslintrc.js` (standard, react)
   - update tree
 
-
 `2018.12.28.1`
   - add mkdircd() to `.bashrc`
-
 
 `2018.12.27.1`
   - edit `.bashrc` (organize + remove unused)
   - update `.bash_aliases` with git commands
 
-
 `2018.12.26.1`
   - add `.tmux.conf`
-  - bash and terminator upates 
+  - bash and terminator upates
   - update this RM, tree, cl
-
 
 `2018.12.14.1`
   - remove scripts from here (rethought)
   - terminator config
   - .bashrc $HOME addendum
-
 
 `2018.12.14`
   - adjust terminator config again
@@ -305,10 +235,10 @@
 - added .bashrc to VCS
 
 `2017.5.31`
-- misc. 
+- misc.
 
 `2017.5.18`
-- vimrc: change noexpandtab to expandtab for standardjs / syntastic 
+- vimrc: change noexpandtab to expandtab for standardjs / syntastic
 
 `2017.5.15`
 - vimrc: remove old/unused lines from previous plugins / settings
