@@ -1,4 +1,9 @@
 ###### changelog
+`2019.05.03.1`
+  - some fixes / clean-up whitespace removal in `bash.rc`
+  - other whitespace / cleanup tasks
+
+
 `2019.05.01.1`
   - add the python.vim file, missed last push
   - whitespace remove
