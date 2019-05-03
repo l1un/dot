@@ -84,12 +84,13 @@
 │       └── webpack.prod.js
 ├── python.vim
 ├── README.md
+├── text.snippets
 ├── .tmux.conf
 ├── vimium-options.json
 └── .vimrc
 
-19 directories, 46 files
-last generated: Wed May  1 00:02:46 PDT 2019
+19 directories, 47 files
+last generated: Fri May  3 12:21:05 PDT 2019
 ```
 ###### packages
 ```
@@ -99,7 +100,7 @@ devDependencies
 dependencies
 
 
-auto-generated: Wed May  1 00:02:46 PDT 2019
+auto-generated: Fri May  3 12:21:05 PDT 2019
 ```
 ###### notes
 ###### [changelog](CHANGELOG.md)
