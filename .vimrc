@@ -236,7 +236,16 @@ filetype plugin indent on    " required
     endfunction
 
     " type <leader>r to run node file in split
-    noremap <leader>r :call RunFileInNode()<cr>
+    noremap <leader>rn :call RunFileInNode()<cr>
+
+    " run python in split
+    function! RunFileInPython()
+      let python_file = expand('%')
+      exec ':w !echo; python' python_file
+    endfunction
+
+    " type <leader>r to run node file in split
+    noremap <leader>rp :call RunFileInPython()<cr>
 
 " }
 
