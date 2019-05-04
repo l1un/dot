@@ -48,9 +48,12 @@ Plugin 'Yggdroot/indentLine'
 Plugin 'christoomey/vim-tmux-navigator'
 " python indent
 Plugin 'vim-scripts/indentpython.vim'
+" LaTeX
+Plugin 'lervag/vimtex'
+
 " utltisnips
-" Plugin 'SirVer/ultisnips'
-" Plugin 'honza/vim-snippets'
+Plugin 'SirVer/ultisnips'
+Plugin 'honza/vim-snippets'
 
 " call vundle
 call vundle#end()            " required
@@ -209,7 +212,7 @@ filetype plugin indent on    " required
     " open netrw
     nnoremap <silent> <Leader>dw :Vexplore<CR>
     " quick edit snippets
-    " nnoremap <silent> <Leader>es :UltiSnipsEdit<CR>
+    nnoremap <silent> <Leader>es :UltiSnipsEdit<CR>
 
 " }
 
@@ -232,7 +235,7 @@ filetype plugin indent on    " required
     " run node in split
     function! RunFileInNode()
       let input_file = expand('%')
-      exec ':set splitbelow | new | r! node' input_file
+      exec ':w !echo; node' input_file
     endfunction
 
     " type <leader>r to run node file in split
@@ -333,11 +336,11 @@ filetype plugin indent on    " required
 " ultisnips {
 
     " set directory
-    " let g:UltiSnipsSnippetDirectories = ['/home/o12/.vim/ultisnips']
+    let g:UltiSnipsSnippetDirectories = ['/home/o12/.vim/ultisnips']
     " expand completion
-    " let g:UltiSnipsExpandTrigger="<c-e>"
+    let g:UltiSnipsExpandTrigger="<c-e>"
     " open :UltiSnipsEdit in split
-    " let g:UltiSnipsEditSplit="vertical"
+    let g:UltiSnipsEditSplit="vertical"
 
 " }
 
@@ -352,8 +355,18 @@ filetype plugin indent on    " required
     " let g:ycm_server_python_interpreter='/usr/bin/python'
     " let g:ycm_global_ycm_extra_conf='~/.ycm_extra_conf.py'
     let g:ycm_python_binary_path='python'
+
 " }
 
+" vimtex {
+
+    let g:tex_flavor='latex'
+    let g:vimtex_view_method='zathura'
+    let g:vimtex_quickfix_mode=0
+    set conceallevel=1
+    let g:tex_conceal='abdmg'
+
+" }
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " TODO: clean-up or integrate
 
