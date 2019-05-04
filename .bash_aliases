@@ -50,7 +50,7 @@ alias eba="vim ~/.bash_aliases"
 # quick edit .tmux.conf
 alias et="vim ~/.tmux.conf"
 # quick edit notes.txt
-alias en="vim ~/notes/88c8f4f99bb6bbd510ef1461ec06044f/notes.txt"
+alias en="vim ~/notes/88c8f4f99bb6bbd510ef1461ec06044f/notes.md"
 
 ## BASH / SHELL
 

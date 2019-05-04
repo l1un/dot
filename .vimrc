@@ -16,7 +16,7 @@ Plugin 'scrooloose/nerdcommenter'
 " Add You Complete Me
 Plugin 'Valloric/YouCompleteMe'
 " Vim Instant Markdown
-" Plugin 'suan/vim-instant-markdown'
+Plugin 'suan/vim-instant-markdown'
 " Monokai
 Plugin 'crusoexia/vim-monokai'
 " vim-javascript
@@ -50,10 +50,13 @@ Plugin 'christoomey/vim-tmux-navigator'
 Plugin 'vim-scripts/indentpython.vim'
 " LaTeX
 Plugin 'lervag/vimtex'
-
 " utltisnips
 Plugin 'SirVer/ultisnips'
 Plugin 'honza/vim-snippets'
+" goyo
+Plugin 'junegunn/goyo.vim'
+" limelight
+Plugin 'junegunn/limelight.vim'
 
 " call vundle
 call vundle#end()            " required
@@ -202,7 +205,7 @@ filetype plugin indent on    " required
     " source vimrc
     nnoremap <silent> <Leader>so :so $MYVIMRC<CR>
     " quick edit notes (vcs to gist)
-    nnoremap <silent> <Leader>en :tabnew<CR>:e ~/notes/88c8f4f99bb6bbd510ef1461ec06044f/notes.txt<CR>
+    nnoremap <silent> <Leader>en :tabnew<CR>:e ~/notes/88c8f4f99bb6bbd510ef1461ec06044f/notes.md<CR>
     " quick edit tmux
     nnoremap <silent> <Leader>et :tabnew<CR>:e ~/.tmux.conf<CR>
     " quick edit bash aliases
@@ -236,6 +239,7 @@ filetype plugin indent on    " required
     function! RunFileInNode()
       let input_file = expand('%')
       exec ':w !echo; node' input_file
+
     endfunction
 
     " type <leader>r to run node file in split
@@ -293,6 +297,7 @@ filetype plugin indent on    " required
     set listchars=""
     let g:indentLine_color_term = 236
     let g:vim_json_syntax_conceal = 0 " disable in JSON
+    let g:indentLine_fileTypeExclude = ['markdown']
     " let g:indentLine_setColors = 233
     " let g:indentLine_bgcolor_term = 235
     " let g:indentLine_char = '|'
@@ -367,6 +372,19 @@ filetype plugin indent on    " required
     let g:tex_conceal='abdmg'
 
 " }
+
+" Limelight {
+
+    nnoremap <localleader>Ll :Limelight!!0.8 <CR>
+
+" }
+
+" Goyo {
+
+    nnoremap <localleader>Gg :Goyo <CR>
+
+" }
+
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " TODO: clean-up or integrate
 
