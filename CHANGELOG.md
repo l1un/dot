@@ -1,4 +1,11 @@
 ###### changelog
+`2019.05.04.2`
+  - add Limelight and Goyo for better text, markdown, LaTeX etc.
+  - add <localleader> commands for both
+  - adjust conceal level settings
+  - update bash and vim aliases to notes.md (main notes now)
+
+
 `2019.05.04.1`
   - add LaTeX live editing via vimtex and zathura
   - renable ultisnips / configs
