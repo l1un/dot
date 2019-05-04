@@ -1,4 +1,10 @@
 ###### changelog
+`2019.05.04.1`
+  - add LaTeX live editing via vimtex and zathura
+  - renable ultisnips / configs
+  - update run node in vim function
+
+
 `2019.05.03.2`
   - add function to quick run python file in vim
   - edit leader command for run node function to fit new convention
