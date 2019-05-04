@@ -1,4 +1,9 @@
 ###### changelog
+`2019.05.03.2`
+  - add function to quick run python file in vim
+  - edit leader command for run node function to fit new convention
+
+
 `2019.05.03.1`
   - some fixes / clean-up whitespace removal in `bash.rc`
   - other whitespace / cleanup tasks
