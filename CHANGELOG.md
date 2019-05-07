@@ -1,4 +1,9 @@
 ###### changelog
+`2019.05.07.1`
+  - add auto-change pane to YCM get doc shortcut
+  - update local leader netrw shortcut
+
+
 `2019.05.04.2`
   - add Limelight and Goyo for better text, markdown, LaTeX etc.
   - add <localleader> commands for both
