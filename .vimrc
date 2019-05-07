@@ -213,7 +213,7 @@ filetype plugin indent on    " required
     " quick edit bashrc
     nnoremap <silent> <Leader>ebc :tabnew<CR>:e ~/.bashrc<CR>
     " open netrw
-    nnoremap <silent> <Leader>dw :Vexplore<CR>
+    nnoremap <silent> <Leader>nw :Vexplore<CR>
     " quick edit snippets
     nnoremap <silent> <Leader>es :UltiSnipsEdit<CR>
 
@@ -268,6 +268,7 @@ filetype plugin indent on    " required
     \  'javascript': ['stylelint', 'eslint', 'prettier'],
     \  'css': ['stylelint', 'eslint'],
     \  'sh': ['language_server', 'shellcheck'],
+    \  'markdown': ['remark-lint'],
     \}
 
     " Ale symbols
@@ -351,8 +352,16 @@ filetype plugin indent on    " required
 
 " you complete me (ycm) {
 
+    " ycm preview on bottom
+    set splitbelow
+    " close preview after selecting
+    let g:ycm_autoclose_preview_window_after_completion=1
     " turn off ycm preview on top
-    set completeopt-=preview
+    " set completeopt-=preview
+
+    " get documentation word under cursor
+    nnoremap <silent> <localleader>Yy :YcmCompleter GetDoc <CR><c-w>w
+
     " ycm colors
     highlight Pmenu ctermfg=Green ctermbg=Black
     highlight PmenuSel ctermfg=Black ctermbg=Green
@@ -375,13 +384,13 @@ filetype plugin indent on    " required
 
 " Limelight {
 
-    nnoremap <localleader>Ll :Limelight!!0.8 <CR>
+    nnoremap <silent> <localleader>Ll :Limelight!!0.8 <CR>
 
 " }
 
 " Goyo {
 
-    nnoremap <localleader>Gg :Goyo <CR>
+    nnoremap <silent> <localleader>Gg :Goyo <CR>
 
 " }
 
