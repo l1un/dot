@@ -1,4 +1,9 @@
 ###### changelog
+`2019.05.08.1`
+  - add function to read python output to comment in `.vimrc`
+  - general cleanup / conventionalize
+
+
 `2019.05.07.1`
   - add auto-change pane to YCM get doc shortcut
   - update local leader netrw shortcut
