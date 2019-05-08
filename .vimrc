@@ -63,7 +63,8 @@ call vundle#end()            " required
 filetype plugin indent on    " required
 " filetype indent on
 
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" BUILT-IN ---------------------------------------------------------------------
+
 " global / file configs {
 
     set tabstop=2
@@ -152,6 +153,8 @@ filetype plugin indent on    " required
 
 " }
 
+" REMAPS ----------------------------------------------------------------------
+
 " remapping etc. {
 
     " <leader> to ','
@@ -198,7 +201,9 @@ filetype plugin indent on    " required
 
 " }
 
-" files {
+" FILES ----------------------------------------------------------------------
+
+" file edit shortcuts {
 
     " quick edit .vimrc
     nnoremap <silent> <Leader>ev :tabnew<CR>:e $MYVIMRC<CR>
@@ -219,7 +224,9 @@ filetype plugin indent on    " required
 
 " }
 
-" functions {
+" FUNCTIONS --------------------------------------------------------------------
+
+" vim functions {
 
     " rename files within vim (<leader>n to rename)
     function! RenameFile()
@@ -235,15 +242,22 @@ filetype plugin indent on    " required
     " type <leader>n to open rename file dialog
     noremap <leader>n :call RenameFile()<cr>
 
+" }
+
+" js functions {
+
     " run node in split
     function! RunFileInNode()
       let input_file = expand('%')
       exec ':w !echo; node' input_file
-
     endfunction
 
     " type <leader>r to run node file in split
     noremap <leader>rn :call RunFileInNode()<cr>
+
+" }
+
+" py functions {
 
     " run python in split
     function! RunFileInPython()
@@ -254,10 +268,17 @@ filetype plugin indent on    " required
     " type <leader>r to run node file in split
     noremap <leader>rp :call RunFileInPython()<cr>
 
+    " append python output as comment
+    function! GetPythonComment()
+      exec ':r !python %'
+      :execute "normal! i# \<esc>"
+    endfunction
+
+    " type <localleader> to append output and comment
+    noremap <localleader>cp :call GetPythonComment()<cr>
 " }
 
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" plugin config
+" PLUGINS ----------------------------------------------------------------------
 
 " ale {
 
@@ -380,38 +401,18 @@ filetype plugin indent on    " required
     set conceallevel=1
     let g:tex_conceal='abdmg'
 
+    nnoremap <silent> <localleader>Vv :VimtexView <CR>
+
 " }
 
-" Limelight {
+" limelight {
 
     nnoremap <silent> <localleader>Ll :Limelight!!0.8 <CR>
 
 " }
 
-" Goyo {
+" goyo {
 
     nnoremap <silent> <localleader>Gg :Goyo <CR>
 
 " }
-
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" TODO: clean-up or integrate
-
-" autocommand groups
-" augroup testgroup
-    " autocmd!
-    " autocmd BufWrite * :echom 'foo'
-    " autocmd BufWrite * :echom 'bar'
-" augroup END
-
-" comments test
-" autocmd FileType javascript nnoremap <localleader>c I//<Space><esc>
-
-" quick abbrev test
-" iabbrev <html> <html><cr><head><cr></head><cr><body><cr></body><cr></html>
-
-" <localleader>f - select in tags and fold
-" augroup filetype_html
-  " autocmd!
-  " autocmd FileType html nnoremap <buffer> <localleader>f Vatzf
-" augroup END
