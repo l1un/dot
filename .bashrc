@@ -94,7 +94,7 @@ alias l='ls -CF'
 
 # Add an "alert" alias for long running commands.  Use like so:
 #   sleep 10; alert
-# alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo error)" "$(history|tail -n1|sed -e '\''s/^\s*[0-9]\+\s*//;s/[;&|]\s*alert$//'\'')"'
+alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo error)" "$(history|tail -n1|sed -e '\''s/^\s*[0-9]\+\s*//;s/[;&|]\s*alert$//'\'')"'
 
 # Alias definitions.
 # You may want to put all your additions into a separate file like
@@ -116,65 +116,25 @@ if ! shopt -oq posix; then
   fi
 fi
 
-# ADDS ------------------------------------------------------------------------
+# GALLIUM / XFCE ---------------------------------------------------
 
-export NPM_PACKAGES="/home/o12/.npm-packages"
-export NODE_PATH="$NPM_PACKAGES/lib/node_modules${NODE_PATH:+:$NODE_PATH}"
-export PATH="$NPM_PACKAGES/bin:$PATH"
+# get 256 colors
+case "$TERM" in
+	xterm*) TERM=xterm-256color
+esac
 
-# Unset manpath so we can inherit from /etc/manpath via the `manpath`
-# command
-unset MANPATH  # delete if you already modified MANPATH elsewhere in your config
-export MANPATH="$NPM_PACKAGES/share/man:$(manpath)"
- 
-# scripts dir
+# ------------------------------------------------------------------
+
+# scripts
 export PATH="$HOME/bin:$PATH"
-
-# termtosvg
-export PATH="/home/o12/.local/bin:$PATH"
-
-# yarn
-export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
-
-# -------------------------------------------------------------------------------
-
-# cd; ls -al
-cd_ls() {
-  cd "$@"
-  ls -al
-}
-
-# mkdir; cd
-mkdir_cd() {
-  mkdir -p "$1" && cd "$1"
-}
-
-# quick change profiles in ba sh using xdotool + nth profile arg
-change_bash_profile() {
-  # TODO: debugg --clearmodifiers for tmux, vim etc.
-  xdotool key Shift+F10 r "$1"
-}
-
-# copy last command to file
-save_last_command() {
-  # fc (fix command) -l (list) -n (do not prefix command numbers)
-  # $1 = path to file to append output
-  fc -ln -1 | sed '1s/^[[:space:]]*//' >> "${1}"
-}
-# -------------------------------------------------------------------------------
 
 # vim default editor
 export VISUAL=vim
 export EDITOR="$VISUAL"
 
-# vi bash mode
+# vim mode
+export VISUAL=vim
 set -o vi
 
-# via fzf install
-[ -f ~/.fzf.bash ] && source ~/.fzf.bash
-
-# z database
-. /usr/local/bin/z.sh
-
-# extend globs / regexes
+# extend globs / regex
 shopt -s extglob
