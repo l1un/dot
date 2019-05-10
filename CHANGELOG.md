@@ -1,4 +1,8 @@
 ###### changelog
+`2019.05.09.1`
+	- gallium updates
+
+
 `2019.05.08.1`
   - add function to read python output to comment in `.vimrc`
   - general cleanup / conventionalize
