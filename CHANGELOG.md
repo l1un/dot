@@ -1,4 +1,9 @@
 ###### changelog
+`2019.05.14.1`
+  - edit some of the leaders used
+  - change conceal level for built-in LaTeX
+
+
 `2019.05.09.1`
 	- gallium updates
 
