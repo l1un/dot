@@ -275,7 +275,7 @@ filetype plugin indent on    " required
     endfunction
 
     " type <localleader> to append output and comment
-    noremap <localleader>cp :call GetPythonComment()<cr>
+    noremap <leader>cpy :call GetPythonComment()<cr>
 " }
 
 " PLUGINS ----------------------------------------------------------------------
@@ -290,6 +290,7 @@ filetype plugin indent on    " required
     \  'css': ['stylelint', 'eslint'],
     \  'sh': ['language_server', 'shellcheck'],
     \  'markdown': ['remark-lint'],
+    \  'tex': ['chktex'],
     \}
 
     " Ale symbols
@@ -365,7 +366,7 @@ filetype plugin indent on    " required
     " set directory
     let g:UltiSnipsSnippetDirectories = ['/home/o12/.vim/ultisnips']
     " expand completion
-    let g:UltiSnipsExpandTrigger="<c-e>"
+    let g:UltiSnipsExpandTrigger="kj"
     " open :UltiSnipsEdit in split
     let g:UltiSnipsEditSplit="vertical"
 
@@ -381,7 +382,7 @@ filetype plugin indent on    " required
     " set completeopt-=preview
 
     " get documentation word under cursor
-    nnoremap <silent> <localleader>Yy :YcmCompleter GetDoc <CR><c-w>w
+    nnoremap <silent> <leader>yd :YcmCompleter GetDoc <CR><c-w>w
 
     " ycm colors
     highlight Pmenu ctermfg=Green ctermbg=Black
@@ -398,10 +399,11 @@ filetype plugin indent on    " required
     let g:tex_flavor='latex'
     let g:vimtex_view_method='zathura'
     let g:vimtex_quickfix_mode=0
-    set conceallevel=1
-    let g:tex_conceal='abdmg'
+    let g:tex_conceal = '' " turn off internal LaTex syntax behaviour
+    " set conceallevel=0
+    " let g:tex_conceal='abdmg'
 
-    nnoremap <silent> <localleader>Vv :VimtexView <CR>
+    nnoremap <silent> <leader>vt :VimtexView <CR>
 
 " }
 
@@ -416,3 +418,5 @@ filetype plugin indent on    " required
     nnoremap <silent> <localleader>Gg :Goyo <CR>
 
 " }
+
+" packloadall

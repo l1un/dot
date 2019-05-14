@@ -42,6 +42,8 @@
 │   │   ├── npm-config-notes.md
 │   │   └── old-tdd-notes.md
 │   ├── gallium
+│   │   ├── .bashrc
+│   │   ├── notes.md
 │   │   └── xkb
 │   │       ├── chromebook_minimal
 │   │       ├── chromebook_minimal_vim
@@ -89,8 +91,8 @@
 ├── vimium-options.json
 └── .vimrc
 
-19 directories, 47 files
-last generated: Wed May  8 16:33:37 PDT 2019
+19 directories, 49 files
+last generated: Tue May 14 10:35:19 PDT 2019
 ```
 ###### packages
 ```
@@ -100,7 +102,7 @@ devDependencies
 dependencies
 
 
-auto-generated: Wed May  8 16:33:37 PDT 2019
+auto-generated: Tue May 14 10:35:19 PDT 2019
 ```
 ###### notes
 ###### [changelog](CHANGELOG.md)
