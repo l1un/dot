@@ -1,4 +1,11 @@
 ###### changelog
+`2019.05.19.1`
+  - `.vimrc`:
+    - change some leaders / mappings
+    - adjust ALE LaTeX linters
+    - change edit shortcuts from open tab to open split
+
+
 `2019.05.14.1`
   - edit some of the leaders used
   - change conceal level for built-in LaTeX
