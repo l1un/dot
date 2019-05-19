@@ -186,15 +186,17 @@ filetype plugin indent on    " required
     " temp unmap escape
     inoremap <Esc> <nop>
 
-    " ,B - list buffers and prep :b
-    nnoremap <Leader>B :ls<CR>:b<Space>
-    " ,b - buffer next
-    nnoremap <Leader>b :bn<CR>
+    " ,bl - list buffers and prep :b
+    nnoremap <Leader>bl :ls<CR>:b<Space>
+    " ,bn - buffer next
+    nnoremap <Leader>bn :bn<CR>
+    " ,bp - buffer previous
+    nnoremap <Leader>bp :bp<CR>
 
     " help behaviour
     " open help in new tab
-    cabbrev help tab help
-    cabbrev h tab h
+    " cabbrev help tab help
+    " cabbrev h tab h
 
     " goto EOL in insertmode
     inoremap AA <c-o>A
@@ -206,11 +208,11 @@ filetype plugin indent on    " required
 " file edit shortcuts {
 
     " quick edit .vimrc
-    nnoremap <silent> <Leader>ev :tabnew<CR>:e $MYVIMRC<CR>
+    nnoremap <silent> <Leader>ev :sp $MYVIMRC<CR>
     " source vimrc
     nnoremap <silent> <Leader>so :so $MYVIMRC<CR>
     " quick edit notes (vcs to gist)
-    nnoremap <silent> <Leader>en :tabnew<CR>:e ~/notes/88c8f4f99bb6bbd510ef1461ec06044f/notes.md<CR>
+    nnoremap <silent> <Leader>en :sp ~/notes/88c8f4f99bb6bbd510ef1461ec06044f/notes.md<CR>
     " quick edit tmux
     nnoremap <silent> <Leader>et :tabnew<CR>:e ~/.tmux.conf<CR>
     " quick edit bash aliases
@@ -252,7 +254,7 @@ filetype plugin indent on    " required
       exec ':w !echo; node' input_file
     endfunction
 
-    " type <leader>r to run node file in split
+    " type <leader>rn to run node file in split
     noremap <leader>rn :call RunFileInNode()<cr>
 
 " }
@@ -265,7 +267,7 @@ filetype plugin indent on    " required
       exec ':w !echo; python' python_file
     endfunction
 
-    " type <leader>r to run node file in split
+    " type <leader>rp to run python file in split
     noremap <leader>rp :call RunFileInPython()<cr>
 
     " append python output as comment
@@ -290,7 +292,7 @@ filetype plugin indent on    " required
     \  'css': ['stylelint', 'eslint'],
     \  'sh': ['language_server', 'shellcheck'],
     \  'markdown': ['remark-lint'],
-    \  'tex': ['chktex'],
+    \  'tex': ['lacheck', 'chktex'],
     \}
 
     " Ale symbols
@@ -382,7 +384,7 @@ filetype plugin indent on    " required
     " set completeopt-=preview
 
     " get documentation word under cursor
-    nnoremap <silent> <leader>yd :YcmCompleter GetDoc <CR><c-w>w
+    nnoremap <silent> <leader>yD :YcmCompleter GetDoc <CR><c-w>w
 
     " ycm colors
     highlight Pmenu ctermfg=Green ctermbg=Black
@@ -403,19 +405,17 @@ filetype plugin indent on    " required
     " set conceallevel=0
     " let g:tex_conceal='abdmg'
 
-    nnoremap <silent> <leader>vt :VimtexView <CR>
-
 " }
 
 " limelight {
 
-    nnoremap <silent> <localleader>Ll :Limelight!!0.8 <CR>
+    nnoremap <silent> <leader>Ll :Limelight!!0.8 <CR>
 
 " }
 
 " goyo {
 
-    nnoremap <silent> <localleader>Gg :Goyo <CR>
+    nnoremap <silent> <leader>Gg :Goyo <CR>
 
 " }
 
