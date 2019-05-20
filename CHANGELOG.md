@@ -1,4 +1,8 @@
 ###### changelog
+`2019.05.20.2`
+  - add time and battery to `.tmux.conf` status
+
+
 `2019.05.20.1`
   - remove extra spaces in `tmux.conf`
   - add devilspie2 script to completely remove window decorations (finally!)
