@@ -1,4 +1,9 @@
 ###### changelog
+`2019.05.20.1`
+  - remove extra spaces in `tmux.conf`
+  - add devilspie2 script to completely remove window decorations (finally!)
+
+
 `2019.05.19.1`
   - `.vimrc`:
     - change some leaders / mappings
