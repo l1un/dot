@@ -86,13 +86,14 @@
 │       └── webpack.prod.js
 ├── python.vim
 ├── README.md
+├── remove-window-decoration.lua
 ├── text.snippets
 ├── .tmux.conf
 ├── vimium-options.json
 └── .vimrc
 
-19 directories, 49 files
-last generated: Sun May 19 16:45:50 PDT 2019
+19 directories, 50 files
+last generated: Mon May 20 10:05:26 PDT 2019
 ```
 ###### packages
 ```
@@ -102,7 +103,7 @@ devDependencies
 dependencies
 
 
-auto-generated: Sun May 19 16:45:50 PDT 2019
+auto-generated: Mon May 20 10:05:26 PDT 2019
 ```
 ###### notes
 ###### [changelog](CHANGELOG.md)
