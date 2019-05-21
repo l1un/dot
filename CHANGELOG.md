@@ -1,4 +1,9 @@
 ###### changelog
+`2019.05.21.1`
+  - tweak status bar and colors in `.tmux.conf`
+  - add new profile to terminator config
+
+
 `2019.05.20.2`
   - add time and battery to `.tmux.conf` status
 
