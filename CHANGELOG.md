@@ -1,4 +1,8 @@
 ###### changelog
+`2019.05.24.2`
+  - remove extra files, new workflow cleanup
+
+
 `2019.05.24.1`
   - create new maintainable script for updating this repo
   - use script which now retains directory structure (created new dirs)
