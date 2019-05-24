@@ -35,7 +35,6 @@
 │   ├── update-dot-files
 │   └── update-project-push
 ├── CHANGELOG.md
-├── config
 ├── .config
 │   ├── gtk-3.0
 │   │   └── gtk.css
@@ -46,8 +45,6 @@
 │   ├── terminator
 │   │   └── config
 │   └── zathura
-├── gtk.css
-├── javascript.snippets
 ├── other
 │   ├── .babelrc
 │   ├── cat
@@ -106,7 +103,6 @@
 │       ├── webpack.dev.js
 │       └── webpack.prod.js
 ├── README.md
-├── text.snippets
 ├── .tmux.conf
 ├── .vim
 │   ├── ftplugin
@@ -117,8 +113,8 @@
 │       └── text.snippets
 └── .vimrc
 
-29 directories, 65 files
-last generated: Fri May 24 11:34:04 PDT 2019
+29 directories, 61 files
+last generated: Fri May 24 11:44:09 PDT 2019
 ```
 ###### packages
 ```
@@ -128,7 +124,7 @@ devDependencies
 dependencies
 
 
-auto-generated: Fri May 24 11:34:04 PDT 2019
+auto-generated: Fri May 24 11:44:09 PDT 2019
 ```
 ###### notes
 ###### [changelog](CHANGELOG.md)
