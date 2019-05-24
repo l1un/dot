@@ -1,4 +1,12 @@
 ###### changelog
+`2019.05.24.1`
+  - create new maintainable script for updating this repo
+  - use script which now retains directory structure (created new dirs)
+  - add speedcrunch, zathura, htop, bin/ scripts etc. part of new script now
+  - remove old alias bs from `.bash_aliases` start move towards using it less
+  - other misc.
+
+
 `2019.05.21.1`
   - tweak status bar and colors in `.tmux.conf`
   - add new profile to terminator config
