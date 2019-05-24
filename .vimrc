@@ -72,6 +72,7 @@ filetype plugin indent on    " required
     set shiftwidth=2
 
     " python at ~/.vim/ftplugin/python.vim
+    " LaTeX at ~/.vim/ftplugin/tex.vim
     " https://vim.fandom.com/wiki/Keep_your_vimrc_file_clean
 
 " }

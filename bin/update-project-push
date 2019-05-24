@@ -1,0 +1,93 @@
+#!/bin/sh
+
+# ----------- 1. remove old tree, generate new tree, add to README ------------
+
+# remove everything between tree and packages 
+sed -n -i '1,/###### tree/p;/###### packages/,$p' README.md
+
+# open formatting
+echo '```' >> temp.txt
+
+# create tree, ignore (-I) node_modules, old, temp.txt, .cache, d(public gatsby), 20* (gatsby articles) and .git dirs, include (-a) dotfiles,  put in temp .txt 
+tree -Ia "node*|.git|old|temp.txt|.cache|d|20*" >> temp.txt 
+
+# add timestamp
+echo "last generated: `date`" >> temp.txt
+
+# close formatting
+echo '```' >> temp.txt
+
+# sed formatted output to README tree section
+sed -i '/###### tree/r temp.txt' README.md
+
+# remove temp file
+rm temp.txt
+
+# ---------- 2. remove old module list, add current module list -------------
+
+# remove everything between modules and notes
+sed -n -i '1,/###### packages/p;/###### notes/,$p' README.md
+
+# open formatting
+echo '```' >> temp-mod.txt
+
+# use jq to get devDependencies, add to temp file
+echo "devDependencies\n" >> temp-mod.txt
+cat ./package.json | jq .devDependencies >> temp-mod.txt 
+
+# use jq to get devDependencies, add to temp file
+echo "\ndependencies\n" >> temp-mod.txt
+cat ./package.json | jq .dependencies >> temp-mod.txt  # TODO: add condtional logic for null
+
+# add timestamp
+echo "\nauto-generated: `date`" >> temp-mod.txt
+
+# close formatting
+echo '```' >> temp-mod.txt
+
+# sed formatted output to README packages section
+sed -i '/###### packages/r temp-mod.txt' README.md
+
+# remove temp file
+rm temp-mod.txt
+
+# ------------ 3. git add / review  ----------------------
+git add . && git commit -v
+
+# ------------ 4. update changelog ----------------------
+
+# versioning defined by date + increment for disambiguation
+VER_DATE="`date +%Y.%m.%d`"
+
+# get entry total for "today" 
+VER_CHECK=`grep $VER_DATE CHANGELOG.md | wc -l`
+
+# increment it (if 0 then 1, if one then next is 2, etc.)
+VER_COUNT=$(($VER_CHECK + 1))
+
+# full version
+THIS_VERSION="$VER_DATE.$VER_COUNT"
+
+# add placeholder hint line
+echo '  - add changes' >> temp-cl.txt
+
+# # append git status for quick review / reminder
+# echo $(git status) >> temp-cl.txt
+
+# open in vi
+vi temp-cl.txt
+
+# sed version to top
+sed -i '1i`'"${THIS_VERSION}"'`' temp-cl.txt
+
+# add newline to keep md formatting correctly
+echo "\n" >> temp-cl.txt
+
+# sed new entry into README append to top of chaglelog section
+sed -i '/###### changelog/r temp-cl.txt' CHANGELOG.md
+
+# remove temp file
+rm temp-cl.txt
+
+# ------------ 5. clean up ----------------------
+git add . && git commit -m "auto-update CL: (${THIS_VERSION})" && git push

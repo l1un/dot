@@ -1,0 +1,11 @@
+#!/bin/bash
+#### Name: save-last-command
+#### Date: 04.27.2019
+#### Description: append last bash command to a file
+#### Notes: only works in .bashrc due to history
+
+save_last_command () {
+  # fc (fix command) -l (list) -n (do not prefix command numbers)
+  # $1 = path to file to append output
+  fc -ln -1 | sed '1s/^[[:space:]]*//' >> "${1}"
+}

@@ -24,9 +24,28 @@
 .
 ├── .bash_aliases
 ├── .bashrc
+├── bin
+│   ├── add-changelog-entry
+│   ├── add-npm-entry
+│   ├── add-tree-entry
+│   ├── change-bash-profile
+│   ├── copy-shell-scripts
+│   ├── open-tmux
+│   ├── save-last-command
+│   ├── update-dot-files
+│   └── update-project-push
 ├── CHANGELOG.md
 ├── config
-├── .eslintrc.js
+├── .config
+│   ├── gtk-3.0
+│   │   └── gtk.css
+│   ├── htop
+│   │   └── htoprc
+│   ├── SpeedCrunch
+│   │   └── SpeedCrunch.ini
+│   ├── terminator
+│   │   └── config
+│   └── zathura
 ├── gtk.css
 ├── javascript.snippets
 ├── other
@@ -41,6 +60,7 @@
 │   │   ├── nix-bash-notes.md
 │   │   ├── npm-config-notes.md
 │   │   └── old-tdd-notes.md
+│   ├── .eslintrc.js
 │   ├── gallium
 │   │   ├── .bashrc
 │   │   ├── notes.md
@@ -80,20 +100,25 @@
 │   │   └── plugins-vim
 │   │       └── vim-jsx
 │   │           └── xml.vim
+│   ├── vimium-options.json
 │   └── webpack
 │       ├── webpack.common.js
 │       ├── webpack.dev.js
 │       └── webpack.prod.js
-├── python.vim
 ├── README.md
-├── remove-window-decoration.lua
 ├── text.snippets
 ├── .tmux.conf
-├── vimium-options.json
+├── .vim
+│   ├── ftplugin
+│   │   ├── python.vim
+│   │   └── tex.vim
+│   └── ultisnips
+│       ├── javascript.snippets
+│       └── text.snippets
 └── .vimrc
 
-19 directories, 50 files
-last generated: Tue May 21 00:53:01 PDT 2019
+29 directories, 65 files
+last generated: Fri May 24 11:34:04 PDT 2019
 ```
 ###### packages
 ```
@@ -103,7 +128,7 @@ devDependencies
 dependencies
 
 
-auto-generated: Tue May 21 00:53:02 PDT 2019
+auto-generated: Fri May 24 11:34:04 PDT 2019
 ```
 ###### notes
 ###### [changelog](CHANGELOG.md)

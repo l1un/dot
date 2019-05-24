@@ -1,0 +1,80 @@
+#!/usr/bin/env bash
+
+#### Name: update-dot-files
+#### Date: 05.21.2019
+#### Description: Synchronize latest system dot files to git repository keeping correct structure and files in corresponding directories.
+
+update_dot_files() {
+
+	############################################################
+	# 1. Define source files and directories and prep.
+	############################################################
+
+	local source_bashrc_file="$HOME/.bashrc"
+	local source_bash_aliases_file="$HOME/.bash_aliases"
+	local source_tmux_conf_file="$HOME/.tmux.conf"
+	local source_vimrc_file="$HOME/.vimrc"
+	local source_gtk_css_file="$HOME/.config/gtk-3.0/gtk.css"
+
+	local source_bin_dir="$HOME/bin/"
+	local source_ftplugin_dir="$HOME/.vim/ftplugin/"
+	local source_htop_dir="$HOME/.config/htop/"
+	local source_snippets_dir="$HOME/.vim/ultisnips/"
+	local source_speedcrunch_dir="$HOME/.config/SpeedCrunch/"
+	local source_terminator_dir="$HOME/.config/terminator/"
+	local source_zathura_dir="$HOME/.config/zathura/"
+
+	# Array for system root files to array
+	local source_root_dir_config_files=(
+		$source_bashrc_file
+		$source_bash_aliases_file
+		$source_tmux_conf_file
+		$source_vimrc_file
+	)
+
+	# Array for .config directories
+	local source_dot_config_dirs=(
+		$source_zathura_dir
+		$source_htop_dir
+		$source_speedcrunch_dir
+		$source_terminator_dir
+	)
+
+	############################################################
+	# 2. Define destination paths for the repo directories.
+	############################################################
+
+	# local dot_config_path="/srv/www/html/dot-config"
+	local repo_bin_dir="/srv/www/html/dot-config/bin/"
+	local repo_dot_vim_dir="/srv/www/html/dot-config/.vim/"
+	local repo_dot_config_dir="/srv/www/html/dot-config/.config/"
+	local repo_gtk_dir="/srv/www/html/dot-config/.config/gtk-3.0/"
+	local repo_root_dir="/srv/www/html/dot-config/"
+
+	############################################################
+	# 3. Execute.
+	############################################################
+
+	# Sync system root config files
+	for each_file in "${source_root_dir_config_files[@]}"; do
+		cp  "$each_file" "$repo_root_dir"
+	done
+
+	# Sync system .config directories to repo directories
+	for each_dir in "${source_dot_config_dirs[@]}"; do
+		cp -r "$each_dir" "$repo_dot_config_dir"
+	done
+
+	# Sync system shell scripts to repo bin dir
+	cp -r "$source_bin_dir"/* "$repo_bin_dir"
+
+	# Sync system vim config files
+	cp "$source_ftplugin_dir"/* "$repo_dot_vim_dir"/ftplugin/
+	cp "$source_snippets_dir"/* "$repo_dot_vim_dir"/ultisnips/
+
+	# Sync system gtk css file
+	cp "$source_gtk_css_file" "$repo_gtk_dir"
+
+}
+
+update_dot_files

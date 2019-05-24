@@ -1,0 +1,2 @@
+#!/bin/sh
+rsync -av --exclude=searchai ~/bin/ /srv/www/html/shell-scripts/
