@@ -1,4 +1,9 @@
 ###### changelog
+`2019.05.25.1`
+  - rename sync script and change `.bash_alias` to reflect changes
+  - add `.lynxrc`, `.tern-config`, `.eslintrc.js` to new script workflow
+  - terminator `.config` update
+\n
 `2019.05.24.2`
   - remove extra files, new workflow cleanup
 
