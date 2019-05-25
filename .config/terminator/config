@@ -3,11 +3,29 @@
   focus = system
   geometry_hinting = True
   handle_size = 1
-  inactive_color_offset = 0.728395061728
+  inactive_color_offset = 0.902597402597
   suppress_multiple_term_dialog = True
 [keybindings]
 [layouts]
-  [[default]]
+  [[old default]]
+    [[[child0]]]
+      fullscreen = False
+      last_active_term = 2de6ac56-04a5-4909-8f2f-673e9ca54695
+      last_active_window = True
+      maximised = False
+      order = 0
+      parent = ""
+      position = 0:0
+      size = 683, 761
+      title = ator: ~
+      type = Window
+    [[[terminal1]]]
+      order = 0
+      parent = child0
+      profile = trans
+      type = Terminal
+      uuid = 2de6ac56-04a5-4909-8f2f-673e9ca54695
+  [[fullFour]]
     [[[child0]]]
       fullscreen = False
       last_active_term = beb94e95-9b61-4e22-8143-01a66810f5d0
@@ -61,7 +79,7 @@
       profile = trans
       type = Terminal
       uuid = 6aa12466-ba9f-4cf2-9cc7-3055c4c682b5
-  [[old]]
+  [[default]]
     [[[child0]]]
       fullscreen = False
       last_active_term = 2de6ac56-04a5-4909-8f2f-673e9ca54695
@@ -69,8 +87,8 @@
       maximised = False
       order = 0
       parent = ""
-      position = 0:0
-      size = 683, 761
+      position = 683:0
+      size = 683, 768
       title = ator: ~
       type = Window
     [[[terminal1]]]

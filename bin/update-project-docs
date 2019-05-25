@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+
+#### Name: update-project-docs
+#### Date: 05.25.2019
+#### Description: Update and format README and CHANGELOG files with project info.
+
+update_project_docs() {
+
+
+}
+
+update_project_docs

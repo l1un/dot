@@ -32,7 +32,9 @@
 │   ├── copy-shell-scripts
 │   ├── open-tmux
 │   ├── save-last-command
+│   ├── sync-dot-files
 │   ├── update-dot-files
+│   ├── update-project-docs
 │   └── update-project-push
 ├── CHANGELOG.md
 ├── .config
@@ -45,6 +47,8 @@
 │   ├── terminator
 │   │   └── config
 │   └── zathura
+├── .eslintrc.js
+├── .lynxrc
 ├── other
 │   ├── .babelrc
 │   ├── cat
@@ -103,6 +107,7 @@
 │       ├── webpack.dev.js
 │       └── webpack.prod.js
 ├── README.md
+├── .tern-config
 ├── .tmux.conf
 ├── .vim
 │   ├── ftplugin
@@ -113,18 +118,14 @@
 │       └── text.snippets
 └── .vimrc
 
-29 directories, 61 files
-last generated: Fri May 24 11:44:09 PDT 2019
+29 directories, 66 files
+last generated: Sat May 25 07:51:26 PDT 2019
 ```
 ###### packages
 ```
-devDependencies
-
-
-dependencies
-
-
-auto-generated: Fri May 24 11:44:09 PDT 2019
+devDependencies\n
+\ndependencies\n
+\nauto-generated: Sat May 25 07:51:26 PDT 2019
 ```
 ###### notes
 ###### [changelog](CHANGELOG.md)

@@ -39,4 +39,4 @@ alias tdd="gnome-terminal --window-with-profile=tdd"
 alias tmuxs="~/bin/open-tmux"
 
 # copy dotfiles, got to dir (vcs), add, commit, push
-alias dotsync="~/bin/update-dot-files && cd /srv/www/html/dot-config && ~/bin/update-project-push"
+alias dotsync="~/bin/sync-dot-files && cd /srv/www/html/dot-config && ~/bin/update-project-push"

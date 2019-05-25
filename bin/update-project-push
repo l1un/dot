@@ -1,15 +1,15 @@
-#!/bin/sh
+#!/usr/bin/env bash
 
 # ----------- 1. remove old tree, generate new tree, add to README ------------
 
-# remove everything between tree and packages 
+# remove everything between tree and packages
 sed -n -i '1,/###### tree/p;/###### packages/,$p' README.md
 
 # open formatting
 echo '```' >> temp.txt
 
-# create tree, ignore (-I) node_modules, old, temp.txt, .cache, d(public gatsby), 20* (gatsby articles) and .git dirs, include (-a) dotfiles,  put in temp .txt 
-tree -Ia "node*|.git|old|temp.txt|.cache|d|20*" >> temp.txt 
+# create tree, ignore (-I) node_modules, old, temp.txt, .cache, d(public gatsby), 20* (gatsby articles) and .git dirs, include (-a) dotfiles,  put in temp .txt
+tree -Ia "node*|.git|old|temp.txt|.cache|d|20*" >> temp.txt
 
 # add timestamp
 echo "last generated: `date`" >> temp.txt
@@ -33,7 +33,7 @@ echo '```' >> temp-mod.txt
 
 # use jq to get devDependencies, add to temp file
 echo "devDependencies\n" >> temp-mod.txt
-cat ./package.json | jq .devDependencies >> temp-mod.txt 
+cat ./package.json | jq .devDependencies >> temp-mod.txt
 
 # use jq to get devDependencies, add to temp file
 echo "\ndependencies\n" >> temp-mod.txt
@@ -59,7 +59,7 @@ git add . && git commit -v
 # versioning defined by date + increment for disambiguation
 VER_DATE="`date +%Y.%m.%d`"
 
-# get entry total for "today" 
+# get entry total for "today"
 VER_CHECK=`grep $VER_DATE CHANGELOG.md | wc -l`
 
 # increment it (if 0 then 1, if one then next is 2, etc.)
