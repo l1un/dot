@@ -12,7 +12,7 @@ echo '```' >> temp.txt
 tree -Ia "node*|.git|old|temp.txt|.cache|d|20*" >> temp.txt
 
 # add timestamp
-echo "last generated: `date`" >> temp.txt
+echo "last generated: $(date)" >> temp.txt
 
 # close formatting
 echo '```' >> temp.txt
@@ -32,15 +32,15 @@ sed -n -i '1,/###### packages/p;/###### notes/,$p' README.md
 echo '```' >> temp-mod.txt
 
 # use jq to get devDependencies, add to temp file
-echo "devDependencies\n" >> temp-mod.txt
+echo -e "devDependencies\n" >> temp-mod.txt
 cat ./package.json | jq .devDependencies >> temp-mod.txt
 
 # use jq to get devDependencies, add to temp file
-echo "\ndependencies\n" >> temp-mod.txt
+echo -e "\ndependencies\n" >> temp-mod.txt
 cat ./package.json | jq .dependencies >> temp-mod.txt  # TODO: add condtional logic for null
 
 # add timestamp
-echo "\nauto-generated: `date`" >> temp-mod.txt
+echo -e "\nauto-generated: $(date)" >> temp-mod.txt
 
 # close formatting
 echo '```' >> temp-mod.txt
@@ -57,13 +57,13 @@ git add . && git commit -v
 # ------------ 4. update changelog ----------------------
 
 # versioning defined by date + increment for disambiguation
-VER_DATE="`date +%Y.%m.%d`"
+VER_DATE="$(date +%Y.%m.%d)"
 
 # get entry total for "today"
-VER_CHECK=`grep $VER_DATE CHANGELOG.md | wc -l`
+VER_CHECK=$(grep "VER_DATE" CHANGELOG.md | wc -l)
 
 # increment it (if 0 then 1, if one then next is 2, etc.)
-VER_COUNT=$(($VER_CHECK + 1))
+VER_COUNT=$((VER_CHECK + 1))
 
 # full version
 THIS_VERSION="$VER_DATE.$VER_COUNT"
@@ -81,7 +81,7 @@ vi temp-cl.txt
 sed -i '1i`'"${THIS_VERSION}"'`' temp-cl.txt
 
 # add newline to keep md formatting correctly
-echo "\n" >> temp-cl.txt
+echo -e "\n" >> temp-cl.txt
 
 # sed new entry into README append to top of chaglelog section
 sed -i '/###### changelog/r temp-cl.txt' CHANGELOG.md
