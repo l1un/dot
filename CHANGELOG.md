@@ -1,4 +1,9 @@
 ###### changelog
+`2019.05.30.1`
+  - terminator and speedcrunch layouts
+  - set vimtex build directory
+  - `.vimrc` updated `~` to `$HOME` in one instance
+\n
 `2019.05.25.1`
   - rename sync script and change `.bash_alias` to reflect changes
   - add `.lynxrc`, `.tern-config`, `.eslintrc.js` to new script workflow
