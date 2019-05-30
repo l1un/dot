@@ -17,7 +17,7 @@
       parent = ""
       position = 0:0
       size = 683, 761
-      title = ator: ~
+      title = term: ~
       type = Window
     [[[terminal1]]]
       order = 0
@@ -35,7 +35,7 @@
       parent = ""
       position = 0:0
       size = 1366, 768
-      title = ator: ~
+      title = term: ~
       type = Window
     [[[child1]]]
       order = 0
@@ -89,7 +89,7 @@
       parent = ""
       position = 683:0
       size = 683, 768
-      title = ator: ~
+      title = term: ~
       type = Window
     [[[terminal1]]]
       order = 0

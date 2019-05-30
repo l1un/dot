@@ -344,7 +344,7 @@ filetype plugin indent on    " required
         \ 'component_function': {
         \   'filename': 'LightlineFilename',
         \ }
-        \ }
+      \ }
 
   function! LightlineFilename()
     let root = fnamemodify(get(b:, 'git_dir'), ':h')
@@ -367,7 +367,7 @@ filetype plugin indent on    " required
 " ultisnips {
 
     " set directory
-    let g:UltiSnipsSnippetDirectories = ['/home/o12/.vim/ultisnips']
+    let g:UltiSnipsSnippetDirectories = ['$HOME/.vim/ultisnips']
     " expand completion
     let g:UltiSnipsExpandTrigger="kj"
     " open :UltiSnipsEdit in split
@@ -402,6 +402,12 @@ filetype plugin indent on    " required
     let g:tex_flavor='latex'
     let g:vimtex_view_method='zathura'
     let g:vimtex_quickfix_mode=0
+    " seperate build dir, NOTE: clean <LocalLeader>lc within vimtex obeys
+    " this setting when set here, unsure about .latexmkrc
+    let g:vimtex_compiler_latexmk = {
+          \ 'build_dir': './2-pdf',
+      \ }
+
     let g:tex_conceal = '' " turn off internal LaTex syntax behaviour
     " set conceallevel=0
     " let g:tex_conceal='abdmg'
