@@ -1,5 +1,10 @@
 ###### changelog
 `2019.05.30.1`
+  - update project push script with fixes related to bash env and best practice
+  - TODO: rewrite project push script soon
+
+
+`2019.05.30.1`
   - terminator and speedcrunch layouts
   - set vimtex build directory
   - `.vimrc` updated `~` to `$HOME` in one instance
