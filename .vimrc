@@ -70,6 +70,7 @@ filetype plugin indent on    " required
     set tabstop=2
     set softtabstop=2
     set shiftwidth=2
+    set expandtab
 
     " python at ~/.vim/ftplugin/python.vim
     " LaTeX at ~/.vim/ftplugin/tex.vim
