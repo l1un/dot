@@ -1,4 +1,9 @@
 ###### changelog
+`2019.05.31.1`
+  - adjust `speedcrunch.ini` layout
+  - `.vimrc` try global set expandtab again, js vs py configs..
+
+
 `2019.05.30.1`
   - update project push script with fixes related to bash env and best practice
   - TODO: rewrite project push script soon
