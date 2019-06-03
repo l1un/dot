@@ -1,4 +1,8 @@
 ###### changelog
+`2019.06.03.1`
+  - minor tweaks to speedcrunch and .vimrc
+
+
 `2019.05.31.1`
   - adjust `speedcrunch.ini` layout
   - `.vimrc` try global set expandtab again, js vs py configs..
