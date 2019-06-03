@@ -370,7 +370,7 @@ filetype plugin indent on    " required
     " set directory
     let g:UltiSnipsSnippetDirectories = ['$HOME/.vim/ultisnips']
     " expand completion
-    let g:UltiSnipsExpandTrigger="kj"
+    " let g:UltiSnipsExpandTrigger="kj"
     " open :UltiSnipsEdit in split
     let g:UltiSnipsEditSplit="vertical"
 
@@ -379,11 +379,11 @@ filetype plugin indent on    " required
 " you complete me (ycm) {
 
     " ycm preview on bottom
-    set splitbelow
+    " set splitbelow
     " close preview after selecting
-    let g:ycm_autoclose_preview_window_after_completion=1
+    " let g:ycm_autoclose_preview_window_after_completion=1
     " turn off ycm preview on top
-    " set completeopt-=preview
+    set completeopt-=preview
 
     " get documentation word under cursor
     nnoremap <silent> <leader>yD :YcmCompleter GetDoc <CR><c-w>w
