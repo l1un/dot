@@ -15,6 +15,7 @@ update_dot_files() {
 	local source_bashrc_file="$HOME/.bashrc"
 	local source_bash_aliases_file="$HOME/.bash_aliases"
 	local source_eslint_file="$HOME/.eslintrc.js"
+	local source_latexmkrc_file="$HOME/.latexmkrc"
 	local source_lynxrc_file="$HOME/.lynxrc"
 	local source_tern_config_file="$HOME/.tern-config"
 	local source_vimrc_file="$HOME/.vimrc"
@@ -34,6 +35,7 @@ update_dot_files() {
 		$source_bashrc_file
 		$source_bash_aliases_file
 		$source_eslint_file
+    $source_latexmkrc_file
 		$source_lynxrc_file
 		$source_tern_config_file
 		$source_tmux_conf_file

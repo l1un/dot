@@ -33,7 +33,6 @@
 │   ├── open-tmux
 │   ├── save-last-command
 │   ├── sync-dot-files
-│   ├── update-dot-files
 │   ├── update-project-docs
 │   └── update-project-push
 ├── CHANGELOG.md
@@ -48,6 +47,7 @@
 │   │   └── config
 │   └── zathura
 ├── .eslintrc.js
+├── .latexmkrc
 ├── .lynxrc
 ├── other
 │   ├── .babelrc
@@ -64,6 +64,7 @@
 │   ├── .eslintrc.js
 │   ├── gallium
 │   │   ├── .bashrc
+│   │   ├── .latexmkrc
 │   │   ├── notes.md
 │   │   └── xkb
 │   │       ├── chromebook_minimal
@@ -118,8 +119,8 @@
 │       └── text.snippets
 └── .vimrc
 
-29 directories, 66 files
-last generated: Mon Jun  3 17:52:16 PDT 2019
+29 directories, 67 files
+last generated: Tue Jun  4 05:49:19 PDT 2019
 ```
 ###### packages
 ```
@@ -129,7 +130,7 @@ devDependencies
 dependencies
 
 
-auto-generated: Mon Jun  3 17:52:16 PDT 2019
+auto-generated: Tue Jun  4 05:49:19 PDT 2019
 ```
 ###### notes
 ###### [changelog](CHANGELOG.md)
