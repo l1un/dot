@@ -3,10 +3,15 @@
 
 # Things to do on install: (TODO: refine / automate this)
 
+  - adjust keyboard repeat etc. speed
+  - setup window manager tile shortcuts
   - Copy dotfiles, .vimrc, .bashrc, terminator .conf, eslint, etc.
-  - Disable tap to click (see below)
-  - remap search / escape (see below)
+  - Disable tap to click (see below) script or startup
+  - remap search / escape (see below) install script
   - Install terminator, htop, speedcrunch, LaTeX, py venv, linters
+  - Install vim, compile firefox, (some available in new app grid)
+  - Add nvim, node / npm latest
+  - Add script for terminator config (avoid tmux atm here)
 
 # Disable tap to click:
 
