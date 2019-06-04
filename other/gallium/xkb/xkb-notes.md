@@ -1,8 +1,16 @@
 ##### ++ xkb-notes
 
+- add these files to `/usr/share/X11/xkb/symbols`:
+  - chromebook_minimal
+  - chromebook_minimal_vim
+  - xkb_keymap
+
+- copy .xkb directory to $HOME
+
 - after adding files compile with:
 
 `xkbcomp -I$HOME/.xkb ~/.xkb/keymap/mykbd $DISPLAY`
+
 - optional (to possibly add and test) script to check if `xinput list` has changed and recompiles:
 
 ```
