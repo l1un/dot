@@ -399,9 +399,3 @@ filetype plugin indent on    " required
     " let g:tex_conceal='abdmg'
 
 " }
-
-" limelight {
-
-    nnoremap <silent> <leader>Ll :Limelight!!0.8 <CR>
-
-" }
