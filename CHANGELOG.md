@@ -1,5 +1,9 @@
 ###### changelog
 `2019.06.03.1`
+  - remove a few plugins and settings not used in `.vimrc`
+
+
+`2019.06.03.1`
   - minor tweaks to speedcrunch and .vimrc
 
 
