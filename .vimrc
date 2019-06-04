@@ -15,8 +15,6 @@ Plugin 'w0rp/ale'
 Plugin 'scrooloose/nerdcommenter'
 " Add You Complete Me
 Plugin 'Valloric/YouCompleteMe'
-" Vim Instant Markdown
-Plugin 'suan/vim-instant-markdown'
 " Monokai
 Plugin 'crusoexia/vim-monokai'
 " vim-javascript
@@ -34,8 +32,6 @@ Plugin 'itchyny/lightline.vim'
 " fzf
 Plugin 'junegunn/fzf'
 Plugin 'junegunn/fzf.vim'
-" codi (code scratchpad)
-Plugin 'metakirby5/codi.vim'
 " surround.vim
 Plugin 'tpope/vim-surround'
 " repeat.vim
@@ -53,10 +49,6 @@ Plugin 'lervag/vimtex'
 " utltisnips
 Plugin 'SirVer/ultisnips'
 Plugin 'honza/vim-snippets'
-" goyo
-Plugin 'junegunn/goyo.vim'
-" limelight
-Plugin 'junegunn/limelight.vim'
 
 " call vundle
 call vundle#end()            " required
@@ -331,13 +323,6 @@ filetype plugin indent on    " required
 
 " }
 
-" instant markdown {
-
-    " instant markdown autostart
-    let g:instant_markdown_autostart = 0
-
-" }
-
 " lightline {
 
   " lightline relative paths (requires fugitive)
@@ -420,11 +405,3 @@ filetype plugin indent on    " required
     nnoremap <silent> <leader>Ll :Limelight!!0.8 <CR>
 
 " }
-
-" goyo {
-
-    nnoremap <silent> <leader>Gg :Goyo <CR>
-
-" }
-
-" packloadall
