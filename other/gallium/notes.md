@@ -1,3 +1,13 @@
+(3.0.1 beta) - Mon Jun  3 17:22:52 PDT 2019
+-------------------------------------------
+
+- Disable tap to click:
+
+  - Find ID: `xinput --list`
+  - Disable: `xinput --set-int-prop <id> "Tap Enable" 8 0`
+  - Renable: `xinput --set-int-prop <id> "Tap Enable" 8 1`
+  - Add to Startup autocommand.
+
 - add to .bashrc to get 256 color in `xfce-terminal` for vim colorscheme to work etc.
 
 https://bbs.archlinux.org/viewtopic.php?id=175581
