@@ -1,4 +1,9 @@
 ###### changelog
+`2019.06.04.1`
+  - update project update script to include `.latexmkrc`
+  - add `.latexmkrc` to gallium (start organizing to sync)
+
+
 `2019.06.03.1`
   - remove py unused
 
