@@ -1,0 +1,37 @@
+#!/usr/bin/env bash
+
+#### Name: toggle-touchpad
+#### Created: 06.3.2019
+#### Description: Disable touchpad to avoid annoyance while typing.
+#### Usecases: GalliumOS, distros with accessibility limitations.
+#### Notes: Use `xinput --list` to find <ID> and change accordingly.
+
+toggle_touchpad() {
+
+  # USER DEFINED: Find via: `xinput --list`
+  local device_id=9
+
+  # Look up current state.
+  local device_state
+  device_state=$(
+    xinput list-props "$device_id" |\
+      grep "Device Enabled" |\
+      grep -o "[01]$"
+  )
+
+  # Toggle it accordingly.
+  if [ "$device_state" == '1' ]; then
+    xinput --disable "$device_id"
+    echo
+    echo -e 'Touchpad: \e[91mDISABLED'
+    echo
+  else
+    xinput --enable "$device_id"
+    echo
+    echo -e 'Touchpad: \e[92mENABLED'
+    echo
+  fi
+
+}
+
+toggle_touchpad

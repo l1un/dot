@@ -1,4 +1,9 @@
 ###### changelog
+
+`2019.06.04.2`
+  - add gallium notes related to `xlist` disable touchpad
+  - add `disable-touchpad` script to `gallium/bin`
+
 `2019.06.04.1`
   - update project update script to include `.latexmkrc`
   - add `.latexmkrc` to gallium (start organizing to sync)

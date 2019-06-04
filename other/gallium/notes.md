@@ -1,4 +1,4 @@
-(3.0.1 beta) - Mon Jun  3 17:22:52 PDT 2019
+(3.0.2 beta) - Tue Jun 4 17:22:52 PDT 2019
 -------------------------------------------
 
 # Things to do on install: (TODO: refine / automate this)
@@ -7,18 +7,22 @@
   - setup window manager tile shortcuts
   - Copy dotfiles, .vimrc, .bashrc, terminator .conf, eslint, etc.
   - Disable tap to click (see below) script or startup
-  - remap search / escape (see below) install script
+  - FIXME: (reverts) remap search / escape (see below) install script
   - Install terminator, htop, speedcrunch, LaTeX, py venv, linters
   - Install vim, compile firefox, (some available in new app grid)
   - Add nvim, node / npm latest
   - Add script for terminator config (avoid tmux atm here)
+  - Add script to togle touchpad
 
-# Disable tap to click:
+# Disable tap to click or touchpad completely:
 
   - Find ID: `xinput --list`
-  - Disable: `xinput --set-int-prop <id> "Tap Enable" 8 0`
-  - Renable: `xinput --set-int-prop <id> "Tap Enable" 8 1`
-  - Add to Startup autocommand.
+
+  - Disable TTC: `xinput --set-int-prop <id> "Tap Enable" 8 0`
+  - Renable TTC: `xinput --set-int-prop <id> "Tap Enable" 8 1`
+
+  - Disable Touchpad: `xinput --set-prop <id> "Device Enabled" 0`
+  - Renable Touchpad: `xinput --set-prop <id> "Device Enabled" 1`
 
 ```
 case "$TERM" in
@@ -27,7 +31,7 @@ esac
 
 ```
 
-(Tested with 3.0.1 beta) - OLD
+(Tested with 3.0.2 beta) - OLD
 ------------------------------
 
 # Remap escape to search (xkb)
@@ -89,7 +93,7 @@ esac
 
 ```
 
-(Possibly fixed with 3.0.1 beta) - OLD
+(Possibly fixed with 3.0.2 beta) - OLD
 ---------------------------------------
 - add to .bashrc to get 256 color in `xfce-terminal` for vim colorscheme to work etc.
 
