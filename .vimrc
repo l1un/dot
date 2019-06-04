@@ -377,8 +377,6 @@ filetype plugin indent on    " required
     highlight Pmenu ctermfg=Green ctermbg=Black
     highlight PmenuSel ctermfg=Black ctermbg=Green
 
-    " let g:ycm_server_python_interpreter='/usr/bin/python'
-    " let g:ycm_global_ycm_extra_conf='~/.ycm_extra_conf.py'
     let g:ycm_python_binary_path='python'
 
 " }
