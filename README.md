@@ -64,6 +64,9 @@
 │   ├── .eslintrc.js
 │   ├── gallium
 │   │   ├── .bashrc
+│   │   ├── bin
+│   │   │   ├── set-keymap
+│   │   │   └── toggle-touchpad
 │   │   ├── .latexmkrc
 │   │   ├── notes.md
 │   │   └── xkb
@@ -83,6 +86,8 @@
 │   │   └── package.json
 │   ├── gulp
 │   │   └── gulpfile.babel.js
+│   ├── lint
+│   │   └── linter-list-cheatsheet.md
 │   ├── lynx
 │   │   ├── bash_bookmarks.html
 │   │   ├── lynx_bookmarks.html
@@ -119,8 +124,8 @@
 │       └── text.snippets
 └── .vimrc
 
-29 directories, 67 files
-last generated: Tue Jun  4 05:49:19 PDT 2019
+31 directories, 70 files
+last generated: Fri Jun  7 07:08:40 PDT 2019
 ```
 ###### packages
 ```
@@ -130,7 +135,7 @@ devDependencies
 dependencies
 
 
-auto-generated: Tue Jun  4 05:49:19 PDT 2019
+auto-generated: Fri Jun  7 07:08:40 PDT 2019
 ```
 ###### notes
 ###### [changelog](CHANGELOG.md)

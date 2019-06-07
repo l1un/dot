@@ -70,6 +70,16 @@ filetype plugin indent on    " required
 
 " }
 
+" Movements {
+
+    " reverse exlusive linewise behavior when wrap is on
+    noremap j gj
+    noremap k gk
+    noremap gj j
+    noremap gk k
+
+" }
+
 " colors, aesthetics, setup {
 
     " auto follow directory
