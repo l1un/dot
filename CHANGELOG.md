@@ -1,4 +1,8 @@
 ###### changelog
+`2019.06.07.1`
+  - reverse linewise exclusive movements keys `.vimrc`
+
+
 
 `2019.06.04.2`
   - add gallium notes related to `xlist` disable touchpad
