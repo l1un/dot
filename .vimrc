@@ -133,11 +133,11 @@ filetype plugin indent on    " required
     autocmd BufWinLeave * call clearmatches()
 
 
-    " save code folding after closing / reopening files
-    augroup savefolding
+    " persisant folds fixed - (mkview, loadview, do not remember syntax)
+    augroup SaveFoldState
       autocmd!
-      autocmd BufWinLeave *.* mkview
-      autocmd BufWinEnter *.* silent loadview
+      autocmd BufWinLeave ?* mkview | filetype detect
+      autocmd BufWinEnter ?* silent loadview | filetype detect
     augroup END
 
     " netrw
@@ -216,7 +216,8 @@ filetype plugin indent on    " required
     " source vimrc
     nnoremap <silent> <Leader>so :so $MYVIMRC<CR>
     " quick edit notes (vcs to gist)
-    nnoremap <silent> <Leader>en :sp ~/notes/88c8f4f99bb6bbd510ef1461ec06044f/notes.md<CR>
+    nnoremap <silent> <Leader>en :sp
+          \ ~/notes/88c8f4f99bb6bbd510ef1461ec06044f/notes.md<CR>
     " quick edit tmux
     nnoremap <silent> <Leader>et :tabnew<CR>:e ~/.tmux.conf<CR>
     " quick edit bash aliases
@@ -365,7 +366,8 @@ filetype plugin indent on    " required
     " set directory
     let g:UltiSnipsSnippetDirectories = ['$HOME/.vim/ultisnips']
     " expand completion
-    " let g:UltiSnipsExpandTrigger="kj"
+    let g:UltiSnipsExpandTrigger="Kj"
+
     " open :UltiSnipsEdit in split
     let g:UltiSnipsEditSplit="vertical"
 
