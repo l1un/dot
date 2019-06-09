@@ -1,5 +1,9 @@
 ###### changelog
 `2019.06.08.1`
+  - Update shortcuts for sourcing .vimrc and browsing files netrw
+
+
+`2019.06.08.1`
   - Fix behavior where saving folds was conflicting.
   - Finally find a seemingly conflict-free ultisnips / YCM trigger
   - Speedcrunch tweaks
