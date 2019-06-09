@@ -1,4 +1,10 @@
 ###### changelog
+`2019.06.08.1`
+  - Fix behavior where saving folds was conflicting.
+  - Finally find a seemingly conflict-free ultisnips / YCM trigger
+  - Speedcrunch tweaks
+
+
 `2019.06.07.1`
   - reverse linewise exclusive movements keys `.vimrc`
 
