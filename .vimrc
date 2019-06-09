@@ -214,7 +214,7 @@ filetype plugin indent on    " required
     " quick edit .vimrc
     nnoremap <silent> <Leader>ev :sp $MYVIMRC<CR>
     " source vimrc
-    nnoremap <silent> <Leader>so :so $MYVIMRC<CR>
+    nnoremap <silent> <Leader>sv :so $MYVIMRC<CR>
     " quick edit notes (vcs to gist)
     nnoremap <silent> <Leader>en :sp
           \ ~/notes/88c8f4f99bb6bbd510ef1461ec06044f/notes.md<CR>
@@ -224,8 +224,8 @@ filetype plugin indent on    " required
     nnoremap <silent> <Leader>eba :tabnew<CR>:e ~/.bash_aliases<CR>
     " quick edit bashrc
     nnoremap <silent> <Leader>ebc :tabnew<CR>:e ~/.bashrc<CR>
-    " open netrw
-    nnoremap <silent> <Leader>nw :Vexplore<CR>
+    " open netrw (bf browse files)
+    nnoremap <silent> <Leader>bf :Vexplore<CR>
     " quick edit snippets
     nnoremap <silent> <Leader>es :UltiSnipsEdit<CR>
 
