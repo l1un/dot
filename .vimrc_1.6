@@ -8,48 +8,34 @@
     nnoremap <Leader>bp :bp<CR>
 
 " }}}
-" Copy + Paste ---------------------------------------------------- {{{
+" Copy, Paste, Registers ------------------------------------------ {{{
 
+    " X11, vim-gtk, clipboard support required:
     " Copy selected test to system clipboard
-    vnoremap <Leader>y "+y:echom "Copied to Clipboard"<CR>
-    " Paste system clipboard to Vim
-    nnoremap <Leader>p :set paste<CR>"+p:set nopaste<CR>
-          \:echom "Pasted from Clipboard"<CR>
+    " vnoremap <Leader>y \"+y:echom \"Copied to Clipboard"<CR>
+    " Paste clipboard
+    " vnoremap <Leader>p \"+p:echom \"Pasted from Clipboard"<CR>
+
+    " Paste Toggle, ouput state
+		nnoremap <Leader>p :set paste!<CR>:set paste?<CR>
 
 " }}}
-" Core Keymaps, Movements, Settings ------------------------------- {{{
+" Echo Examples --------------------------------------------------- {{{
 
-    " <jk> to exit insert
-    inoremap jk <Esc>
-    " <Esc> to end of line insert
-    inoremap <Esc> <C-o>A
-
-    " Reverse exclusive linewise behaviour when wrap is on
-    noremap j gj
-    noremap k gk
-    noremap gj j
-    noremap gk k
-
-    " New line below, stay in normal
-    nnoremap <Leader>o o<Esc>k
-    " New line above, stay in normal
-    nnoremap <Leader>O O<Esc>j
-    " New line below and above, stay in normal
-    nnoremap <Leader>= o<Esc>kO<Esc>j
-
-    " _ Move the current line down
-    nnoremap <Leader>_ ddp
-    " - Move the current line up
-    nnoremap <Leader>- dd<esc>kkp<esc>
-
-" }}}
-" Echo ------------------------------------------------------------ {{{
-
-    " Test Echom
-    echom "Using echom: >^.^<"
+    " C: Echo in color
+    " echohl WarningMsg | echom 'WarningMsg'
+    " echohl Error | echom 'Error'
+    " echohl Title | echom 'Title'
+    " echohl None
 
 " }}}
 " Folding, Settings, Shortcuts ------------------------------------ {{{
+
+    " TODO: Filetype foldmethods
+    set foldmethod=marker
+
+    " Toggle folds
+    nnoremap <Leader><space> za
 
     " Persist Folds Fixed - (mkview, loadview do not remember syntax)
     augroup SaveFoldState
@@ -77,18 +63,33 @@
     set tabstop=2
 
 " }}}
-" Leaders, Mappings, Settings ------------------------------------- {{{
+" Maps, Remaps, Movements, Shortcuts ------------------------------ {{{
 
     let mapleader = ","
     let maplocalleader = "\\"
 
-" }}}
-" Line Numbers Settings ------------------------------------------- {{{
+    " <jk> to exit insert
+    inoremap jk <Esc>
+    " <Esc> to end of line insert
+    inoremap <Esc> <C-o>A
 
-    " Hybrid numbers
-    set number
-    set relativenumber
-    set numberwidth=1
+    " Reverse exclusive linewise behaviour when wrap is on
+    noremap j gj
+    noremap k gk
+    noremap gj j
+    noremap gk k
+
+    " New line below, stay in normal
+    nnoremap <Leader>o o<Esc>k
+    " New line above, stay in normal
+    nnoremap <Leader>O O<Esc>j
+    " New line below and above, stay in normal
+    nnoremap <Leader>= o<Esc>kO<Esc>j
+
+    " _ Move the current line down
+    nnoremap <Leader>_ ddp
+    " - Move the current line up
+    nnoremap <Leader>- dd<esc>kkp<esc>
 
 " }}}
 " NETRW File Browser ---------------------------------------------- {{{
@@ -109,16 +110,21 @@
     set nocompatible
 
 " }}}
-" Source, Reload Files -------------------------------------------- {{{
+" Set, Lines, Numbers, Cursors, Wrap ------------------------------ {{{
 
-    " Source .vimrc
-    nnoremap <Leader>sv :so ~/Projects/learn-vimscript-the-hardway/.vimrcc<CR>
+    " Hybrid numbers
+    set number
+    set relativenumber
+    set numberwidth=1
+
+    " Cursor line
+    set cursorline
 
 " }}}
 " Syntax, Colors -------------------------------------------------- {{{
 
     syntax on
-    colorscheme molokay
+    colorscheme molokai
 
 " }}}
 " Uppercase Words ------------------------------------------------- {{{
@@ -140,12 +146,12 @@
     autocmd BufWinLeave * call clearmatches()
 
 " }}}
-" Quick Edit Files ------------------------------------------------ {{{
+" Quick Edit + Source Files --------------------------------------- {{{
 
     " .vimrc
     nnoremap <silent> <Leader>ev :sp $MYVIMRC<CR>
     " notes
-    nnoremap <silent> <Leader>en :sp
+    nnoremap <silent> <Leader>en :tabnew
           \ ~/notes/88c8f4f99bb6bbd510ef1461ec06044f/notes.md<CR>
     " tmux
     nnoremap <silent> <Leader>et :tabnew<CR>:e ~/.tmux.conf<CR>
@@ -155,5 +161,10 @@
     nnoremap <silent> <Leader>ebc :tabnew<CR>:e ~/.bashrc<CR>
     " snippets
     nnoremap <silent> <Leader>es :UltiSnipsEdit<CR>
+
+    " Source .vimrc, echo status
+    nnoremap <Leader>sv :so ~/.vimrc<CR>
+          \ :echon ":so[urce] " \| :echohl Error \|
+          \ echon $MYVIMRC \| echohl None<CR>
 
 " }}}
