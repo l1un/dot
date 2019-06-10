@@ -1,0 +1,170 @@
+" Buffer Shortcuts ------------------------------------------------ {{{
+
+    " List buffers, prep prompt for selection
+    nnoremap <Leader>bl :ls<CR>:b<Space>
+    " Next buffer
+    nnoremap <Leader>bn :bn<CR>
+    " Previous buffer
+    nnoremap <Leader>bp :bp<CR>
+
+" }}}
+" Copy, Paste, Registers ------------------------------------------ {{{
+
+    " X11, vim-gtk, clipboard support required:
+    " Copy selected test to system clipboard
+    " vnoremap <Leader>y \"+y:echom \"Copied to Clipboard"<CR>
+    " Paste clipboard
+    " vnoremap <Leader>p \"+p:echom \"Pasted from Clipboard"<CR>
+
+    " Paste Toggle, ouput state
+		nnoremap <Leader>p :set paste!<CR>:set paste?<CR>
+
+" }}}
+" Echo Examples --------------------------------------------------- {{{
+
+    " C: Echo in color
+    " echohl WarningMsg | echom 'WarningMsg'
+    " echohl Error | echom 'Error'
+    " echohl Title | echom 'Title'
+    " echohl None
+
+" }}}
+" Folding, Settings, Shortcuts ------------------------------------ {{{
+
+    " TODO: Filetype foldmethods
+    set foldmethod=marker
+
+    " Toggle folds
+    nnoremap <Leader><space> za
+
+    " Persist Folds Fixed - (mkview, loadview do not remember syntax)
+    augroup SaveFoldState
+        autocmd!
+        autocmd BufWinLeave ?* mkview | filetype detect
+        autocmd BufWinEnter ?* silent! loadview | filetype detect
+    augroup END
+
+    " Show folded lines, first-line text, total lines folded
+    function! ShowFoldMessage()
+      let get_total_lines = v:foldend - v:foldstart + 1 . ' lines              '
+      let get_text = substitute(getline(v:foldstart), "{{*", get_total_lines, 1)
+      let show_message = get_text
+      return show_message
+    endfunction
+    set foldtext=ShowFoldMessage()
+
+" }}}
+" Indentation Settings -------------------------------------------- {{{
+
+    filetype plugin indent on
+    set softtabstop=2
+    set shiftwidth=2
+    set expandtab
+    set tabstop=2
+
+" }}}
+" Maps, Remaps, Movements, Shortcuts ------------------------------ {{{
+
+    let mapleader = ","
+    let maplocalleader = "\\"
+
+    " <jk> to exit insert
+    inoremap jk <Esc>
+    " <Esc> to end of line insert
+    inoremap <Esc> <C-o>A
+
+    " Reverse exclusive linewise behaviour when wrap is on
+    noremap j gj
+    noremap k gk
+    noremap gj j
+    noremap gk k
+
+    " New line below, stay in normal
+    nnoremap <Leader>o o<Esc>k
+    " New line above, stay in normal
+    nnoremap <Leader>O O<Esc>j
+    " New line below and above, stay in normal
+    nnoremap <Leader>= o<Esc>kO<Esc>j
+
+    " _ Move the current line down
+    nnoremap <Leader>_ ddp
+    " - Move the current line up
+    nnoremap <Leader>- dd<esc>kkp<esc>
+
+" }}}
+" NETRW File Browser ---------------------------------------------- {{{
+
+    let g:netrw_banner = 0
+    let g:netrw_liststyle = 3
+    let g:netrw_browse_split = 4
+    let g:netrw_altv = 1
+    let g:netrw_winsize = 33
+
+    " Browse Files - <bf>
+    nnoremap <silent><Leader>bf :Vexplore<CR>
+
+" }}}
+" OMNI Tab Completion --------------------------------------------- {{{
+
+    " Omnicompletion :h cmdline-completion
+    set nocompatible
+
+" }}}
+" Set, Lines, Numbers, Cursors, Wrap ------------------------------ {{{
+
+    " Hybrid numbers
+    set number
+    set relativenumber
+    set numberwidth=1
+
+    " Cursor line
+    set cursorline
+
+" }}}
+" Syntax, Colors -------------------------------------------------- {{{
+
+    syntax on
+    colorscheme molokai
+
+" }}}
+" Uppercase Words ------------------------------------------------- {{{
+
+    " Uppcase word while in insert mode and continue at same position
+    inoremap <C-u> <Esc>viw~ea
+    " Mark position, uppercase word, return to position in normal mode
+    nnoremap <C-u> m`viw~<C-o>
+
+" }}}
+" Whitespace Awareness -------------------------------------------- {{{
+
+    " Show whitespace
+    highlight ExtraWhitespace ctermbg=red
+    match ExtraWhitespace /\s+$/
+    autocmd BufWinEnter * match ExtraWhitespace /\s\+$/
+    autocmd InsertEnter * match ExtraWhitespace /\s\+\%#\@<!$/
+    autocmd InsertLeave * match ExtraWhitespace /\s\+$/
+    autocmd BufWinLeave * call clearmatches()
+
+" }}}
+" Quick Edit + Source Files --------------------------------------- {{{
+
+    " .vimrc
+    nnoremap <silent> <Leader>ev :sp $MYVIMRC<CR>
+    " notes
+    nnoremap <silent> <Leader>en :tabnew
+          \ ~/notes/88c8f4f99bb6bbd510ef1461ec06044f/notes.md<CR>
+    " tmux
+    nnoremap <silent> <Leader>et :tabnew<CR>:e ~/.tmux.conf<CR>
+    " .bash aliases
+    nnoremap <silent> <Leader>eba :tabnew<CR>:e ~/.bash_aliases<CR>
+    " .bashrc
+    nnoremap <silent> <Leader>ebc :tabnew<CR>:e ~/.bashrc<CR>
+    " snippets
+    nnoremap <silent> <Leader>es :UltiSnipsEdit<CR>
+
+    " Source .vimrc, echo status
+    nnoremap <Leader>sv :so ~/.vimrc<CR>
+          \ :echon ":so[urce] " \| :echohl Error \|
+          \ echon $MYVIMRC \| echohl None<CR>
+
+" }}}
