@@ -1,4 +1,13 @@
 ###### changelog
+`2019.06.12.1`
+  - `.vimrc`
+    - merge all relevant changes from 1.7
+    - clean-up format for foldmethod=marker (current global)
+    - move from monokai to molokai colorscheme and remove plugin accordingly
+  - `.vimrc_1.7` minor edits
+  - speedcrunch geometry tweak
+
+
 `2019.06.11.1`
   - `.vimrc_1.7`
     - fix leaders (move to top)
