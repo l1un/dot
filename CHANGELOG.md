@@ -1,4 +1,10 @@
 ###### changelog
+`2019.06.11.1`
+  - `.vimrc_1.7`
+    - fix leaders (move to top)
+    - refactor folding function to display nicely multiplatform
+    - other tweaks ongoing
+
 `2019.06.08.1`
   - Update shortcuts for sourcing .vimrc and browsing files netrw
 
