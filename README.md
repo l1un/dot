@@ -122,10 +122,11 @@
 │   └── ultisnips
 │       ├── javascript.snippets
 │       └── text.snippets
-└── .vimrc
+├── .vimrc
+└── .vimrc_1.7
 
-31 directories, 70 files
-last generated: Sat Jun  8 21:20:51 PDT 2019
+31 directories, 71 files
+last generated: Wed Jun 12 09:45:26 PDT 2019
 ```
 ###### packages
 ```
@@ -135,7 +136,7 @@ devDependencies
 dependencies
 
 
-auto-generated: Sat Jun  8 21:20:51 PDT 2019
+auto-generated: Wed Jun 12 09:45:26 PDT 2019
 ```
 ###### notes
 ###### [changelog](CHANGELOG.md)
