@@ -1,8 +1,8 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 # launch tmux with options & keep shell open ok
 tmuxs() {
-  tmux new-session \; split-window -v \; resize-pane -y 9\; rename-window env \; attach
+  tmux new-session \; split-window -v \; resize-pane -y 9\; rename-window tmux \; attach
   $SHELL
 }
 

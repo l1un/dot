@@ -97,7 +97,7 @@
 
         " Search Behaviour, RegEx Typing
         set incsearch
-        set ignorecase
+        " set ignorecase
 
         " Follow Working Directory
         set autochdir
@@ -161,6 +161,9 @@
         nnoremap <Leader>bn :bn<CR>
         " Previous Buffer
         nnoremap <Leader>bp :bp<CR>
+
+        " Open current buffer in new tab (toggle larger view)
+        nnoremap <Leader>ts :tab split <CR>
 
     " }}}
     " 1.3. Whitespace Awareness ----------------------------------- {{{
@@ -323,14 +326,14 @@
         let g:ale_sign_column_always = 0
 
     " }}}
-    " 4.2. Fzf --------------------------------------------------- {{{
+    " 4.2. Fzf ---------------------------------------------------- {{{
 
         " test fzf completion
         " inoremap <expr> <c-x><c-k>
               " \ fzf#vim#complete('cat /usr/share/dict/words')
 
     " }}}
-    " 4.3. Indent Lines ------------------------------------------ {{{
+    " 4.3. Indent Lines ------------------------------------------- {{{
 
         " indent guides/lines hide '$' at end of lines etc...
         set listchars=""
@@ -343,7 +346,7 @@
         " let g:indentLine_char = '|'
 
     " }}}
-    " 4.4. Lightline --------------------------------------------- {{{
+    " 4.4. Lightline ---------------------------------------------- {{{
 
         " lightline relative paths (requires fugitive)
         let g:lightline = {
@@ -362,13 +365,13 @@
         endfunction
 
     " }}}
-    " 4.5. Nerd Comments ---------------------------------------- {{{
+    " 4.5. Nerd Comments ------------------------------------------ {{{
 
         " add spaces to nerd/sexy comments (Standard JS no-warn msg)
         let NERDSpaceDelims=1
 
     " }}}
-    " 4.6. Ultisnips -------------------------------------------- {{{
+    " 4.6. Ultisnips ---------------------------------------------- {{{
 
         " set directory
         let g:UltiSnipsSnippetDirectories = ['$HOME/.vim/ultisnips']
@@ -378,7 +381,7 @@
         let g:UltiSnipsEditSplit="vertical"
 
     " }}}
-    " 4.7. YCM - You Complete Me -------------------------------- {{{
+    " 4.7. YCM - You Complete Me ---------------------------------- {{{
 
         " ycm preview on bottom
         " set splitbelow
@@ -399,7 +402,7 @@
         let g:ycm_python_binary_path='python'
 
     " }}}
-    " 4.8. VimTeX ----------------------------------------------- {{{
+    " 4.8. VimTeX ------------------------------------------------- {{{
 
         let g:tex_flavor='latex'
         let g:vimtex_view_method='zathura'
