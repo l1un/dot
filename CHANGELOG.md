@@ -1,4 +1,10 @@
 ###### changelog
+`2019.06.16.1`
+  - remap to move buffer to new tab, disable ignorecase `.vimrc`
+  - update `/bin/open-tmux` to bash env
+  - `speedcrunch.ini` dynamic tweaks
+
+
 `2019.06.12.1`
   - `.vimrc`
     - merge all relevant changes from 1.7
