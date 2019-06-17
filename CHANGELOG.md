@@ -1,5 +1,11 @@
 ###### changelog
 `2019.06.16.1`
+  - new terminator .conf for LaTeX math flow
+  - new vim `:vsplit` command
+  - speed crunch geometry
+
+
+`2019.06.16.1`
   - remap to move buffer to new tab, disable ignorecase `.vimrc`
   - update `/bin/open-tmux` to bash env
   - `speedcrunch.ini` dynamic tweaks
