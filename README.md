@@ -47,6 +47,7 @@
 │   │   └── config
 │   └── zathura
 ├── .eslintrc.js
+├── gnuplot-test.gnu
 ├── .latexmkrc
 ├── .lynxrc
 ├── other
@@ -125,8 +126,8 @@
 ├── .vimrc
 └── .vimrc_1.7
 
-31 directories, 71 files
-last generated: Sun Jun 16 13:03:25 PDT 2019
+31 directories, 72 files
+last generated: Sun Jun 16 22:05:47 PDT 2019
 ```
 ###### packages
 ```
@@ -136,7 +137,7 @@ devDependencies
 dependencies
 
 
-auto-generated: Sun Jun 16 13:03:25 PDT 2019
+auto-generated: Sun Jun 16 22:05:47 PDT 2019
 ```
 ###### notes
 ###### [changelog](CHANGELOG.md)

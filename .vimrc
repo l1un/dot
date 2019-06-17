@@ -163,7 +163,10 @@
         nnoremap <Leader>bp :bp<CR>
 
         " Open current buffer in new tab (toggle larger view)
-        nnoremap <Leader>ts :tab split <CR>
+        nnoremap <Leader>ts :tab split<CR>
+
+        " Trim whitespace at end of lines
+        nnoremap <Leader>tw :%s/\s\+$//e<CR>
 
     " }}}
     " 1.3. Whitespace Awareness ----------------------------------- {{{
@@ -222,6 +225,7 @@
 
     " .vimrc
     nnoremap <silent> <Leader>ev :sp $MYVIMRC<CR>
+    nnoremap <silent> <Leader>eV :vsp $MYVIMRC<CR>
     " notes
     nnoremap <silent> <Leader>en :sp
           \ ~/notes/88c8f4f99bb6bbd510ef1461ec06044f/notes.md<CR>
