@@ -1,5 +1,9 @@
 ###### changelog
 `2019.06.16.1`
+  - remove stray gnuplot file
+
+
+`2019.06.16.1`
   - new terminator .conf for LaTeX math flow
   - new vim `:vsplit` command
   - speed crunch geometry
