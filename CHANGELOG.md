@@ -1,4 +1,9 @@
 ###### changelog
+`2019.06.19.1`
+  - speed crunch tweaks
+  - project script updates in progress
+
+
 `2019.06.16.1`
   - remove stray gnuplot file
 
