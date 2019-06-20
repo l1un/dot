@@ -13,6 +13,7 @@
   - Add nvim, node / npm latest
   - Add script for terminator config (avoid tmux atm here)
   - Add script to togle touchpad
+  - Install / config unclutter
 
 # Disable tap to click or touchpad completely:
 
