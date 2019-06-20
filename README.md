@@ -28,6 +28,7 @@
 │   ├── add-changelog-entry
 │   ├── add-npm-entry
 │   ├── add-tree-entry
+│   ├── arb
 │   ├── change-bash-profile
 │   ├── copy-shell-scripts
 │   ├── open-tmux
@@ -125,8 +126,8 @@
 ├── .vimrc
 └── .vimrc_1.7
 
-31 directories, 71 files
-last generated: Sun Jun 16 22:11:24 PDT 2019
+32 directories, 71 files
+last generated: Wed Jun 19 20:47:10 PDT 2019
 ```
 ###### packages
 ```
@@ -136,7 +137,7 @@ devDependencies
 dependencies
 
 
-auto-generated: Sun Jun 16 22:11:24 PDT 2019
+auto-generated: Wed Jun 19 20:47:10 PDT 2019
 ```
 ###### notes
 ###### [changelog](CHANGELOG.md)
