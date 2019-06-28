@@ -1,4 +1,8 @@
 ###### changelog
+`2019.06.28.1`
+  - testing vim markdown, usual speedcrunch
+
+
 `2019.06.20.1`
   - sc test
 
