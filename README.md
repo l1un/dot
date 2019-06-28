@@ -70,6 +70,7 @@
 │   │   │   └── toggle-touchpad
 │   │   ├── .latexmkrc
 │   │   ├── notes.md
+│   │   ├── .vimrc
 │   │   └── xkb
 │   │       ├── chromebook_minimal
 │   │       ├── chromebook_minimal_vim
@@ -126,8 +127,8 @@
 ├── .vimrc
 └── .vimrc_1.7
 
-32 directories, 71 files
-last generated: Thu Jun 20 05:07:06 PDT 2019
+32 directories, 72 files
+last generated: Fri Jun 28 16:22:20 PDT 2019
 ```
 ###### packages
 ```
@@ -137,7 +138,7 @@ devDependencies
 dependencies
 
 
-auto-generated: Thu Jun 20 05:07:06 PDT 2019
+auto-generated: Fri Jun 28 16:22:20 PDT 2019
 ```
 ###### notes
 ###### [changelog](CHANGELOG.md)

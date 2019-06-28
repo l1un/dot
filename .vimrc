@@ -50,6 +50,9 @@
         " utltisnips
         Plugin 'SirVer/ultisnips'
         Plugin 'honza/vim-snippets'
+        " vim-markdown
+        " Plugin 'godlygeek/tabular'
+        " Plugin 'plasticboy/vim-markdown'
 
         " call vundle
         call vundle#end()            " required
@@ -114,6 +117,10 @@
         set linebreak
         set nolist " list disables linebreak
 
+        " FIXME: Speedup scrolling
+        set lazyredraw
+        set regexpengine=1
+
     " }}}
     " 1.2. Remapping ---------------------------------------------- {{{
 
@@ -128,7 +135,7 @@
         " Jump to EOL in insert
         inoremap <Esc> <nop>
         " New line below / cursor stays
-        nnoremap <Enter> o<ESC>k
+        " nnoremap <Enter> o<ESC>k
 
         " New line above / cursor stays
         noremap <Leader>O O<Esc>j
@@ -197,6 +204,10 @@
 
         " TODO: Filetype foldmethods
         set foldmethod=marker
+
+        " FIXME: testing
+        let g:markdown_folding = 1
+        let g:markdown_enable_folding = 1
 
         " Persisant Folds 2.0 - (mkview, loadview, do not remember syntax)
         augroup SaveFoldState
