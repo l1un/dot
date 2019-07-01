@@ -1,3 +1,18 @@
+(3.0.2 beta) - Sat Jun 29 16:18:23 PDT 2019
+-------------------------------------------
+
+  - usb ethernet fix:
+
+https://www.reddit.com/r/GalliumOS/comments/93zm8j/my_realtek_r8153based_ethernetusb_adapter_no/
+
+https://askubuntu.com/questions/882806/ethernet-device-not-managed/893614#893614
+
+```
+sudo touch /etc/NetworkManager/conf.d/10-globally-managed-devices.conf
+sudo service network-manager restart
+
+```
+
 (3.0.2 beta) - Tue Jun 4 17:22:52 PDT 2019
 -------------------------------------------
 
