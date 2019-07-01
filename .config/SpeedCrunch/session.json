@@ -1,0 +1,43 @@
+{
+    "functions": [
+        {
+            "args": [
+                "b",
+                "h"
+            ],
+            "expression": "1/2 * (b * h)",
+            "name": "triArea"
+        },
+        {
+            "args": [
+                "p",
+                "n"
+            ],
+            "expression": "(1-p)^(n-1)*p",
+            "name": "geometpdf"
+        }
+    ],
+    "history": [
+    ],
+    "variables": [
+        {
+            "identifier": "ans",
+            "type": "BuiltIn",
+            "value": {
+                "numeric_value": {
+                    "value": "0.055848076855744654491196979205102169984351980780677254890342667381286477256506"
+                }
+            }
+        },
+        {
+            "identifier": "sd",
+            "type": "User",
+            "value": {
+                "numeric_value": {
+                    "value": "5.400000000000000000000000000000000000000000000000000000000000000000000000000000"
+                }
+            }
+        }
+    ],
+    "version": "0.12"
+}
