@@ -17,7 +17,7 @@
         " Nerd Commments
         Plugin 'scrooloose/nerdcommenter'
         " Add You Complete Me
-        Plugin 'Valloric/YouCompleteMe'
+        " Plugin 'Valloric/YouCompleteMe'
         " vim-javascript
         Plugin 'pangloss/vim-javascript'
         " vim-javascript-lib companion
@@ -50,6 +50,9 @@
         " utltisnips
         Plugin 'SirVer/ultisnips'
         Plugin 'honza/vim-snippets'
+        " vim-markdown
+        " Plugin 'godlygeek/tabular'
+        " Plugin 'plasticboy/vim-markdown'
 
         " call vundle
         call vundle#end()            " required
@@ -113,6 +116,10 @@
         set wrap
         set linebreak
         set nolist " list disables linebreak
+
+        " FIXME: Speedup scrolling
+        set lazyredraw
+        set regexpengine=1
 
     " }}}
     " 1.2. Remapping ----------------------------------------- {{{
@@ -198,7 +205,11 @@
         " TODO: Filetype foldmethods
         set foldmethod=marker
 
-        " Persisant Folds 2.0
+        " FIXME: testing
+        let g:markdown_folding = 1
+        let g:markdown_enable_folding = 1
+
+        " Persisant Folds 2.0 - (mkview, loadview, do not remember syntax)
         augroup SaveFoldState
           autocmd!
           autocmd BufWinLeave ?* mkview | filetype detect
