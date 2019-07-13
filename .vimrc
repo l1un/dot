@@ -121,6 +121,8 @@
         set lazyredraw
         set regexpengine=1
 
+        " go with this again
+        set hls
     " }}}
     " 1.2. Remapping ---------------------------------------------- {{{
 

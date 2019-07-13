@@ -1,4 +1,13 @@
 ###### changelog
+`2019.07.01.1`
+  - add geometric cummlative density function to SpeedCrunch `session.json`
+
+
+`2019.07.01.1`
+  - add `session.json` to backup custom formulas
+  - turn off terminator visual bell in `terminator.conf`
+
+
 `2019.06.28.1`
   - testing vim markdown, usual speedcrunch
 

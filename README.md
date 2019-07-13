@@ -43,6 +43,7 @@
 │   ├── htop
 │   │   └── htoprc
 │   ├── SpeedCrunch
+│   │   ├── session.json
 │   │   └── SpeedCrunch.ini
 │   ├── terminator
 │   │   └── config
@@ -127,8 +128,8 @@
 ├── .vimrc
 └── .vimrc_1.7
 
-32 directories, 72 files
-last generated: Fri Jun 28 16:22:20 PDT 2019
+32 directories, 73 files
+last generated: Mon Jul  1 07:32:05 PDT 2019
 ```
 ###### packages
 ```
@@ -138,7 +139,7 @@ devDependencies
 dependencies
 
 
-auto-generated: Fri Jun 28 16:22:20 PDT 2019
+auto-generated: Mon Jul  1 07:32:05 PDT 2019
 ```
 ###### notes
 ###### [changelog](CHANGELOG.md)
