@@ -1,4 +1,9 @@
 ###### changelog
+`2019.07.13.1`
+  - Updated alias to new notes repo (not using gist anymore)
+  - previously updated gallium .vimrc (temp removal of YCM)
+
+
 `2019.07.01.1`
   - add geometric cummlative density function to SpeedCrunch `session.json`
 
