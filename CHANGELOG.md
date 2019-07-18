@@ -1,5 +1,9 @@
 ###### changelog
 `2019.07.18.1`
+  - simplify notebook dir/alias
+
+
+`2019.07.18.1`
   - fixed issue (removed) echo message for now
 
 
