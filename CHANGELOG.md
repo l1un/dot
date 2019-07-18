@@ -1,4 +1,10 @@
 ###### changelog
+`2019.07.18.1`
+  - redraw test to echo message `.vimrc`
+  - select + redirect `.vimrc`
+  - universal notebook alias `.bash_aliases`
+
+
 `2019.07.13.1`
   - Updated alias to new notes repo (not using gist anymore)
   - previously updated gallium .vimrc (temp removal of YCM)
