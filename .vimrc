@@ -177,6 +177,8 @@
         " Trim whitespace at end of lines
         nnoremap <Leader>tw :%s/\s\+$//e<CR>
 
+        " Prep selection to redirect (enter <file-name-dir)
+        vnoremap <Leader>rd :!cat >><Space>
     " }}}
     " 1.3. Whitespace Awareness ----------------------------------- {{{
 
@@ -241,7 +243,7 @@
     nnoremap <silent> <Leader>eV :vsp $MYVIMRC<CR>
     " notes
     nnoremap <silent> <Leader>en :sp
-          \ ~/notes/88c8f4f99bb6bbd510ef1461ec06044f/notes.md<CR>
+          \ ~/Projects/universal-notebook/main-note.md<CR>
     " tmux
     nnoremap <silent> <Leader>et :tabnew<CR>:e ~/.tmux.conf<CR>
     " .bash_aliases
@@ -251,10 +253,10 @@
     " ultisnips
     nnoremap <silent> <Leader>es :UltiSnipsEdit<CR>
 
-    " Source .vimrc, Echo Status
-    nnoremap <Leader>sv :so ~/.vimrc<CR>
-          \ :echon ":so[ource] " \| :echohl Error \|
-          \ echon $MYVIMRC \| echohl None<CR>
+    " Source .vimrc, Echo Status, added redraw to ensure message display.
+    nnoremap <Leader>sv :so ~/.vimrc<CR> | redraw |
+          \ :echon ":so[ource](ed) " | :echohl Error |
+          \ :echon $MYVIMRC | :echohl None<CR>
 
 " }}}
 " 3. Custom Built-In Functions ------------------------------------ {{{
@@ -427,7 +429,7 @@
         " seperate build dir, NOTE: clean <LocalLeader>lc within vimtex obeys
         " this setting when set here, unsure about .latexmkrc
         let g:vimtex_compiler_latexmk = {
-              \ 'build_dir': './2-pdf',
+              \ 'build_dir': './build',
           \ }
 
         let g:tex_conceal = '' " turn off internal LaTex syntax behaviour
