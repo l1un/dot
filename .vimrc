@@ -253,10 +253,8 @@
     " ultisnips
     nnoremap <silent> <Leader>es :UltiSnipsEdit<CR>
 
-    " Source .vimrc, Echo Status, added redraw to ensure message display.
-    nnoremap <Leader>sv :so ~/.vimrc<CR> | redraw |
-          \ :echon ":so[ource](ed) " | :echohl Error |
-          \ :echon $MYVIMRC | :echohl None<CR>
+    " Source .vimrc
+    nnoremap <Leader>sv :so ~/.vimrc<CR>
 
 " }}}
 " 3. Custom Built-In Functions ------------------------------------ {{{
