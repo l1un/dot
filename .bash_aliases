@@ -29,7 +29,7 @@ alias eba="vim ~/.bash_aliases"
 # quick edit .tmux.conf
 alias et="vim ~/.tmux.conf"
 # quick edit notebook main note
-alias en="vim ~/Projects/universal-notebook/main-note.md"
+alias en="vim ~/Projects/notebook/main-note.md"
 
 ## BASH / SHELL
 
