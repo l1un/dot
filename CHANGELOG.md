@@ -1,4 +1,8 @@
 ###### changelog
+`2019.07.18.1`
+  - fixed issue (removed) echo message for now
+
+
 
 `2019.07.18.1`
   - redraw test to echo message `.vimrc`
