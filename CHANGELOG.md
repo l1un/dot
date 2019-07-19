@@ -1,4 +1,9 @@
 ###### changelog
+`2019.07.19.1`
+  - Update edit notes short cut in `.vimrc` and `.bash_aliases` to use netrw.
+  - Update cut and paste text shortcut leader in `.vimrc`
+
+
 `2019.07.18.1`
   - simplify notebook dir/alias
 
