@@ -38,6 +38,8 @@
 │   └── update-project-push
 ├── CHANGELOG.md
 ├── .config
+│   ├── gnuplot
+│   │   └── qtterminal.conf
 │   ├── gtk-3.0
 │   │   └── gtk.css
 │   ├── htop
@@ -128,8 +130,8 @@
 ├── .vimrc
 └── .vimrc_1.7
 
-32 directories, 73 files
-last generated: Fri Jul 19 06:33:34 PDT 2019
+33 directories, 74 files
+last generated: Fri Jul 19 06:46:49 PDT 2019
 ```
 ###### packages
 ```
@@ -139,7 +141,7 @@ devDependencies
 dependencies
 
 
-auto-generated: Fri Jul 19 06:33:34 PDT 2019
+auto-generated: Fri Jul 19 06:46:49 PDT 2019
 ```
 ###### notes
 ###### [changelog](CHANGELOG.md)

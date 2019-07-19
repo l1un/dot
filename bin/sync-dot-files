@@ -24,6 +24,7 @@ update_dot_files() {
 	# Directories
 	local source_bin_dir="$HOME/bin/"
 	local source_ftplugin_dir="$HOME/.vim/ftplugin/"
+	local source_gnuplot_dir="$HOME/./.config/gnuplot/"
 	local source_htop_dir="$HOME/.config/htop/"
 	local source_snippets_dir="$HOME/.vim/ultisnips/"
 	local source_speedcrunch_dir="$HOME/.config/SpeedCrunch/"
@@ -44,10 +45,11 @@ update_dot_files() {
 
 	# Array for .config directories, other dirs to get files from
 	local source_dot_config_dirs=(
-		$source_zathura_dir
+		$source_gnuplot_dir
 		$source_htop_dir
 		$source_speedcrunch_dir
 		$source_terminator_dir
+		$source_zathura_dir
 	)
 
 	############################################################
