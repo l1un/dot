@@ -60,7 +60,7 @@ git add . && git commit -v
 VER_DATE="$(date +%Y.%m.%d)"
 
 # get entry total for "today"
-VER_CHECK=$(grep "VER_DATE" CHANGELOG.md | wc -l)
+VER_CHECK=$(grep "$VER_DATE" CHANGELOG.md | wc -l)
 
 # increment it (if 0 then 1, if one then next is 2, etc.)
 VER_COUNT=$((VER_CHECK + 1))
