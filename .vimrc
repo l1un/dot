@@ -177,8 +177,8 @@
         " Trim whitespace at end of lines
         nnoremap <Leader>tw :%s/\s\+$//e<CR>
 
-        " Prep selection to redirect (enter <file-name-dir)
-        vnoremap <Leader>rd :!cat >><Space>
+        " Cue to cut & paste text <cpt> to new file (enter <file-name-dir)
+        vnoremap <Leader>cpt :!cat >><Space>
     " }}}
     " 1.3. Whitespace Awareness ----------------------------------- {{{
 
@@ -241,9 +241,8 @@
     " .vimrc
     nnoremap <silent> <Leader>ev :sp $MYVIMRC<CR>
     nnoremap <silent> <Leader>eV :vsp $MYVIMRC<CR>
-    " notes
-    nnoremap <silent> <Leader>en :sp
-          \ ~/Projects/universal-notebook/main-note.md<CR>
+    " notes (netrw)
+    nnoremap <silent> <Leader>en :sp ~/Projects/notebook/<CR>
     " tmux
     nnoremap <silent> <Leader>et :tabnew<CR>:e ~/.tmux.conf<CR>
     " .bash_aliases
