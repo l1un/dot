@@ -1,4 +1,7 @@
 ###### changelog
+`2019.07.19.3`
+  - Manually fix minor version numbers in changelog from previous updates.
+
 `2019.07.19.2`
   - Fix expansion in `update-project-push` (missing $ from edit)
 
@@ -8,11 +11,11 @@
   - Update cut and paste text shortcut leader in `.vimrc`
 
 
-`2019.07.18.1`
+`2019.07.18.3`
   - simplify notebook dir/alias
 
 
-`2019.07.18.1`
+`2019.07.18.2`
   - fixed issue (removed) echo message for now
 
 
@@ -27,7 +30,7 @@
   - previously updated gallium .vimrc (temp removal of YCM)
 
 
-`2019.07.01.1`
+`2019.07.01.2`
   - add geometric cummlative density function to SpeedCrunch `session.json`
 
 
@@ -49,11 +52,11 @@
   - project script updates in progress
 
 
-`2019.06.16.1`
+`2019.06.16.3`
   - remove stray gnuplot file
 
 
-`2019.06.16.1`
+`2019.06.16.2`
   - new terminator .conf for LaTeX math flow
   - new vim `:vsplit` command
   - speed crunch geometry
@@ -80,7 +83,7 @@
     - refactor folding function to display nicely multiplatform
     - other tweaks ongoing
 
-`2019.06.08.1`
+`2019.06.08.2`
   - Update shortcuts for sourcing .vimrc and browsing files netrw
 
 
@@ -92,7 +95,6 @@
 
 `2019.06.07.1`
   - reverse linewise exclusive movements keys `.vimrc`
-
 
 
 `2019.06.04.2`
