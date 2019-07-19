@@ -1,4 +1,8 @@
 ###### changelog
+`2019.07.19.2`
+  - Fix expansion in `update-project-push` (missing $ from edit)
+
+
 `2019.07.19.1`
   - Update edit notes short cut in `.vimrc` and `.bash_aliases` to use netrw.
   - Update cut and paste text shortcut leader in `.vimrc`
