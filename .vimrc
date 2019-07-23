@@ -50,6 +50,8 @@
         " utltisnips
         Plugin 'SirVer/ultisnips'
         Plugin 'honza/vim-snippets'
+        " vim-instant-markdown
+        Plugin 'suan/vim-instant-markdown', {'rtp': 'after'}
         " vim-markdown
         " Plugin 'godlygeek/tabular'
         " Plugin 'plasticboy/vim-markdown'
@@ -210,15 +212,16 @@
         set foldmethod=marker
 
         " FIXME: testing
-        let g:markdown_folding = 1
-        let g:markdown_enable_folding = 1
+        " let g:markdown_folding = 1
+        " let g:markdown_enable_folding = 1
 
+        " TODO: Look into: This causes issues with vundle E10: readonly ...
         " Persisant Folds 2.0 - (mkview, loadview, do not remember syntax)
-        augroup SaveFoldState
-          autocmd!
-          autocmd BufWinLeave ?* mkview | filetype detect
-          autocmd BufWinEnter ?* silent loadview | filetype detect
-        augroup END
+        " augroup SaveFoldState
+          " autocmd!
+          " autocmd BufWinLeave ?* mkview | filetype detect
+          " autocmd BufWinEnter ?* silent loadview | filetype detect
+        " augroup END
 
         " Show folded lines, first-line text, total lines folded
         function! ShowFoldMessage()
@@ -362,7 +365,17 @@
         " let g:indentLine_char = '|'
 
     " }}}
-    " 4.4. Lightline ---------------------------------------------- {{{
+    " 4.4. Instant Markdown --------------------------------------- {{{
+
+        " autoscroll toggle
+          " let g:instant_markdown_autoscroll = 0
+        " autostart toggle
+          " let g:instant_markdown_autostart = 0
+        " realtime toggle - if taxing system
+          " let g:instant_markdown_slow = 1
+
+    " }}}
+    " 4.5. Lightline ---------------------------------------------- {{{
 
         " lightline relative paths (requires fugitive)
         let g:lightline = {
@@ -381,13 +394,13 @@
         endfunction
 
     " }}}
-    " 4.5. Nerd Comments ------------------------------------------ {{{
+    " 4.6. Nerd Comments ------------------------------------------ {{{
 
         " add spaces to nerd/sexy comments (Standard JS no-warn msg)
         let NERDSpaceDelims=1
 
     " }}}
-    " 4.6. Ultisnips ---------------------------------------------- {{{
+    " 4.7. Ultisnips ---------------------------------------------- {{{
 
         " set directory
         let g:UltiSnipsSnippetDirectories = ['$HOME/.vim/ultisnips']
@@ -397,7 +410,7 @@
         let g:UltiSnipsEditSplit="vertical"
 
     " }}}
-    " 4.7. YCM - You Complete Me ---------------------------------- {{{
+    " 4.8. YCM - You Complete Me ---------------------------------- {{{
 
         " ycm preview on bottom
         " set splitbelow
@@ -418,7 +431,7 @@
         let g:ycm_python_binary_path='python'
 
     " }}}
-    " 4.8. VimTeX ------------------------------------------------- {{{
+    " 4.9. VimTeX ------------------------------------------------- {{{
 
         let g:tex_flavor='latex'
         let g:vimtex_view_method='zathura'

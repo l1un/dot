@@ -9,7 +9,7 @@ sed -n -i '1,/###### tree/p;/###### packages/,$p' README.md
 echo '```' >> temp.txt
 
 # create tree, ignore (-I) node_modules, old, temp.txt, .cache, d(public gatsby), 20* (gatsby articles) and .git dirs, include (-a) dotfiles,  put in temp .txt
-tree -Ia "node*|.git|old|temp.txt|.cache|d|20*" >> temp.txt
+tree -Ia "node*|.git|old|temp.txt|.cache|lpmn_project*|d|20*" >> temp.txt
 
 # add timestamp
 echo "last generated: $(date)" >> temp.txt
