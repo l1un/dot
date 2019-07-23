@@ -1,4 +1,8 @@
 ###### changelog
+`2019.07.22.1`
+  - SC SOP, `.vimrc` indents
+
+
 `2019.07.19.4`
   - Update `sync-dot-files` script to include gnuplot and sync all.
 
