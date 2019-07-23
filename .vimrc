@@ -370,7 +370,7 @@
         " autoscroll toggle
           " let g:instant_markdown_autoscroll = 0
         " autostart toggle
-          " let g:instant_markdown_autostart = 0
+          let g:instant_markdown_autostart = 0
         " realtime toggle - if taxing system
           " let g:instant_markdown_slow = 1
 

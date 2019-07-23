@@ -31,6 +31,7 @@
 │   ├── arb
 │   ├── change-bash-profile
 │   ├── copy-shell-scripts
+│   ├── get-window-info
 │   ├── open-tmux
 │   ├── save-last-command
 │   ├── sync-dot-files
@@ -50,6 +51,7 @@
 │   ├── terminator
 │   │   └── config
 │   └── zathura
+│       └── zathurarc
 ├── .eslintrc.js
 ├── .latexmkrc
 ├── .lynxrc
@@ -130,8 +132,8 @@
 ├── .vimrc
 └── .vimrc_1.7
 
-33 directories, 74 files
-last generated: Tue Jul 23 07:44:46 PDT 2019
+33 directories, 76 files
+last generated: Tue Jul 23 10:24:53 PDT 2019
 ```
 ###### packages
 ```
@@ -141,7 +143,7 @@ devDependencies
 dependencies
 
 
-auto-generated: Tue Jul 23 07:44:46 PDT 2019
+auto-generated: Tue Jul 23 10:24:53 PDT 2019
 ```
 ###### notes
 ###### [changelog](CHANGELOG.md)
