@@ -1,4 +1,10 @@
 ###### changelog
+`2019.07.23.2`
+  - add `get-window-info` script to display window coordinates and size.
+  - add `zathurarc` with window size settings
+  - toggle vim-markdown-viewer settings
+
+
 `2019.07.23.1`
   - turned off markdown folding and mkview in `.vimrc` (debug)
   - updated u-p-p script to ignore python (math stats)
