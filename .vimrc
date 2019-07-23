@@ -327,7 +327,7 @@
               \ 'sh': ['language_server', 'shellcheck'],
               \ 'markdown': ['remark-lint'],
               \ 'tex': ['lacheck', 'chktex'],
-              \ }
+            \ }
 
         " Ale symbols
         let g:ale_sign_error = '✗'
@@ -336,7 +336,7 @@
         " Ale fixing
         let g:ale_fixers = {
               \ 'javascript': ['eslint'],
-              \ }
+            \ }
 
         " always show Ale gutter
         let g:ale_sign_column_always = 0
