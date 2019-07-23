@@ -1,4 +1,9 @@
 ###### changelog
+`2019.07.23.1`
+  - turned off markdown folding and mkview in `.vimrc` (debug)
+  - updated u-p-p script to ignore python (math stats)
+
+
 `2019.07.22.1`
   - SC SOP, `.vimrc` indents
 
