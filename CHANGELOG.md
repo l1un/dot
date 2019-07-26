@@ -1,4 +1,9 @@
 ###### changelog
+`2019.07.26.1`
+  - define ALE html linters in `.vimrc`
+  - add `adjust-open width` to `zathurarc`
+
+
 `2019.07.23.2`
   - add `get-window-info` script to display window coordinates and size.
   - add `zathurarc` with window size settings
