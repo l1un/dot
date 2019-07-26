@@ -330,6 +330,7 @@
               \ 'sh': ['language_server', 'shellcheck'],
               \ 'markdown': ['remark-lint'],
               \ 'tex': ['lacheck', 'chktex'],
+              \ 'html': ['tidy', 'stylelint', 'alex'],
             \ }
 
         " Ale symbols
