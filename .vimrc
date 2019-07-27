@@ -126,7 +126,7 @@
         " go with this again
         set hls
     " }}}
-    " 1.2. Remapping ---------------------------------------------- {{{
+    " 1.2. Shortcuts, Remapping ----------------------------------- {{{
 
         " Also reverse exlusive linewise behavior when wrap is on.
         noremap j gj
@@ -181,6 +181,10 @@
 
         " Cue to cut & paste text <cpt> to new file (enter <file-name-dir)
         vnoremap <Leader>cpt :!cat >><Space>
+
+        " Search for visually highlighted text
+        vnoremap <Leader>st y<ESC>/<c-r>"<CR>:call EchoStat('Searched')<CR>
+
     " }}}
     " 1.3. Whitespace Awareness ----------------------------------- {{{
 

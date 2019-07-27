@@ -2,11 +2,11 @@
     "functions": [
         {
             "args": [
-                "b",
-                "h"
+                "a",
+                "b"
             ],
-            "expression": "1/2 * (b * h)",
-            "name": "triArea"
+            "expression": "a+b? this is a test function",
+            "name": "func"
         },
         {
             "args": [
@@ -18,11 +18,37 @@
         },
         {
             "args": [
+                "X",
+                "mu",
+                "sd"
+            ],
+            "expression": "(X-mu)/sd",
+            "name": "zscore"
+        },
+        {
+            "args": [
+                "critical",
+                "p",
+                "n"
+            ],
+            "expression": "critical * sqrt((p*(1-p))/n)",
+            "name": "myinterval"
+        },
+        {
+            "args": [
                 "p",
                 "n"
             ],
             "expression": "1-(1-p)^n",
             "name": "geometcdf"
+        },
+        {
+            "args": [
+                "b",
+                "h"
+            ],
+            "expression": "1/2 * (b * h)",
+            "name": "triArea"
         }
     ],
     "history": [
@@ -33,16 +59,7 @@
             "type": "BuiltIn",
             "value": {
                 "numeric_value": {
-                    "value": "0.382696706677090613648429239988039285504579465312861658330089843267043875357533"
-                }
-            }
-        },
-        {
-            "identifier": "sd",
-            "type": "User",
-            "value": {
-                "numeric_value": {
-                    "value": "5.400000000000000000000000000000000000000000000000000000000000000000000000000000"
+                    "value": "4329.600000000000000000000000000000000000000000000000000000000000000000000000000000"
                 }
             }
         }
