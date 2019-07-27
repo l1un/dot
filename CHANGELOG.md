@@ -1,4 +1,9 @@
 ###### changelog
+`2019.07.27.2`
+  - add mapping for searching for visually selected to text to `.vimrc`
+  - add myinterval function to `Speedcrunch/session.json` for confidence intervals
+
+
 `2019.07.27.1`
   - add `EchoStat` to `.vimrc` - color echo helper function
   - integrate / test it with a couple commands
