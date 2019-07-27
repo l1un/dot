@@ -148,10 +148,10 @@
         " New line above + below / cursor stays
         noremap <Leader>= o<Esc>kO<Esc>j
 
-        " Move current line up
-        nnoremap <Leader>_ ddp
         " Move current line down
-        nnoremap <Leader>- dd<Esc>kkp<Esc>
+        nnoremap <Leader>_ ddp:echom "Moved Line Down"<CR>
+        " Move current line up
+        nnoremap <Leader>- dd<Esc>kkp<Esc>:echom "Moved Line Up"<CR>
 
         " Uppercase word, insert + normal / cursor stays
         inoremap <C-u> <Esc>viw~ea
@@ -159,9 +159,9 @@
 
         " NOTE: Clipboard support required, X11, vim-gtk
         " Copy selected test to system clipboard
-        vnoremap <Leader>y "+y:echom "Copied to Clipboard"<CR>
+        vnoremap <Leader>y "+y:call EchoStat('Copy to Clipboard')<CR>
         " Paste system clipboard
-        nnoremap <Leader>p "+p:echom "Pasted from Clipboard"<CR>
+        nnoremap <Leader>p "+p:call EchoStat('Paste from Clipboard')<CR>
 
         " Paste Toggle, ouput state
         nnoremap <Leader>pt :set paste!<CR>:set paste?<CR>
@@ -177,7 +177,7 @@
         nnoremap <Leader>ts :tab split<CR>
 
         " Trim whitespace at end of lines
-        nnoremap <Leader>tw :%s/\s\+$//e<CR>
+        nnoremap <Leader>tw :%s/\s\+$//e<CR>:call EchoStat('Trim Whitespace')<CR>
 
         " Cue to cut & paste text <cpt> to new file (enter <file-name-dir)
         vnoremap <Leader>cpt :!cat >><Space>
@@ -274,7 +274,15 @@
         endfunction
 
         " type <leader>n to open rename file dialog
-        noremap <leader>n :call RenameFile()<cr>
+        noremap <leader>n :call RenameFile()<CR>
+
+        " Echo color status message
+        " :so /usr/share/vim/vim81/syntax/hitest.vim
+        function! EchoStat(msg)
+          echohl StatusLineTerm
+          echo a:msg
+          echohl None
+        endfunction
 
     " }}}
     " 3.2. JS Functions ------------------------------------------- {{{
