@@ -1,4 +1,9 @@
 ###### changelog
+`2019.07.27.1`
+  - add `EchoStat` to `.vimrc` - color echo helper function
+  - integrate / test it with a couple commands
+
+
 `2019.07.26.1`
   - define ALE html linters in `.vimrc`
   - add `adjust-open width` to `zathurarc`
