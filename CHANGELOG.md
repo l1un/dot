@@ -1,4 +1,8 @@
 ###### changelog
+`2019.07.27.3`
+  - add mapping for nohls
+
+
 `2019.07.27.2`
   - add mapping for searching for visually selected to text to `.vimrc`
   - add myinterval function to `Speedcrunch/session.json` for confidence intervals
