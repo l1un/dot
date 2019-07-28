@@ -183,7 +183,10 @@
         vnoremap <Leader>cpt :!cat >><Space>
 
         " Search for visually highlighted text
-        vnoremap <Leader>st y<ESC>/<c-r>"<CR>:call EchoStat('Searched')<CR>
+        vnoremap <Leader>st y<Esc>/<c-r>"<CR>:call EchoStat('Searched')<CR>
+
+        " quickly turn off hls
+        nnoremap <Esc><Esc> :nohls<CR>
 
     " }}}
     " 1.3. Whitespace Awareness ----------------------------------- {{{
@@ -315,7 +318,7 @@
         " append python output as comment
         function! GetPythonComment()
           exec ':r !python %'
-          :execute "normal! i# \<esc>"
+          :execute "normal! i# \<Esc>"
         endfunction
 
         " type <localleader> to append output and comment
