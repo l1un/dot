@@ -1,4 +1,10 @@
 ###### changelog
+`2019.07.30.1`
+  - add and refine tmargin and zmargin function in `SpeedCrunch/session.json`
+  - update SpeedCrunch history setting in `SpeedCrunch.ini`
+  - update "echo status" function use and rename for disambiguation `Ek0`
+
+
 `2019.07.27.3`
   - add mapping for nohls
 
