@@ -159,9 +159,9 @@
 
         " NOTE: Clipboard support required, X11, vim-gtk
         " Copy selected test to system clipboard
-        vnoremap <Leader>y "+y:call EchoStat('Copy to Clipboard')<CR>
+        vnoremap <Leader>y "+y:call Ek0('Copy to Clipboard')<CR>
         " Paste system clipboard
-        nnoremap <Leader>p "+p:call EchoStat('Paste from Clipboard')<CR>
+        nnoremap <Leader>p "+p:call Ek0('Paste from Clipboard')<CR>
 
         " Paste Toggle, ouput state
         nnoremap <Leader>pt :set paste!<CR>:set paste?<CR>
@@ -177,16 +177,18 @@
         nnoremap <Leader>ts :tab split<CR>
 
         " Trim whitespace at end of lines
-        nnoremap <Leader>tw :%s/\s\+$//e<CR>:call EchoStat('Trim Whitespace')<CR>
+        nnoremap <Leader>tw :%s/\s\+$//e<CR>:call Ek0('Trim Whitespace')<CR>
 
         " Cue to cut & paste text <cpt> to new file (enter <file-name-dir)
         vnoremap <Leader>cpt :!cat >><Space>
 
         " Search for visually highlighted text
-        vnoremap <Leader>st y<Esc>/<c-r>"<CR>:call EchoStat('Searched')<CR>
+        vnoremap <Leader>st y<Esc>/<c-r>"<CR>:call Ek0('Select Search')<CR>
+        " Search for visually highlighted text + ready replace
+        vnoremap <Leader>sT y<Esc>/<c-r>"<CR>:%s///gc<Left><Left><Left>
 
         " quickly turn off hls
-        nnoremap <Esc><Esc> :nohls<CR>
+        nnoremap <Esc><Esc> :nohls<CR>:call Ek0(':nohls')<CR>
 
     " }}}
     " 1.3. Whitespace Awareness ----------------------------------- {{{
@@ -283,9 +285,9 @@
         " type <leader>n to open rename file dialog
         noremap <leader>n :call RenameFile()<CR>
 
-        " Echo color status message
+        " echo color status message
         " :so /usr/share/vim/vim81/syntax/hitest.vim
-        function! EchoStat(msg)
+        function! Ek0(msg)
           echohl StatusLineTerm
           echo a:msg
           echohl None

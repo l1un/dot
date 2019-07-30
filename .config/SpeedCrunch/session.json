@@ -2,11 +2,11 @@
     "functions": [
         {
             "args": [
-                "a",
-                "b"
+                "base",
+                "height"
             ],
-            "expression": "a+b? this is a test function",
-            "name": "func"
+            "expression": "1/2 * (base * height)",
+            "name": "triarea"
         },
         {
             "args": [
@@ -18,24 +18,6 @@
         },
         {
             "args": [
-                "X",
-                "mu",
-                "sd"
-            ],
-            "expression": "(X-mu)/sd",
-            "name": "zscore"
-        },
-        {
-            "args": [
-                "critical",
-                "p",
-                "n"
-            ],
-            "expression": "critical * sqrt((p*(1-p))/n)",
-            "name": "myinterval"
-        },
-        {
-            "args": [
                 "p",
                 "n"
             ],
@@ -44,11 +26,30 @@
         },
         {
             "args": [
-                "b",
-                "h"
+                "X",
+                "mu",
+                "sd"
             ],
-            "expression": "1/2 * (b * h)",
-            "name": "triArea"
+            "expression": "(X-mu)/sd? FIXME: review usecase",
+            "name": "zscore"
+        },
+        {
+            "args": [
+                "zscore",
+                "p",
+                "n"
+            ],
+            "expression": "zscore * sqrt((p*(1-p))/n)? zscore OR critical",
+            "name": "zmargin"
+        },
+        {
+            "args": [
+                "tscore",
+                "sd",
+                "n"
+            ],
+            "expression": "tscore * (sd/sqrt(n))? tscore OR critical",
+            "name": "tmargin"
         }
     ],
     "history": [
@@ -59,7 +60,7 @@
             "type": "BuiltIn",
             "value": {
                 "numeric_value": {
-                    "value": "4329.600000000000000000000000000000000000000000000000000000000000000000000000000000"
+                    "value": "0"
                 }
             }
         }
