@@ -1,4 +1,9 @@
 ###### changelog
+`2019.08.03.1`
+  - add function updates to SpeedCrunch `session.json` + SC SOP
+  - add `TSServer.json` for YCM (not using tern atm)
+
+
 `2019.07.30.1`
   - add and refine tmargin and zmargin function in `SpeedCrunch/session.json`
   - update SpeedCrunch history setting in `SpeedCrunch.ini`
