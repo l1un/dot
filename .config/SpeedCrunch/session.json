@@ -36,10 +36,10 @@
         {
             "args": [
                 "zscore",
-                "p",
+                "sigma",
                 "n"
             ],
-            "expression": "zscore * sqrt((p*(1-p))/n)? zscore OR critical",
+            "expression": "zscore * sqrt((sigma*(1-sigma))/n)? zscore OR critical value",
             "name": "zmargin"
         },
         {
@@ -48,7 +48,7 @@
                 "sd",
                 "n"
             ],
-            "expression": "tscore * (sd/sqrt(n))? tscore OR critical",
+            "expression": "tscore * (sd/sqrt(n))? tscore OR critical value",
             "name": "tmargin"
         }
     ],

@@ -219,6 +219,7 @@
 
         " TODO: Filetype foldmethods
         set foldmethod=marker
+        set foldlevelstart=99
 
         " FIXME: testing
         " let g:markdown_folding = 1

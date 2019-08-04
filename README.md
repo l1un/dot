@@ -53,6 +53,7 @@
 │   └── zathura
 │       └── zathurarc
 ├── .eslintrc.js
+├── jsconfig.json
 ├── .latexmkrc
 ├── .lynxrc
 ├── other
@@ -124,6 +125,7 @@
 ├── .tmux.conf
 ├── .vim
 │   ├── ftplugin
+│   │   ├── javascript.vim
 │   │   ├── python.vim
 │   │   └── tex.vim
 │   └── ultisnips
@@ -132,8 +134,8 @@
 ├── .vimrc
 └── .vimrc_1.7
 
-33 directories, 76 files
-last generated: Tue Jul 30 07:14:00 PDT 2019
+33 directories, 78 files
+last generated: Sat Aug  3 18:04:46 PDT 2019
 ```
 ###### packages
 ```
@@ -143,7 +145,7 @@ devDependencies
 dependencies
 
 
-auto-generated: Tue Jul 30 07:14:00 PDT 2019
+auto-generated: Sat Aug  3 18:04:46 PDT 2019
 ```
 ###### notes
 ###### [changelog](CHANGELOG.md)
