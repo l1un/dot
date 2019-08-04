@@ -2,6 +2,7 @@
 `2019.08.03.1`
   - add function updates to SpeedCrunch `session.json` + SC SOP
   - add `TSServer.json` for YCM (not using tern atm)
+  - add vim ftp for javascript folding
 
 
 `2019.07.30.1`
