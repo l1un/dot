@@ -387,7 +387,7 @@
     " 4.4. Instant Markdown --------------------------------------- {{{
 
         " autoscroll toggle
-          " let g:instant_markdown_autoscroll = 0
+          let g:instant_markdown_autoscroll = 1
         " autostart toggle
           let g:instant_markdown_autostart = 0
         " realtime toggle - if taxing system
