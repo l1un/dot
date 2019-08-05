@@ -1,4 +1,8 @@
 ###### changelog
+`2019.08.05.1`
+  - manually toggle autoscroll to debug in `.vimrc`
+
+
 `2019.08.04.3`
   - add zscoretest function to `SpeedCrunch/session.json`
 
