@@ -2,21 +2,13 @@
     "functions": [
         {
             "args": [
-                "X",
-                "mu",
-                "sd"
-            ],
-            "expression": "(X-mu)/sd? FIXME: review usecase",
-            "name": "zscore"
-        },
-        {
-            "args": [
-                "zscore",
-                "sigma",
+                "x_bar",
+                "mu_zero",
+                "s_x",
                 "n"
             ],
-            "expression": "zscore * sqrt((sigma*(1-sigma))/n)? zscore OR critical value",
-            "name": "zmargin"
+            "expression": "(x_bar - mu_zero) / (s_x / sqrt(n))? (MEANS)",
+            "name": "tscoretest"
         },
         {
             "args": [
@@ -24,7 +16,7 @@
                 "p_zero",
                 "n"
             ],
-            "expression": "(p_hat - p_zero)/(sqrt((p_zero*(1-p_zero))/n))",
+            "expression": "(p_hat - p_zero) / (sqrt((p_zero * (1 - p_zero)) / n))? (PROPORTIONS)",
             "name": "zscoretest"
         },
         {
@@ -32,8 +24,24 @@
                 "p",
                 "n"
             ],
-            "expression": "1-(1-p)^n",
+            "expression": "((1 - p)^(n - 1) * p)",
+            "name": "geometpdf"
+        },
+        {
+            "args": [
+                "p",
+                "n"
+            ],
+            "expression": "(1 - (1 - p)^n)",
             "name": "geometcdf"
+        },
+        {
+            "args": [
+                "base",
+                "height"
+            ],
+            "expression": "(1/2 * (base * height))",
+            "name": "triarea"
         },
         {
             "args": [
@@ -41,24 +49,26 @@
                 "sd",
                 "n"
             ],
-            "expression": "tscore * (sd/sqrt(n))? tscore OR critical value",
+            "expression": "(tscore * (sd / sqrt(n)))? tscore OR critical value",
             "name": "tmargin"
         },
         {
             "args": [
-                "base",
-                "height"
+                "zscore",
+                "sigma",
+                "n"
             ],
-            "expression": "1/2 * (base * height)",
-            "name": "triarea"
+            "expression": "(zscore * sqrt((sigma * (1 - sigma)) / n))? zscore OR critical value",
+            "name": "zmargin"
         },
         {
             "args": [
-                "p",
-                "n"
+                "X",
+                "mu",
+                "sd"
             ],
-            "expression": "(1-p)^(n-1)*p",
-            "name": "geometpdf"
+            "expression": "((X - mu) / sd)? FIXME: review usecase",
+            "name": "zscore"
         }
     ],
     "history": [
@@ -69,7 +79,7 @@
             "type": "BuiltIn",
             "value": {
                 "numeric_value": {
-                    "value": "87.920000000000000000000000000000000000000000000000000000000000000000000000000000"
+                    "value": "1.200000000000000000000000000000000000000000000000000000000000000000000000000000"
                 }
             }
         }
