@@ -1,4 +1,8 @@
 ###### changelog
+`2019.08.04.3`
+  - add zscoretest function to `SpeedCrunch/session.json`
+
+
 `2019.08.04.2`
   - test
 
