@@ -1,4 +1,10 @@
 ###### changelog
+`2019.08.04.1`
+  - add Ek0 statements to some shortcuts in `.vimrc`
+  - edit / update some YCM settings in `.vimrc`
+  - go back to SaveSession in SpeedCrunch `session.json` (loads functions)
+
+
 `2019.08.03.1`
   - add function updates to SpeedCrunch `session.json` + SC SOP
   - add `TSServer.json` for YCM (not using tern atm)
