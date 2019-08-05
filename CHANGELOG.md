@@ -1,4 +1,9 @@
 ###### changelog
+`2019.08.05.2`
+  - add tscoretest function to `session.json` for SpeedCrunch
+  - also update comments and tidy spacing, parens for functions in file
+
+
 `2019.08.05.1`
   - manually toggle autoscroll to debug in `.vimrc`
 
