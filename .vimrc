@@ -149,9 +149,9 @@
         noremap <Leader>= o<Esc>kO<Esc>j
 
         " Move current line down
-        nnoremap <Leader>_ ddp:echom "Moved Line Down"<CR>
+        nnoremap <Leader>_ ddp:call Ek0("Moved Line Down")<CR>
         " Move current line up
-        nnoremap <Leader>- dd<Esc>kkp<Esc>:echom "Moved Line Up"<CR>
+        nnoremap <Leader>- dd<Esc>kkp<Esc>:call Ek0("Moved Line Up")<CR>
 
         " Uppercase word, insert + normal / cursor stays
         inoremap <C-u> <Esc>viw~ea
@@ -255,7 +255,7 @@
     nnoremap <silent> <Leader>ev :sp $MYVIMRC<CR>
     nnoremap <silent> <Leader>eV :vsp $MYVIMRC<CR>
     " notes (netrw)
-    nnoremap <silent> <Leader>en :sp ~/Projects/notebook/<CR>
+    nnoremap <silent> <Leader>en :sp ~/Projects/notebook/main-note.md<CR>
     " tmux
     nnoremap <silent> <Leader>et :tabnew<CR>:e ~/.tmux.conf<CR>
     " .bash_aliases
@@ -448,6 +448,9 @@
         highlight PmenuSel ctermfg=Black ctermbg=Green
 
         let g:ycm_python_binary_path='python'
+
+        " get full diagnostics (:lopen, :lclose, <leader>d)
+        let g:ycm_always_populate_location_list = 1
 
     " }}}
     " 4.9. VimTeX ------------------------------------------------- {{{
