@@ -1,4 +1,8 @@
 ###### changelog
+`2019.08.04.2`
+  - test
+
+
 `2019.08.04.1`
   - add Ek0 statements to some shortcuts in `.vimrc`
   - edit / update some YCM settings in `.vimrc`
