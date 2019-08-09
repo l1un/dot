@@ -2,13 +2,11 @@
     "functions": [
         {
             "args": [
-                "x_bar",
-                "mu_zero",
-                "s_x",
+                "p",
                 "n"
             ],
-            "expression": "(x_bar - mu_zero) / (s_x / sqrt(n))? (MEANS)",
-            "name": "tscoretest"
+            "expression": "((1 - p)^(n - 1) * p)",
+            "name": "geometpdf"
         },
         {
             "args": [
@@ -18,22 +16,6 @@
             ],
             "expression": "(p_hat - p_zero) / (sqrt((p_zero * (1 - p_zero)) / n))? (PROPORTIONS)",
             "name": "zscoretest"
-        },
-        {
-            "args": [
-                "p",
-                "n"
-            ],
-            "expression": "((1 - p)^(n - 1) * p)",
-            "name": "geometpdf"
-        },
-        {
-            "args": [
-                "p",
-                "n"
-            ],
-            "expression": "(1 - (1 - p)^n)",
-            "name": "geometcdf"
         },
         {
             "args": [
@@ -54,6 +36,15 @@
         },
         {
             "args": [
+                "X",
+                "mu",
+                "sd"
+            ],
+            "expression": "((X - mu) / sd)? FIXME: review usecase",
+            "name": "zscore"
+        },
+        {
+            "args": [
                 "zscore",
                 "sigma",
                 "n"
@@ -63,12 +54,29 @@
         },
         {
             "args": [
-                "X",
-                "mu",
-                "sd"
+                "p",
+                "n"
             ],
-            "expression": "((X - mu) / sd)? FIXME: review usecase",
-            "name": "zscore"
+            "expression": "(1 - (1 - p)^n)",
+            "name": "geometcdf"
+        },
+        {
+            "args": [
+                "x_bar",
+                "mu_zero",
+                "s_x",
+                "n"
+            ],
+            "expression": "(x_bar - mu_zero) / (s_x / sqrt(n))? (MEANS)",
+            "name": "tscoretest"
+        },
+        {
+            "args": [
+                "observed",
+                "expected"
+            ],
+            "expression": "((observed - expected)^2) / expected",
+            "name": "chisquare"
         }
     ],
     "history": [
@@ -79,7 +87,7 @@
             "type": "BuiltIn",
             "value": {
                 "numeric_value": {
-                    "value": "1.200000000000000000000000000000000000000000000000000000000000000000000000000000"
+                    "value": "11.441666666666666666666666666666666666666666666666666666666666666666666666666666"
                 }
             }
         }
