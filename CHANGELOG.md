@@ -1,4 +1,9 @@
 ###### changelog
+`2019.08.09.1`
+  - update edit note alias in `.bash_aliases`
+  - add chisquare helper function to `SpeedCrunch/session.json`
+
+
 `2019.08.05.2`
   - add tscoretest function to `session.json` for SpeedCrunch
   - also update comments and tidy spacing, parens for functions in file
