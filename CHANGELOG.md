@@ -1,4 +1,9 @@
 ###### changelog
+`2019.08.09.2`
+  - update `sync-dot-files` to include `.config/devilspie2` and sync lua file
+  - add `Parcel.js` 'backup' setting to `.vimrc`
+
+
 `2019.08.09.1`
   - update edit note alias in `.bash_aliases`
   - add chisquare helper function to `SpeedCrunch/session.json`
