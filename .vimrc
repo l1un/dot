@@ -69,6 +69,11 @@
         "set timeout timeoutlen=1500 <-- try if too fast
 
     " }}}
+    " 0.3. Parcel Bundler ---------------------------------------- {{{
+
+        set backupcopy=yes
+
+    " }}}
 " }}}
 " 1. Global Built-In Settings + Config ---------------------------- {{{
     " 1.0. Notes -------------------------------------------------- {{{
@@ -451,6 +456,9 @@
 
         " get full diagnostics (:lopen, :lclose, <leader>d)
         let g:ycm_always_populate_location_list = 1
+
+        " disable typescript server warnings
+        let g:ycm_filter_diagnostics = { 'javascript': { 'regex': [ '.*' ] } }
 
     " }}}
     " 4.9. VimTeX ------------------------------------------------- {{{

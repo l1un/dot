@@ -39,6 +39,8 @@
 │   └── update-project-push
 ├── CHANGELOG.md
 ├── .config
+│   ├── devilspie2
+│   │   └── remove-window-decoration.lua
 │   ├── gnuplot
 │   │   └── qtterminal.conf
 │   ├── gtk-3.0
@@ -134,8 +136,8 @@
 ├── .vimrc
 └── .vimrc_1.7
 
-33 directories, 78 files
-last generated: Fri Aug  9 05:44:52 PDT 2019
+34 directories, 79 files
+last generated: Fri Aug  9 17:24:49 PDT 2019
 ```
 ###### packages
 ```
@@ -145,7 +147,7 @@ devDependencies
 dependencies
 
 
-auto-generated: Fri Aug  9 05:44:52 PDT 2019
+auto-generated: Fri Aug  9 17:24:49 PDT 2019
 ```
 ###### notes
 ###### [changelog](CHANGELOG.md)

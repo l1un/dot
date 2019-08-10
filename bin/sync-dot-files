@@ -2,7 +2,7 @@
 
 #### Name: update-dot-files
 #### Created: 05.21.2019
-#### Updated: Fri Jul 19 06:27:43 PDT 2019
+#### Updated: Fri Aug  9 17:20:30 PDT 2019 (add devilspie2)
 #### Description: Synchronize latest system dot files to git repository keeping correct structure and files in corresponding directories.
 
 update_dot_files() {
@@ -24,6 +24,7 @@ update_dot_files() {
 	# Directories
 	local source_bin_dir="$HOME/bin/"
 	local source_ftplugin_dir="$HOME/.vim/ftplugin/"
+	local source_devilspie2_dir="$HOME/./.config/devilspie2/"
 	local source_gnuplot_dir="$HOME/./.config/gnuplot/"
 	local source_htop_dir="$HOME/.config/htop/"
 	local source_snippets_dir="$HOME/.vim/ultisnips/"
@@ -45,6 +46,7 @@ update_dot_files() {
 
 	# Array for .config directories, other dirs to get files from
 	local source_dot_config_dirs=(
+    $source_devilspie2_dir
 		$source_gnuplot_dir
 		$source_htop_dir
 		$source_speedcrunch_dir
