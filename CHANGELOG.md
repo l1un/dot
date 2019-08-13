@@ -1,4 +1,9 @@
 ###### changelog
+`2019.08.13.1`
+  - add ftp files for css, tex and adjust fold settings
+  - remove unused function in `SpeedCrunch/session.json`
+
+
 `2019.08.09.2`
   - update `sync-dot-files` to include `.config/devilspie2` and sync lua file
   - add `Parcel.js` 'backup' setting to `.vimrc`
