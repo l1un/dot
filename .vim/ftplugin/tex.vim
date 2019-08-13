@@ -1,3 +1,4 @@
+set foldmethod=marker
 setlocal spell spelllang=en_us
 
 " TEST: vimtex clean on quit
