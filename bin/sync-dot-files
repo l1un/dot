@@ -2,7 +2,7 @@
 
 #### Name: update-dot-files
 #### Created: 05.21.2019
-#### Updated: Fri Aug  9 17:20:30 PDT 2019 (add devilspie2)
+#### Updated: Wed Aug 14 10:06:10 PDT 2019 (add .emacs)
 #### Description: Synchronize latest system dot files to git repository keeping correct structure and files in corresponding directories.
 
 update_dot_files() {
@@ -14,6 +14,7 @@ update_dot_files() {
 	# Files
 	local source_bashrc_file="$HOME/.bashrc"
 	local source_bash_aliases_file="$HOME/.bash_aliases"
+	local source_emacs_file="$HOME/.emacs"
 	local source_eslint_file="$HOME/.eslintrc.js"
 	local source_latexmkrc_file="$HOME/.latexmkrc"
 	local source_lynxrc_file="$HOME/.lynxrc"
@@ -36,6 +37,7 @@ update_dot_files() {
 	local source_root_dir_config_files=(
 		$source_bashrc_file
 		$source_bash_aliases_file
+    $source_emacs_file
 		$source_eslint_file
     $source_latexmkrc_file
 		$source_lynxrc_file

@@ -172,11 +172,11 @@
         nnoremap <Leader>pt :set paste!<CR>:set paste?<CR>
 
         " List Buffers + Prep Entry
-        nnoremap <Leader>bl :ls<CR>:b<Space>
+        " nnoremap <Leader>bl :ls<CR>:b<Space>
         " Next Buffer
-        nnoremap <Leader>bn :bn<CR>
+        " nnoremap <Leader>bn :bn<CR>
         " Previous Buffer
-        nnoremap <Leader>bp :bp<CR>
+        " nnoremap <Leader>bp :bp<CR>
 
         " Open current buffer in new tab (toggle larger view)
         nnoremap <Leader>ts :tab split<CR>

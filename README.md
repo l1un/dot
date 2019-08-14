@@ -1,23 +1,32 @@
 ##### dot-config
 `babel`
 `bash`
+`bin`
 `curl`
+`devilspie2`
+`emacs`
 `eslint`
+`htop`
+`gatsby`
+`gnuplot`
 `gulp`
 `gtk`
 `json`
+`LaTeX`
 `lynx`
-`python.vim`
 `setxkbmap`
+`speedcrunch`
 `ssh`
 `tern`
 `terminator`
 `tmux`
+`tsserver`
 `ultisnips`
 `vim`
 `vimium`
 `webpack`
 `xkb`
+`zathura`
 
 ###### tree
 ```
@@ -54,6 +63,7 @@
 │   │   └── config
 │   └── zathura
 │       └── zathurarc
+├── .emacs
 ├── .eslintrc.js
 ├── jsconfig.json
 ├── .latexmkrc
@@ -138,8 +148,8 @@
 ├── .vimrc
 └── .vimrc_1.7
 
-34 directories, 81 files
-last generated: Tue Aug 13 04:11:53 PDT 2019
+34 directories, 82 files
+last generated: Wed Aug 14 10:16:24 PDT 2019
 ```
 ###### packages
 ```
@@ -149,7 +159,7 @@ devDependencies
 dependencies
 
 
-auto-generated: Tue Aug 13 04:11:53 PDT 2019
+auto-generated: Wed Aug 14 10:16:24 PDT 2019
 ```
 ###### notes
 ###### [changelog](CHANGELOG.md)
