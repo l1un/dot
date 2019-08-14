@@ -1,4 +1,10 @@
 ###### changelog
+`2019.08.14.1`
+  - add default `.emacs` initial config file
+  - update script to auto-sync updates
+  - toggle buffer related shortcuts in `.vimrc`
+
+
 `2019.08.13.1`
   - add ftp files for css, tex and adjust fold settings
   - remove unused function in `SpeedCrunch/session.json`
