@@ -1,4 +1,9 @@
 ###### changelog
+`2019.08.16.1`
+  - change splits to edits in vim shortcuts
+  - disable chktex lint
+
+
 `2019.08.14.1`
   - add default `.emacs` initial config file
   - update script to auto-sync updates
