@@ -32,3 +32,6 @@
 
 ;; (setq-default cursor-in-non-selected-windows nil)
 (scroll-bar-mode -1)))
+
+;; testing
+(setq inhibit-startup-message t)

@@ -40,7 +40,7 @@
         " fugitive.vim
         Plugin 'tpope/vim-fugitive'
         " indent line
-        Plugin 'Yggdroot/indentLine'
+        " Plugin 'Yggdroot/indentLine'
         " tmux vim split pane sync
         Plugin 'christoomey/vim-tmux-navigator'
         " python indent
@@ -86,6 +86,7 @@
 
         " Molokai added to .vim/colors
         syntax on
+        " set termguicolors
         colorscheme molokai
 
         set encoding=utf-8
@@ -258,16 +259,16 @@
 " 2. Quick Edit + Source Files ------------------------------------ {{{
 
     " .vimrc
-    nnoremap <silent> <Leader>ev :sp $MYVIMRC<CR>
-    nnoremap <silent> <Leader>eV :vsp $MYVIMRC<CR>
+    nnoremap <silent> <Leader>ev :e $MYVIMRC<CR>
+    nnoremap <silent> <Leader>eV :sp $MYVIMRC<CR>
     " notes (netrw)
-    nnoremap <silent> <Leader>en :sp ~/Projects/notebook/main-note.md<CR>
+    nnoremap <silent> <Leader>en :e ~/Projects/notebook/main-note.md<CR>
     " tmux
-    nnoremap <silent> <Leader>et :tabnew<CR>:e ~/.tmux.conf<CR>
+    nnoremap <silent> <Leader>et :e<CR>:e ~/.tmux.conf<CR>
     " .bash_aliases
-    nnoremap <silent> <Leader>eba :tabnew<CR>:e ~/.bash_aliases<CR>
+    nnoremap <silent> <Leader>eba :e<CR>:e ~/.bash_aliases<CR>
     " .bashrc
-    nnoremap <silent> <Leader>ebc :tabnew<CR>:e ~/.bashrc<CR>
+    nnoremap <silent> <Leader>ebc :e<CR>:e ~/.bashrc<CR>
     " ultisnips
     nnoremap <silent> <Leader>es :UltiSnipsEdit<CR>
 
@@ -347,13 +348,15 @@
         " https://jaxbot.me/articles/setting-up-vim-for-react-js-jsx-02-03-2015
         let g:jsx_ext_required = 0 " Allow JSX in normal JS files
 
+        " lacheck removed
+
         let g:ale_statusline_format = ['error', 'warning %d', '']
         let g:ale_linters = {
               \ 'javascript': ['stylelint', 'eslint', 'prettier'],
               \ 'css': ['stylelint', 'eslint'],
               \ 'sh': ['language_server', 'shellcheck'],
               \ 'markdown': ['remark-lint'],
-              \ 'tex': ['lacheck', 'chktex'],
+              \ 'tex': ['chktex'],
               \ 'html': ['tidy', 'stylelint', 'alex'],
             \ }
 
@@ -380,14 +383,14 @@
     " 4.3. Indent Lines ------------------------------------------- {{{
 
         " indent guides/lines hide '$' at end of lines etc...
-        set listchars=""
-        let g:indentLine_color_term = 236
-        let g:vim_json_syntax_conceal = 0 " disable in JSON
-        let g:indentLine_fileTypeExclude = ['markdown']
+        " set listchars=""
+        " let g:indentLine_color_term = 236
+        " let g:vim_json_syntax_conceal = 0 " disable in JSON
+        " let g:indentLine_fileTypeExclude = ['markdown']
 
         " let g:indentLine_setColors = 233
         " let g:indentLine_bgcolor_term = 235
-        " let g:indentLine_char = '|'
+        " let g:indentLine_char = '.'
 
     " }}}
     " 4.4. Instant Markdown --------------------------------------- {{{
@@ -428,7 +431,7 @@
     " 4.7. Ultisnips ---------------------------------------------- {{{
 
         " set directory
-        let g:UltiSnipsSnippetDirectories = ['$HOME/.vim/ultisnips']
+        let g:UltiSnipsSnippetDirectories = ['~/.vim/ultisnips']
         " expand completion
         let g:UltiSnipsExpandTrigger="Kj"
         " open :UltiSnipsEdit in split
