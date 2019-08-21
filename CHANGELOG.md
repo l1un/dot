@@ -1,4 +1,8 @@
 ###### changelog
+`2019.08.21.1`
+  - change `eV` shortcut to open ftplugin files (markdown.vim created first)
+
+
 `2019.08.16.1`
   - change splits to edits in vim shortcuts
   - disable chktex lint
