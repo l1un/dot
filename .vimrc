@@ -260,7 +260,6 @@
 
     " .vimrc
     nnoremap <silent> <Leader>ev :e $MYVIMRC<CR>
-    nnoremap <silent> <Leader>eV :sp $MYVIMRC<CR>
     " notes (netrw)
     nnoremap <silent> <Leader>en :e ~/Projects/notebook/main-note.md<CR>
     " tmux
