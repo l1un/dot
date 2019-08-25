@@ -1,4 +1,9 @@
 ###### changelog
+`2019.08.25.1`
+  - update `markdown.vim` with comments and `set spell`
+  - speedcrunch SOP
+
+
 `2019.08.21.1`
   - change `eV` shortcut to open ftplugin files (markdown.vim created first)
 
