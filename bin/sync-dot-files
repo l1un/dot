@@ -1,8 +1,8 @@
 #!/usr/bin/env bash
 
-#### Name: update-dot-files
+#### Name: sync-dot-files
 #### Created: 05.21.2019
-#### Updated: Wed Aug 14 10:06:10 PDT 2019 (add .emacs)
+#### Updated: Sun Aug 25 06:11:38 PDT 2019 (FIX: define tmux.conf source)
 #### Description: Synchronize latest system dot files to git repository keeping correct structure and files in corresponding directories.
 
 update_dot_files() {
@@ -19,6 +19,7 @@ update_dot_files() {
 	local source_latexmkrc_file="$HOME/.latexmkrc"
 	local source_lynxrc_file="$HOME/.lynxrc"
 	local source_tern_config_file="$HOME/.tern-config"
+	local source_tmux_conf_file="$HOME/.tmux.conf"
 	local source_vimrc_file="$HOME/.vimrc"
 	local source_gtk_css_file="$HOME/.config/gtk-3.0/gtk.css"
 
