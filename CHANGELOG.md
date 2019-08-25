@@ -1,4 +1,9 @@
 ###### changelog
+`2019.08.25.2`
+  - update `sync-dot-files` with path/source to `tmux.conf`
+  - update `tmux.conf` with adjustments for granual resizing
+
+
 `2019.08.25.1`
   - update `markdown.vim` with comments and `set spell`
   - speedcrunch SOP
