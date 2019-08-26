@@ -1,4 +1,8 @@
 ###### changelog
+`2019.08.26.1`
+  - change ultisnips trigger to `fd` test
+
+
 `2019.08.25.2`
   - update `sync-dot-files` with path/source to `tmux.conf`
   - update `tmux.conf` with adjustments for granual resizing
