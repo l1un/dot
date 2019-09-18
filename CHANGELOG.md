@@ -1,4 +1,9 @@
 ###### changelog
+`2019.09.18.1`
+  - add REPL function shortcut to `.vimrc`
+  - continue work on dotsync scripting
+
+
 `2019.08.30.1`
   - test
 
