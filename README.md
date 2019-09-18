@@ -150,7 +150,7 @@
 └── .vimrc_1.7
 
 34 directories, 83 files
-last generated: Fri Aug 30 04:17:33 PDT 2019
+last generated: Wed Sep 18 12:33:01 PDT 2019
 ```
 ###### packages
 ```
@@ -160,7 +160,7 @@ devDependencies
 dependencies
 
 
-auto-generated: Fri Aug 30 04:17:33 PDT 2019
+auto-generated: Wed Sep 18 12:33:01 PDT 2019
 ```
 ###### notes
 ###### [changelog](CHANGELOG.md)

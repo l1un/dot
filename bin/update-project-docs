@@ -4,17 +4,9 @@
 #### date: 06.19.2019
 #### dependencies: `tree`, `sed`
 
-#### NOTES: use after syncing other files, directories etc. to a project in an alias
-#### then add github workflow after running the script in the same alias. written for
-#### bash. minor edits required for posix. [[namely]].
+#### NOTES: use after syncing other files, directories etc. to a project in an alias, then add github workflow after running the script in the same alias. written for bash. minor edits required for posix. [[namely]]. EXAMPLE: <ALIAS>="rsync <files><dirs> <path> && cd <path> && <run-this-script> && git add . && git commit -v && git push"
 
-#### EXAMPLE: <ALIAS>="rsync <files><dirs> <path> && cd <path> && <run-this-script> &&
-#### git add . && git commit -v && git push"
-
-#### DESCRIPTION: 1. If README and CHANGELOG do not exist: Prompts to create the files
-#### at the root directory and formats new files for updating via script. 2. Once the
-#### files exist: Auto updates (within set markers) the README with current tree view #### (of reasonable depth) and timestamp / info. 3. Opens editor to add
-#### entries to the CHANGELOG and applies them with timestamp / info.
+#### DESCRIPTION: 1. If README and CHANGELOG do not exist: Prompts to create the files at the root directory and formats new files for updating via script. 2. Once the files exist: Auto updates (within set markers) the README with current tree view (of reasonable depth) and timestamp / info. 3. Opens editor to add entries to the CHANGELOG and applies them with timestamp / info.
 
 update_project_docs() {
 
@@ -26,6 +18,7 @@ update_project_docs() {
   # For tests and messages
   local README='README.md'
   local CHANGELOG='CHANGELOG.md'
+  local PACKAGE_JSON='package.json'
   local not_found="${red}not found.${end}"
   local create_prompt="${grn}Create File?${end} [Y/n]: "
   local ready_msg="Ready. ${red}C${end} to Cancel or ${grn}Any${end} to continue. "
@@ -45,7 +38,7 @@ update_project_docs() {
       touch $README && echo -e "\n${README} ${grn}created.${end}"
       # NOTE: README markers are set here.
       echo -e '##### tree' >> "$README"
-      echo -e '##### notes' >> "$README"
+      # echo -e '##### notes' >> "$README"
     else
       echo -e "\n${README} does not exist. ${exit_msg}\n"  && exit 1
     fi
@@ -78,17 +71,33 @@ update_project_docs() {
   fi
 
   update_tree() {
+
     local time_stamp
     time_stamp="Updated: $(date)"
+
     local tree_output
     tree_output=$(tree -Ia "node*|.git|old|tMp|.cache|d|20*")
-    # NOTE: Set markers here. Remove / prep for tree update.
+
     sed -n -i '1,/##### tree/p;/##### notes/,$p' $README
     echo "$triple_ticks" "$tree_output" "$time_stamp" > $temp_file
     echo -e "$triple_ticks\n" >> $temp_file
     sed -i "/##### tree/r $temp_file" "$README"
-
   }
+
+  update_packages() {
+    if [[ ! -f $PACKAGE_JSON ]]; then
+      echo "no package.json file exists"
+    else
+      echo '##### packages' >> $temp_file
+      echo "$triple_ticks" >> $temp_file
+      cat ./package.json | jq .devDependencies >> $temp_file
+      cat ./package.json | jq .dependencies >> $temp_file
+      echo "$triple_ticks" >> $temp_file
+      echo -e "\nupdated: $(date)" >> $temp_file
+    fi
+  }
+
+update_packages
 
 update_tree
 

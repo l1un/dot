@@ -290,7 +290,7 @@
         endfunction
 
         " type <leader>n to open rename file dialog
-        noremap <leader>n :call RenameFile()<CR>
+        noremap <Leader>n :call RenameFile()<CR>
 
         " echo color status message
         " :so /usr/share/vim/vim81/syntax/hitest.vim
@@ -299,6 +299,27 @@
           echo a:msg
           echohl None
         endfunction
+
+        " REPL (math, etc.)
+        function! Repl()
+          while 1
+            let expr = input ('>', '', 'expression')
+            if expr == 'q' | break | endif
+              if expr != ''
+                echo "\n"
+                if expr =~ '='
+                  execute 'let ' . expr
+                else
+                  let ans = eval(expr)
+                  echo string(ans)
+                endif
+              endif
+            endwhile
+          endfunction
+
+        " <leader> c to call REPL function
+        nnoremap <Leader>c :call Repl()<CR>
+
 
     " }}}
     " 3.2. JS Functions ------------------------------------------- {{{
