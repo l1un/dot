@@ -42,10 +42,12 @@
 │   ├── copy-shell-scripts
 │   ├── get-window-info
 │   ├── open-tmux
+│   ├── README.md
 │   ├── save-last-command
 │   ├── sync-dot-files
 │   ├── update-project-docs
-│   └── update-project-push
+│   ├── update-project-push
+│   └── update-readme-tree
 ├── CHANGELOG.md
 ├── .config
 │   ├── devilspie2
@@ -118,6 +120,12 @@
 │   │   └── ssh-config-example
 │   ├── tdd
 │   │   └── mocha-standard-js-example-package.json
+│   ├── termux
+│   │   ├── .bash_aliases
+│   │   ├── .bashrc
+│   │   ├── .hushlogin
+│   │   ├── README.md
+│   │   └── .termux.properties
 │   ├── .tern-config
 │   ├── .tern-project
 │   ├── tmux
@@ -149,8 +157,8 @@
 ├── .vimrc
 └── .vimrc_1.7
 
-34 directories, 83 files
-last generated: Wed Sep 18 12:33:01 PDT 2019
+35 directories, 90 files
+last generated: Sun Oct 13 10:12:38 PDT 2019
 ```
 ###### packages
 ```
@@ -160,7 +168,7 @@ devDependencies
 dependencies
 
 
-auto-generated: Wed Sep 18 12:33:01 PDT 2019
+auto-generated: Sun Oct 13 10:12:38 PDT 2019
 ```
 ###### notes
 ###### [changelog](CHANGELOG.md)

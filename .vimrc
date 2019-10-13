@@ -108,7 +108,7 @@
 
         " Search Behaviour, RegEx Typing
         set incsearch
-        " set ignorecase
+        set ignorecase
 
         " Follow Working Directory
         set autochdir

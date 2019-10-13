@@ -20,29 +20,67 @@ update_project_docs() {
   local CHANGELOG='CHANGELOG.md'
   local PACKAGE_JSON='package.json'
   local not_found="${red}not found.${end}"
+  local is_found="${grn}is found.${grn}"
   local create_prompt="${grn}Create File?${end} [Y/n]: "
+  local update_prompt="${grn}Update File?${end} [Y/n]: "
   local ready_msg="Ready. ${red}C${end} to Cancel or ${grn}Any${end} to continue. "
   local exit_msg="${red}Cancelled.${end}"
 
   # For formatting
-  local temp_file='tMp'
+  local temporary_text_file='temporary_text_file.txt'
+  local temporary_package_file='temporary_package_file.txt'
   local triple_ticks="\`\`\`"
 
+  # Function to update the tree in README
 
-  # IF no README: prompt to create --> then formats, ELSE: exits.
+  update_tree() {
+
+    local time_stamp
+    time_stamp="Last Tree Update: $(date)"
+
+    local tree_output
+    tree_output=$(tree -Ia "node*|.git|old|tMp|.cache|d|20*")
+
+    sed -n -i '1,/##### tree/p;/##### notes/,$p' $README
+    {
+      echo "$triple_ticks"
+      echo "$tree_output"
+      echo "$time_stamp"
+      echo -e "$triple_ticks\n"
+    } >> $temporary_text_file
+
+    sed -i "/##### tree/r $temporary_text_file" "$README"
+
+    rm $temporary_text_file
+
+  }
+
+  # Logic If README exists: prompt to update, then if call update.
+  if [[ -f $README ]]; then
+    read -r -p "${README} ${is_found} ${update_prompt}" answer_one_b
+    if [ "$answer_one_b" = "Y" ] || [ "$answer_one_b" = "y" ]; then
+      update_tree
+      echo "Tree Successfully Updated..."
+    fi
+  fi
+
+  # Logic if README does NOT exist: prompt to create --> then formats, ELSE: exits.
   if [[ ! -f $README ]]; then
     echo
     read -r -p "${README} ${not_found} ${create_prompt}" answer_one
 
-    if [ "$answer_one" = "Y" ]; then
+    if [ "$answer_one" = "Y" ] || [ "$answer_one" = "y" ]; then
       touch $README && echo -e "\n${README} ${grn}created.${end}"
+
       # NOTE: README markers are set here.
-      echo -e '##### tree' >> "$README"
-      # echo -e '##### notes' >> "$README"
+      {
+        echo -e "##### tree\n"
+        echo -e '##### notes'
+      } >> "$README"
+
     else
       echo -e "\n${README} does not exist. ${exit_msg}\n"  && exit 1
     fi
-
   fi
 
   # IF no CHANGELOG: prompt to create --> then formats, ELSE: exits.
@@ -50,7 +88,7 @@ update_project_docs() {
     echo
     read -r -p "${CHANGELOG} ${not_found} ${create_prompt}" answer_two
 
-    if [ "$answer_two" = "Y" ]; then
+    if [ "$answer_two" = "Y" ] || [ "$answer_two" = "y" ]; then
       touch $CHANGELOG && echo -e "\n${CHANGELOG} ${grn}created.${end}"
       # NOTE: CHANGELOG marker set here.
       echo -e '##### changelog\n' >> "$CHANGELOG"
@@ -70,36 +108,30 @@ update_project_docs() {
     echo
   fi
 
-  update_tree() {
-
-    local time_stamp
-    time_stamp="Updated: $(date)"
-
-    local tree_output
-    tree_output=$(tree -Ia "node*|.git|old|tMp|.cache|d|20*")
-
-    sed -n -i '1,/##### tree/p;/##### notes/,$p' $README
-    echo "$triple_ticks" "$tree_output" "$time_stamp" > $temp_file
-    echo -e "$triple_ticks\n" >> $temp_file
-    sed -i "/##### tree/r $temp_file" "$README"
-  }
 
   update_packages() {
+
     if [[ ! -f $PACKAGE_JSON ]]; then
       echo "no package.json file exists"
     else
-      echo '##### packages' >> $temp_file
-      echo "$triple_ticks" >> $temp_file
-      cat ./package.json | jq .devDependencies >> $temp_file
-      cat ./package.json | jq .dependencies >> $temp_file
-      echo "$triple_ticks" >> $temp_file
-      echo -e "\nupdated: $(date)" >> $temp_file
+      {
+        echo '##### packages';
+        echo "$triple_ticks";
+        jq '.dependencies' package.json
+        jq '.devDependencies' package.json
+        # cat ./package.json | jq .devDependencies
+        # cat ./package.json | jq .dependencies
+        echo "$triple_ticks"
+        echo -e "\nLast package.json Update: $(date)"
+      } >> $temporary_package_file
     fi
+
   }
 
-update_packages
-
-update_tree
+# 1. Update tree first.
+# update_tree
+# 2. Update packages second.
+# update_packages
 
 
 }

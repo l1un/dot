@@ -1,0 +1,39 @@
+#!/usr/bin/env bash
+
+#### name: update-readme-tree
+#### date: Fri Sep 27 14:14:10 PDT 2019
+#### dependencies: `tree`, `sed`
+
+update_readme_tree() {
+
+  # Ansi colors
+  red=$'\e[1;31m'
+  grn=$'\e[1;32m'
+  end=$'\e[0m'
+
+  # Files
+  README='README.md'
+  temp_text='temp.txt'
+
+  # Formatted Text
+  timestamp="Tree Updated: $(date)"
+  ticks="\`\`\`"
+  tree_output=$(tree -Ia "node*|.git|old|temp.txt|.cache")
+
+  # Replace lines between patterns exclude patterns.
+  sed -e '/##### tree/,/##### notes/{//!p;}' $README
+
+    {
+      echo "$ticks"
+      echo "$tree_output"
+      echo "$timestamp"
+      echo -e "$ticks\n"
+    } > $temp_text
+
+    sed -i "/##### tree/r $temp_text" "$README"
+
+    # rm $temp_text
+
+}
+
+update_readme_tree
