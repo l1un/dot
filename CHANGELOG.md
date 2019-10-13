@@ -1,4 +1,8 @@
 ###### changelog
+`2019.10.13.2`
+  - clean-up from scripting tests and termux add
+
+
 `2019.10.13.1`
   - add changes
 
