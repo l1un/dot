@@ -1,4 +1,9 @@
 ###### changelog
+`2019.10.13.4`
+  - create `old-changelogs` dir and edit `CHANGELOG.md` to include only 2019
+  - create `CHANGELOG-2018.md` and `CHANGELOG-2017.md` respectively
+
+
 `2019.10.13.2`
   - clean-up from scripting tests and termux add
 
