@@ -4,7 +4,12 @@
 
 
 `2019.10.13.1`
-  - add changes
+  - updated scripts not pushed in September
+  - added .bashrc and .bash_aliases for termux
+
+
+`2019.10.13.1`
+  - PREVIOUSLY (via termux): added first files for termux config
 
 
 `2019.09.18.1`
