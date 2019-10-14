@@ -1,7 +1,8 @@
 #### file notes
 
 - `.hushlogin`: silence welcome message
-- `.termux/.termux.properties`: extra keys +?
+- `.termux/.termux.properties`: extra keys + 
+- `.bash*`: customized for termux 
 
 #### links
 
