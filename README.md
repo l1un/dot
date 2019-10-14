@@ -121,6 +121,9 @@
 │   │   ├── lynx.cfg
 │   │   ├── lynx.lss
 │   │   └── nix_bookmarks.html
+│   ├── mega
+│   │   ├── .megarc
+│   │   └── README.md
 │   ├── ssh
 │   │   └── ssh-config-example
 │   ├── tdd
@@ -159,11 +162,10 @@
 │   └── ultisnips
 │       ├── javascript.snippets
 │       └── text.snippets
-├── .vimrc
-└── .vimrc_1.7
+└── .vimrc
 
-37 directories, 93 files
-last generated: Mon Oct 14 09:49:44 PDT 2019
+38 directories, 94 files
+last generated: Mon Oct 14 13:26:01 PDT 2019
 ```
 ###### packages
 ```
@@ -173,7 +175,7 @@ devDependencies
 dependencies
 
 
-auto-generated: Mon Oct 14 09:49:44 PDT 2019
+auto-generated: Mon Oct 14 13:26:01 PDT 2019
 ```
 ###### notes
 ###### [changelog](CHANGELOG.md)
