@@ -1,4 +1,8 @@
 ###### changelog
+`2019.10.14.4`
+  - rename and clean-up after merge conflict and improving sync
+
+
 
 `2019.10.14.3`
   - continue termux setup, dirs, files custom etc.
