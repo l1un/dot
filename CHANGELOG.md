@@ -1,4 +1,8 @@
 ###### changelog
+`2019.10.14.3`
+  - add mega config + README
+
+
 `2019.10.14.2`
   - add rsync test to `sync-dot-files`, clean-up, run it
   - also corrected dir structure for `lynx.cfg` `lynx.lss` and synced
