@@ -1,4 +1,9 @@
 ###### changelog
+`2019.10.14.2`
+  - add rsync test to `sync-dot-files`, clean-up, run it
+  - also corrected dir structure for `lynx.cfg` `lynx.lss` and synced
+
+
 `2019.10.14.1`
   - update `sync-dot-files` for updated dir structure + clean / conventionalize
 
