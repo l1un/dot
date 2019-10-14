@@ -1,15 +1,14 @@
 #!/usr/bin/env bash
 
-#### Name: sync-dot-files
-#### Created: 05.21.2019
-#### Updated: Sun Aug 25 06:11:38 PDT 2019 (FIX: define tmux.conf source)
-#### Description: Synchronize latest system dot files to git repository keeping correct structure and files in corresponding directories.
+## Name: sync-dot-files
+## Created: 05.21.2019
+## Updated: Mon Oct 14 09:11:31 PDT 2019 (handle termux sync + cleanup)
+## Description: Synchronize latest system dot files to git repository keeping correct structure and files in corresponding directories.
+## TODO: Update to rysnc.
 
 update_dot_files() {
 
-	############################################################
-	# 1. Define source files and directories and prep.
-	############################################################
+	## 1. Define source files and directories and prep. -----------------------
 
 	# Files
 	local source_bashrc_file="$HOME/.bashrc"
@@ -57,20 +56,16 @@ update_dot_files() {
 		$source_zathura_dir
 	)
 
-	############################################################
-	# 2. Define destination paths for the repo directories.
-	############################################################
+	## 2. Define destination paths for the repo directories. -------------------
 
 	# To essentially replicate system structure in repo
-	local repo_bin_dir="/srv/www/html/dot-config/bin/"
-	local repo_dot_vim_dir="/srv/www/html/dot-config/.vim/"
-	local repo_dot_config_dir="/srv/www/html/dot-config/.config/"
-	local repo_gtk_dir="/srv/www/html/dot-config/.config/gtk-3.0/"
-	local repo_root_dir="/srv/www/html/dot-config/"
+	local repo_bin_dir="$HOME/Projects/dot-config/bin/"
+	local repo_dot_vim_dir="$HOME/Projects/dot-config/.vim/"
+	local repo_dot_config_dir="$HOME/Projects/dot-config/.config/"
+	local repo_gtk_dir="$HOME/Projects/dot-config/.config/gtk-3.0/"
+	local repo_root_dir="$HOME/Projects/dot-config/"
 
-	############################################################
-	# 3. Loop and copy files and directories.
-	############################################################
+	## 3. Loop and copy files and directories. ---------------------------------
 
 	# Sync system root config files
 	for each_file in "${source_root_dir_config_files[@]}"; do

@@ -116,7 +116,7 @@ if ! shopt -oq posix; then
   fi
 fi
 
-# ADDS ------------------------------------------------------------------------
+## adds ---------------------------------------------------------------------
 
 export NPM_PACKAGES="/home/o12/.npm-packages"
 export NODE_PATH="$NPM_PACKAGES/lib/node_modules${NODE_PATH:+:$NODE_PATH}"
@@ -136,7 +136,7 @@ export PATH="/home/o12/.local/bin:$PATH"
 # yarn
 export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
 
-# -------------------------------------------------------------------------------
+# functions ----------------------------------------------------------------
 
 # cd; ls -al
 cd_ls() {
@@ -161,7 +161,13 @@ save_last_command() {
   # $1 = path to file to append output
   fc -ln -1 | sed '1s/^[[:space:]]*//' >> "${1}"
 }
-# -------------------------------------------------------------------------------
+
+# surfraw duckduckgo helper
+surfraw_ddg() {
+  sr duckduckgo "$1"
+}
+
+# other --------------------------------------------------------------------
 
 # vim default editor
 export VISUAL=vim

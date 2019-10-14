@@ -144,6 +144,10 @@
 ├── README.md
 ├── .tern-config
 ├── .tmux.conf
+├── usr
+│   └── etc
+│       ├── lynx.cfg
+│       └── lynx.lss
 ├── .vim
 │   ├── ftplugin
 │   │   ├── css.vim
@@ -158,8 +162,8 @@
 ├── .vimrc
 └── .vimrc_1.7
 
-35 directories, 91 files
-last generated: Sun Oct 13 10:32:42 PDT 2019
+37 directories, 93 files
+last generated: Mon Oct 14 09:25:29 PDT 2019
 ```
 ###### packages
 ```
@@ -169,7 +173,7 @@ devDependencies
 dependencies
 
 
-auto-generated: Sun Oct 13 10:32:42 PDT 2019
+auto-generated: Mon Oct 14 09:25:29 PDT 2019
 ```
 ###### notes
 ###### [changelog](CHANGELOG.md)
