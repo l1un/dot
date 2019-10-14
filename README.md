@@ -65,6 +65,10 @@
 │       └── zathurarc
 ├── .emacs
 ├── .eslintrc.js
+├── etc
+│   └── lynx
+│       ├── lynx.cfg
+│       └── lynx.lss
 ├── jsconfig.json
 ├── .latexmkrc
 ├── .lynxrc
@@ -144,10 +148,6 @@
 ├── README.md
 ├── .tern-config
 ├── .tmux.conf
-├── usr
-│   └── etc
-│       ├── lynx.cfg
-│       └── lynx.lss
 ├── .vim
 │   ├── ftplugin
 │   │   ├── css.vim
@@ -163,7 +163,7 @@
 └── .vimrc_1.7
 
 37 directories, 93 files
-last generated: Mon Oct 14 09:25:29 PDT 2019
+last generated: Mon Oct 14 09:49:44 PDT 2019
 ```
 ###### packages
 ```
@@ -173,7 +173,7 @@ devDependencies
 dependencies
 
 
-auto-generated: Mon Oct 14 09:25:29 PDT 2019
+auto-generated: Mon Oct 14 09:49:44 PDT 2019
 ```
 ###### notes
 ###### [changelog](CHANGELOG.md)
