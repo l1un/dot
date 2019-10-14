@@ -1,7 +1,7 @@
 ###### changelog
 `2019.10.14.4`
+  - previously add `/mega/.megarc` + README for mega dir
   - rename and clean-up after merge conflict and improving sync
-
 
 
 `2019.10.14.3`
