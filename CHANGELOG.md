@@ -1,4 +1,8 @@
 ###### changelog
+`2019.10.13.5`
+  - add `usr/etc/lynx*` config files
+
+
 `2019.10.13.4`
   - create `old-changelogs` dir and edit `CHANGELOG.md` to include only 2019
   - create `CHANGELOG-2018.md` and `CHANGELOG-2017.md` respectively
