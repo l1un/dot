@@ -1,4 +1,8 @@
 ###### changelog
+`2019.10.14.1`
+  - update `sync-dot-files` for updated dir structure + clean / conventionalize
+
+
 `2019.10.13.5`
   - add `usr/etc/lynx*` config files
 
