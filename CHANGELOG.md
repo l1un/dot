@@ -1,6 +1,7 @@
 ###### changelog
+
 `2019.10.14.3`
-  - add mega config + README
+  - continue termux setup, dirs, files custom etc.
 
 
 `2019.10.14.2`
