@@ -40,6 +40,7 @@
 │   ├── change-bash-profile
 │   ├── copy-shell-scripts
 │   ├── get-window-info
+│   ├── gzip_and_move
 │   ├── open-tmux
 │   ├── save-last-command
 │   ├── sync-dot-files
@@ -162,8 +163,8 @@
 │       └── text.snippets
 └── .vimrc
 
-38 directories, 92 files
-last generated: Mon Oct 14 13:37:02 PDT 2019
+38 directories, 93 files
+last generated: Mon Oct 14 16:15:48 PDT 2019
 ```
 ###### packages
 ```
@@ -173,7 +174,7 @@ devDependencies
 dependencies
 
 
-auto-generated: Mon Oct 14 13:37:02 PDT 2019
+auto-generated: Mon Oct 14 16:15:48 PDT 2019
 ```
 ###### notes
 ###### [changelog](CHANGELOG.md)
