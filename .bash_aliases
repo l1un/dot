@@ -39,7 +39,7 @@ alias tdd="gnome-terminal --window-with-profile=tdd"
 alias tmuxs="~/bin/open-tmux"
 
 # copy dotfiles, got to dir (vcs), add, commit, push
-alias dotsync="~/bin/sync-dot-files && cd $HOME/Projects/dot-config && ~/bin/update-project-push"
+alias dotsync='~/bin/sync-dot-files && cd "$HOME"/Projects/dot-config && ~/bin/update-project-push'
 
 ## surfraw
 

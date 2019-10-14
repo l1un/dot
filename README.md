@@ -72,10 +72,7 @@
 ├── jsconfig.json
 ├── .latexmkrc
 ├── .lynxrc
-├── old-changelogs
-│   ├── CHANGELOG-2017.md
-│   └── CHANGELOG-2018.md
-├── other
+├── oth
 │   ├── .babelrc
 │   ├── cat
 │   ├── crontab
@@ -133,7 +130,8 @@
 │   │   ├── .bashrc
 │   │   ├── .hushlogin
 │   │   ├── README.md
-│   │   └── .termux.properties
+│   │   └── .termux
+│   │       └── termux.properties
 │   ├── .tern-config
 │   ├── .tern-project
 │   ├── tmux
@@ -164,8 +162,8 @@
 │       └── text.snippets
 └── .vimrc
 
-38 directories, 94 files
-last generated: Mon Oct 14 13:26:01 PDT 2019
+38 directories, 92 files
+last generated: Mon Oct 14 13:37:02 PDT 2019
 ```
 ###### packages
 ```
@@ -175,7 +173,7 @@ devDependencies
 dependencies
 
 
-auto-generated: Mon Oct 14 13:26:01 PDT 2019
+auto-generated: Mon Oct 14 13:37:02 PDT 2019
 ```
 ###### notes
 ###### [changelog](CHANGELOG.md)
