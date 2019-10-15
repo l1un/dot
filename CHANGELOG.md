@@ -1,4 +1,8 @@
 ###### changelog
+`2019.10.15.1`
+  - update termux `.vimrc`
+
+
 `2019.10.14.5`
   - add `bin/gzip_and_move` script for mega / termux use
 
