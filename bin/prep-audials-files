@@ -1,0 +1,45 @@
+#!/usr/bin/env bash
+
+## Name: prep-audials-files
+## Created: Mon Oct 14 14:51:00 PDT 2019
+## Modified: Tue Oct 15 20:34:37 PDT 2019
+## Description: Rename .aud extensios to .mp3, gzip and move to directory for backup.
+
+prep_audials_files() {
+
+  local grn='\033[0;32m'
+  local def='\033[0m'
+
+  # if no destination dir, create it
+  if [ ! -d "$2" ]; then
+    mkdir ./"$2"
+    echo "Created destination directory."
+  fi
+
+  echo
+
+  # change all file extensions to .mp3 in source
+  rename aud mp3 "$1"/*
+
+  for each_file in $1/*; do
+
+    # compress each file and keep
+    gzip -k "$each_file"
+
+    # move each file to destination
+    mv "$each_file".gz "$2"
+
+    # display verbose status
+    echo -e "${grn}$(basename "$each_file").gz copied to ${2}${def}"
+
+  done
+
+  # revert file ext. back to .aud in source
+  rename mp3 aud "$1"/*
+
+  echo
+  echo "Done."
+
+}
+
+prep_audials_files "$1" "$2"

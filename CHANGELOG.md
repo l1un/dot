@@ -1,4 +1,9 @@
 ###### changelog
+`2019.10.15.2`
+  - start termux dotfiles sync script
+  - add script to prep audials files for cloud backup
+
+
 `2019.10.15.1`
   - update termux `.vimrc`
 
