@@ -42,11 +42,14 @@
 │   ├── get-window-info
 │   ├── gzip_and_move
 │   ├── open-tmux
+│   ├── prep-audials-files
 │   ├── save-last-command
 │   ├── sync-dot-files
+│   ├── sync-termux-dotfiles
 │   ├── update-project-docs
 │   ├── update-project-push
-│   └── update-readme-tree
+│   ├── update-readme-tree
+│   └── z.sh
 ├── CHANGELOG.md
 ├── .config
 │   ├── devilspie2
@@ -131,8 +134,9 @@
 │   │   ├── .bashrc
 │   │   ├── .hushlogin
 │   │   ├── README.md
-│   │   └── .termux
-│   │       └── termux.properties
+│   │   ├── .termux
+│   │   │   └── termux.properties
+│   │   └── .vimrc
 │   ├── .tern-config
 │   ├── .tern-project
 │   ├── tmux
@@ -163,8 +167,8 @@
 │       └── text.snippets
 └── .vimrc
 
-38 directories, 93 files
-last generated: Mon Oct 14 16:15:48 PDT 2019
+38 directories, 97 files
+last generated: Sat Nov 23 11:28:26 PST 2019
 ```
 ###### packages
 ```
@@ -174,7 +178,7 @@ devDependencies
 dependencies
 
 
-auto-generated: Mon Oct 14 16:15:48 PDT 2019
+auto-generated: Sat Nov 23 11:28:26 PST 2019
 ```
 ###### notes
 ###### [changelog](CHANGELOG.md)

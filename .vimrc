@@ -134,6 +134,9 @@
     " }}}
     " 1.2. Shortcuts, Remapping ----------------------------------- {{{
 
+        "  FIXME: remap help to open in new tab
+        " :cabbrev help tab help
+
         " Also reverse exlusive linewise behavior when wrap is on.
         noremap j gj
         noremap k gk
