@@ -1,4 +1,8 @@
 ###### changelog
+`2019.11.23.1`
+  - add (fixme) vim help new tab, update tree
+
+
 `2019.10.15.2`
   - start termux dotfiles sync script
   - add script to prep audials files for cloud backup
