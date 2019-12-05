@@ -1,4 +1,9 @@
 ###### changelog
+`2019.12.05.1`
+  - test terminator config for splits (not working)
+  - `.vimrc` add remap for creating timestamp
+
+
 `2019.11.23.1`
   - add (fixme) vim help new tab, update tree
 
