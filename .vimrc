@@ -199,6 +199,9 @@
         " quickly turn off hls
         nnoremap <Esc><Esc> :nohls<CR>:call Ek0(':nohls')<CR>
 
+        " Read, insert and format date (timestamp)
+        nnoremap <Leader>!d o<Esc>:r!date \+\%Y\-\%m\-\%d\ \/\ \%R<CR>i# <Esc>o
+
     " }}}
     " 1.3. Whitespace Awareness ----------------------------------- {{{
 

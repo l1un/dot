@@ -168,7 +168,7 @@
 └── .vimrc
 
 38 directories, 97 files
-last generated: Sat Nov 23 11:28:26 PST 2019
+last generated: Thu Dec  5 11:53:57 PST 2019
 ```
 ###### packages
 ```
@@ -178,7 +178,7 @@ devDependencies
 dependencies
 
 
-auto-generated: Sat Nov 23 11:28:26 PST 2019
+auto-generated: Thu Dec  5 11:53:57 PST 2019
 ```
 ###### notes
 ###### [changelog](CHANGELOG.md)

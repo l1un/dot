@@ -6,6 +6,8 @@
   inactive_color_offset = 0.902597402597
   suppress_multiple_term_dialog = True
 [keybindings]
+  split_horiz = <Primary><Shift>underscore
+  split_vert = <Primary><Shift>bar
 [layouts]
   [[default]]
     [[[child0]]]
