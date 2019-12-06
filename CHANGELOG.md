@@ -1,4 +1,8 @@
 ###### changelog
+`2019.12.06.1`
+  - changed `node` to `nodemon` in `.vimrc` run node in split function
+
+
 `2019.12.05.1`
   - test terminator config for splits (not working)
   - `.vimrc` add remap for creating timestamp
