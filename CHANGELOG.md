@@ -1,4 +1,8 @@
 ###### changelog
+`2019.12.09.1`
+  - re-add `<leader>bl` shortcut for quick buffer nav
+
+
 `2019.12.06.1`
   - changed `node` to `nodemon` in `.vimrc` run node in split function
 
