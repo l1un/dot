@@ -176,7 +176,7 @@
         nnoremap <Leader>pt :set paste!<CR>:set paste?<CR>
 
         " List Buffers + Prep Entry
-        " nnoremap <Leader>bl :ls<CR>:b<Space>
+        nnoremap <Leader>bl :ls<CR>:b<Space>
         " Next Buffer
         " nnoremap <Leader>bn :bn<CR>
         " Previous Buffer
