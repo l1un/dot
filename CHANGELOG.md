@@ -1,4 +1,8 @@
 ###### changelog
+`2019.12.10.1`
+  - revert from nodemon back to node `.vimrc` shortcut
+
+
 `2019.12.09.1`
   - re-add `<leader>bl` shortcut for quick buffer nav
 
