@@ -333,7 +333,7 @@
         " run node in split
         function! RunFileInNode()
           let input_file = expand('%')
-          exec ':w !echo; nodemon' input_file
+          exec ':w !echo; node' input_file
         endfunction
 
         " type <leader>rn to run node file in split
