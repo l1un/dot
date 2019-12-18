@@ -378,7 +378,7 @@
 
         let g:ale_statusline_format = ['error', 'warning %d', '']
         let g:ale_linters = {
-              \ 'javascript': ['stylelint', 'eslint', 'prettier'],
+              \ 'javascript': ['standard', 'stylelint', 'eslint', 'prettier'],
               \ 'css': ['stylelint', 'eslint'],
               \ 'sh': ['language_server', 'shellcheck'],
               \ 'markdown': ['remark-lint'],
