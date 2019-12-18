@@ -1,4 +1,8 @@
 ###### changelog
+`2019.12.18.1`
+  - update / revert ALE JS linters `.vimrc`
+
+
 `2019.12.10.1`
   - revert from nodemon back to node `.vimrc` shortcut
 
