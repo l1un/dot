@@ -398,6 +398,9 @@
         " always show Ale gutter
         let g:ale_sign_column_always = 0
 
+        " Ale fix eslint
+        nnoremap <silent> <leader>af :ALEFix eslint<CR>
+
     " }}}
     " 4.2. Fzf ---------------------------------------------------- {{{
 
@@ -476,7 +479,7 @@
         set completeopt-=preview
 
         " get documentation word under cursor
-        nnoremap <silent> <leader>yD :YcmCompleter GetDoc <CR><c-w>w
+        nnoremap <silent> <leader>gd :YcmCompleter GetDoc <CR><c-w>w
 
         " ycm colors
         highlight Pmenu ctermfg=Green ctermbg=Black
