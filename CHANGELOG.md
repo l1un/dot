@@ -1,4 +1,8 @@
 ###### changelog
+`2019.12.21.1`
+  - add shortcut to ALEFix and update shortcut to YCMGetDoc `.vimrc`
+
+
 `2019.12.18.1`
   - update / revert ALE JS linters `.vimrc`
 
