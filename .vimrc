@@ -23,7 +23,7 @@
         " vim-javascript-lib companion
         Plugin 'crusoexia/vim-javascript-lib'
         " Auto Pairs
-        Plugin 'jiangmiao/auto-pairs'
+        " Plugin 'jiangmiao/auto-pairs'
         " vim-jsx
         Plugin 'mxw/vim-jsx'
         " vim-json
@@ -55,6 +55,7 @@
         " vim-markdown
         " Plugin 'godlygeek/tabular'
         " Plugin 'plasticboy/vim-markdown'
+        Plugin 'mattn/emmet-vim'
 
         " call vundle
         call vundle#end()            " required
@@ -69,7 +70,12 @@
         "set timeout timeoutlen=1500 <-- try if too fast
 
     " }}}
-    " 0.3. Parcel Bundler ---------------------------------------- {{{
+    " 0.3. Autoclose mappings ------------------------------------ {{{
+
+        source ~/.vim/config/autoclose.vim
+
+    " }}}
+    " 0.4. Parcel Bundler ---------------------------------------- {{{
 
         set backupcopy=yes
 
@@ -239,6 +245,7 @@
         " TODO: Look into: This causes issues with vundle E10: readonly ...
         " Persisant Folds 2.0 - (mkview, loadview, do not remember syntax)
         " SEE: stackexchange: vim-conceal-doesnt-work/19333#19333
+        " FIXME: Comment out group below before PluginInstall
         augroup SaveFoldState
           autocmd!
           autocmd BufWinLeave ?* mkview | filetype detect
@@ -508,6 +515,12 @@
         let g:tex_conceal = '' " turn off internal LaTex syntax behaviour
         " set conceallevel=0
         " let g:tex_conceal='abdmg'
+
+    " }}}
+    " 5.0 Emmet --------------------------------------------------- {{{
+
+        " leader .
+        let g:user_emmet_leader_key=','
 
     " }}}
 " }}}

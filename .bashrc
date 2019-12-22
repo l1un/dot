@@ -145,7 +145,7 @@ cdlist() {
 }
 
 # mkdir; cd
-mdchange() {
+mkdchange() {
   mkdir -p "$1" && cd "$1" || exit
 }
 

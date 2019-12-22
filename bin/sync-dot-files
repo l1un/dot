@@ -27,11 +27,12 @@ update_dot_files() {
 
 	# Directories
 	local source_bin_dir="$HOME/bin/"
-	local source_ftplugin_dir="$HOME/.vim/ftplugin/"
+	local source_vim_config_dir="$HOME/.vim/config/"
+	local source_vim_ftplugin_dir="$HOME/.vim/ftplugin/"
 	local source_devilspie2_dir="$HOME/./.config/devilspie2/"
 	local source_gnuplot_dir="$HOME/./.config/gnuplot/"
 	local source_htop_dir="$HOME/.config/htop/"
-	local source_snippets_dir="$HOME/.vim/ultisnips/"
+	local source_vim_snippets_dir="$HOME/.vim/ultisnips/"
 	local source_speedcrunch_dir="$HOME/.config/SpeedCrunch/"
 	local source_terminator_dir="$HOME/.config/terminator/"
 	local source_zathura_dir="$HOME/.config/zathura/"
@@ -84,8 +85,9 @@ update_dot_files() {
 	cp -r "$source_bin_dir"/* "$repo_bin_dir"
 
 	# Sync system vim config files
-	cp "$source_ftplugin_dir"/* "$repo_dot_vim_dir"/ftplugin/
-	cp "$source_snippets_dir"/* "$repo_dot_vim_dir"/ultisnips/
+	cp "$source_vim_config_dir"/* "$repo_dot_vim_dir"/config/
+	cp "$source_vim_ftplugin_dir"/* "$repo_dot_vim_dir"/ftplugin/
+	cp "$source_vim_snippets_dir"/* "$repo_dot_vim_dir"/ultisnips/
 
 	# Sync system gtk css file
 	cp "$source_gtk_css_file" "$repo_gtk_dir"
