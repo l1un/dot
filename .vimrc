@@ -245,11 +245,11 @@
         " Persisant Folds 2.0 - (mkview, loadview, do not remember syntax)
         " SEE: stackexchange: vim-conceal-doesnt-work/19333#19333
         " FIXME: Comment out group below before PluginInstall
-        " augroup SaveFoldState
-          " autocmd!
-          " autocmd BufWinLeave ?* mkview | filetype detect
-          " autocmd BufWinEnter ?* silent loadview | filetype detect
-        " augroup END
+        augroup SaveFoldState
+          autocmd!
+          autocmd BufWinLeave ?* mkview | filetype detect
+          autocmd BufWinEnter ?* silent loadview | filetype detect
+        augroup END
 
         " Show folded lines, first-line text, total lines folded
         function! ShowFoldMessage()
@@ -469,7 +469,7 @@
         let g:UltiSnipsSnippetDir = $HOME."/.vim/ultisnips"
         " let g:UltiSnipsSnippetDirectories = ["~/.vim/ultisnips"]
         " expand completion
-        let g:UltiSnipsExpandTrigger="<CR>"
+        let g:UltiSnipsExpandTrigger="jk"
         " open :UltiSnipsEdit in split
         let g:UltiSnipsEditSplit="vertical"
 
