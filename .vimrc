@@ -23,7 +23,7 @@
         " vim-javascript-lib companion
         Plugin 'crusoexia/vim-javascript-lib'
         " Auto Pairs
-        " Plugin 'jiangmiao/auto-pairs'
+        Plugin 'jiangmiao/auto-pairs'
         " vim-jsx
         Plugin 'mxw/vim-jsx'
         " vim-json
@@ -72,7 +72,8 @@
     " }}}
     " 0.3. Autoclose mappings ------------------------------------ {{{
 
-        source ~/.vim/config/autoclose.vim
+        " consider later...
+        " source ~/.vim/config/autoclose.vim
 
     " }}}
     " 0.4. Parcel Bundler ---------------------------------------- {{{
@@ -355,8 +356,8 @@
           exec ':w !echo; python' python_file
         endfunction
 
-        " type <leader>rp to run python file in split
-        noremap <leader>rp :call RunFileInPython()<cr>
+        " type <Leader>rp to run python file in split
+        noremap <Leader>rp :call RunFileInPython()<cr>
 
         " append python output as comment
         function! GetPythonComment()
@@ -364,8 +365,8 @@
           :execute "normal! i# \<Esc>"
         endfunction
 
-        " type <localleader> to append output and comment
-        noremap <leader>cpy :call GetPythonComment()<cr>
+        " type <Leader> to append output and comment
+        noremap <Leader>cpy :call GetPythonComment()<cr>
 
     " }}}
     " 3.4. GalliumOS functions ----------------------------------- {{{

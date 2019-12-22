@@ -62,3 +62,16 @@ inoremap ",<CR> "<CR>",<ESC>O
 inoremap (,<CR> (<CR>),<ESC>O
 inoremap [,<CR> [<CR>],<ESC>O
 inoremap {,<CR> {<CR>},<ESC>O
+
+"-- QUICK MOVEMENTS ON INSERT MODE --
+"single movements h j k l
+noremap! <LocalLeader>h <left>
+noremap! <LocalLeader>j <down>
+noremap! <LocalLeader>k <up>
+noremap! <LocalLeader>l <right>
+"append shortcuts
+noremap! <LocalLeader>A <esc>A
+noremap! <LocalLeader>a <esc>a
+"new line and insert shortcuts
+noremap! <LocalLeader>O <esc>O
+noremap! <LocalLeader>o <esc>o
