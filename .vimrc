@@ -462,7 +462,7 @@
         " set directory
         let g:UltiSnipsSnippetDirectories = ['~/.vim/ultisnips']
         " expand completion
-        let g:UltiSnipsExpandTrigger="fd"
+        let g:UltiSnipsExpandTrigger="Ue"
         " open :UltiSnipsEdit in split
         let g:UltiSnipsEditSplit="vertical"
 

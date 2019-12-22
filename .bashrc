@@ -139,31 +139,31 @@ export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
 # functions ----------------------------------------------------------------
 
 # cd; ls -al
-cd_ls() {
-  cd "$@"
+cdlist() {
+  cd "$@" || exit
   ls -al
 }
 
 # mkdir; cd
-mkdir_cd() {
-  mkdir -p "$1" && cd "$1"
+mdchange() {
+  mkdir -p "$1" && cd "$1" || exit
 }
 
 # quick change profiles in ba sh using xdotool + nth profile arg
-change_bash_profile() {
+cbprofile() {
   # TODO: debugg --clearmodifiers for tmux, vim etc.
   xdotool key Shift+F10 r "$1"
 }
 
 # copy last command to file
-save_last_command() {
+slcommand() {
   # fc (fix command) -l (list) -n (do not prefix command numbers)
   # $1 = path to file to append output
   fc -ln -1 | sed '1s/^[[:space:]]*//' >> "${1}"
 }
 
 # surfraw duckduckgo helper
-surfraw_ddg() {
+srduckduckgo() {
   sr duckduckgo "$1"
 }
 
