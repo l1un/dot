@@ -151,18 +151,16 @@
         noremap gk k
 
         " Exit insert mode
-        inoremap jk <Esc>
+        " inoremap jk <Esc>
         " Jump to EOL in insert
-        inoremap <Esc> <nop>
-        " New line below / cursor stays
-        " nnoremap <Enter> o<ESC>k
+        " inoremap <Esc> <nop>
 
         " New line above / cursor stays
-        noremap <Leader>O O<Esc>j
+        nnoremap <Leader>O O<Esc>j
         " New line below / cursor stays
-        noremap <Leader>o o<Esc>k
+        nnoremap <Leader>o o<Esc>k
         " New line above + below / cursor stays
-        noremap <Leader>= o<Esc>kO<Esc>j
+        nnoremap <Leader>= o<Esc>kO<Esc>j
 
         " Move current line down
         nnoremap <Leader>_ ddp:call Ek0("Moved Line Down")<CR>
@@ -247,11 +245,11 @@
         " Persisant Folds 2.0 - (mkview, loadview, do not remember syntax)
         " SEE: stackexchange: vim-conceal-doesnt-work/19333#19333
         " FIXME: Comment out group below before PluginInstall
-        augroup SaveFoldState
-          autocmd!
-          autocmd BufWinLeave ?* mkview | filetype detect
-          autocmd BufWinEnter ?* silent loadview | filetype detect
-        augroup END
+        " augroup SaveFoldState
+          " autocmd!
+          " autocmd BufWinLeave ?* mkview | filetype detect
+          " autocmd BufWinEnter ?* silent loadview | filetype detect
+        " augroup END
 
         " Show folded lines, first-line text, total lines folded
         function! ShowFoldMessage()
@@ -283,7 +281,7 @@
     " .bashrc
     nnoremap <silent> <Leader>ebc :e<CR>:e ~/.bashrc<CR>
     " ultisnips
-    nnoremap <silent> <Leader>es :UltiSnipsEdit<CR>
+    nnoremap <silent> <Leader>eus :UltiSnipsEdit<CR>
 
     " Source .vimrc
     nnoremap <Leader>sv :so ~/.vimrc<CR>
@@ -468,9 +466,10 @@
     " 4.7. Ultisnips ---------------------------------------------- {{{
 
         " set directory
-        let g:UltiSnipsSnippetDirectories = ['~/.vim/ultisnips']
+        let g:UltiSnipsSnippetDir = $HOME."/.vim/ultisnips"
+        " let g:UltiSnipsSnippetDirectories = ["~/.vim/ultisnips"]
         " expand completion
-        let g:UltiSnipsExpandTrigger="Ue"
+        let g:UltiSnipsExpandTrigger="<CR>"
         " open :UltiSnipsEdit in split
         let g:UltiSnipsEditSplit="vertical"
 
