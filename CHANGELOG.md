@@ -1,4 +1,9 @@
 ###### changelog
+`2019.12.22.5`
+  - removed jk mapped to <esc> -- cause error keys bug
+  - trying to debug `javascript.snippet` but to expand in parens etc.
+
+
 `2019.12.22.4`
   - go back to auto-close, leave config dir/file for consideration..
 
