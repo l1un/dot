@@ -1,4 +1,8 @@
 ###### changelog
+`2019.12.22.6`
+  - change expand trig for ultisnips to jk
+
+
 `2019.12.22.5`
   - removed jk mapped to <esc> -- cause error keys bug
   - trying to debug `javascript.snippet` but to expand in parens etc.
