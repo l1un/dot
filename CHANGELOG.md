@@ -1,4 +1,8 @@
 ###### changelog
+`2019.12.22.3`
+  - add missing directory/file with auto close mappings for vim
+
+
 `2019.12.22.2`
   - remove `auto-pairs` plugin create custom mappings, source file
   - update sync script
