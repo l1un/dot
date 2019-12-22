@@ -1,4 +1,8 @@
 ###### changelog
+`2019.12.22.4`
+  - go back to auto-close, leave config dir/file for consideration..
+
+
 `2019.12.22.3`
   - add missing directory/file with auto close mappings for vim
 
