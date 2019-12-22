@@ -1,4 +1,9 @@
 ###### changelog
+`2019.12.22.1`
+  - fix ultisnips expand trigger shortcut conflict `.vimrc`
+  - shorten names of `.bashrc` functions add exits
+
+
 `2019.12.21.1`
   - add shortcut to ALEFix and update shortcut to YCMGetDoc `.vimrc`
 
