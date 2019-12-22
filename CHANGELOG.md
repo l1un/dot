@@ -1,4 +1,9 @@
 ###### changelog
+`2019.12.22.2`
+  - remove `auto-pairs` plugin create custom mappings, source file
+  - update sync script
+
+
 `2019.12.22.1`
   - fix ultisnips expand trigger shortcut conflict `.vimrc`
   - shorten names of `.bashrc` functions add exits
