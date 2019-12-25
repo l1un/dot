@@ -164,13 +164,13 @@
 │   │   ├── markdown.vim
 │   │   ├── python.vim
 │   │   └── tex.vim
-│   └── ultisnips
+│   └── UltiSnips
 │       ├── javascript.snippets
 │       └── text.snippets
 └── .vimrc
 
 39 directories, 98 files
-last generated: Wed Dec 25 09:04:24 PST 2019
+last generated: Wed Dec 25 09:09:38 PST 2019
 ```
 ###### packages
 ```
@@ -180,7 +180,7 @@ devDependencies
 dependencies
 
 
-auto-generated: Wed Dec 25 09:04:24 PST 2019
+auto-generated: Wed Dec 25 09:09:38 PST 2019
 ```
 ###### notes
 ###### [changelog](CHANGELOG.md)

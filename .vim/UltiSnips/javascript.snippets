@@ -1,17 +1,22 @@
+# simple require
+snippet req "require('<data>')" i
+const ${1:name} = require('$1');
+endsnippet
+
 # eslint shebang
-snippet nc "eslint.. no-console" b
+snippet nc "eslint-disable no-console" b
 /* eslint-disable no-console */
 endsnippet
 
 # simple console log
-snippet cl "console log" i
+snippet cl "console.log(<data>)" i
 console.log($1)
 endsnippet
 
 # simple named function
 snippet fn "named function"
 function ${1:func}($2) {
-  $3
+	$3
 }
 endsnippet
 
