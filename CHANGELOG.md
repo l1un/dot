@@ -1,4 +1,9 @@
 ###### changelog
+`2019.12.25.1`
+  - `.vimrc` some debug to get ultisnips to work, trigger, new snip test
+  - `.vim/ftplugin/javascript.vim` turn off javascript ftplugin (not working right)
+
+
 `2019.12.22.6`
   - change expand trig for ultisnips to jk
 
