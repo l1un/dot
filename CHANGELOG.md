@@ -1,4 +1,9 @@
 ###### changelog
+`2019.12.25.3`
+  - updated `.bashrc` with nvm
+  - updated `.eslint.js`
+
+
 `2019.12.25.2`
   - update `ultisnips` to `UltiSnips` in repo and script, sync
 
