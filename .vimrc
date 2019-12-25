@@ -47,7 +47,7 @@
         Plugin 'vim-scripts/indentpython.vim'
         " LaTeX
         Plugin 'lervag/vimtex'
-        " utltisnips
+        " ultisnips
         Plugin 'SirVer/ultisnips'
         Plugin 'honza/vim-snippets'
         " vim-instant-markdown
@@ -465,13 +465,13 @@
     " }}}
     " 4.7. Ultisnips ---------------------------------------------- {{{
 
-        " set directory
-        let g:UltiSnipsSnippetDir = $HOME."/.vim/ultisnips"
-        " let g:UltiSnipsSnippetDirectories = ["~/.vim/ultisnips"]
-        " expand completion
-        let g:UltiSnipsExpandTrigger="jk"
-        " open :UltiSnipsEdit in split
-        let g:UltiSnipsEditSplit="vertical"
+      " set directory
+      " let g:UltiSnipsSnippetDir = $HOME."/.vim/ultisnips"
+      let g:UltiSnipsSnippetDirectories = ["~/.vim/UltiSnips", "UltiSnips"]
+      " expand completion
+      let g:UltiSnipsExpandTrigger="<c-j>"
+      " open :UltiSnipsEdit in split
+      let g:UltiSnipsEditSplit="vertical"
 
     " }}}
     " 4.8. YCM - You Complete Me ---------------------------------- {{{
