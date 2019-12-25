@@ -1,4 +1,8 @@
 ###### changelog
+`2019.12.25.4`
+  - update eslint
+
+
 `2019.12.25.3`
   - updated `.bashrc` with nvm
   - updated `.eslint.js`
