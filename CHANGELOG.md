@@ -1,4 +1,8 @@
 ###### changelog
+`2019.12.25.5`
+  - really update `.eslint.js`
+
+
 `2019.12.25.4`
   - update eslint
 
