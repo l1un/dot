@@ -55,7 +55,10 @@
         " vim-markdown
         " Plugin 'godlygeek/tabular'
         " Plugin 'plasticboy/vim-markdown'
+        " Emmet
         Plugin 'mattn/emmet-vim'
+        " vim-pug
+        Plugin 'digitaltoad/vim-pug'
 
         " call vundle
         call vundle#end()            " required
@@ -115,7 +118,7 @@
 
         " Search Behaviour, RegEx Typing
         set incsearch
-        set ignorecase
+        " set ignorecase
 
         " Follow Working Directory
         set autochdir
@@ -206,6 +209,9 @@
 
         " Read, insert and format date (timestamp)
         nnoremap <Leader>!d o<Esc>:r!date \+\%Y\-\%m\-\%d\ \/\ \%R<CR>i# <Esc>o
+
+        " Clear view folder
+        nnoremap <Leader>cv :!rm ~/.vim/view/*
 
     " }}}
     " 1.3. Whitespace Awareness ----------------------------------- {{{
@@ -390,6 +396,7 @@
               \ 'markdown': ['remark-lint'],
               \ 'tex': ['chktex'],
               \ 'html': ['tidy', 'stylelint', 'alex'],
+              \ 'pug': ['puglint', 'eslint'],
             \ }
 
         " Ale symbols
