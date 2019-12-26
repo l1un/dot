@@ -1,6 +1,7 @@
 ###### changelog
 `2019.12.26.3`
   - add vim pug plugin, short cut to clear `.vim/view/*` in `.vimrc`
+  - add `pug-lint` settings for ale checkers
 
 
 `2019.12.26.2`
