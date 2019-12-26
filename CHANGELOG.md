@@ -1,4 +1,8 @@
 ###### changelog
+`2019.12.26.1`
+  - `tmux.conf` change prefix to C-a
+
+
 `2019.12.25.5`
   - really update `.eslint.js`
 
