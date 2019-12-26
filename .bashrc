@@ -138,32 +138,37 @@ export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
 
 # functions ----------------------------------------------------------------
 
+# show only last three dirs in prompt
+promptDirTrimNumber() {
+  PROMPT_DIRTRIM=$1
+}
+
 # cd; ls -al
-cdlist() {
+cdList() {
   cd "$@" || exit
   ls -al
 }
 
 # mkdir; cd
-mkdchange() {
+mkdirChange() {
   mkdir -p "$1" && cd "$1" || exit
 }
 
 # quick change profiles in ba sh using xdotool + nth profile arg
-cbprofile() {
+changeBashProfile() {
   # TODO: debugg --clearmodifiers for tmux, vim etc.
   xdotool key Shift+F10 r "$1"
 }
 
 # copy last command to file
-slcommand() {
+copyLastCommandToFile() {
   # fc (fix command) -l (list) -n (do not prefix command numbers)
   # $1 = path to file to append output
   fc -ln -1 | sed '1s/^[[:space:]]*//' >> "${1}"
 }
 
 # surfraw duckduckgo helper
-srduckduckgo() {
+surfrawDuckDuckGo() {
   sr duckduckgo "$1"
 }
 
@@ -185,6 +190,7 @@ set -o vi
 # extend globs / regexes
 shopt -s extglob
 
+# added via Node Package Manager
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
