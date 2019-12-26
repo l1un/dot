@@ -1,4 +1,9 @@
 ###### changelog
+`2019.12.26.2`
+  - change func names in `.bashrc` more intuitive
+  - add promptDirTrimNumber function in `.bashrc` quick prompt shorten
+
+
 `2019.12.26.1`
   - `tmux.conf` change prefix to C-a
 
