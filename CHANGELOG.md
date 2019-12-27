@@ -1,4 +1,8 @@
 ###### changelog
+`2019.12.27.1`
+  - edit `tmux-open` to open two windows and name
+
+
 `2019.12.26.4`
   - update `netrw` settings on open shortcut
   - update `open-tmux` script with split sync
