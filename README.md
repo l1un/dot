@@ -151,6 +151,8 @@
 │       ├── webpack.common.js
 │       ├── webpack.dev.js
 │       └── webpack.prod.js
+├── package.json
+├── package-lock.json
 ├── README.md
 ├── .tern-config
 ├── .tmux.conf
@@ -169,18 +171,52 @@
 │       └── text.snippets
 └── .vimrc
 
-39 directories, 98 files
-last generated: Fri Dec 27 06:30:23 PST 2019
+39 directories, 100 files
+last generated: Fri Dec 27 06:55:05 PST 2019
 ```
 ###### packages
 ```
 devDependencies
 
+null
 
 dependencies
 
+{
+  "archy": "@1.0.0",
+  "bash-language-server": "@1.5.6",
+  "chalk": "@2.4.1",
+  "express-generator": "@4.16.1",
+  "gatsby-cli": "@2.8.8",
+  "gulp-util": "@3.0.8",
+  "http-server": "@0.11.1",
+  "instant-markdown-d": "@0.2.0-rc.1",
+  "interpret": "@1.1.0",
+  "liftoff": "@2.5.0",
+  "live-server": "@1.2.1",
+  "local-web-server": "@3.0.7",
+  "markdownlint": "@0.13.0",
+  "markdownlint-cli": "@0.15.0",
+  "minimist": "@1.2.0",
+  "nodemon": "@2.0.2",
+  "npm": "@6.13.4",
+  "npm-check": "@5.9.0",
+  "parcel-bundler": "@1.12.4",
+  "pretty-hrtime": "@1.0.3",
+  "pug-lint": "@2.6.0",
+  "remark-cli": "@6.0.1",
+  "remark-lint": "@6.0.4",
+  "semver": "@5.5.0",
+  "serve": "@9.3.0",
+  "supervisor": "@0.12.0",
+  "surge": "@0.20.1",
+  "tern": "@0.21.0",
+  "tildify": "@1.2.0",
+  "v8flags": "@3.1.1",
+  "yarn": "@1.9.4"
+}
 
-auto-generated: Fri Dec 27 06:30:23 PST 2019
+auto-generated: Fri Dec 27 06:55:05 PST 2019
 ```
 ###### notes
 ###### [changelog](CHANGELOG.md)
