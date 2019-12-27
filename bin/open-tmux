@@ -2,9 +2,11 @@
 
 # launch tmux with options & keep shell open ok
 tmuxs() {
-  tmux new-session -n dev \;\
+  tmux new-session -n cli \;\
+    new-window -n dev \;\
     split-window -p 20 \;\
-    set-window-option synchronize-panes \;
+    set-window-option synchronize-panes \;\
+    select-window -t 1 \;
   $SHELL
 }
 
