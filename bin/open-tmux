@@ -2,7 +2,9 @@
 
 # launch tmux with options & keep shell open ok
 tmuxs() {
-  tmux new-session \; split-window -v \; resize-pane -y 9\; rename-window tmux \; attach
+  tmux new-session -n dev \;\
+    split-window -p 20 \;\
+    set-window-option synchronize-panes \;
   $SHELL
 }
 

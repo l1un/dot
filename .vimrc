@@ -234,8 +234,8 @@
         let g:netrw_altv = 1
         let g:netrw_winsize = 33
 
-        " <bf> - 'Browse Files'
-        nnoremap <silent><Leader>bf :Vexplore<CR>
+        " <bf> - 'Browse Files' split, rotate to below
+        nnoremap <silent><Leader>bf :Sexplore<CR><c-W>r
 
     " }}}
     " 1.5. Global Folding Config ---------------------------------- {{{
