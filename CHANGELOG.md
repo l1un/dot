@@ -1,4 +1,8 @@
 ###### changelog
+`2019.12.27.3`
+  - clean-up `.vimrc` removing old comments, fold comments, etc.
+
+
 `2019.12.27.2`
   - update `.eslint.js`
   - add `package.json` for global packages reference (mainly linters)
