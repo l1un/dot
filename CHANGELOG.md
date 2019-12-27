@@ -1,4 +1,9 @@
 ###### changelog
+`2019.12.27.2`
+  - update `.eslint.js`
+  - add `package.json` for global packages reference (mainly linters)
+
+
 `2019.12.27.1`
   - edit `tmux-open` to open two windows and name
 
