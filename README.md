@@ -157,6 +157,8 @@
 ├── .tern-config
 ├── .tmux.conf
 ├── .vim
+│   ├── colors
+│   │   └── molokai.vim
 │   ├── config
 │   │   └── autoclose.vim
 │   ├── ftplugin
@@ -171,8 +173,8 @@
 │       └── text.snippets
 └── .vimrc
 
-39 directories, 100 files
-last generated: Sat Dec 28 10:14:55 PST 2019
+40 directories, 101 files
+last generated: Sat Dec 28 11:23:32 PST 2019
 ```
 ###### packages
 ```
@@ -216,7 +218,7 @@ dependencies
   "yarn": "@1.9.4"
 }
 
-auto-generated: Sat Dec 28 10:14:55 PST 2019
+auto-generated: Sat Dec 28 11:23:32 PST 2019
 ```
 ###### notes
 ###### [changelog](CHANGELOG.md)
