@@ -2,7 +2,7 @@
 
 ## Name: sync-dot-files
 ## Created: 05.21.2019
-## Updated: Wed Dec 25 09:08:07 PST 2019 - update ultisnips dir
+## Updated: Sat Dec 28 10:12:49 PST 2019 - add vim/colors dir
 ## Description: Synchronize latest system dot files to git repository keeping correct structure and files in corresponding directories.
 ## TODO: Update to rysnc.
 
@@ -27,15 +27,19 @@ update_dot_files() {
 
 	# Directories
 	local source_bin_dir="$HOME/bin/"
-	local source_vim_config_dir="$HOME/.vim/config/"
-	local source_vim_ftplugin_dir="$HOME/.vim/ftplugin/"
+
 	local source_devilspie2_dir="$HOME/./.config/devilspie2/"
 	local source_gnuplot_dir="$HOME/./.config/gnuplot/"
 	local source_htop_dir="$HOME/.config/htop/"
-	local source_vim_snippets_dir="$HOME/.vim/UltiSnips/"
 	local source_speedcrunch_dir="$HOME/.config/SpeedCrunch/"
 	local source_terminator_dir="$HOME/.config/terminator/"
 	local source_zathura_dir="$HOME/.config/zathura/"
+
+	local source_vim_config_dir="$HOME/.vim/config/"
+	local source_vim_colors_dir="$HOME/.vim/colors/"
+	local source_vim_ftplugin_dir="$HOME/.vim/ftplugin/"
+	local source_vim_snippets_dir="$HOME/.vim/UltiSnips/"
+
 
 	# Array for system root files, they get added to repo root dir.
 	local source_root_dir_config_files=(
@@ -86,6 +90,7 @@ update_dot_files() {
 
 	# Sync system vim config files
 	cp "$source_vim_config_dir"/* "$repo_dot_vim_dir"/config/
+	cp "$source_vim_colors_dir"/* "$repo_dot_vim_dir"/colors/
 	cp "$source_vim_ftplugin_dir"/* "$repo_dot_vim_dir"/ftplugin/
 	cp "$source_vim_snippets_dir"/* "$repo_dot_vim_dir"/UltiSnips/
 
