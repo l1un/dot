@@ -27,6 +27,8 @@ Plugin 'mxw/vim-jsx'
 Plugin 'elzr/vim-json'
 " lightline
 Plugin 'itchyny/lightline.vim'
+" vim-buftabline
+Plugin 'ap/vim-buftabline'
 " fzf
 Plugin 'junegunn/fzf'
 Plugin 'junegunn/fzf.vim'
@@ -34,10 +36,6 @@ Plugin 'junegunn/fzf.vim'
 Plugin 'tpope/vim-surround'
 " repeat.vim
 Plugin 'tpope/vim-repeat'
-" fugitive.vim
-Plugin 'tpope/vim-fugitive'
-" indent line
-" Plugin 'Yggdroot/indentLine'
 " tmux vim split pane sync
 Plugin 'christoomey/vim-tmux-navigator'
 " python indent
@@ -49,15 +47,10 @@ Plugin 'SirVer/ultisnips'
 Plugin 'honza/vim-snippets'
 " vim-instant-markdown
 Plugin 'suan/vim-instant-markdown', {'rtp': 'after'}
-" vim-markdown
-" Plugin 'godlygeek/tabular'
-" Plugin 'plasticboy/vim-markdown'
 " Emmet
 Plugin 'mattn/emmet-vim'
 " vim-pug
 Plugin 'digitaltoad/vim-pug'
-" lightline-bufferline
-Plugin 'mengelbrecht/lightline-bufferline'
 
 " startup, launch -----------------------------------------------
 " call vundle
@@ -377,21 +370,19 @@ let g:ale_sign_column_always = 0
 " Ale fix eslint
 nnoremap <silent> <leader>af :ALEFix eslint<CR>
 
-" fzf --------------------------------------------------------
-" test fzf completion
-" inoremap <expr> <c-x><c-k>
-    " \ fzf#vim#complete('cat /usr/share/dict/words')
+" lightline -----------------------------------
+let g:lightline = {
+  \   'component': {
+  \     'lineinfo': ' %3l:%-2v',
+  \   },
+  \ }
 
-" indent lines ------------------------------------------------
-" indent guides/lines hide '$' at end of lines etc...
-" set listchars=""
-" let g:indentLine_color_term = 236
-" let g:vim_json_syntax_conceal = 0 " disable in JSON
-" let g:indentLine_fileTypeExclude = ['markdown']
+let g:lightline.subseparator = {
+  \   'left': '\u2b64', 'right': '\u2b64'
+  \}
 
-" let g:indentLine_setColors = 233
-" let g:indentLine_bgcolor_term = 235
-" let g:indentLine_char = '.'
+" tabline settings
+set showtabline=2
 
 " instant markdown ---------------------------------------------
 " autoscroll toggle
@@ -400,37 +391,6 @@ let g:instant_markdown_autoscroll = 1
 let g:instant_markdown_autostart = 0
 " realtime toggle - if taxing system
 " let g:instant_markdown_slow = 1
-
-" lightline, tabline, bufferline -----------------------------------
-" function to shorten path in lightline
-" function! LightlineFilename()
-" let root = fnamemodify(get(b:, 'git_dir'), ':h')
-" let path = expand('%:p')
-" if path[:len(root)-1] ==# root
-  " return path[len(root)+1:]
-" endif
-" return expand('%')
-" endfunction
-
-" lightline relative paths (requires fugitive)
-" let g:lightline = {
-    " \ 'component_function': {
-    " \   'filename': 'LightlineFilename'
-    " \   }
-    " \ }
-
-" lightline-bufferline config
-let g:lightline = {}
-let g:lightline.tabline = {'left': [['buffers']], 'right': [['close']]}
-let g:lightline.component_expand = {
-    \ 'buffers': 'lightline#bufferline#buffers'
-    \ }
-let g:lightline.component_type = {'buffers': 'tabsel'}
-
-" auto show tabline at 3 buffers
-let g:lighline#bufferline#min_buffer_count = 3
-" shorten path in buffer tabs in lightline-bufferline
-let g:lighline#bufferline#filename_modifier = ':t'
 
 " nerd comments -----------------------------------
 " add spaces to nerd/sexy comments (Standard JS no-warn msg)

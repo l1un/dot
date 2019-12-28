@@ -126,7 +126,7 @@ export PATH="$NPM_PACKAGES/bin:$PATH"
 # command
 unset MANPATH  # delete if you already modified MANPATH elsewhere in your config
 export MANPATH="$NPM_PACKAGES/share/man:$(manpath)"
- 
+
 # scripts dir
 export PATH="$HOME/bin:$PATH"
 
@@ -136,7 +136,12 @@ export PATH="/home/o12/.local/bin:$PATH"
 # yarn
 export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
 
-# functions ----------------------------------------------------------------
+# functions -------------------------------------------
+
+# clear ~/.vim/views dir (common debug)
+clearVimViews() {
+  rm "$HOME"/.vim/view/*
+}
 
 # show only last three dirs in prompt
 promptDirTrimNumber() {
@@ -172,7 +177,7 @@ surfrawDuckDuckGo() {
   sr duckduckgo "$1"
 }
 
-# other --------------------------------------------------------------------
+# other ---------------------------------------------
 
 # vim default editor
 export VISUAL=vim
