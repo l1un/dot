@@ -1,4 +1,8 @@
 ###### changelog
+`2019.12.28.2`
+  - update `sync-dot-files` to include .vim/colors
+
+
 `2019.12.28.1`
   - Clean up `.vimrc` add edit lightline settings, tabline reconfig plugin
   - add `clearVimView` function to `.bashrc`
