@@ -1,4 +1,8 @@
 ###### changelog
+`2019.12.28.3`
+  - sync new customized `./vim/colors/molokai.vim` files.
+
+
 `2019.12.28.2`
   - update `sync-dot-files` to include .vim/colors
 
