@@ -1,4 +1,9 @@
 ###### changelog
+`2019.12.28.1`
+  - Clean up `.vimrc` add edit lightline settings, tabline reconfig plugin
+  - add `clearVimView` function to `.bashrc`
+
+
 `2019.12.27.3`
   - clean-up `.vimrc` removing old comments, fold comments, etc.
 
