@@ -1,4 +1,8 @@
 ###### changelog
+`2019.12.28.4`
+  - edits to `.vimrc` and `molokai.vim` for buftab plugin prefs
+
+
 `2019.12.28.3`
   - sync new customized `./vim/colors/molokai.vim` files.
 
