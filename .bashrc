@@ -143,7 +143,7 @@ clearVimViews() {
   rm "$HOME"/.vim/view/*
 }
 
-# show only last three dirs in prompt
+# show only <$num> dirs in prompt
 promptDirTrimNumber() {
   PROMPT_DIRTRIM=$1
 }

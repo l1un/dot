@@ -101,7 +101,7 @@ set incsearch
 " set ignorecase
 
 " Follow Working Directory
-set autochdir
+" set autochdir
 
 " Staus Line Settings
 set statusline+=%#warningmsg#
@@ -373,13 +373,9 @@ nnoremap <silent> <leader>af :ALEFix eslint<CR>
 " lightline -----------------------------------
 let g:lightline = {
   \   'component': {
-  \     'lineinfo': ' %3l:%-2v',
+  \     'filename': '%f',
   \   },
   \ }
-
-let g:lightline.subseparator = {
-  \   'left': '\u2b64', 'right': '\u2b64'
-  \}
 
 " tabline settings
 set showtabline=2
@@ -419,8 +415,8 @@ set completeopt-=preview
 nnoremap <silent> <leader>gd :YcmCompleter GetDoc <CR><c-w>w
 
 " ycm colors
-highlight Pmenu ctermfg=Green ctermbg=Black
-highlight PmenuSel ctermfg=Black ctermbg=Green
+" highlight Pmenu ctermfg=Green ctermbg=Black
+" highlight PmenuSel ctermfg=Black ctermbg=Green
 
 let g:ycm_python_binary_path='python'
 

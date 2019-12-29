@@ -110,8 +110,8 @@ hi WarningMsg      guifg=#FFFFFF guibg=#333333 gui=bold
 hi WildMenu        guifg=#66D9EF guibg=#000000
 
 hi TabLineFill     ctermfg=233
-hi TabLine         cterm=none ctermbg=233 gui=none
-hi TabLineSel      ctermbg=black
+hi TabLine         cterm=bold ctermbg=233 ctermfg=242 gui=none
+hi TabLineSel      cterm=bold ctermfg=255 ctermbg=236
 
 if s:molokai_original == 1
    hi Normal          guifg=#F8F8F2 guibg=#272822
@@ -188,7 +188,7 @@ if &t_Co > 255
 
    " complete menu
    hi Pmenu           ctermfg=81  ctermbg=16
-   hi PmenuSel        ctermfg=255 ctermbg=242
+   hi PmenuSel        ctermfg=255 ctermbg=233 cterm=bold
    hi PmenuSbar                   ctermbg=232
    hi PmenuThumb      ctermfg=81
 
