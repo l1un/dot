@@ -1,4 +1,9 @@
 ###### changelog
+`2020.01.04.1`
+  - update default color in `htoprc`
+  - update ultisnip `req` with `$2` placeholder, common workflow
+
+
 `2019.12.28.4`
   - edits to `.vimrc` and `molokai.vim` for buftab plugin prefs
 
