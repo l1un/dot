@@ -1,4 +1,8 @@
 ###### changelog
+`2020.01.04.2`
+  - refactor `req` in ultisnip js again to include before/after placeholder
+
+
 `2020.01.04.1`
   - update default color in `htoprc`
   - update ultisnip `req` with `$2` placeholder, common workflow
