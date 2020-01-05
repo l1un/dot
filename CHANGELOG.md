@@ -1,4 +1,8 @@
 ###### changelog
+`2020.01.05.4`
+  - null
+
+
 `2020.01.05.3`
   - add vim-vinegar plug, change netrw to `Lexplore`, fix / speed up open / close issue
 
