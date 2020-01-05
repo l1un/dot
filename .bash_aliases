@@ -21,25 +21,27 @@ alias gitpush="git add . && git commit -v && git push"
 ## quick edit config files -----------------------------------------------
 
 # quick edit .vimrc
-alias ev="vim ~/.vimrc"
+alias evrc='vim $HOME/.vimrc'
+# quick edit vim theme
+alias evth='vim $HOME/.vim/colors/molokai.vim'
 # quick edit .bashrc
-alias ebc="vim ~/.bashrc"
+alias ebrc='vim $HOME/.bashrc'
 # quick edit .bash_aliases
-alias eba="vim ~/.bash_aliases"
+alias ebal='vim $HOME/.bash_aliases'
 # quick edit .tmux.conf
-alias et="vim ~/.tmux.conf"
+alias etmc='vim $HOME/.tmux.conf'
 # quick edit / cue notebook notes
-alias en="vim ~/Projects/notebook/main-note.md"
+alias enot='vim $HOME/Projects/notebook/main-note.md'
 
 ## bash / shell ------------------------------------------------------
 
 # open tdd terminal window same directory
 alias tdd="gnome-terminal --window-with-profile=tdd"
 # launch custom tmux config (used with keyboard shortcut)
-alias tmuxs="~/bin/open-tmux"
+alias tmuxs='$HOME/bin/open-tmux'
 
 # copy dotfiles, got to dir (vcs), add, commit, push
-alias dotsync='~/bin/sync-dot-files && cd "$HOME"/Projects/dot-config && ~/bin/update-project-push'
+alias dotsync='$HOME/bin/sync-dot-files && cd "$HOME"/Projects/dot-config && $HOME/bin/update-project-push'
 
 ## surfraw
 
