@@ -1,4 +1,8 @@
 ###### changelog
+`2020.01.05.2`
+  - set `Folded` to grey / default in theme `molokai.vim`
+
+
 `2020.01.05.1`
   - improve `.bash_aliases` tersify, add `$HOME`, single quotes for expansion
 
