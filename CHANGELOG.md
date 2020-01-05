@@ -1,4 +1,8 @@
 ###### changelog
+`2020.01.05.1`
+  - improve `.bash_aliases` tersify, add `$HOME`, single quotes for expansion
+
+
 `2020.01.04.2`
   - refactor `req` in ultisnip js again to include before/after placeholder
 
