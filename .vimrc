@@ -36,6 +36,8 @@ Plugin 'junegunn/fzf.vim'
 Plugin 'tpope/vim-surround'
 " repeat.vim
 Plugin 'tpope/vim-repeat'
+" vim-vinegar
+Plugin 'tpope/vim-vinegar'
 " tmux vim split pane sync
 Plugin 'christoomey/vim-tmux-navigator'
 " python indent
@@ -210,7 +212,12 @@ let g:netrw_altv = 1
 let g:netrw_winsize = 33
 
 " <bf> - 'Browse Files' split, rotate to below
-nnoremap <silent><Leader>bf :Sexplore<CR><c-W>r
+" nnoremap <silent><Leader>bf :Sexplore<CR><c-W>r
+" <bf> - 'Browse Files' left explore
+nnoremap <silent><Leader>bf :Lexplore<CR>
+
+" <C-a> jump to EOL in insert
+inoremap <C-a> <C-o>$
 
 " folding ----------------------------------------------------------
 " TODO: Filetype foldmethods
@@ -443,3 +450,9 @@ let g:tex_conceal = '' " turn off internal LaTex syntax behaviour
 " emmet --------------------------------------------------
 " leader .
 let g:user_emmet_leader_key=','
+
+" vim-vinegar --------------------------------------------------
+" dot files hidden by default <gf> to show
+let g:netrw_list_hide = '\(^\|\s\s\)\zs\.\S\+'
+" closing netrw window / buffer
+let g:netrw_fastbrowse = 0
