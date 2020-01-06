@@ -174,7 +174,7 @@
 └── .vimrc
 
 40 directories, 101 files
-last generated: Sun Jan  5 12:13:36 PST 2020
+last generated: Mon Jan  6 14:08:30 PST 2020
 ```
 ###### packages
 ```
@@ -218,7 +218,7 @@ dependencies
   "yarn": "@1.9.4"
 }
 
-auto-generated: Sun Jan  5 12:13:36 PST 2020
+auto-generated: Mon Jan  6 14:08:30 PST 2020
 ```
 ###### notes
 ###### [changelog](CHANGELOG.md)

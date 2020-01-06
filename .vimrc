@@ -166,7 +166,7 @@ nnoremap <Leader>p "+p:call Ek0('Paste from Clipboard')<CR>
 " Paste Toggle, ouput state
 nnoremap <Leader>pt :set paste!<CR>:set paste?<CR>
 
-" List Buffers + Prep Entry
+" List Buffers, buffer + Prep Entry
 nnoremap <Leader>bl :ls<CR>:b<Space>
 " Next Buffer
 " nnoremap <Leader>bn :bn<CR>
@@ -250,7 +250,7 @@ endfunction
 set foldtext=ShowFoldMessage()
 
 " Toggle Folds
-nnoremap <Leader><space> za
+" nnoremap <Leader><space> za
 
 " quick edit + source files ------------------------------------
 " .vimrc
@@ -377,7 +377,7 @@ let g:ale_sign_column_always = 0
 " Ale fix eslint
 nnoremap <silent> <leader>af :ALEFix eslint<CR>
 
-" lightline -----------------------------------
+" lightline, buftabline -----------------------------------
 let g:lightline = {
   \   'component': {
   \     'filename': '%f',
@@ -386,6 +386,9 @@ let g:lightline = {
 
 " tabline settings
 set showtabline=2
+" vim-bufftabline show numbers
+let g:buftabline_numbers = 1
+" let g:buftabline_separators = 1
 
 " instant markdown ---------------------------------------------
 " autoscroll toggle
