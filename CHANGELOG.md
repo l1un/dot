@@ -1,4 +1,9 @@
 ###### changelog
+`2020.01.06.1`
+  - set `vim-buftabline` to show buffer numbers in tabs
+  - disable folding shortcut (not working with current fold methods)
+
+
 `2020.01.05.4`
   - null
 
