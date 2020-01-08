@@ -1,4 +1,8 @@
 ###### changelog
+`2020.01.08.1`
+  - lint, tmux, vimrc, vim colors, ....
+
+
 `2020.01.06.1`
   - set `vim-buftabline` to show buffer numbers in tabs
   - disable folding shortcut (not working with current fold methods)
