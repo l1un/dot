@@ -102,7 +102,7 @@ set cursorline
 set incsearch
 " set ignorecase
 
-" Follow Working Directory
+" follow Working Directory
 " set autochdir
 
 " Staus Line Settings
@@ -162,6 +162,7 @@ nnoremap <C-u> m`viw~<C-o>
 vnoremap <Leader>y "+y:call Ek0('Copy to Clipboard')<CR>
 " Paste system clipboard
 nnoremap <Leader>p "+p:call Ek0('Paste from Clipboard')<CR>
+inoremap <Leader>p <C-o>"+p<C-o>:call Ek0('Paste from Clipboard')<CR>
 
 " Paste Toggle, ouput state
 nnoremap <Leader>pt :set paste!<CR>:set paste?<CR>
@@ -353,7 +354,7 @@ let g:jsx_ext_required = 0 " Allow JSX in normal JS files
 
 let g:ale_statusline_format = ['error', 'warning %d', '']
 let g:ale_linters = {
-    \ 'javascript': ['standard', 'stylelint', 'eslint', 'prettier'],
+    \ 'javascript': [ 'eslint', 'prettier', 'stylelint'],
     \ 'css': ['stylelint', 'eslint'],
     \ 'sh': ['language_server', 'shellcheck'],
     \ 'markdown': ['remark-lint'],
@@ -459,3 +460,7 @@ let g:user_emmet_leader_key=','
 let g:netrw_list_hide = '\(^\|\s\s\)\zs\.\S\+'
 " closing netrw window / buffer
 let g:netrw_fastbrowse = 0
+
+" fzf ---------------------------------------------------------
+let g:fzf_layout = { 'up': '~15%' }
+nnoremap <Leader>fz :FZF<CR>

@@ -7,6 +7,9 @@ module.exports = {
   extends: [
     'airbnb-base',
   ],
+  plugins: [
+    'pug',
+  ],
   globals: {
     Atomics: 'readonly',
     SharedArrayBuffer: 'readonly',

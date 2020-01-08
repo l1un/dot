@@ -68,7 +68,6 @@
 │   └── zathura
 │       └── zathurarc
 ├── .emacs
-├── .eslintrc.js
 ├── etc
 │   └── lynx
 │       ├── lynx.cfg
@@ -115,7 +114,10 @@
 │   ├── gulp
 │   │   └── gulpfile.babel.js
 │   ├── lint
-│   │   └── linter-list-cheatsheet.md
+│   │   ├── dD_package.json
+│   │   ├── .eslintrc.js
+│   │   ├── README.md
+│   │   └── .stylelintrc
 │   ├── lynx
 │   │   ├── bash_bookmarks.html
 │   │   ├── lynx_bookmarks.html
@@ -158,7 +160,9 @@
 ├── .tmux.conf
 ├── .vim
 │   ├── colors
-│   │   └── molokai.vim
+│   │   ├── molokai.vim
+│   │   ├── yang.vim
+│   │   └── yin.vim
 │   ├── config
 │   │   └── autoclose.vim
 │   ├── ftplugin
@@ -173,8 +177,8 @@
 │       └── text.snippets
 └── .vimrc
 
-40 directories, 101 files
-last generated: Mon Jan  6 14:08:30 PST 2020
+40 directories, 105 files
+last generated: Wed Jan  8 01:28:47 PST 2020
 ```
 ###### packages
 ```
@@ -218,7 +222,7 @@ dependencies
   "yarn": "@1.9.4"
 }
 
-auto-generated: Mon Jan  6 14:08:30 PST 2020
+auto-generated: Wed Jan  8 01:28:47 PST 2020
 ```
 ###### notes
 ###### [changelog](CHANGELOG.md)
