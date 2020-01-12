@@ -136,6 +136,9 @@ export PATH="/home/o12/.local/bin:$PATH"
 # yarn
 export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
 
+# firefox dev
+export PATH="/opt/firefox/firefox:$PATH"
+
 # functions -------------------------------------------
 
 # clear ~/.vim/views dir (common debug)
