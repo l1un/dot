@@ -1,4 +1,9 @@
 ###### changelog
+`2020.01.12.1`
+  - add `$PATH` for firefox dev in `.bashrc`
+  - update window list colors in `tmux.conf`
+
+
 `2020.01.08.1`
   - lint, tmux, vimrc, vim colors, ....
 
