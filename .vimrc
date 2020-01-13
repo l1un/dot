@@ -102,7 +102,7 @@ set cursorline
 set incsearch
 " set ignorecase
 
-" Follow Working Directory
+" follow Working Directory
 " set autochdir
 
 " Staus Line Settings
@@ -162,11 +162,12 @@ nnoremap <C-u> m`viw~<C-o>
 vnoremap <Leader>y "+y:call Ek0('Copy to Clipboard')<CR>
 " Paste system clipboard
 nnoremap <Leader>p "+p:call Ek0('Paste from Clipboard')<CR>
+inoremap <Leader>p <C-o>"+p<C-o>:call Ek0('Paste from Clipboard')<CR>
 
 " Paste Toggle, ouput state
 nnoremap <Leader>pt :set paste!<CR>:set paste?<CR>
 
-" List Buffers + Prep Entry
+" List Buffers, buffer + Prep Entry
 nnoremap <Leader>bl :ls<CR>:b<Space>
 " Next Buffer
 " nnoremap <Leader>bn :bn<CR>
@@ -250,7 +251,7 @@ endfunction
 set foldtext=ShowFoldMessage()
 
 " Toggle Folds
-nnoremap <Leader><space> za
+" nnoremap <Leader><space> za
 
 " quick edit + source files ------------------------------------
 " .vimrc
@@ -353,7 +354,7 @@ let g:jsx_ext_required = 0 " Allow JSX in normal JS files
 
 let g:ale_statusline_format = ['error', 'warning %d', '']
 let g:ale_linters = {
-    \ 'javascript': ['standard', 'stylelint', 'eslint', 'prettier'],
+    \ 'javascript': [ 'eslint', 'prettier', 'stylelint'],
     \ 'css': ['stylelint', 'eslint'],
     \ 'sh': ['language_server', 'shellcheck'],
     \ 'markdown': ['remark-lint'],
@@ -374,10 +375,12 @@ let g:ale_fixers = {
 " always show Ale gutter
 let g:ale_sign_column_always = 0
 
-" Ale fix eslint
+" ale fix eslint
 nnoremap <silent> <leader>af :ALEFix eslint<CR>
+" read full error/warn message details
+nnoremap <silent> <leader>ad :ALEDetail<CR>
 
-" lightline -----------------------------------
+" lightline, buftabline -----------------------------------
 let g:lightline = {
   \   'component': {
   \     'filename': '%f',
@@ -386,6 +389,9 @@ let g:lightline = {
 
 " tabline settings
 set showtabline=2
+" vim-bufftabline show numbers
+let g:buftabline_numbers = 1
+" let g:buftabline_separators = 1
 
 " instant markdown ---------------------------------------------
 " autoscroll toggle
@@ -456,3 +462,7 @@ let g:user_emmet_leader_key=','
 let g:netrw_list_hide = '\(^\|\s\s\)\zs\.\S\+'
 " closing netrw window / buffer
 let g:netrw_fastbrowse = 0
+
+" fzf ---------------------------------------------------------
+let g:fzf_layout = { 'up': '~15%' }
+nnoremap <Leader>fz :FZF<CR>

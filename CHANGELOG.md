@@ -1,4 +1,24 @@
 ###### changelog
+`2020.01.12.2`
+  - adjust tmux colors again
+  - add shortcut to `ALEDetail` in `.vimrc`
+  - add `print-colors` script to print terminal colors
+
+
+`2020.01.12.1`
+  - add `$PATH` for firefox dev in `.bashrc`
+  - update window list colors in `tmux.conf`
+
+
+`2020.01.08.1`
+  - lint, tmux, vimrc, vim colors, ....
+
+
+`2020.01.06.1`
+  - set `vim-buftabline` to show buffer numbers in tabs
+  - disable folding shortcut (not working with current fold methods)
+
+
 `2020.01.05.4`
   - null
 

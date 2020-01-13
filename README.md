@@ -43,6 +43,7 @@
 │   ├── gzip_and_move
 │   ├── open-tmux
 │   ├── prep-audials-files
+│   ├── print-colors
 │   ├── save-last-command
 │   ├── sync-dot-files
 │   ├── sync-termux-dotfiles
@@ -68,7 +69,6 @@
 │   └── zathura
 │       └── zathurarc
 ├── .emacs
-├── .eslintrc.js
 ├── etc
 │   └── lynx
 │       ├── lynx.cfg
@@ -115,7 +115,10 @@
 │   ├── gulp
 │   │   └── gulpfile.babel.js
 │   ├── lint
-│   │   └── linter-list-cheatsheet.md
+│   │   ├── dD_package.json
+│   │   ├── .eslintrc.js
+│   │   ├── README.md
+│   │   └── .stylelintrc
 │   ├── lynx
 │   │   ├── bash_bookmarks.html
 │   │   ├── lynx_bookmarks.html
@@ -158,7 +161,9 @@
 ├── .tmux.conf
 ├── .vim
 │   ├── colors
-│   │   └── molokai.vim
+│   │   ├── molokai.vim
+│   │   ├── yang.vim
+│   │   └── yin.vim
 │   ├── config
 │   │   └── autoclose.vim
 │   ├── ftplugin
@@ -173,8 +178,8 @@
 │       └── text.snippets
 └── .vimrc
 
-40 directories, 101 files
-last generated: Sun Jan  5 12:13:36 PST 2020
+40 directories, 106 files
+last generated: Sun Jan 12 23:19:30 PST 2020
 ```
 ###### packages
 ```
@@ -218,7 +223,7 @@ dependencies
   "yarn": "@1.9.4"
 }
 
-auto-generated: Sun Jan  5 12:13:36 PST 2020
+auto-generated: Sun Jan 12 23:19:30 PST 2020
 ```
 ###### notes
 ###### [changelog](CHANGELOG.md)
