@@ -1,4 +1,8 @@
 ###### changelog
+`2020.01.13.1`
+  - fix a couple coulour errors/conflicts in `tmux.conf`
+
+
 `2020.01.12.2`
   - adjust tmux colors again
   - add shortcut to `ALEDetail` in `.vimrc`
