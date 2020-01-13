@@ -92,6 +92,7 @@
 │   ├── gallium
 │   │   ├── .bashrc
 │   │   ├── bin
+│   │   │   ├── disable-radios
 │   │   │   ├── set-keymap
 │   │   │   └── toggle-touchpad
 │   │   ├── .latexmkrc
@@ -178,8 +179,8 @@
 │       └── text.snippets
 └── .vimrc
 
-40 directories, 106 files
-last generated: Sun Jan 12 23:19:30 PST 2020
+40 directories, 107 files
+last generated: Mon Jan 13 11:20:11 PST 2020
 ```
 ###### packages
 ```
@@ -223,7 +224,7 @@ dependencies
   "yarn": "@1.9.4"
 }
 
-auto-generated: Sun Jan 12 23:19:30 PST 2020
+auto-generated: Mon Jan 13 11:20:11 PST 2020
 ```
 ###### notes
 ###### [changelog](CHANGELOG.md)
