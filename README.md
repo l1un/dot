@@ -43,6 +43,7 @@
 │   ├── gzip_and_move
 │   ├── open-tmux
 │   ├── prep-audials-files
+│   ├── print-colors
 │   ├── save-last-command
 │   ├── sync-dot-files
 │   ├── sync-termux-dotfiles
@@ -177,8 +178,8 @@
 │       └── text.snippets
 └── .vimrc
 
-40 directories, 105 files
-last generated: Sun Jan 12 12:17:31 PST 2020
+40 directories, 106 files
+last generated: Sun Jan 12 23:19:30 PST 2020
 ```
 ###### packages
 ```
@@ -222,7 +223,7 @@ dependencies
   "yarn": "@1.9.4"
 }
 
-auto-generated: Sun Jan 12 12:17:31 PST 2020
+auto-generated: Sun Jan 12 23:19:30 PST 2020
 ```
 ###### notes
 ###### [changelog](CHANGELOG.md)

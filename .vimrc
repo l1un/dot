@@ -375,8 +375,10 @@ let g:ale_fixers = {
 " always show Ale gutter
 let g:ale_sign_column_always = 0
 
-" Ale fix eslint
+" ale fix eslint
 nnoremap <silent> <leader>af :ALEFix eslint<CR>
+" read full error/warn message details
+nnoremap <silent> <leader>ad :ALEDetail<CR>
 
 " lightline, buftabline -----------------------------------
 let g:lightline = {
