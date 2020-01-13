@@ -1,4 +1,10 @@
 ###### changelog
+`2020.01.12.2`
+  - adjust tmux colors again
+  - add shortcut to `ALEDetail` in `.vimrc`
+  - add `print-colors` script to print terminal colors
+
+
 `2020.01.12.1`
   - add `$PATH` for firefox dev in `.bashrc`
   - update window list colors in `tmux.conf`
