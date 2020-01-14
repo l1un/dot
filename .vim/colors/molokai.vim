@@ -48,6 +48,7 @@ hi DiffText                      guibg=#4C4745 gui=italic,bold
 
 hi Directory       guifg=#A6E22E               gui=bold
 hi Error           guifg=#E6DB74 guibg=#1E0010
+
 hi ErrorMsg        guifg=#F92672 guibg=#232526 gui=bold
 hi Exception       guifg=#A6E22E               gui=bold
 hi Float           guifg=#AE81FF
@@ -109,9 +110,9 @@ hi Visual                        guibg=#403D3D
 hi WarningMsg      guifg=#FFFFFF guibg=#333333 gui=bold
 hi WildMenu        guifg=#66D9EF guibg=#000000
 
-hi TabLineFill     ctermfg=233
-hi TabLine         cterm=bold ctermbg=233 ctermfg=242 gui=none
-hi TabLineSel      cterm=bold ctermfg=255 ctermbg=236
+hi TabLineFill     ctermfg=234
+hi TabLine         cterm=bold ctermbg=234 ctermfg=242 gui=none
+hi TabLineSel      cterm=bold ctermfg=255 ctermbg=234
 
 if s:molokai_original == 1
    hi Normal          guifg=#F8F8F2 guibg=#272822
@@ -140,13 +141,13 @@ end
 "
 if &t_Co > 255
    if s:molokai_original == 1
-      hi Normal                   ctermbg=234
+      hi Normal                   ctermbg=232
       hi CursorLine               ctermbg=235   cterm=none
-      hi CursorLineNr ctermfg=208               cterm=none
+      hi CursorLineNr ctermfg=242               cterm=none
    else
-      hi Normal       ctermfg=252 ctermbg=233
-      hi CursorLine               ctermbg=234   cterm=none
-      hi CursorLineNr ctermfg=208               cterm=none
+      hi Normal       ctermfg=255 ctermbg=232
+      hi CursorLine               ctermbg=233   cterm=none
+      hi CursorLineNr ctermfg=255  ctermbg=233   cterm=bold
    endif
    hi Boolean         ctermfg=135
    hi Character       ctermfg=144
@@ -166,7 +167,7 @@ if &t_Co > 255
 
    hi Directory       ctermfg=118               cterm=bold
    hi Error           ctermfg=219 ctermbg=89
-   hi ErrorMsg        ctermfg=199 ctermbg=16    cterm=bold
+   hi ErrorMsg        ctermfg=1 ctermbg=232    cterm=bold
    hi Exception       ctermfg=118               cterm=bold
    hi Float           ctermfg=135
    hi FoldColumn      ctermfg=67  ctermbg=16
@@ -174,7 +175,7 @@ if &t_Co > 255
    hi Function        ctermfg=118
    hi Identifier      ctermfg=208               cterm=none
    hi Ignore          ctermfg=244 ctermbg=232
-   hi IncSearch       ctermfg=193 ctermbg=16
+   hi IncSearch       ctermfg=232 ctermbg=255 cterm=none
 
    hi keyword         ctermfg=161               cterm=bold
    hi Label           ctermfg=229               cterm=none
@@ -182,8 +183,8 @@ if &t_Co > 255
    hi SpecialKey      ctermfg=81
 
    hi MatchParen      ctermfg=233  ctermbg=208 cterm=bold
-   hi ModeMsg         ctermfg=229
-   hi MoreMsg         ctermfg=229
+   hi ModeMsg         ctermfg=154
+   hi MoreMsg         ctermfg=154
    hi Operator        ctermfg=161
 
    " complete menu
@@ -196,7 +197,7 @@ if &t_Co > 255
    hi PreProc         ctermfg=118
    hi Question        ctermfg=81
    hi Repeat          ctermfg=161               cterm=bold
-   hi Search          ctermfg=0   ctermbg=222   cterm=NONE
+   hi Search          ctermfg=234  ctermbg=255 cterm=bold
 
    " marks column
    hi SignColumn      ctermfg=118 ctermbg=235
@@ -210,13 +211,13 @@ if &t_Co > 255
        hi SpellRare  ctermfg=none ctermbg=none  cterm=reverse
    endif
    hi Statement       ctermfg=161               cterm=bold
-   hi StatusLine      ctermfg=238 ctermbg=253
-   hi StatusLineNC    ctermfg=244 ctermbg=232
+   hi StatusLine      ctermfg=255 ctermbg=234 cterm=bold
+   hi StatusLineNC    ctermfg=242 ctermbg=234 cterm=bold
    hi StorageClass    ctermfg=208
    hi Structure       ctermfg=81
    hi Tag             ctermfg=161
    hi Title           ctermfg=166
-   hi Todo            ctermfg=231 ctermbg=232   cterm=bold
+   hi Todo            ctermfg=255 ctermbg=232   cterm=bold
 
    hi Typedef         ctermfg=81
    hi Type            ctermfg=81                cterm=none
@@ -225,13 +226,13 @@ if &t_Co > 255
    hi VertSplit       ctermfg=244 ctermbg=232   cterm=bold
    hi VisualNOS                   ctermbg=238
    hi Visual                      ctermbg=235
-   hi WarningMsg      ctermfg=231 ctermbg=238   cterm=bold
+   hi WarningMsg      ctermfg=178               cterm=bold
    hi WildMenu        ctermfg=81  ctermbg=16
 
    hi Comment         ctermfg=59
    hi CursorColumn                ctermbg=236
    hi ColorColumn                 ctermbg=236
-   hi LineNr          ctermfg=250 ctermbg=236
+   hi LineNr          ctermfg=242 ctermbg=234
    hi NonText         ctermfg=59
 
    hi SpecialKey      ctermfg=59

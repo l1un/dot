@@ -26,7 +26,7 @@ Plugin 'mxw/vim-jsx'
 " vim-json
 Plugin 'elzr/vim-json'
 " lightline
-Plugin 'itchyny/lightline.vim'
+" Plugin 'itchyny/lightline.vim'
 " vim-buftabline
 Plugin 'ap/vim-buftabline'
 " fzf
@@ -93,7 +93,7 @@ set tabstop=2
 set number
 set numberwidth=1
 set relativenumber
-highlight LineNr ctermfg=grey
+" highlight LineNr ctermfg=grey
 
 " Full line highlight cursor
 set cursorline
@@ -149,9 +149,9 @@ nnoremap <Leader>o o<Esc>k
 nnoremap <Leader>= o<Esc>kO<Esc>j
 
 " Move current line down
-nnoremap <Leader>_ ddp:call Ek0("Moved Line Down")<CR>
+nnoremap <Leader>_ ddp
 " Move current line up
-nnoremap <Leader>- dd<Esc>kkp<Esc>:call Ek0("Moved Line Up")<CR>
+nnoremap <Leader>- dd<Esc>kkp<Esc>>
 
 " Uppercase word, insert + normal / cursor stays
 inoremap <C-u> <Esc>viw~ea
@@ -159,10 +159,10 @@ nnoremap <C-u> m`viw~<C-o>
 
 " NOTE: Clipboard support required, X11, vim-gtk
 " Copy selected test to system clipboard
-vnoremap <Leader>y "+y:call Ek0('Copy to Clipboard')<CR>
+vnoremap <Leader>y "+y:call EchoCustom('Selection Copied to System Clipboard')<CR>
 " Paste system clipboard
-nnoremap <Leader>p "+p:call Ek0('Paste from Clipboard')<CR>
-inoremap <Leader>p <C-o>"+p<C-o>:call Ek0('Paste from Clipboard')<CR>
+nnoremap <Leader>p "+p:call EchoCustom('Pasted from System Clipboard')<CR>
+" inoremap <Leader>p <C-o>"+p<C-o>:call Ek0('Paste from Clipboard')<CR>
 
 " Paste Toggle, ouput state
 nnoremap <Leader>pt :set paste!<CR>:set paste?<CR>
@@ -178,18 +178,18 @@ nnoremap <Leader>bl :ls<CR>:b<Space>
 nnoremap <Leader>ts :tab split<CR>
 
 " Trim whitespace at end of lines
-nnoremap <Leader>tw :%s/\s\+$//e<CR>:call Ek0('Trim Whitespace')<CR>
+nnoremap <Leader>tw :%s/\s\+$//e<CR>:call EchoCustom('Trimmed Whitespace')<CR>
 
 " Cue to cut & paste text <cpt> to new file (enter <file-name-dir)
 vnoremap <Leader>cpt :!cat >><Space>
 
 " Search for visually highlighted text
-vnoremap <Leader>st y<Esc>/<c-r>"<CR>:call Ek0('Select Search')<CR>
+vnoremap <Leader>st y<Esc>/<c-r>"<CR>:call EchoCustom('Search for text...')<CR>
 " Search for visually highlighted text + ready replace
 vnoremap <Leader>sT y<Esc>/<c-r>"<CR>:%s///gc<Left><Left><Left>
 
 " quickly turn off hls
-nnoremap <Esc><Esc> :nohls<CR>:call Ek0(':nohls')<CR>
+nnoremap <Esc><Esc> :nohls<CR>:call EchoCustom(':nohls')<CR>
 
 " Read, insert and format date (timestamp)
 nnoremap <Leader>!d o<Esc>:r!date \+\%Y\-\%m\-\%d\ \/\ \%R<CR>i# <Esc>o
@@ -268,7 +268,7 @@ nnoremap <silent> <Leader>ebc :e<CR>:e ~/.bashrc<CR>
 nnoremap <silent> <Leader>eus :UltiSnipsEdit<CR>
 
 " Source .vimrc
-nnoremap <Leader>sv :so ~/.vimrc<CR>
+nnoremap <Leader>sv :so ~/.vimrc<CR>:nohls<CR>
 
 " custom functions ------------------------------------------------------
 " rename files within vim (<leader>n to rename)
@@ -287,9 +287,9 @@ noremap <Leader>n :call RenameFile()<CR>
 
 " echo color status message
 " :so /usr/share/vim/vim81/syntax/hitest.vim
-function! Ek0(msg)
-echohl StatusLineTerm
-echo a:msg
+function! EchoCustom(msg)
+echohl WarningMsg
+echo "[!]" a:msg
 echohl None
 endfunction
 
@@ -381,11 +381,12 @@ nnoremap <silent> <leader>af :ALEFix eslint<CR>
 nnoremap <silent> <leader>ad :ALEDetail<CR>
 
 " lightline, buftabline -----------------------------------
-let g:lightline = {
-  \   'component': {
-  \     'filename': '%f',
-  \   },
-  \ }
+" let g:lightline = {
+  " \   'colorscheme': 'molokai' ,
+  " \   'component': {
+  " \     'filename': '%f',
+  " \   },
+  " \ }
 
 " tabline settings
 set showtabline=2
