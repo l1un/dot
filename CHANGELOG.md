@@ -1,4 +1,8 @@
 ###### changelog
+`2020.01.13.2`
+  - lots of changes to tmux and vim colors mostly
+
+
 `2020.01.13.1`
   - fix a couple coulour errors/conflicts in `tmux.conf`
 
