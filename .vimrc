@@ -26,7 +26,7 @@ Plugin 'mxw/vim-jsx'
 " vim-json
 Plugin 'elzr/vim-json'
 " lightline
-" Plugin 'itchyny/lightline.vim'
+Plugin 'itchyny/lightline.vim'
 " vim-buftabline
 Plugin 'ap/vim-buftabline'
 " fzf
@@ -381,12 +381,12 @@ nnoremap <silent> <leader>af :ALEFix eslint<CR>
 nnoremap <silent> <leader>ad :ALEDetail<CR>
 
 " lightline, buftabline -----------------------------------
-" let g:lightline = {
-  " \   'colorscheme': 'molokai' ,
-  " \   'component': {
-  " \     'filename': '%f',
-  " \   },
-  " \ }
+let g:lightline = {
+  \   'colorscheme': 'simpleblack' ,
+  \   'component': {
+  \     'filename': '%f',
+  \   },
+  \ }
 
 " tabline settings
 set showtabline=2
