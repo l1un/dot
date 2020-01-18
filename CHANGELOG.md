@@ -1,4 +1,8 @@
 ###### changelog
+`2020.01.18.1`
+  - re-enable lightline, vundle update and clean `.vimrc`
+
+
 `2020.01.13.2`
   - lots of changes to tmux and vim colors mostly
 
