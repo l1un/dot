@@ -1,4 +1,10 @@
 ###### changelog
+`2020.01.19.4`
+  - clean up `tmux.conf` post-update to 3a
+  - add `bin/tmux-rename-window` for quick renames from shell
+  - add alias to ^^^ in `.bash_aliases`
+
+
 `2020.01.19.3`
   - update `tmux.conf` for tmux version 2.9+ `<something>-style fg=,bg=,attr`
 
