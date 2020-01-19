@@ -1,4 +1,8 @@
 ###### changelog
+`2020.01.19.2`
+  - play with tmux colors and battery plugin settings etc.
+
+
 `2020.01.19.1`
   - remove old (unworking) vim-like bindings, add new working vim-like bindings for visual selection and copy in `tmux.conf`
 
