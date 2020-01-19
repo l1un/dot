@@ -1,4 +1,8 @@
 ###### changelog
+`2020.01.19.1`
+  - remove old (unworking) vim-like bindings, add new working vim-like bindings for visual selection and copy in `tmux.conf`
+
+
 `2020.01.18.1`
   - re-enable lightline, vundle update and clean `.vimrc`
 
