@@ -1,4 +1,8 @@
 ###### changelog
+`2020.01.19.3`
+  - update `tmux.conf` for tmux version 2.9+ `<something>-style fg=,bg=,attr`
+
+
 `2020.01.19.2`
   - play with tmux colors and battery plugin settings etc.
 
