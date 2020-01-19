@@ -37,8 +37,11 @@ alias enot='vim $HOME/Projects/notebook/main-note.md'
 
 # open tdd terminal window same directory
 alias tdd="gnome-terminal --window-with-profile=tdd"
+
 # launch custom tmux config (used with keyboard shortcut)
 alias tmuxs='$HOME/bin/open-tmux'
+# launch custom tmux config (used with keyboard shortcut)
+alias trw='$HOME/bin/rename-tmux-window'
 
 # copy dotfiles, got to dir (vcs), add, commit, push
 alias dotsync='$HOME/bin/sync-dot-files && cd "$HOME"/Projects/dot-config && $HOME/bin/update-project-push'
