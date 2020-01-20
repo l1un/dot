@@ -1,4 +1,9 @@
 ###### changelog
+`2020.01.19.5`
+  - clean-up `.vimrc`, add a few tweaks
+  - finish tmux update configs add/refactor a few shell helpers
+
+
 `2020.01.19.4`
   - clean up `tmux.conf` post-update to 3a
   - add `bin/tmux-rename-window` for quick renames from shell
