@@ -48,9 +48,13 @@
 │   ├── save-last-command
 │   ├── sync-dot-files
 │   ├── sync-termux-dotfiles
+│   ├── tmux-gnome-terminal
+│   ├── tmux-new-session
+│   ├── tmux-rename-window
 │   ├── update-project-docs
 │   ├── update-project-push
 │   ├── update-readme-tree
+│   ├── wrmctrl_snap_window
 │   └── z.sh
 ├── CHANGELOG.md
 ├── .config
@@ -163,9 +167,7 @@
 ├── .tmux.conf
 ├── .vim
 │   ├── colors
-│   │   ├── molokai.vim
-│   │   ├── yang.vim
-│   │   └── yin.vim
+│   │   └── molokai.vim
 │   ├── config
 │   │   └── autoclose.vim
 │   ├── ftplugin
@@ -180,8 +182,8 @@
 │       └── text.snippets
 └── .vimrc
 
-40 directories, 108 files
-last generated: Sun Jan 19 13:25:26 PST 2020
+40 directories, 110 files
+last generated: Sun Jan 19 19:39:24 PST 2020
 ```
 ###### packages
 ```
@@ -225,7 +227,7 @@ dependencies
   "yarn": "@1.9.4"
 }
 
-auto-generated: Sun Jan 19 13:25:26 PST 2020
+auto-generated: Sun Jan 19 19:39:24 PST 2020
 ```
 ###### notes
 ###### [changelog](CHANGELOG.md)

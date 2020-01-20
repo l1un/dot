@@ -1,4 +1,4 @@
-" vundle / plugins " TIP: vim +PluginInstall +qall
+" vundle / plugins -- vim +PluginInstall +qall
 
 set nocompatible              " be iMproved, required
 filetype off                  " required
@@ -7,361 +7,323 @@ filetype off                  " required
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 
-" vundle
 Plugin 'VundleVim/Vundle.vim'
-" Ale
 Plugin 'w0rp/ale'
-" Nerd Commments
 Plugin 'scrooloose/nerdcommenter'
-" Add You Complete Me
 Plugin 'Valloric/YouCompleteMe'
-" vim-javascript
 Plugin 'pangloss/vim-javascript'
-" vim-javascript-lib companion
 Plugin 'crusoexia/vim-javascript-lib'
-" Auto Pairs
 Plugin 'jiangmiao/auto-pairs'
-" vim-jsx
 Plugin 'mxw/vim-jsx'
-" vim-json
 Plugin 'elzr/vim-json'
-" lightline
 Plugin 'itchyny/lightline.vim'
-" vim-buftabline
 Plugin 'ap/vim-buftabline'
-" fzf
 Plugin 'junegunn/fzf'
 Plugin 'junegunn/fzf.vim'
-" surround.vim
 Plugin 'tpope/vim-surround'
-" repeat.vim
 Plugin 'tpope/vim-repeat'
-" vim-vinegar
 Plugin 'tpope/vim-vinegar'
-" tmux vim split pane sync
 Plugin 'christoomey/vim-tmux-navigator'
-" python indent
 Plugin 'vim-scripts/indentpython.vim'
-" LaTeX
 Plugin 'lervag/vimtex'
-" ultisnips
 Plugin 'SirVer/ultisnips'
 Plugin 'honza/vim-snippets'
-" vim-instant-markdown
-Plugin 'suan/vim-instant-markdown', {'rtp': 'after'}
-" Emmet
+Plugin 'suan/vim-instant-markdown', { 'rtp': 'after' }
 Plugin 'mattn/emmet-vim'
-" vim-pug
 Plugin 'digitaltoad/vim-pug'
 
-" startup, launch -----------------------------------------------
+" RUNTIME: startup, launch ------------------------------------------------
+
 " call vundle
 call vundle#end()            " required
 filetype plugin indent on    " required
 
-" Mapped BEFORE use, (vimscript line by line)
+" map before use (vimscript line by line)
 let mapleader = ","
 let maplocalleader = ",,"
-"set timeout timeoutlen=1500 <-- try if too fast
 
-" Autoclose consider later...
+" potential manual option for autoclosure
 " source ~/.vim/config/autoclose.vim
 
-" for Parcel js bundler
+" required for parcel js bundler
 set backupcopy=yes
 
-" Note: Filetype Specific Reference
-" python at ~/.vim/ftplugin/python.vim
-" LaTeX at ~/.vim/ftplugin/tex.vim
-" https://vim.fandom.com/wiki/Keep_your_vimrc_file_clean
+" SETTINGS: global, set ---------------------------------------------------
 
-" global, settings -----------------------------------------------
-" Molokai added to .vim/colors
+" custom molokai @ .vim/colors
 syntax on
-" set termguicolors
 colorscheme molokai
 
 set encoding=utf-8
 
-" Indentation, Tab behaviour
+" indent, tabs
 set expandtab
 set shiftwidth=2
 set softtabstop=2
 set tabstop=2
 
-" Hybrid numbers, Gutter State fix, Grey Numbers
+" hybrid numbers, gutter
 set number
 set numberwidth=1
 set relativenumber
-" highlight LineNr ctermfg=grey
 
-" Full line highlight cursor
+" full line highlight cursor
 set cursorline
 
-" Search Behaviour, RegEx Typing
+" search, case, highlight
+set hls
 set incsearch
-" set ignorecase
+set ignorecase
 
-" follow Working Directory
-" set autochdir
-
-" Staus Line Settings
+" status, status line
 set statusline+=%#warningmsg#
 set statusline+=%*
 set laststatus=2
-set statusline=%f "tail of filename
+set statusline=%f " tail of filename
 
-" Width, Wrap, TODO: HTML ftp, nolist debug
+" width, wrap
 set tw=0
 set wrap
 set linebreak
 set nolist " list disables linebreak
 
-" FIXME: Speedup scrolling
+" scroll, scrolling, speed
 set lazyredraw
 set regexpengine=1
 
-" go with this again
-set hls
+" MAP: shortcuts, remap ---------------------------------------------------
 
-" set showtabline=2
-
-" shortcuts, remap ----------------------------------------------
-"  FIXME: remap help to open in new tab
-" :cabbrev help tab help
-
-" Also reverse exlusive linewise behavior when wrap is on.
+" reverse exlusive linewise behavior when wrap is on.
 noremap j gj
 noremap k gk
 noremap gj j
 noremap gk k
 
-" Exit insert mode
-" inoremap jk <Esc>
-" Jump to EOL in insert
-" inoremap <Esc> <nop>
-
-" New line above / cursor stays
+" new lines above, below, above and below, cursor static
 nnoremap <Leader>O O<Esc>j
-" New line below / cursor stays
 nnoremap <Leader>o o<Esc>k
-" New line above + below / cursor stays
 nnoremap <Leader>= o<Esc>kO<Esc>j
 
-" Move current line down
-nnoremap <Leader>_ ddp
-" Move current line up
+" move current line up, down
 nnoremap <Leader>- dd<Esc>kkp<Esc>>
+nnoremap <Leader>_ ddp
 
-" Uppercase word, insert + normal / cursor stays
+" uppercase word, insert, normal, cursor stays
 inoremap <C-u> <Esc>viw~ea
 nnoremap <C-u> m`viw~<C-o>
 
-" NOTE: Clipboard support required, X11, vim-gtk
-" Copy selected test to system clipboard
-vnoremap <Leader>y "+y:call EchoCustom('Selection Copied to System Clipboard')<CR>
-" Paste system clipboard
+" NOTE: clipboard support required, X11, vim-gtk
+" copy, paste, to, from, system clipboard
+vnoremap <Leader>y "+y:call EchoCustom('Copied to System Clipboard')<CR>
 nnoremap <Leader>p "+p:call EchoCustom('Pasted from System Clipboard')<CR>
-" inoremap <Leader>p <C-o>"+p<C-o>:call Ek0('Paste from Clipboard')<CR>
 
-" Paste Toggle, ouput state
+" paste toggle, output state
 nnoremap <Leader>pt :set paste!<CR>:set paste?<CR>
 
-" List Buffers, buffer + Prep Entry
+" list buffers, buffer, prep entry
 nnoremap <Leader>bl :ls<CR>:b<Space>
-" Next Buffer
-" nnoremap <Leader>bn :bn<CR>
-" Previous Buffer
-" nnoremap <Leader>bp :bp<CR>
 
-" Open current buffer in new tab (toggle larger view)
-nnoremap <Leader>ts :tab split<CR>
-
-" Trim whitespace at end of lines
-nnoremap <Leader>tw :%s/\s\+$//e<CR>:call EchoCustom('Trimmed Whitespace')<CR>
-
-" Cue to cut & paste text <cpt> to new file (enter <file-name-dir)
-vnoremap <Leader>cpt :!cat >><Space>
-
-" Search for visually highlighted text
+" search for visually highlighted text, same, then cue replace
 vnoremap <Leader>st y<Esc>/<c-r>"<CR>:call EchoCustom('Search for text...')<CR>
-" Search for visually highlighted text + ready replace
 vnoremap <Leader>sT y<Esc>/<c-r>"<CR>:%s///gc<Left><Left><Left>
 
-" quickly turn off hls
+" toggle hls constantly
 nnoremap <Esc><Esc> :nohls<CR>:call EchoCustom(':nohls')<CR>
 
-" Read, insert and format date (timestamp)
+" read, insert and format date (timestamp)
 nnoremap <Leader>!d o<Esc>:r!date \+\%Y\-\%m\-\%d\ \/\ \%R<CR>i# <Esc>o
 
-" Clear view folder
-nnoremap <Leader>cv :!rm ~/.vim/view/*
-
-" Show Extraneous Whitespace
+" show extraneous whitespace
 highlight ExtraWhitespace ctermbg=red guibg=red
 match ExtraWhitespace /\s\+$/
 autocmd BufWinEnter * match ExtraWhitespace /\s\+$/
 autocmd InsertEnter * match ExtraWhitespace /\s\+\%#\@<!$/
 autocmd InsertLeave * match ExtraWhitespace /\s\+$/
 autocmd BufWinLeave * call clearmatches()
+"trim whitespace
+nnoremap <Leader>tw :%s/\s\+$//e<CR>:call EchoCustom('Trimmed Whitespace')<CR>
 
-" NETRW File Browser Config
+" netrw config, project drawer, browse files
 let g:netrw_banner = 0
 let g:netrw_liststyle = 3
 let g:netrw_browse_split = 4
 let g:netrw_altv = 1
 let g:netrw_winsize = 33
 
-" <bf> - 'Browse Files' split, rotate to below
-" nnoremap <silent><Leader>bf :Sexplore<CR><c-W>r
-" <bf> - 'Browse Files' left explore
-nnoremap <silent><Leader>bf :Lexplore<CR>
+nnoremap <Silent><Leader>bf :Lexplore<CR>
 
-" <C-a> jump to EOL in insert
+" jump to EOL in insert
 inoremap <C-a> <C-o>$
 
-" folding ----------------------------------------------------------
-" TODO: Filetype foldmethods
+" FOLD: folding, settings, maps -------------------------------------------
+
 set foldmethod=manual
 
-" FIXME: testing
+" markdown folding options
 " let g:markdown_folding = 1
 " let g:markdown_enable_folding = 1
 
-" TODO: Look into: This causes issues with vundle E10: readonly ...
-" Persisant Folds 2.0 - (mkview, loadview, do not remember syntax)
-" SEE: stackexchange: vim-conceal-doesnt-work/19333#19333
-" FIXME: Comment out group below before PluginInstall
+" FIXME: see below, causes issues with vundle E10: readonly ...
+" persisant folds 2.0 - (mkview, loadview, do not remember syntax)
+" stackexchange: vim-conceal-doesnt-work/19333#19333
+
+" comment out group below before PluginInstall
 augroup SaveFoldState
-autocmd!
-autocmd BufWinLeave ?* mkview | filetype detect
-autocmd BufWinEnter ?* silent loadview | filetype detect
+    autocmd!
+    autocmd BufWinLeave ?* mkview | filetype detect
+    autocmd BufWinEnter ?* silent loadview | filetype detect
 augroup END
 
-" Show folded lines, first-line text, total lines folded
+" show folded lines, first-line text, total lines folded
 function! ShowFoldMessage()
-let count_lines = ' [' . (v:foldend - v:foldstart + 1) . '] '
-let raw_text = getline(v:foldstart)
-" let fold_text = substitute(raw_text, '{{*', count_lines, 1)
-let fold_text = raw_text . ' ' . count_lines
-return fold_text
+    let count_lines = ' [' . (v:foldend - v:foldstart + 1) . '] '
+    let raw_text = getline(v:foldstart)
+    let fold_text = raw_text . ' ' . count_lines
+    return fold_text
 endfunction
 
-" Set folded text to function
+" set folded text to function
 set foldtext=ShowFoldMessage()
 
-" Toggle Folds
-" nnoremap <Leader><space> za
+" FILE: edit, source, files, dirs -----------------------------------------
 
-" quick edit + source files ------------------------------------
 " .vimrc
-nnoremap <silent> <Leader>ev :e $MYVIMRC<CR>
+nnoremap <Silent> <Leader>evc :e $MYVIMRC<CR>
 " notes (netrw)
-nnoremap <silent> <Leader>en :e ~/Projects/notebook/main-note.md<CR>
+nnoremap <Silent> <Leader>en :e ~/Projects/notebook/main-note.md<CR>
 " tmux
-nnoremap <silent> <Leader>et :e<CR>:e ~/.tmux.conf<CR>
+nnoremap <Silent> <Leader>etc :e<CR>:e ~/.tmux.conf<CR>
 " .bash_aliases
-nnoremap <silent> <Leader>eba :e<CR>:e ~/.bash_aliases<CR>
+nnoremap <Silent> <Leader>eba :e<CR>:e ~/.bash_aliases<CR>
 " .bashrc
-nnoremap <silent> <Leader>ebc :e<CR>:e ~/.bashrc<CR>
+nnoremap <Silent> <Leader>ebc :e<CR>:e ~/.bashrc<CR>
 " ultisnips
-nnoremap <silent> <Leader>eus :UltiSnipsEdit<CR>
+nnoremap <Silent> <Leader>eus :UltiSnipsEdit<CR>
 
-" Source .vimrc
-nnoremap <Leader>sv :so ~/.vimrc<CR>:nohls<CR>
+" source .vimrc
+nnoremap <Leader>sv :source ~/.vimrc<CR>:redraw<CR>:nohls<CR>:call EchoCustom('Reloaded .vimrc')<CR>
 
-" custom functions ------------------------------------------------------
-" rename files within vim (<leader>n to rename)
+" clear view folder
+nnoremap <Leader>cv :!rm ~/.vim/view/*
+
+" FUNCTION: rename files --------------------------------------------------
+
 function! RenameFile()
-let old_name = expand('%')
-let new_name = input('New file name: ', expand('%'), 'file')
-if new_name != '' && new_name != old_name
-  exec ':saveas ' . new_name
-  exec ':silent !rm ' . old_name
-  redraw!
-endif
+    let old_name = expand('%')
+    let new_name = input('New file name: ', expand('%'), 'file')
+    if new_name != '' && new_name != old_name
+        exec ':saveas ' . new_name
+        exec ':silent !rm ' . old_name
+        redraw!
+    endif
 endfunction
 
-" type <leader>n to open rename file dialog
 noremap <Leader>n :call RenameFile()<CR>
 
-" echo color status message
+" FUNCTION: echo color status ---------------------------------------------
+
 " :so /usr/share/vim/vim81/syntax/hitest.vim
 function! EchoCustom(msg)
-echohl WarningMsg
-echo "[!]" a:msg
-echohl None
+    echohl WarningMsg
+    echo "[!]" a:msg
+    echohl None
 endfunction
 
-" REPL (math, etc.)
+" FUNCTION: REPL (math, etc.) ---------------------------------------------
+
 function! Repl()
-while 1
-  let expr = input ('>', '', 'expression')
-  if expr == 'q' | break | endif
-    if expr != ''
-      echo "\n"
-      if expr =~ '='
-        execute 'let ' . expr
-      else
-        let ans = eval(expr)
-        echo string(ans)
-      endif
-    endif
-  endwhile
+    while 1
+        let expr = input ('>', '', 'expression')
+        if expr == 'q' | break | endif
+        if expr != ''
+            echo "\n"
+            if expr =~ '='
+                execute 'let ' . expr
+            else
+                let ans = eval(expr)
+                echo string(ans)
+            endif
+        endif
+    endwhile
 endfunction
 
-" <leader> c to call REPL function
 nnoremap <Leader>c :call Repl()<CR>
 
-" javascript, node, js ---------------------------------------------
-" run node in split
-function! RunFileInNode()
-let input_file = expand('%')
-exec ':w !echo; node' input_file
+" FUNCTION: hide status / commmands ---------------------------------------
+
+let s:hidden_all = 0
+
+function! ToggleHiddenAll()
+    if s:hidden_all == 0
+        let s:hidden_all = 1
+        set noshowmode
+        set noruler
+        set laststatus=0
+        set noshowcmd
+        " set cmdheight=1
+    else
+        let s:hidden_all = 0
+        set showmode
+        set ruler
+        set laststatus=2
+        set showcmd
+        " set cmdheight=2
+    endif
+    call EchoCustom('ToggleHiddenAll')
 endfunction
 
-" type <leader>rn to run node file in split
-noremap <leader>rn :call RunFileInNode()<cr>
+nnoremap <S-h> :call ToggleHiddenAll()<CR>
 
-" python -------------------------------------------------------
+" FUNCTION: run node.js ---------------------------------------------------
+
+" runs in split, optionally use nodemon
+function! RunFileInNode()
+    let input_file = expand('%')
+    exec ':w !echo; node' input_file
+endfunction
+
+noremap <Leader>rn :call RunFileInNode()<CR>
+
+" FUNCTION: run python, get comment ---------------------------------------
+
 " run python in split
 function! RunFileInPython()
-let python_file = expand('%')
-exec ':w !echo; python' python_file
+    let python_file = expand('%')
+    exec ':w !echo; python' python_file
 endfunction
 
-" type <Leader>rp to run python file in split
-noremap <Leader>rp :call RunFileInPython()<cr>
+noremap <Leader>rpy :call RunFileInPython()<CR>
 
 " append python output as comment
 function! GetPythonComment()
-exec ':r !python %'
-:execute "normal! i# \<Esc>"
+    exec ':r !python %'
+    :execute "normal! i# \<Esc>"
 endfunction
 
-" type <Leader> to append output and comment
-noremap <Leader>cpy :call GetPythonComment()<cr>
+noremap <Leader>cpy :call GetPythonComment()<CR>
 
-" gallium os --------------------------------------------------------
+" OS: gallium -------------------------------------------------------------
+
 " Needs to be repeated frequently until new fix.
 " nnoremap <Leader>sk :!set-keymap
 
-" ale --------------------------------------------------------
+" PLUGIN: ale -------------------------------------------------------------
+
+" allow jsx in js files
 " https://jaxbot.me/articles/setting-up-vim-for-react-js-jsx-02-03-2015
-let g:jsx_ext_required = 0 " Allow JSX in normal JS files
+let g:jsx_ext_required = 0
 
-" lacheck removed
+let g:ale_statusline_format = [ 'error', 'warning %d', '' ]
 
-let g:ale_statusline_format = ['error', 'warning %d', '']
 let g:ale_linters = {
-    \ 'javascript': [ 'eslint', 'prettier', 'stylelint'],
-    \ 'css': ['stylelint', 'eslint'],
-    \ 'sh': ['language_server', 'shellcheck'],
-    \ 'markdown': ['remark-lint'],
-    \ 'tex': ['chktex'],
-    \ 'html': ['tidy', 'stylelint', 'alex'],
-    \ 'pug': ['puglint', 'eslint'],
-  \ }
+    \           'sh': [ 'language_server', 'shellcheck' ],
+    \          'css': [ 'stylelint', 'eslint' ],
+    \          'pug': [ 'puglint', 'eslint' ],
+    \          'tex': [ 'chktex' ],
+    \         'html': [ 'tidy', 'stylelint', 'alex' ],
+    \     'markdown': [ 'remark-lint' ],
+    \   'javascript': [ 'eslint', 'prettier', 'stylelint' ],
+    \ }
 
 " Ale symbols
 let g:ale_sign_error = '✗'
@@ -369,18 +331,19 @@ let g:ale_sign_warning = '∆'
 
 " Ale fixing
 let g:ale_fixers = {
-    \ 'javascript': ['eslint'],
-  \ }
+    \   'javascript': [ 'eslint' ],
+    \ }
 
 " always show Ale gutter
 let g:ale_sign_column_always = 0
 
 " ale fix eslint
-nnoremap <silent> <leader>af :ALEFix eslint<CR>
+nnoremap <Silent> <Leader>af :ALEFix eslint<CR>
 " read full error/warn message details
-nnoremap <silent> <leader>ad :ALEDetail<CR>
+nnoremap <Silent> <Leader>ad :ALEDetail<CR>
 
-" lightline, buftabline -----------------------------------
+" PLUGIN: lightline, buftabline -------------------------------------------
+
 let g:lightline = {
   \   'colorscheme': 'simpleblack' ,
   \   'component': {
@@ -394,7 +357,8 @@ set showtabline=2
 let g:buftabline_numbers = 1
 " let g:buftabline_separators = 1
 
-" instant markdown ---------------------------------------------
+" PLUGIN: instant markdown ------------------------------------------------
+
 " autoscroll toggle
 let g:instant_markdown_autoscroll = 1
 " autostart toggle
@@ -402,20 +366,23 @@ let g:instant_markdown_autostart = 0
 " realtime toggle - if taxing system
 " let g:instant_markdown_slow = 1
 
-" nerd comments -----------------------------------
+" PLUGIN: nerd comments ---------------------------------------------------
+
 " add spaces to nerd/sexy comments (Standard JS no-warn msg)
 let NERDSpaceDelims=1
 
-" ultisnips ---------------------------------------------------
+" PLUGIN: ultisnips -------------------------------------------------------
+
 " set directory
 " let g:UltiSnipsSnippetDir = $HOME."/.vim/ultisnips"
-let g:UltiSnipsSnippetDirectories = ["~/.vim/UltiSnips", "UltiSnips"]
+let g:UltiSnipsSnippetDirectories = [ "~/.vim/UltiSnips", "UltiSnips" ]
 " expand completion
 let g:UltiSnipsExpandTrigger="<c-j>"
 " open :UltiSnipsEdit in split
 let g:UltiSnipsEditSplit="vertical"
 
-" you complete me, ycm --------------------------------------------
+" PLUGIN: you complete me, ycm --------------------------------------------
+
 " ycm preview on bottom
 " set splitbelow
 
@@ -426,7 +393,7 @@ let g:UltiSnipsEditSplit="vertical"
 set completeopt-=preview
 
 " get documentation word under cursor
-nnoremap <silent> <leader>gd :YcmCompleter GetDoc <CR><c-w>w
+nnoremap <Silent> <Leader>gd :YcmCompleter GetDoc <CR><C-w>w
 
 " ycm colors
 " highlight Pmenu ctermfg=Green ctermbg=Black
@@ -440,30 +407,33 @@ let g:ycm_always_populate_location_list = 1
 " disable typescript server warnings
 let g:ycm_filter_diagnostics = { 'javascript': { 'regex': [ '.*' ] } }
 
-" vimtex -------------------------------------------------------------------
+" PLUGIN: vimtex ----------------------------------------------------------
+
 let g:tex_flavor='latex'
 let g:vimtex_view_method='zathura'
 let g:vimtex_quickfix_mode=0
+
 " seperate build dir, NOTE: clean <LocalLeader>lc within vimtex obeys
 " this setting when set here, unsure about .latexmkrc
-let g:vimtex_compiler_latexmk = {
-    \ 'build_dir': './build',
-\ }
+let g:vimtex_compiler_latexmk = { 'build_dir': './build', }
 
 let g:tex_conceal = '' " turn off internal LaTex syntax behaviour
 " set conceallevel=0
 " let g:tex_conceal='abdmg'
 
-" emmet --------------------------------------------------
+" PLUGIN: emmet -----------------------------------------------------------
+
 " leader .
 let g:user_emmet_leader_key=','
 
-" vim-vinegar --------------------------------------------------
+" PLUGIN: vim-vinegar -----------------------------------------------------
+
 " dot files hidden by default <gf> to show
 let g:netrw_list_hide = '\(^\|\s\s\)\zs\.\S\+'
 " closing netrw window / buffer
 let g:netrw_fastbrowse = 0
 
-" fzf ---------------------------------------------------------
+" PLUGIN: fzf -------------------------------------------------------------
+
 let g:fzf_layout = { 'up': '~15%' }
 nnoremap <Leader>fz :FZF<CR>

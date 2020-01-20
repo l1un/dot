@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+
+## Name: rename-tmux-window
+## Created: Sun Jan 19 13:12:09 PST 2020
+## Description: rename current tmux window
+
+rename_tmux_window() {
+  local fileName="$1"
+  tmux rename-window "$fileName"
+}
+
+rename_tmux_window "$1"
