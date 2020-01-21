@@ -1,4 +1,8 @@
 ###### changelog
+`2020.01.21.1`
+  - soon
+
+
 `2020.01.19.5`
   - clean-up `.vimrc`, add a few tweaks
   - finish tmux update configs add/refactor a few shell helpers
