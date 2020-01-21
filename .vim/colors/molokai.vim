@@ -1,7 +1,7 @@
 " Vim color file
 "
 " Note: This theme file was modified by 11un.
-" Modified: Sat Dec 28 10:19:18 PST 2019 - changed tabline colors
+" Modified: Tue Jan 21 00:23:38 PST 2020
 "
 " Author: Tomas Restrepo <tomas@winterdom.com>
 " https://github.com/tomasr/molokai
@@ -145,7 +145,7 @@ if &t_Co > 255
       hi CursorLine               ctermbg=235   cterm=none
       hi CursorLineNr ctermfg=242               cterm=none
    else
-      hi Normal       ctermfg=255 ctermbg=232
+      hi Normal       ctermfg=255 ctermbg=none
       hi CursorLine               ctermbg=233   cterm=none
       hi CursorLineNr ctermfg=255  ctermbg=233   cterm=bold
    endif
@@ -166,30 +166,31 @@ if &t_Co > 255
    hi DiffText                    ctermbg=102 cterm=bold
 
    hi Directory       ctermfg=118               cterm=bold
-   hi Error           ctermfg=219 ctermbg=89
-   hi ErrorMsg        ctermfg=1 ctermbg=232    cterm=bold
+   hi Error           ctermfg=1   ctermbg=234   cterm=bold
+   hi Warning         ctermfg=208 ctermbg=234   cterm=bold
+   hi ErrorMsg        ctermfg=1   ctermbg=232   cterm=bold
    hi Exception       ctermfg=118               cterm=bold
    hi Float           ctermfg=135
    hi FoldColumn      ctermfg=67  ctermbg=16
-   hi Folded          ctermfg=8  ctermbg=233
+   hi Folded          ctermfg=8   ctermbg=233
    hi Function        ctermfg=118
    hi Identifier      ctermfg=208               cterm=none
    hi Ignore          ctermfg=244 ctermbg=232
-   hi IncSearch       ctermfg=232 ctermbg=255 cterm=none
+   hi IncSearch       ctermfg=232 ctermbg=154   cterm=none
 
    hi keyword         ctermfg=161               cterm=bold
    hi Label           ctermfg=229               cterm=none
    hi Macro           ctermfg=193
    hi SpecialKey      ctermfg=81
 
-   hi MatchParen      ctermfg=233  ctermbg=208 cterm=bold
+   hi MatchParen      ctermfg=233 ctermbg=208   cterm=bold
    hi ModeMsg         ctermfg=154
    hi MoreMsg         ctermfg=154
    hi Operator        ctermfg=161
 
    " complete menu
-   hi Pmenu           ctermfg=81  ctermbg=16
-   hi PmenuSel        ctermfg=255 ctermbg=233 cterm=bold
+   hi Pmenu           ctermfg=251 ctermbg=234
+   hi PmenuSel        ctermfg=154 ctermbg=233   cterm=bold
    hi PmenuSbar                   ctermbg=232
    hi PmenuThumb      ctermfg=81
 
@@ -197,7 +198,7 @@ if &t_Co > 255
    hi PreProc         ctermfg=118
    hi Question        ctermfg=81
    hi Repeat          ctermfg=161               cterm=bold
-   hi Search          ctermfg=234  ctermbg=255 cterm=bold
+   hi Search          ctermfg=234 ctermbg=255   cterm=bold
 
    " marks column
    hi SignColumn      ctermfg=118 ctermbg=235
@@ -238,9 +239,9 @@ if &t_Co > 255
    hi SpecialKey      ctermfg=59
 
    if exists("g:rehash256") && g:rehash256 == 1
-       hi Normal       ctermfg=252 ctermbg=234
-       hi CursorLine               ctermbg=236   cterm=none
-       hi CursorLineNr ctermfg=208               cterm=none
+       hi Normal       ctermfg=252    ctermbg=234
+       hi CursorLine                  ctermbg=236   cterm=none
+       hi CursorLineNr ctermfg=208                  cterm=none
 
        hi Boolean         ctermfg=141
        hi Character       ctermfg=222

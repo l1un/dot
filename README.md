@@ -167,6 +167,7 @@
 ├── .tmux.conf
 ├── .vim
 │   ├── colors
+│   │   ├── gotham.vim
 │   │   └── molokai.vim
 │   ├── config
 │   │   └── autoclose.vim
@@ -182,8 +183,8 @@
 │       └── text.snippets
 └── .vimrc
 
-40 directories, 110 files
-last generated: Sun Jan 19 19:39:24 PST 2020
+40 directories, 111 files
+last generated: Tue Jan 21 03:11:06 PST 2020
 ```
 ###### packages
 ```
@@ -227,7 +228,7 @@ dependencies
   "yarn": "@1.9.4"
 }
 
-auto-generated: Sun Jan 19 19:39:24 PST 2020
+auto-generated: Tue Jan 21 03:11:06 PST 2020
 ```
 ###### notes
 ###### [changelog](CHANGELOG.md)

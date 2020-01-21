@@ -182,6 +182,10 @@ surfrawDuckDuckGo() {
 
 # other ---------------------------------------------
 
+# Gotham Shell
+# GOTHAM_SHELL="$HOME/.config/gotham/gotham.sh"
+# [[ -s $GOTHAM_SHELL  ]] && source $GOTHAM_SHELL
+
 # vim default editor
 export VISUAL=vim
 export EDITOR="$VISUAL"
@@ -190,7 +194,11 @@ export EDITOR="$VISUAL"
 set -o vi
 
 # via fzf install
+# change fzf to use ripgrep
 [ -f ~/.fzf.bash ] && source ~/.fzf.bash
+export FZF_DEFAULT_COMMAND='rg --files --no-ignore --hidden --follow -g "!{.git,node_modules}/*" 2> /dev/null'
+export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
+bind -x '"\C-p": vim $(fzf);'
 
 # z database
 . /usr/local/bin/z.sh
