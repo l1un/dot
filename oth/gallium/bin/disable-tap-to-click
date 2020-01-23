@@ -1,0 +1,15 @@
+#!/usr/bin/env bash
+
+#### Name: toggle-tap-enable
+#### Created: Wed Jan 22 19:58:14 PST 2020
+#### Description: disable anoying AF tap to click on gallium
+#### Usecases: GalliumOS, distros with accessibility limitations.
+#### Notes: maybe add toggle, this only disables for now.
+
+toggle_tap_enable() {
+  xinput --set-int-prop 9 "Tap Enable" 8 0
+  # FYI: to renable it
+  # xinput --set-int-prop 9 "Tap Enable" 8 1
+}
+
+toggle_tap_enable
