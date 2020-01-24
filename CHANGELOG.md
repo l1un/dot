@@ -1,23 +1,26 @@
-###### changelog
-`2020.01.24.1`
-  - clean-up, rename directories
+# changelog
 
+`2020.01.24.1`
+
+- clean-up, rename directories
 
 `2020.01.22.1`
-  - move 2019 changelog entries to `old-logs/`
-  - add script to disable tap-to-click for Gallium
-  - rename top-level folders
+
+- move 2019 changelog entries to `old-logs/`
+- add script to disable tap-to-click for Gallium
+- rename top-level folders
 
 `2020.01.21.1`
-  - soon
 
+- soon
 
 `2020.01.19.5`
-  - clean-up `.vimrc`, add a few tweaks
-  - finish tmux update configs add/refactor a few shell helpers
 
+- clean-up `.vimrc`, add a few tweaks
+- finish tmux update configs add/refactor a few shell helpers
 
 `2020.01.19.4`
+
   - clean up `tmux.conf` post-update to 3a
   - add `bin/tmux-rename-window` for quick renames from shell
   - add alias to ^^^ in `.bash_aliases`
