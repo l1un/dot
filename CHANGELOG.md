@@ -1,4 +1,8 @@
 ###### changelog
+`2020.01.24.1`
+  - clean-up, rename directories
+
+
 `2020.01.22.1`
   - move 2019 changelog entries to `old-logs/`
   - add script to disable tap-to-click for Gallium
