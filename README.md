@@ -81,9 +81,8 @@
 ├── jsconfig.json
 ├── .latexmkrc
 ├── .lynxrc
-├── oth
+├── other
 │   ├── .babelrc
-│   ├── cat
 │   ├── crontab
 │   │   └── git-auto-push
 │   ├── .curlrc
@@ -98,6 +97,7 @@
 │   │   ├── .bashrc
 │   │   ├── bin
 │   │   │   ├── disable-radios
+│   │   │   ├── disable-tap-to-click
 │   │   │   ├── set-keymap
 │   │   │   └── toggle-touchpad
 │   │   ├── .latexmkrc
@@ -183,8 +183,8 @@
 │       └── text.snippets
 └── .vimrc
 
-40 directories, 111 files
-last generated: Tue Jan 21 03:11:06 PST 2020
+39 directories, 112 files
+last generated: Fri Jan 24 08:34:03 PST 2020
 ```
 ###### packages
 ```
@@ -228,7 +228,7 @@ dependencies
   "yarn": "@1.9.4"
 }
 
-auto-generated: Tue Jan 21 03:11:06 PST 2020
+auto-generated: Fri Jan 24 08:34:03 PST 2020
 ```
 ###### notes
 ###### [changelog](CHANGELOG.md)

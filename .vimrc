@@ -15,11 +15,12 @@ Plug 'tpope/vim-surround'
 Plug 'tpope/vim-vinegar'
 Plug 'christoomey/vim-tmux-navigator'
 Plug 'lervag/vimtex'
-Plug 'SirVer/ultisnips'
-Plug 'honza/vim-snippets'
+" Plug 'SirVer/ultisnips'
+" Plug 'honza/vim-snippets'
 Plug 'suan/vim-instant-markdown', { 'rtp': 'after' }
 Plug 'mattn/emmet-vim'
 Plug 'sheerun/vim-polyglot'
+Plug 'godlygeek/tabular'
 
 call plug#end()
 
@@ -193,7 +194,7 @@ nnoremap <silent> <Leader>en :e ~/Projects/notebook/main-note.md<CR>
 " tmux
 nnoremap <silent> <Leader>et :e<CR>:e ~/.tmux.conf<CR>
 " ultisnips
-nnoremap <silent> <Leader>eu :UltiSnipsEdit<CR>
+" nnoremap <silent> <Leader>eu :UltiSnipsEdit<CR>
 
 " source .vimrc
 nnoremap <Leader>sv :source ~/.vimrc<CR>:redraw<CR>:nohls<CR>:call EchoCustom(':so[urce] .vimrc')<CR>
@@ -375,41 +376,6 @@ let g:instant_markdown_autostart = 0
 " add spaces to nerd/sexy comments (Standard JS no-warn msg)
 let NERDSpaceDelims=1
 
-" PLUGIN: ultisnips -------------------------------------------------------
-
-" set directory
-" let g:UltiSnipsSnippetDir = $HOME."/.vim/ultisnips"
-let g:UltiSnipsSnippetDirectories = [ '~/.vim/UltiSnips', 'UltiSnips' ]
-" expand completion
-" let g:UltiSnipsExpandTrigger='<c-j>'
-" open :UltiSnipsEdit in split
-let g:UltiSnipsEditSplit='vertical'
-
-" PLUGIN: you complete me, ycm --------------------------------------------
-
-" DISABLED: ycm settings
-" turn off ycm preview on top
-" set completeopt-=preview
-
-" get documentation word under cursor
-" nnoremap <silent> <Leader>gd :YcmCompleter GetDoc <CR><C-w>w
-
-" let g:ycm_python_binary_path='python'
-
-" get full diagnostics (:lopen, :lclose, <leader>d)
-" let g:ycm_always_populate_location_list = 1
-
-" disable typescript server warnings
-" let g:ycm_filter_diagnostics = { 'javascript': { 'regex': [ '.*' ] } }
-
-" preview on bottom
-" set splitbelow
-" close preview after selecting
-" let g:ycm_autoclose_preview_window_after_completion=1
-" ycm colors
-" highlight Pmenu ctermfg=Green ctermbg=Black
-" highlight PmenuSel ctermfg=Black ctermbg=Green
-
 " PLUGIN: vimtex ----------------------------------------------------------
 
 let g:tex_flavor='latex'
@@ -476,9 +442,6 @@ function! s:check_back_space() abort
   return !col || getline('.')[col - 1]  =~# '\s'
 endfunction
 
-" Use <c-space> to trigger completion.
-" inoremap <silent><expr> <c-space> coc#refresh()
-
 " Use <cr> to confirm completion, `<C-g>u` means break undo chain at current position.
 " Coc only does snippet and additional edit on confirm.
 inoremap <expr> <cr> pumvisible() ? "\<C-y>" : "\<C-g>u\<CR>"
@@ -534,3 +497,36 @@ nnoremap <silent> <space>j  :<C-u>CocNext<CR>
 nnoremap <silent> <space>k  :<C-u>CocPrev<CR>
 " Resume latest coc list
 nnoremap <silent> <space>p  :<C-u>CocListResume<CR>
+
+" DISABLED: settings for ultisnips
+
+" set directory
+" let g:UltiSnipsSnippetDir = $HOME."/.vim/ultisnips"
+" let g:UltiSnipsSnippetDirectories = [ '~/.vim/UltiSnips', 'UltiSnips' ]
+" expand completion
+" let g:UltiSnipsExpandTrigger='<c-j>'
+" open :UltiSnipsEdit in split
+" let g:UltiSnipsEditSplit='vertical'
+" DISABLED: settings for ycm
+
+" turn off ycm preview on top
+" set completeopt-=preview
+
+" get documentation word under cursor
+" nnoremap <silent> <Leader>gd :YcmCompleter GetDoc <CR><C-w>w
+
+" let g:ycm_python_binary_path='python'
+
+" get full diagnostics (:lopen, :lclose, <leader>d)
+" let g:ycm_always_populate_location_list = 1
+
+" disable typescript server warnings
+" let g:ycm_filter_diagnostics = { 'javascript': { 'regex': [ '.*' ] } }
+
+" preview on bottom
+" set splitbelow
+" close preview after selecting
+" let g:ycm_autoclose_preview_window_after_completion=1
+" ycm colors
+" highlight Pmenu ctermfg=Green ctermbg=Black
+" highlight PmenuSel ctermfg=Black ctermbg=Green
