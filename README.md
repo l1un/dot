@@ -121,7 +121,6 @@
 │   ├── gulp
 │   │   └── gulpfile.babel.js
 │   ├── lint
-│   │   ├── dD_package.json
 │   │   ├── .eslintrc.js
 │   │   ├── README.md
 │   │   └── .stylelintrc
@@ -167,10 +166,7 @@
 ├── .tmux.conf
 ├── .vim
 │   ├── colors
-│   │   ├── gotham.vim
 │   │   └── molokai.vim
-│   ├── config
-│   │   └── autoclose.vim
 │   ├── ftplugin
 │   │   ├── css.vim
 │   │   ├── html.vim
@@ -183,8 +179,8 @@
 │       └── text.snippets
 └── .vimrc
 
-39 directories, 112 files
-last generated: Fri Jan 24 08:52:50 PST 2020
+38 directories, 109 files
+last generated: Sun Jan 26 10:08:40 PST 2020
 ```
 ###### packages
 ```
@@ -228,7 +224,7 @@ dependencies
   "yarn": "@1.9.4"
 }
 
-auto-generated: Fri Jan 24 08:52:50 PST 2020
+auto-generated: Sun Jan 26 10:08:40 PST 2020
 ```
 ###### notes
 ###### [changelog](CHANGELOG.md)

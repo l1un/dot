@@ -1,11 +1,15 @@
-# lint
+# linters notes
 
 ## shell
 
-  - Bash Language Server: `npm i -g bash-language-server`
-  - Shellcheck: check distro OR `apt-get install shellcheck`
+- Bash Language Server: `npm i -g bash-language-server`
+- Shellcheck: check distro OR `apt-get install shellcheck`
 
-  ```
+## vim
+
+- vint:
+
+```json
 "devDependencies": {
   "eslint": "^6.8.0",
   "eslint-config-airbnb-base": "^14.0.0",
@@ -15,6 +19,6 @@
   "stylelint": "^12.0.1",
   "stylelint-config-recommended": "^3.0.0"
 }
+```
 
-  ```
-# TODO: add the rest
+## TODO: add the rest

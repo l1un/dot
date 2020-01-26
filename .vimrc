@@ -1,7 +1,6 @@
 call plug#begin('~/.vim/plugged')
 
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
-Plug 'VundleVim/Vundle.vim'
 Plug 'w0rp/ale'
 Plug 'jiangmiao/auto-pairs'
 Plug 'itchyny/lightline.vim'
@@ -18,10 +17,12 @@ Plug 'lervag/vimtex'
 Plug 'suan/vim-instant-markdown', { 'rtp': 'after' }
 Plug 'mattn/emmet-vim'
 Plug 'sheerun/vim-polyglot'
-Plug 'godlygeek/tabular'
+Plug 'tommcdo/vim-lion'
 " DISABLED: plugins
 " Plug 'SirVer/ultisnips'
 " Plug 'honza/vim-snippets'
+" Plug 'godlygeek/tabular'
+" Plug 'chrisbra/NrrwRgn'
 
 call plug#end()
 
@@ -147,7 +148,7 @@ nnoremap <silent><Leader>bf :Lexplore<CR>
 " jump to EOL in insert
 inoremap <C-a> <C-o>$
 
-" FOLD: folding, settings, maps -------------------------------------------
+" FOLD: folding, settings, maps ------------------------------------------
 
 set foldmethod=manual
 
@@ -335,10 +336,8 @@ nmap <Leader>af <Plug>(ale_fix)
 " nnoremap <silent> <Leader>ad :ALEDetail<CR>
 nmap <Leader>ad <Plug>(ale_detail)
 
-let g:ale_sign_warning = '>>'
-
-" DISABLED: Ale symbols
-" let g:ale_sign_error = '◉◉'
+let g:ale_sign_error = '◉◉'
+let g:ale_sign_warning = '◉◉'
 
 " PLUGIN: lightline, buftabline -------------------------------------------
 
@@ -404,7 +403,7 @@ let g:netrw_fastbrowse = 0
 
 " PLUGIN: fzf -------------------------------------------------------------
 
-let g:fzf_layout = { 'down': '~18%' }
+" let g:fzf_layout = { 'down': '~18%' }
 
 " remember: C-t, C-x, C-b == tab, split, vsplit
 nnoremap <Leader>ff :Files<CR>
@@ -413,7 +412,8 @@ nnoremap <Leader>fh :History<CR>
 nnoremap <Leader>ft :BTags<CR>
 nnoremap <Leader>fT :Tags<CR>
 
-" PLUGIN: coc -------------------------------------------------------------
+" PLUGIN: coc ------------------------------------------------------------
+
 " if hidden is not set, TextEdit might fail.
 set hidden
 
@@ -421,7 +421,7 @@ set hidden
 set nobackup
 set nowritebackup
 
-" You will have bad experience for diagnostic messages when it's default 4000.
+" improves experience from default 4000
 set updatetime=300
 
 " don't give |ins-completion-menu| messages.
@@ -438,6 +438,9 @@ nmap <leader>rn <Plug>(coc-rename)
 
 " Use K to show documentation in preview window
 nnoremap <silent> K :call <SID>show_documentation()<CR>
+
+" autofix on current line
+nmap <Leader>qf <Plug>(coc-fix-current)
 
 " Show all diagnostics
 nnoremap <silent> <space>a  :<C-u>CocList diagnostics<cr>
@@ -482,7 +485,9 @@ function! s:show_documentation()
 endfunction
 
 " Highlight symbol under cursor on CursorHold
-autocmd CursorHold * silent call CocActionAsync('highlight')
+augroup HighlightSymbol
+  autocmd CursorHold * silent call CocActionAsync('highlight')
+augroup end
 
 augroup mygroup
   autocmd!
