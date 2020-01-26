@@ -39,7 +39,7 @@ alias tns='$HOME/bin/tmux-new-session'
 alias trw='$HOME/bin/tmux-rename-window'
 
 # copy dotfiles, got to dir (vcs), add, commit, push
-alias dotsync='$HOME/bin/sync-dot-files && cd "$HOME"/Projects/dot-config && $HOME/bin/update-project-push && cd -'
+alias dotsync='$HOME/bin/sync-dot-files && cd "$HOME"/Projects/dot-config && echo "Dotfiles Synced. Update Changelog!"'
 
 ## surfraw
 

@@ -242,7 +242,7 @@ function! Repl()
     endwhile
 endfunction
 
-nnoremap <Leader>c :call Repl()<CR>
+nnoremap <Leader>rR :call Repl()<CR>
 
 " FUNCTION: hide status / commmands ---------------------------------------
 
