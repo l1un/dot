@@ -2,7 +2,7 @@
 
 ## Name: sync-dot-files
 ## Created: 05.21.2019
-## Updated: Sat Dec 28 10:12:49 PST 2019 - add vim/colors dir
+## Updated: Sun Jan 26 10:33:09 PST 2020 - comment out unused
 ## Description: Synchronize latest system dot files to git repository keeping correct structure and files in corresponding directories.
 ## TODO: Update to rysnc.
 
@@ -17,7 +17,7 @@ update_dot_files() {
 	local source_bashrc_file="$HOME/.bashrc"
 	local source_bash_aliases_file="$HOME/.bash_aliases"
 	local source_emacs_file="$HOME/.emacs"
-	local source_eslint_file="$HOME/.eslintrc.js"
+	# local source_eslint_file="$HOME/.eslintrc.js"
 	local source_latexmkrc_file="$HOME/.latexmkrc"
 	local source_lynxrc_file="$HOME/.lynxrc"
 	local source_tern_config_file="$HOME/.tern-config"
@@ -35,10 +35,10 @@ update_dot_files() {
 	local source_terminator_dir="$HOME/.config/terminator/"
 	local source_zathura_dir="$HOME/.config/zathura/"
 
-	local source_vim_config_dir="$HOME/.vim/config/"
+	# local source_vim_config_dir="$HOME/.vim/config/"
 	local source_vim_colors_dir="$HOME/.vim/colors/"
 	local source_vim_ftplugin_dir="$HOME/.vim/ftplugin/"
-	local source_vim_snippets_dir="$HOME/.vim/UltiSnips/"
+	# local source_vim_snippets_dir="$HOME/.vim/UltiSnips/"
 
 
 	# Array for system root files, they get added to repo root dir.
@@ -77,25 +77,27 @@ update_dot_files() {
 
 	# Sync system root config files
 	for each_file in "${source_root_dir_config_files[@]}"; do
-		cp  "$each_file" "$repo_root_dir"
+		cp  "$each_file" "$repo_root_dir" -v
 	done
 
 	# Sync system .config directories to repo directories
 	for each_dir in "${source_dot_config_dirs[@]}"; do
-		cp -r "$each_dir" "$repo_dot_config_dir"
+		cp -r "$each_dir" "$repo_dot_config_dir" -v
 	done
 
 	# Sync system shell scripts to repo bin dir
-	cp -r "$source_bin_dir"/* "$repo_bin_dir"
+	cp -r "$source_bin_dir"/* "$repo_bin_dir" -v
 
 	# Sync system vim config files
-	cp "$source_vim_config_dir"/* "$repo_dot_vim_dir"/config/
-	cp "$source_vim_colors_dir"/* "$repo_dot_vim_dir"/colors/
-	cp "$source_vim_ftplugin_dir"/* "$repo_dot_vim_dir"/ftplugin/
-	cp "$source_vim_snippets_dir"/* "$repo_dot_vim_dir"/UltiSnips/
+	# cp "$source_vim_config_dir"/* "$repo_dot_vim_dir"/config/
+	cp "$source_vim_colors_dir"/* "$repo_dot_vim_dir"/colors/ -v
+	cp "$source_vim_ftplugin_dir"/* "$repo_dot_vim_dir"/ftplugin/ -v
+	# cp "$source_vim_snippets_dir"/* "$repo_dot_vim_dir"/UltiSnips/
 
 	# Sync system gtk css file
-	cp "$source_gtk_css_file" "$repo_gtk_dir"
+	cp "$source_gtk_css_file" "$repo_gtk_dir" -v
+
+  echo "sync-dot-files completed..."
 
 }
 

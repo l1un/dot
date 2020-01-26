@@ -1,5 +1,11 @@
 # changelog
 
+## 2020.01.26.1
+
+- update sync script and aliases
+- vim ale, tmux batt, icon updates
+- other misc. changes
+
 `2020.01.24.1`
 
 - clean-up, rename directories
