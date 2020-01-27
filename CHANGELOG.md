@@ -1,6 +1,15 @@
 # changelog
 
-## 2020.01.26.1
+## [old changelogs here](./old)
+
+### 2020.01.27.1
+
+- copy customized `molokai` colorscheme to `llun` to evolve..
+- update `sync-dot-files` to include `coc-settings.json`
+- update `.bash_aliases`
+- `.vimrc` tweaks, other misc.
+
+### 2020.01.26.1
 
 - update sync script and aliases
 - vim ale, tmux batt, icon updates

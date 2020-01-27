@@ -12,9 +12,9 @@ alias lla="find . -maxdepth 1 -printf '%p\t\n'"
 ## git ----------------------------------------------------------
 
 # quick default add, commit, push
-alias gitQuick="git add . && git commit -m 'quick edit (via alias)' && git push"
+alias gitPushQuick="git add . && git commit -m 'Quick (via alias).' && git push"
 # quick verbose add, commit, push
-alias gitVerbose="git add . && git commit -v && git push"
+alias gitPushVerbose="git add . && git commit -v && git push"
 
 ## quick edit config files -----------------------------------------------
 
@@ -39,7 +39,7 @@ alias tns='$HOME/bin/tmux-new-session'
 alias trw='$HOME/bin/tmux-rename-window'
 
 # copy dotfiles, echo message, TODO: fix/upate automation scripts.
-alias syncDotFiles='$HOME/bin/sync-dot-files && cd "$HOME"/Projects/dot-config && printf "\n\e[1;32m%-6s\e[m\n" "Synced Dotfiles. Update Changelog!"'
+alias syncDotFiles='$HOME/bin/sync-dot-files && cd "$HOME"/Projects/dot-config'
 
 ## surfraw
 

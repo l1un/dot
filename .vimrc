@@ -39,9 +39,9 @@ set backupcopy=yes
 
 " SETTINGS: global, set ---------------------------------------------------
 
-" custom molokai @ .vim/colors
+" custom theme @ .vim/colors
 syntax on
-colorscheme molokai
+colorscheme llun
 
 set encoding=utf-8
 scriptencoding utf-8
@@ -65,11 +65,17 @@ set hlsearch
 set incsearch
 set ignorecase
 
-" status, status line
-set statusline+=%#warningmsg#
-set statusline+=%*
+" set statusline+=%#warningmsg#
+" set statusline+=%*
+" set laststatus=2
+" set statusline=%f " tail of filename
+
+" command line
+set showmode
+set ruler
 set laststatus=2
-set statusline=%f " tail of filename
+" set showcmd
+set cmdheight=2
 
 " width, wrap
 set textwidth=0
@@ -255,14 +261,14 @@ function! ToggleHiddenAll()
         set noruler
         set laststatus=0
         set noshowcmd
-        " set cmdheight=1
+        set cmdheight=1
     else
         let s:hidden_all = 0
         set showmode
         set ruler
         set laststatus=2
         set showcmd
-        " set cmdheight=2
+        set cmdheight=2
     endif
     call EchoCustom('ToggleHiddenAll')
 endfunction
@@ -336,8 +342,8 @@ nmap <Leader>af <Plug>(ale_fix)
 " nnoremap <silent> <Leader>ad :ALEDetail<CR>
 nmap <Leader>ad <Plug>(ale_detail)
 
-let g:ale_sign_error = '◉◉'
-let g:ale_sign_warning = '◉◉'
+" let g:ale_sign_error = '--'
+" let g:ale_sign_warning = '--'
 
 " PLUGIN: lightline, buftabline -------------------------------------------
 
@@ -348,7 +354,7 @@ let g:lightline = {
     \              [ 'gitbranch', 'readonly', 'filename', 'modified' ] ]
     \   },
     \   'component_function': {
-    \     'gitbranch': 'fugitive#head'
+    \     'gitbranch': 'fugitive#head',
     \   },
     \ }
 
@@ -427,23 +433,19 @@ set updatetime=300
 " don't give |ins-completion-menu| messages.
 set shortmess+=c
 
-" Remap keys for gotos
-nmap <silent> gd <Plug>(coc-definition)
-nmap <silent> gy <Plug>(coc-type-definition)
-nmap <silent> gi <Plug>(coc-implementation)
-nmap <silent> gr <Plug>(coc-references)
+hi CocUnderline ctermfg=yellow
 
+" Remap to jump to next diagnostic
+nmap <silent> <Leader>cj <Plug>(coc-diagnostic-next)
 " Remap for rename current word
-nmap <leader>rn <Plug>(coc-rename)
-
+nmap <Leader>cn <Plug>(coc-rename)
+" autofix on current line
+nmap <Leader>cf <Plug>(coc-fix-current)
+" Show all diagnostics
+nnoremap <silent> <Leader>cd  :<C-u>CocList diagnostics<cr>
 " Use K to show documentation in preview window
 nnoremap <silent> K :call <SID>show_documentation()<CR>
 
-" autofix on current line
-nmap <Leader>qf <Plug>(coc-fix-current)
-
-" Show all diagnostics
-nnoremap <silent> <space>a  :<C-u>CocList diagnostics<cr>
 " Manage extensions
 nnoremap <silent> <space>e  :<C-u>CocList extensions<cr>
 " Show commands
@@ -497,8 +499,13 @@ augroup mygroup
   autocmd User CocJumpPlaceholder call CocActionAsync('showSignatureHelp')
 augroup end
 
-" status line support, for integration w/ other plugin, see `:h coc-status`
-set statusline^=%{coc#status()}%{get(b:,'coc_current_function','')}
+" DISABLED: settings for coc
+" Remap keys for gotos
+" nmap <silent> gd <Plug>(coc-definition)
+" nmap <silent> gy <Plug>(coc-type-definition)
+" nmap <silent> gi <Plug>(coc-implementation)
+" nmap <silent> gr <Plug>(coc-references)
+
 
 " DISABLED: settings for ultisnips
 
@@ -509,6 +516,7 @@ set statusline^=%{coc#status()}%{get(b:,'coc_current_function','')}
 " let g:UltiSnipsExpandTrigger='<c-j>'
 " open :UltiSnipsEdit in split
 " let g:UltiSnipsEditSplit='vertical'
+
 " DISABLED: settings for ycm
 
 " turn off ycm preview on top
