@@ -2,6 +2,10 @@
 
 ## [old changelogs here](./old)
 
+### 2020.01.28.1
+
+- add alias for portable monitor testing to `.bash_aliases`
+
 ### 2020.01.27.1
 
 - copy customized `molokai` colorscheme to `llun` to evolve..
