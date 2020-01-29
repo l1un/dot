@@ -2,6 +2,10 @@
 
 ## [old changelogs here](./old)
 
+### 2020.01.29.1
+
+- tmux add bind for quick swap panes
+
 ### 2020.01.28.1
 
 - add alias for portable monitor testing to `.bash_aliases`
