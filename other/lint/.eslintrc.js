@@ -3,12 +3,14 @@ module.exports = {
     browser: true,
     es6: true,
     node: true,
+    jest: true,
   },
   extends: [
     'airbnb-base',
   ],
   plugins: [
     'pug',
+    'jest'
   ],
   globals: {
     Atomics: 'readonly',

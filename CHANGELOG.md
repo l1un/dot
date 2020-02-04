@@ -2,6 +2,11 @@
 
 ## [old changelogs here](./old)
 
+### 2020.02.04.1
+
+- update `.eslintrc.js`
+- update date shortcut in `.vimrc`
+
 ### 2020.01.29.1
 
 - tmux add bind for quick swap panes

@@ -127,7 +127,7 @@ vnoremap <Leader>sT y<Esc>/<c-r>"<CR>:%s///gc<Left><Left><Left>
 nnoremap <Esc><Esc> :nohls<CR>:call EchoCustom(':nohls')<CR>
 
 " read, insert and format date (timestamp)
-nnoremap <Leader>!d o<Esc>:r!date \+\%Y\-\%m\-\%d\ \/\ \%R<CR>i# <Esc>o
+nnoremap <Leader>!d o<Esc>:r!date \+\%Y\.\%m\.\%d\ \/\ \%R<CR>i### <Esc>o
 
 " show extraneous whitespace
 highlight ExtraWhitespace ctermbg=red guibg=red
