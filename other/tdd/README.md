@@ -4,8 +4,7 @@
 
 ### config
 
-Vim, Coc, tss-server, Intellisense, auto-completion, suggestions,
-documentation, etc. (updated: 2020.02.13 / 08:59)
+#### Vim, Coc, tss-server, Intellisense, auto-completion, documentation, etc. (updated: 2020.02.13 / 08:59)
 
 ```json
 // package.json
@@ -63,3 +62,26 @@ documentation, etc. (updated: 2020.02.13 / 08:59)
   - test: `npm run test`
   - watch: `npm run test -- --watch`
 
+- links:
+
+  - [https://github.com/neoclide/coc-tsserver/issues/8](https://github.com/neoclide/coc-tsserver/issues/8)
+
+    > You should use latest version of typescript for better feature support.
+    >
+    > You should install @types/node in your project for tsserver intellisense.
+    >
+    > The filetype of jsx should be javascript.jsx or javascriptreact for jsx files.
+    >
+    > You may need to create a jsconfig.json for tsserver to understand your project
+
+  - [https://github.com/jest-community/vscode-jest/issues/78](https://github.com/jest-community/vscode-jest/issues/78)
+
+    ```json
+    {
+      typeAcquisition": {
+        "include": [
+          "jest"
+        ]
+      }
+    }
+    ```
