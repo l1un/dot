@@ -2,6 +2,10 @@
 
 ## [old changelogs here](./old)
 
+### 2020.02.13.1
+
+- add `README` notes for jest config in `tdd`
+
 ### 2020.02.04.1
 
 - update `.eslintrc.js`
