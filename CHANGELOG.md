@@ -2,8 +2,11 @@
 
 ## [old changelogs here](./old)
 
-### 2020.02.13.2
+### 2020.02.13.3
 
+- configure tweaks in `.vimrc` for neovim
+- add `.config/nvim/init.vim` to share .vimrc with neovim
+- pmenu tweaks in colorscheme `llun.vim`
 - update `README` notes for jest config (vim, coc, tss-server, eslint config).
 - update leader/shortcut for editing ftplugin files in `markdown.vim`
 - add autogroup/command `textwidth=80` in `ftplugin/markdown.vim` conform to md best-practice/lint

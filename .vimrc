@@ -190,10 +190,12 @@ set fillchars=fold:\
 
 " FILE: edit, source, files, dirs -----------------------------------------
 
-" .vimrc
+" .vimrc or init.vim (neovim)
 nnoremap <silent> <Leader>ev :e $MYVIMRC<CR>
+" .vimrc (absolute for neovim)
+nnoremap <silent> <Leader>eV :e ~/.vimrc<CR>
 " theme
-nnoremap <silent> <Leader>ec :e ~/.vim/colors/molokai.vim<CR>
+nnoremap <silent> <Leader>ec :e ~/.vim/colors/llun.vim<CR>
 " notes (netrw)
 nnoremap <silent> <Leader>en :e ~/Projects/notebook/main-note.md<CR>
 " tmux
@@ -442,7 +444,7 @@ nmap <Leader>cn <Plug>(coc-rename)
 " autofix on current line
 nmap <Leader>cf <Plug>(coc-fix-current)
 " Show all diagnostics
-nnoremap <silent> <Leader>cd  :<C-u>CocList diagnostics<cr>
+nnoremap <silent> <Leader>cd :<C-u>CocList diagnostics<cr>
 " Use K to show documentation in preview window
 nnoremap <silent> K :call <SID>show_documentation()<CR>
 
