@@ -2,8 +2,11 @@
 
 ## [old changelogs here](./old)
 
-### 2020.02.13.1
+### 2020.02.13.2
 
+- update `README` notes for jest config (vim, coc, tss-server, eslint config).
+- update leader/shortcut for editing ftplugin files in `markdown.vim`
+- add autogroup/command `textwidth=80` in `ftplugin/markdown.vim` conform to md best-practice/lint
 - add `README` notes for jest config in `tdd`
 
 ### 2020.02.04.1
