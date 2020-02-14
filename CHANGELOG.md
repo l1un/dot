@@ -2,8 +2,10 @@
 
 ## [old changelogs here](./old)
 
-### 2020.02.13.3
+### 2020.02.13.4
 
+- minor tweaks to `.vimrc`
+- add coverage settings to `tdd/README.md`
 - configure tweaks in `.vimrc` for neovim
 - add `.config/nvim/init.vim` to share .vimrc with neovim
 - pmenu tweaks in colorscheme `llun.vim`

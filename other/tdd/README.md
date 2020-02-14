@@ -4,39 +4,45 @@
 
 ### config
 
-#### Vim, Coc, tss-server, Intellisense, auto-completion, documentation, etc. (updated: 2020.02.13 / 08:59)
+#### Vim, Coc, tss-server, Intellisense, auto-completion, documentation, etc
 
-```json
-// package.json
+2020.02.13 / 15:56
 
-  {
-    "scripts": {
-      "test": "jest"
+- `package.json`
+
+  ```json
+    {
+      "scripts": {
+        "test": "jest"
+      },
+     "jest": {
+      "collectCoverage": true,
+      "coverageReporters": ["HTML"]
     },
-    "devDependencies": {
-      "@types/jest": "^25.1.2",
-      "jest": "^25.1.0"
+     "devDependencies": {
+        "@types/jest": "^25.1.2",
+        "jest": "^25.1.0"
+      }
     }
-  }
-```
+  ```
 
-```javascript
-// eslintrc.js
+- `.eslintrc.js`
 
-  env: {
-    jest: true,
-  },
-  extends: [
-    'plugin:jest/recommended',
-  ],
-  plugins: [
-    'jest',
-  ]
-```
+  ```javascript
+    env: {
+      jest: true,
+    },
+    extends: [
+      'plugin:jest/recommended',
+    ],
+    plugins: [
+      'jest',
+    ]
+  ```
+
+- `jsconfig.json`
 
 ```json
-// jsconfig.json
-
 {
   "typeAcquisition": {
     "include": [
@@ -59,8 +65,9 @@
 ```
 
 - commands:
-  - test: `npm run test`
-  - watch: `npm run test -- --watch`
+  - test: `npm run test` or `npm test`
+  - watch: `npm run test -- --watch` or `npm test -- --watch`
+  - coverage: `npm run test -- --coverage` or `npm test -- --coverage`
 
 - links:
 
