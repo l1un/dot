@@ -2,8 +2,9 @@
 
 ## [old changelogs here](./old)
 
-### 2020.02.13.4
+### 2020.02.13.5
 
+- remove unused nerd config in `.vimrc`
 - minor tweaks to `.vimrc`
 - add coverage settings to `tdd/README.md`
 - configure tweaks in `.vimrc` for neovim

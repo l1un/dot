@@ -376,11 +376,6 @@ let g:instant_markdown_autostart = 0
 " DISABLED: realtime toggle - if taxing system
 " let g:instant_markdown_slow = 1
 
-" PLUGIN: nerd comments ---------------------------------------------------
-
-" add spaces to nerd/sexy comments (Standard JS no-warn msg)
-let NERDSpaceDelims=1
-
 " PLUGIN: vimtex ----------------------------------------------------------
 
 let g:tex_flavor='latex'
