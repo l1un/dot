@@ -2,6 +2,10 @@
 
 ## [old changelogs here](./old)
 
+### 2020.02.15.1
+
+- re-add lightline function / config for showing relative path with fugitive
+
 ### 2020.02.13.5
 
 - remove unused nerd config in `.vimrc`

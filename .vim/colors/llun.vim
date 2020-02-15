@@ -160,10 +160,10 @@ if &t_Co > 255
    hi Define          ctermfg=81
    hi Delimiter       ctermfg=241
 
-   hi DiffAdd                     ctermbg=24
-   hi DiffChange      ctermfg=181 ctermbg=239
-   hi DiffDelete      ctermfg=162 ctermbg=53
-   hi DiffText                    ctermbg=102 cterm=bold
+   hi DiffAdd         ctermfg=green ctermbg=232
+   hi DiffChange      ctermfg=blue ctermbg=233 cterm=none
+   hi DiffDelete      ctermfg=red ctermbg=232
+   hi DiffText                    ctermbg=233 cterm=bold
 
    hi Directory       ctermfg=118               cterm=bold
    hi Error           ctermfg=1   ctermbg=none   cterm=bold
@@ -183,7 +183,7 @@ if &t_Co > 255
    hi Macro           ctermfg=193
    hi SpecialKey      ctermfg=81
 
-   hi MatchParen      ctermfg=233 ctermbg=208   cterm=bold
+   hi MatchParen      ctermfg=232 ctermbg=200   cterm=bold,reverse
    hi ModeMsg         ctermfg=154
    hi MoreMsg         ctermfg=154
    hi Operator        ctermfg=161

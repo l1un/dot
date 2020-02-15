@@ -357,8 +357,18 @@ let g:lightline = {
     \   },
     \   'component_function': {
     \     'gitbranch': 'fugitive#head',
+    \     'filename': 'LightlineFilename',
     \   },
     \ }
+
+function! LightlineFilename()
+    let root = fnamemodify(get(b:, 'git_dir'), ':h')
+    let path = expand('%:p')
+    if path[:len(root)-1] ==# root
+        return path[len(root)+1:]
+    endif
+    return expand('%')
+endfunction
 
 " tabline settings
 set showtabline=2
@@ -375,6 +385,11 @@ let g:instant_markdown_autostart = 0
 
 " DISABLED: realtime toggle - if taxing system
 " let g:instant_markdown_slow = 1
+
+" PLUGIN: nerd comments ---------------------------------------------------
+
+" add spaces to nerd/sexy comments (Standard JS no-warn msg)
+let NERDSpaceDelims=1
 
 " PLUGIN: vimtex ----------------------------------------------------------
 
