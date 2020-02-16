@@ -197,7 +197,8 @@ nnoremap <silent> <Leader>eV :e ~/.vimrc<CR>
 " theme
 nnoremap <silent> <Leader>ec :e ~/.vim/colors/llun.vim<CR>
 " notes (netrw)
-nnoremap <silent> <Leader>en :e ~/Projects/notebook/main-note.md<CR>
+nnoremap <silent> <Leader>eM :e ~/Projects/notebook/main.md<CR>
+nnoremap <silent> <Leader>eS :e ~/Projects/notebook/sound.md<CR>
 " tmux
 nnoremap <silent> <Leader>et :e<CR>:e ~/.tmux.conf<CR>
 " ultisnips

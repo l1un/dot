@@ -2,9 +2,11 @@
 
 ## [old changelogs here](./old)
 
-### 2020.02.15.1
+### 2020.02.15.2
 
+- updates to vim and bash alias shortcuts
 - re-add lightline function / config for showing relative path with fugitive
+- update colorscheme
 
 ### 2020.02.13.5
 

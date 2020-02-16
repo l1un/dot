@@ -29,7 +29,8 @@ alias eba='vim $HOME/.bash_aliases'
 # quick edit .tmux.conf
 alias etc='vim $HOME/.tmux.conf'
 # quick edit / cue notebook notes
-alias en='vim $HOME/Projects/notebook/main-note.md'
+alias emn='vim $HOME/Projects/notebook/main.md'
+alias esn='vim $HOME/Projects/notebook/sound.md'
 
 ## shell ----------------------------------------------------------------
 
