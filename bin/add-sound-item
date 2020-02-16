@@ -1,0 +1,22 @@
+#!/usr/bin/env bash
+
+## Name: add-sound-item
+## Created: Sun Feb 16 11:39:34 PST 2020
+## Description: Quick append entry to sound note.
+
+add_sound_item() {
+
+  local grn='\033[0;32m'
+  local def='\033[0m'
+
+  local dir="$HOME/Projects/notebook/sound.md"
+
+  printf "${grn}%s${def}: " "[∅]"
+  read -r entry
+
+  echo "- $entry" >> "$dir"
+  echo -e "Added: ${grn}[$entry]${def} to $dir"
+
+}
+
+add_sound_item

@@ -9,14 +9,14 @@ alias lsl="ls -alt | less"
 # list all files and directories ONLY
 alias lla="find . -maxdepth 1 -printf '%p\t\n'"
 
-## git ----------------------------------------------------------
+## git ------------------------------------------------------------------
 
 # quick default add, commit, push
-alias gitPushQuick="git add . && git commit -m 'Quick (via alias).' && git push"
+alias quickGitPush="git add . && git commit -m 'Quick (via alias).' && git push"
 # quick verbose add, commit, push
-alias gitPushVerbose="git add . && git commit -v && git push"
+alias verboseGitPush="git add . && git commit -v && git push"
 
-## quick edit config files -----------------------------------------------
+## edit/modify config files --------------------------------------------
 
 # quick edit .vimrc
 alias evc='vim $HOME/.vimrc'
@@ -32,6 +32,9 @@ alias etc='vim $HOME/.tmux.conf'
 alias emn='vim $HOME/Projects/notebook/main.md'
 alias esn='vim $HOME/Projects/notebook/sound.md'
 
+# quick add sound/audio entry to sound note
+alias addSoundItem='$HOME/bin/add-sound-item'
+
 ## shell ----------------------------------------------------------------
 
 # launch new custom tmux session
@@ -40,7 +43,7 @@ alias tns='$HOME/bin/tmux-new-session'
 alias trw='$HOME/bin/tmux-rename-window'
 
 # copy dotfiles, echo message, TODO: fix/upate automation scripts.
-alias syncDotFiles='$HOME/bin/sync-dot-files && cd "$HOME"/Projects/dot-config'
+alias syncDotFiles='$HOME/bin/sync-dot-files && cd "$HOME"/Projects/dot-config && git status'
 
 ## surfraw
 

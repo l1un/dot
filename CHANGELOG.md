@@ -2,6 +2,15 @@
 
 ## [old changelogs here](./old)
 
+### 2020.02.16.1
+
+- rename and update `sync-dot-files` with colors
+- rename `gzip-then-move`
+- remove unused scripts
+- add script `add-sound-item` for adding quick entry to sound note
+- update `.bash_aliases` with `add-sound-item` shortcut
+- update `.bash_aliases` sync dot files alias to show gitstatus
+
 ### 2020.02.15.2
 
 - updates to vim and bash alias shortcuts

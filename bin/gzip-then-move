@@ -1,7 +1,8 @@
 #!/usr/bin/env bash
 
-## Name: gzip_and_move
+## Name: gzip-then-move
 ## Created: Mon Oct 14 14:51:00 PDT 2019
+## Updated: 2020.02.16 / 11:34 (rename)
 ## Description: gunzip files in source dir and move to destination dir.
 
 gzip_and_move() {
