@@ -2,6 +2,11 @@
 
 ## [old changelogs here](./old)
 
+### 2020.02.20.1
+
+- disable autofolds annoying issues `.vimrc`
+- revert to old git aliases `.bash_aliases`
+
 ### 2020.02.16.1
 
 - rename and update `sync-dot-files` with colors

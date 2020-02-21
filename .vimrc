@@ -158,15 +158,15 @@ inoremap <C-a> <C-o>$
 " FOLD: folding, settings, maps ------------------------------------------
 
 set foldmethod=manual
-
-augroup AutoSaveFolds
-  autocmd!
-  " view files are about 500 bytes
-  " bufleave but not bufwinleave captures closing 2nd tab
-  " nested is needed by bufwrite* (if triggered via other autocmd)
-  autocmd BufWinLeave,BufLeave,BufWritePost ?* nested silent! mkview!
-  autocmd BufWinEnter ?* silent! loadview
-augroup end
+" DISABLED: Someday, some iteration of this might work right.
+" augroup AutoSaveFolds
+"   autocmd!
+"   " view files are about 500 bytes
+"   " bufleave but not bufwinleave captures closing 2nd tab
+"   " nested is needed by bufwrite* (if triggered via other autocmd)
+"   autocmd BufWinLeave,BufLeave,BufWritePost ?* nested silent! mkview!
+"   autocmd BufWinEnter ?* silent! loadview
+" augroup end
 
 set viewoptions=folds,cursor
 set sessionoptions=folds

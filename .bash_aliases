@@ -12,9 +12,9 @@ alias lla="find . -maxdepth 1 -printf '%p\t\n'"
 ## git ------------------------------------------------------------------
 
 # quick default add, commit, push
-alias quickGitPush="git add . && git commit -m 'Quick (via alias).' && git push"
+alias gitPushQuick="git add . && git commit -m 'Quick Push (via alias).' && git push"
 # quick verbose add, commit, push
-alias verboseGitPush="git add . && git commit -v && git push"
+alias gitPushVerbose="git add . && git commit -v && git push"
 
 ## edit/modify config files --------------------------------------------
 
