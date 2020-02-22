@@ -2,6 +2,10 @@
 
 ## [old changelogs here](./old)
 
+### 2020.02.22.1
+
+- add `dl-youtube-mp3` script
+
 ### 2020.02.20.1
 
 - disable autofolds annoying issues `.vimrc`
