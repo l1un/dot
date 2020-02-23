@@ -21,7 +21,7 @@ alias gitPushVerbose="git add . && git commit -v && git push"
 # quick edit .vimrc
 alias evc='vim $HOME/.vimrc'
 # quick edit vim theme
-alias evt='vim $HOME/.vim/colors/molokai.vim'
+alias evt='vim $HOME/.vim/colors/llun.vim'
 # quick edit .bashrc
 alias ebc='vim $HOME/.bashrc'
 # quick edit .bash_aliases

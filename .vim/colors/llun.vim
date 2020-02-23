@@ -220,7 +220,7 @@ if &t_Co > 255
    hi Structure       ctermfg=81
    hi Tag             ctermfg=161
    hi Title           ctermfg=166
-   hi Todo            ctermfg=255 ctermbg=232   cterm=bold
+   hi Todo            ctermfg=88 ctermbg=none   cterm=bold
 
    hi Typedef         ctermfg=81
    hi Type            ctermfg=81                cterm=none

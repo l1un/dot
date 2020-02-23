@@ -2,6 +2,11 @@
 
 ## [old changelogs here](./old)
 
+### 2020.02.23.1
+
+- update todo / fixme colors in `llun.vim`
+- update `.bash_aliases` with correct alias for vim theme
+
 ### 2020.02.22.1
 
 - add `dl-youtube-mp3` script
