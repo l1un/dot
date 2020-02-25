@@ -2,6 +2,10 @@
 
 ## [old changelogs here](./old)
 
+### 2020.02.24.1
+
+- remove unused (wont use) plugins `.vimrc`
+
 ### 2020.02.23.1
 
 - update todo / fixme colors in `llun.vim`

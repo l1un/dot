@@ -21,8 +21,6 @@ Plug 'tommcdo/vim-lion'
 " DISABLED: plugins
 " Plug 'SirVer/ultisnips'
 " Plug 'honza/vim-snippets'
-" Plug 'godlygeek/tabular'
-" Plug 'chrisbra/NrrwRgn'
 
 call plug#end()
 
