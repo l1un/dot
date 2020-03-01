@@ -33,7 +33,7 @@ let mapleader = ','
 let maplocalleader = ',,'
 
 " required for parcel js bundler
-set backupcopy=yes
+" set backupcopy=yes
 
 " SETTINGS: global, set ---------------------------------------------------
 
