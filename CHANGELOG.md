@@ -2,6 +2,10 @@
 
 ## [old changelogs here](./old)
 
+### 2020.03.01.1
+
+- toggle settings in `tmux.conf`
+
 ### 2020.02.24.1
 
 - remove unused (wont use) plugins `.vimrc`
