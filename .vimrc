@@ -189,17 +189,17 @@ set fillchars=fold:\
 
 " FILE: edit, source, files, dirs -----------------------------------------
 
-" .vimrc or init.vim (neovim)
-nnoremap <silent> <Leader>ev :e $MYVIMRC<CR>
 " .vimrc (absolute for neovim)
-nnoremap <silent> <Leader>eV :e ~/.vimrc<CR>
+nnoremap <silent> <Leader>evc :e ~/.vimrc<CR>
+" .vimrc or init.vim (neovim)
+nnoremap <silent> <Leader>enc :e $MYVIMRC<CR>
 " theme
-nnoremap <silent> <Leader>ec :e ~/.vim/colors/llun.vim<CR>
+nnoremap <silent> <Leader>evt :e ~/.vim/colors/llun.vim<CR>
 " notes (netrw)
-nnoremap <silent> <Leader>eM :e ~/Projects/notebook/main.md<CR>
-nnoremap <silent> <Leader>eS :e ~/Projects/notebook/sound.md<CR>
+nnoremap <silent> <Leader>emn :e ~/Projects/notebook/main.md<CR>
+nnoremap <silent> <Leader>esn :e ~/Projects/notebook/sound.md<CR>
 " tmux
-nnoremap <silent> <Leader>et :e<CR>:e ~/.tmux.conf<CR>
+nnoremap <silent> <Leader>etc :e<CR>:e ~/.tmux.conf<CR>
 " ultisnips
 " nnoremap <silent> <Leader>eu :UltiSnipsEdit<CR>
 
