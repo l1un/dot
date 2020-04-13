@@ -2,16 +2,17 @@
 
 ## Name: sync-dot-files
 ## Created: 05.21.2019
-## Updated: 2020.02.16.12:17 [Refactor color messages. Rename.]
+## Updated: Mon Apr 13 10:20:17 PDT 2020 [Change update prompt to yellow.]
 ## Description: Synchronize latest system dot files to git repository keeping correct structure and files in corresponding directories.
 ## TODO: Update to rysnc.
 ## TODO: Customize and add to Lineage, Gallium branches.
 
 sync_dot_files() {
 
-  local grn='\033[0;32m'
-  local red='\033[0;31m'
   local def='\033[0m'
+  local grn='\033[0;32m'
+  local yel='\033[0;33m'
+  # local red='\033[0;31m'
 
   ## 0. Lynx sync files (rsync test run)
   rsync -va /etc/lynx/ "$HOME"/Projects/dot-config/etc/lynx/
@@ -105,7 +106,7 @@ sync_dot_files() {
 	cp "$source_gtk_css_file" "$repo_gtk_dir" -v
 
   printf "\n$grn%s$def%s" "[∅] " "sync-dot-files completed."
-  printf "\n$red%s$def%s\n\n" "[∅] " "Update CHANGELOG before commit."
+  printf "\n$yel%s$def%s\n\n" "[∅] " "Update CHANGELOG before commit."
 
 }
 

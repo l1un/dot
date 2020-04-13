@@ -2,6 +2,10 @@
 
 ## [old changelogs here](./old)
 
+### 2020.04.13.1
+
+- minor tweaks to `sync-dot-files` and `add-sound-item`
+
 ### 2020.03.01.1
 
 - toggle settings in `tmux.conf`

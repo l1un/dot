@@ -18,6 +18,13 @@ Plug 'suan/vim-instant-markdown', { 'rtp': 'after' }
 Plug 'mattn/emmet-vim'
 Plug 'sheerun/vim-polyglot'
 Plug 'tommcdo/vim-lion'
+if has('nvim')
+  Plug 'Shougo/denite.nvim', { 'do': ':UpdateRemotePlugins'  }
+else
+  Plug 'Shougo/denite.nvim'
+  Plug 'roxma/nvim-yarp'
+  Plug 'roxma/vim-hug-neovim-rpc'
+endif
 " DISABLED: plugins
 " Plug 'SirVer/ultisnips'
 " Plug 'honza/vim-snippets'
