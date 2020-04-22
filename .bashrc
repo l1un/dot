@@ -198,7 +198,10 @@ set -o vi
 [ -f ~/.fzf.bash ] && source ~/.fzf.bash
 export FZF_DEFAULT_COMMAND='rg --files --no-ignore --hidden --follow -g "!{.git,node_modules}/*" 2> /dev/null'
 export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
+
+# shortcuts to search and open using vim and nvim respectively
 bind -x '"\C-p": vim $(fzf);'
+bind -x '"\C-o": nvim $(fzf);'
 
 # z database
 . /usr/local/bin/z.sh

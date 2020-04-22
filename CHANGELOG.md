@@ -2,6 +2,11 @@
 
 ## [old changelogs here](./old)
 
+### 2020.04.22.10.1
+
+- add shortcut to `.bashrc` for fzf/rg nvim search and open
+- remove unused nerd shortcut in `.vimrc`
+
 ### 2020.04.13.1
 
 - minor tweaks to `sync-dot-files` and `add-sound-item`
