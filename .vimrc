@@ -429,7 +429,9 @@ let g:netrw_fastbrowse = 0
 nnoremap <Leader>ff :Files<CR>
 nnoremap <Leader>fb :Buffers<CR>
 nnoremap <Leader>fh :History<CR>
+nnoremap <Leader>fg :Ggrep
 nnoremap <Leader>ft :BTags<CR>
+nnoremap <Leader>fr :Rg<CR>
 nnoremap <Leader>fT :Tags<CR>
 
 " PLUGIN: coc ------------------------------------------------------------
