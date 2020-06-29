@@ -2,6 +2,10 @@
 
 ## [old changelogs here](./old)
 
+### 2020.06.29.2
+
+- add Vim java file type file
+
 ### 2020.06.29.1
 
 - add color column guide to `.vimrc`
