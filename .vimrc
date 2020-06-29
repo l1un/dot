@@ -57,6 +57,9 @@ set shiftwidth=2
 set softtabstop=2
 set tabstop=2
 
+" guide for 79 char width
+set colorcolumn=79
+
 " hybrid numbers, gutter
 set number
 set numberwidth=1
@@ -188,7 +191,7 @@ endfunction
 " set folded text to function
 set foldtext=ShowFoldMessage()
 " hide dashes on folded lines
-set fillchars=fold:\ 
+set fillchars=fold:\
 
 " DISABLED: markdown folding options
 " let g:markdown_folding = 1

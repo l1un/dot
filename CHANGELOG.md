@@ -2,6 +2,10 @@
 
 ## [old changelogs here](./old)
 
+### 2020.06.29.1
+
+- add color column guide to `.vimrc`
+
 ### 2020.04.22.10.1
 
 - add shortcut to `.bashrc` for fzf/rg nvim search and open
