@@ -1,7 +1,9 @@
 " Take care of indents for Java.
 set autoindent
 set smartindent
-set shiftwidth=4
+set shiftwidth=3
+set softtabstop=3
+set tabstop=3
 
 " Java anonymous classes. Sometimes, you have to use them.
 set cinoptions+=j1

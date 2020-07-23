@@ -95,6 +95,10 @@ set nolist " list disables linebreak
 set lazyredraw
 set regexpengine=1
 
+" same line on open file
+au BufWinLeave * mkview
+au BufWinenter * silent loadview
+
 " MAP: shortcuts, remap ---------------------------------------------------
 
 " reverse exlusive linewise behavior when wrap is on.

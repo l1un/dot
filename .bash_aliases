@@ -37,6 +37,20 @@ alias esn='vim $HOME/Projects/notebook/sound.md'
 # quick add sound/audio entry to sound note
 alias addSoundItem='$HOME/bin/add-sound-item'
 
+## xclip ----------------------------------------------------------------
+
+# copy file to clipboard without opening it.
+alias cpFile='xclip -sel c <' # type filename after.
+
+# NOTE: Create script to copy maybe paste shell output from commands...
+
+# Example to to copy output from command.
+# <command> | xclip -selection clipboard
+
+# Example to to paste back into shell.
+# xclip -o
+
+
 ## shell ----------------------------------------------------------------
 
 # launch new custom tmux session
