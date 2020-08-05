@@ -96,8 +96,8 @@ set lazyredraw
 set regexpengine=1
 
 " same line on open file
-au BufWinLeave * mkview
-au BufWinenter * silent loadview
+" au BufWinLeave * mkview
+" au BufWinenter * silent loadview
 
 " MAP: shortcuts, remap ---------------------------------------------------
 

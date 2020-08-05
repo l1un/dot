@@ -2,6 +2,12 @@
 
 ## [old changelogs here](./old)
 
+### 2020.08.05.1
+
+- add `copy-idea-project` script + alias in `.bash_aliases`
+- fix long lines in `.bash_aliases`, `.bashrc`
+- misc. minor edits to `.vimrc` `htop`
+
 ### 2020.06.29.2
 
 - add Vim java file type file

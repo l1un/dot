@@ -12,7 +12,8 @@ alias lla="find . -maxdepth 1 -printf '%p\t\n'"
 ## git ------------------------------------------------------------------
 
 # quick default add, commit, push
-alias gitPushQuick="git add . && git commit -m 'Quick Push (via alias).' && git push"
+alias gitPushQuick='git add . && git commit -m "Quick Push (via alias)."' \
+                   ' && git push'
 # quick verbose add, commit, push
 alias gitPushVerbose="git add . && git commit -v && git push"
 
@@ -53,13 +54,17 @@ alias cpFile='xclip -sel c <' # type filename after.
 
 ## shell ----------------------------------------------------------------
 
+# copy intellij idea projects/packages
+alias cpIdea='$HOME/bin/copy-idea-project'
+
 # launch new custom tmux session
 alias tns='$HOME/bin/tmux-new-session'
 # rename current tmux window
 alias trw='$HOME/bin/tmux-rename-window'
 
 # copy dotfiles, echo message, TODO: fix/upate automation scripts.
-alias syncDotFiles='$HOME/bin/sync-dot-files && cd "$HOME"/Projects/dot-config && git status'
+alias syncDotFiles='$HOME/bin/sync-dot-files' \
+  '&& cd "$HOME"/Projects/dot-config && git status'
 
 ## surfraw
 
@@ -67,7 +72,8 @@ alias syncDotFiles='$HOME/bin/sync-dot-files && cd "$HOME"/Projects/dot-config &
 alias srddg="surfraw_ddg"
 
 # portable monitor setup
-alias extdisp='sudo xrandr --newmode "1360x768_60.00"   84.75  1360 1432 1568 1776  768 771 781 798 -hsync +vsync
+alias extdisp='sudo xrandr --newmode "1360x768_60.00"' \
+  '   84.75  1360 1432 1568 1776  768 771 781 798 -hsync +vsync
 sudo xrandr --addmode DVI-I-1-1 "1360x768_60.00"
 xrandr --output DVI-I-1-1 --mode "1360x768_60.00"'
 
