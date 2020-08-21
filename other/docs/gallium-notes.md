@@ -1,22 +1,23 @@
-#### ++ gallium-notes
+# GalliumOS notes
 
-#### xkb keymapping for chromebooks
+## xkb keymapping for chromebooks
 
-##### 1. [see keyboard mapping articles](https://www.reddit.com/r/GalliumOS/comments/7fj1wl/help_with_keyboard_mapping/) -- todo: add more details
+- 1. [see keyboard mapping articles](https://www.reddit.com/r/GalliumOS/comments/7fj1wl/help_with_keyboard_mapping/)
+-- todo: add more details
 
+- 1a. see .files and config content in xbd folder
 
-- 1a. see .files and config content in xbd folder 
-
-- 1b. add keyboard mapping 
+- 1b. add keyboard mapping
 
 - 1c. compile `xkbcomp -I$HOME/.xkb ~/.xkb/keymap/mykbd $DISPLAY`
 
-- 1d.  ADD DETAILS HERE optional script (in test) to check if `xinput list` has changed, if
-true: recompile keyboard layout, sleep for 5 seconds, then check again..
+- 1d.  ADD DETAILS HERE optional script (in test) to check if `xinput list` has
+changed, if true: recompile keyboard layout, sleep for 5 seconds, then check
+again..
 
 ```Shell
 #!/bin/bash
-# Periodically check to see if an input device has beein plugged in or 
+# Periodically check to see if an input device has beein plugged in or
 # unplugged. If one has, recompile the keyboard layout.
 # 2017-12-18
 rate=5
@@ -53,46 +54,55 @@ echo I shouldn\'t ever exit my loop... Something\'s wrong
 exit 1
 ```
 
-#### prereqs for config / .files:
+## prereqs for config / .files
 
-##### 2. [install `nvm` + `node` + `npm`](https://www.nearform.com/blog/nodejs-sudo-free/) -- allows npm global without sudo + nvm functionality:
+- 1. [install `nvm` + `node` + `npm`](https://www.nearform.com/blog/nodejs-sudo-free/)
+-- allows npm global without sudo + nvm functionality:
 
-- 2a.  check if node / npm is installed and what versions
-```
+- 2. check if node / npm is installed and what versions
+
+```shell
 which node
 which npm
 ```
-- 2b. if unable to install globally without sudo..
+
+- b. if unable to install globally without sudo..
 
 `sudo rm -rf /directory/of/node && /directory/of/npm`
 
-- 2c. clean-up and remove related files
-```
+- c. clean-up and remove related files
+
+``` shell
 sudo rm -f /usr/local/share/man/man1/node.1
 sudo rm -f /usr/local/lib/dtrace/node.d
 sudo rm -rf ~/.npm
 sudo rm -rf ~/.node-gyp
 ```
-- 2d. run each 'which' command a second time, if anything comes up, remove
+
+- d. run each 'which' command a second time, if anything comes up, remove
 those too.
 
-- 2e. use script to install nvm
+- e. use script to install nvm
 ```curl https://raw.githubusercontent.com/creationix/nvm/v0.25.0/install.sh | bash```
 
-- 2f. install the latest stable release of nvm
+- f. install the latest stable release of nvm
 `nvm install stable`
 
-- 2g. set stable as default for new console windows
+- g. set stable as default for new console windows
 `nvm alias default stable`
 
-##### 3. [install `standard js`](https://github.com/standard/standard) --global standard linting + vim `syntastic` support: `npm install standard --global`
+- 3. [install `standard js`](https://github.com/standard/standard)
+--global standard linting + vim `syntastic` support:
+`npm install standard --global`
 
-##### 4. [install `vim-instant-markdown`](https://github.com/suan/vim-instant-markdown) globally for markdown browser syncing: `npm -g install instant-markdown-d` 
+- 4. [install `vim-instant-markdown`](https://github.com/suan/vim-instant-markdown)
+globally for markdown browser syncing: `npm -g install instant-markdown-d`
 
-##### browser extenstions / settings
-- 4a. Vimium - add rules for sites.
+## browser extenstions / settings
 
-- 4b. Stylebot - make sites (like Github) responsive --a must for viewing
+a. Vimium - add rules for sites.
+
+b. Stylebot - make sites (like Github) responsive --a must for viewing
 repos, readmes, etc. in split windows..
 
 ```css
@@ -156,4 +166,4 @@ body {
     min-width: 300px ;
 }
 
-``` 
+```

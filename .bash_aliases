@@ -21,6 +21,8 @@ alias gpVerbose="git add . && git commit -v && git push"
 
 # quick edit .vimrc
 alias evc='vim $HOME/.vimrc'
+# quick edit nvim coc-settings file.
+alias ecoc='vim $HOME/.config/nvim/coc-settings.json'
 # quick edit nvim init.vim config file
 alias enc='vim $HOME/.config/nvim/init.vim'
 # quick edit vim theme

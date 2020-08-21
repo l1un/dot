@@ -1,7 +1,7 @@
 call plug#begin('~/.vim/plugged')
 
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
-Plug 'w0rp/ale'
+" Plug 'w0rp/ale'
 Plug 'jiangmiao/auto-pairs'
 Plug 'itchyny/lightline.vim'
 Plug 'ap/vim-buftabline'
@@ -329,35 +329,35 @@ noremap <Leader>cP :call GetPythonComment()<CR>
 
 " allow jsx in js files
 " https://jaxbot.me/articles/setting-up-vim-for-react-js-jsx-02-03-2015
-let g:jsx_ext_required = 0
+" let g:jsx_ext_required = 0
 
-let g:ale_statusline_format = [ 'error', 'warning %d', '' ]
+" let g:ale_statusline_format = [ 'error', 'warning %d', '' ]
 
-let g:ale_linters = {
-    \           'sh': [ 'language_server', 'shellcheck' ],
-    \          'css': [ 'stylelint', 'eslint' ],
-    \          'pug': [ 'puglint', 'eslint' ],
-    \          'tex': [ 'chktex' ],
-    \          'vim': [ 'vint', 'ale_custom_linting_rules' ],
-    \         'html': [ 'tidy', 'stylelint', 'alex' ],
-    \     'markdown': [ 'remark-lint' ],
-    \   'javascript': [ 'eslint', 'prettier', 'stylelint' ],
-    \ }
+" let g:ale_linters = {
+"     \           'sh': [ 'language_server', 'shellcheck' ],
+"     \          'css': [ 'stylelint', 'eslint' ],
+"     \          'pug': [ 'puglint', 'eslint' ],
+"     \          'tex': [ 'chktex' ],
+"     \          'vim': [ 'vint', 'ale_custom_linting_rules' ],
+"     \         'html': [ 'tidy', 'stylelint', 'alex' ],
+"     \     'markdown': [ 'remark-lint' ],
+"     \   'javascript': [ 'eslint', 'prettier', 'stylelint' ],
+"     \ }
 
 " Ale fixing
-let g:ale_fixers = { 'javascript': [ 'eslint' ], }
+" let g:ale_fixers = { 'javascript': [ 'eslint' ], }
 
-hi link ALEErrorSign    Error
-hi link ALEWarningSign  Warning
+" hi link ALEErrorSign    Error
+" hi link ALEWarningSign  Warning
 
 " always show Ale gutter
-let g:ale_sign_column_always = 0
+" let g:ale_sign_column_always = 0
 
 " ale fix eslint
-nmap <Leader>af <Plug>(ale_fix)
+" nmap <Leader>af <Plug>(ale_fix)
 " read full error/warn message details
 " nnoremap <silent> <Leader>ad :ALEDetail<CR>
-nmap <Leader>ad <Plug>(ale_detail)
+" nmap <Leader>ad <Plug>(ale_detail)
 
 " let g:ale_sign_error = '--'
 " let g:ale_sign_warning = '--'

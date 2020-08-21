@@ -2,7 +2,7 @@
 
 # hostname-alias-1 example
 Host hostname-alias-1
-HostName <host.address.example.number> ex. <000.000.000.000> 
+HostName <host.address.example.number> ex. <000.000.000.000>
 User <user-name>
 Port <port-number>
 IdentityFile ~/.ssh/<identity-file.rsa>

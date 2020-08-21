@@ -84,7 +84,8 @@
 - pmenu tweaks in colorscheme `llun.vim`
 - update `README` notes for jest config (vim, coc, tss-server, eslint config).
 - update leader/shortcut for editing ftplugin files in `markdown.vim`
-- add autogroup/command `textwidth=80` in `ftplugin/markdown.vim` conform to md best-practice/lint
+- add autogroup/command `textwidth=80` in `ftplugin/markdown.vim` conform to md
+best-practice/lint
 - add `README` notes for jest config in `tdd`
 
 ### 2020.02.04.1
@@ -185,7 +186,8 @@
 
 `2020.01.05.3`
 
-- add vim-vinegar plug, change netrw to `Lexplore`, fix / speed up open / close issue
+- add vim-vinegar plug, change netrw to `Lexplore`, fix / speed up open /
+close issue
 
 `2020.01.05.2`
 

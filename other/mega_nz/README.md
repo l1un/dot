@@ -1,4 +1,4 @@
-##### mega CLI
+# mega CLI
 
 - Find version link: https://mega.nz/linux/MEGAsync/
 - `wget https://mega.nz/linux/MEGAsync/<version>/Release.key`
@@ -21,4 +21,5 @@
 
 - lock down permissions: `chmod 600 ~/.megarc`
 - create remote root for sync: `megamkdir /Root/<backup-folder>`
-- sync to remote: `megacopy --local $HOME/<folder-to-backup> --remote /Root/<backup-folder>`
+- sync to remote:
+`megacopy --local $HOME/<folder-to-backup> --remote /Root/<backup-folder>`

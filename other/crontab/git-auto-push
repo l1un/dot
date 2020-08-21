@@ -1,8 +1,0 @@
-# simple git auto-push with email notification example
-@reboot sleep 90 && cd path/to/dir && ./git.run && echo "message body and `date`" | mail -s "email subject" emailAdress@domain.we
-
-# and the git.run example
-git add .
-curtime=`date`
-git commit -m "auto-commit @ $curtime"
-git push
