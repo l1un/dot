@@ -16,15 +16,11 @@
 
 # Install
 
-  ## git
   ## curl
+  ## latexmk
+  ## git
+  ## gnuplot
   ## htop
-  ## tmux (3.1x +) --------------------------------------------------------
-
-     Install TPM:
-
-     `git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm`
-
   ## Neovim: --------------------------------------------------------------
 
     Install Neovim: `sudo apt install neovim`
@@ -40,11 +36,13 @@
 
   ## NVM / Node: ----------------------------------------------------------
 
-    Add nvm:
-
       `curl -o-
       https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.3/install.sh \
       | bash`
 
       See available versions: `nvm ls-remote`
       Install latest LTS: `nvm install node`
+
+  ## tmux (3.1x +)
+  ## Texlive-latex-extra
+  ## zathura

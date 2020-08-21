@@ -57,8 +57,8 @@ set shiftwidth=2
 set softtabstop=2
 set tabstop=2
 
-" guide for 79 char width
-set colorcolumn=79
+" guide for 80 width
+set colorcolumn=80
 
 " hybrid numbers, gutter
 set number
@@ -218,7 +218,8 @@ nnoremap <silent> <Leader>etc :e<CR>:e ~/.tmux.conf<CR>
 " nnoremap <silent> <Leader>eu :UltiSnipsEdit<CR>
 
 " source .vimrc
-nnoremap <Leader>sv :source ~/.vimrc<CR>:redraw<CR>:nohls<CR>:call EchoCustom(':so[urce] .vimrc')<CR>
+nnoremap <Leader>sv :source ~/.vimrc<CR>:redraw<CR>:nohls
+                    \ <CR>:call EchoCustom(':so[urce] .vimrc')<CR>
 
 " clear view folder
 nnoremap <Leader>cv :!rm ~/.vim/view/*
@@ -485,7 +486,7 @@ nnoremap <silent> <space>k  :<C-u>CocPrev<CR>
 nnoremap <silent> <space>p  :<C-u>CocListResume<CR>
 
 " Use tab for trigger completion with characters ahead and navigate.
-" Use command ':verbose imap <tab>' to make sure tab is not mapped by other plugin.
+" Use command ':verbose imap <tab>' to ensure tab not mapped by other plugin.
 inoremap <silent><expr> <TAB>
       \ pumvisible() ? "\<C-n>" :
       \ <SID>check_back_space() ? "\<TAB>" :
@@ -539,27 +540,3 @@ augroup end
 " let g:UltiSnipsExpandTrigger='<c-j>'
 " open :UltiSnipsEdit in split
 " let g:UltiSnipsEditSplit='vertical'
-
-" DISABLED: settings for ycm
-
-" turn off ycm preview on top
-" set completeopt-=preview
-
-" get documentation word under cursor
-" nnoremap <silent> <Leader>gd :YcmCompleter GetDoc <CR><C-w>w
-
-" let g:ycm_python_binary_path='python'
-
-" get full diagnostics (:lopen, :lclose, <leader>d)
-" let g:ycm_always_populate_location_list = 1
-
-" disable typescript server warnings
-" let g:ycm_filter_diagnostics = { 'javascript': { 'regex': [ '.*' ] } }
-
-" preview on bottom
-" set splitbelow
-" close preview after selecting
-" let g:ycm_autoclose_preview_window_after_completion=1
-" ycm colors
-" highlight Pmenu ctermfg=Green ctermbg=Black
-" highlight PmenuSel ctermfg=Black ctermbg=Green

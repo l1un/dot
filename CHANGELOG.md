@@ -2,6 +2,13 @@
 
 ## [old changelogs here](./old)
 
+### 2020.08.20.2
+
+- Clean-up dirs, rename and organize a bit.
+- Remove plugins/manager from `.tmux.conf` implement cat battery solution.
+- Remove unused YCM comments/code + fix long lines in `.vimrc`.
+- Create/add cheatsheet for Mint 20 rapid setup.
+
 ### 2020.08.05.1
 
 - add `copy-idea-project` script + alias in `.bash_aliases`
