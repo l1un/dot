@@ -2,6 +2,12 @@
 
 ## [old changelogs here](./old)
 
+### 2020.08.21.2
+
+- Remove `vim-ale` content now unused. (Coc)
+- Update `Coc` configs.
+- Clean-up and remove many old/unused.
+
 ### 2020.08.20.3
 
 - Update aliases `.bash_aliases`
