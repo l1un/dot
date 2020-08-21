@@ -1,0 +1,14 @@
+{
+  "diagnostic-languageserver.filetypes": {
+    "css": "stylelint",
+    "html": [ "tidy" ],
+    "javascript": [ "eslint" ],
+    "markdown": [ "markdownlint" ],
+    "sh": "shellcheck",
+    "tex": "chktex",
+    "vim": "vint"
+  },
+  "diagnostic-languageserver.formatFiletypes": {
+    "sh": "shfmt"
+  }
+}
