@@ -2,6 +2,11 @@
 
 ## [old changelogs here](./old)
 
+### 2020.08.20.3
+
+- Update aliases `.bash_aliases`
+- Mint 20 cheatsheet update.
+
 ### 2020.08.20.2
 
 - Clean-up dirs, rename and organize a bit.

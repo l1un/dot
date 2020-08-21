@@ -12,10 +12,10 @@ alias lla="find . -maxdepth 1 -printf '%p\t\n'"
 ## git ------------------------------------------------------------------
 
 # quick default add, commit, push
-alias gitPushQuick='git add . && git commit -m "Quick Push (via alias)." \
+alias gpQuick='git add . && git commit -m "Quick Push (via alias)." \
                     && git push'
 # quick verbose add, commit, push
-alias gitPushVerbose="git add . && git commit -v && git push"
+alias gpVerbose="git add . && git commit -v && git push"
 
 ## edit/modify config files --------------------------------------------
 
@@ -63,13 +63,13 @@ alias tns='$HOME/bin/tmux-new-session'
 alias trw='$HOME/bin/tmux-rename-window'
 
 # copy dotfiles, echo message, TODO: fix/upate automation scripts.
-alias syncDotFiles='$HOME/bin/sync-dot-files \
+alias sdFiles='$HOME/bin/sync-dot-files \
                     && cd "$HOME"/Projects/dot-config && git status'
 
 ## surfraw
 
 # duckduckgo helper
-alias srddg="surfraw_ddg"
+alias srDuck="surfraw_ddg"
 
 # portable monitor setup
 # alias extdisp='sudo xrandr --newmode "1360x768_60.00"' \

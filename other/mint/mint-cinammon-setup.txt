@@ -43,6 +43,7 @@
       See available versions: `nvm ls-remote`
       Install latest LTS: `nvm install node`
 
+  ## ripgrep
   ## tmux (3.1x +)
   ## Texlive-latex-extra
   ## zathura
