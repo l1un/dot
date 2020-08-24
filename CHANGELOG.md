@@ -1,5 +1,9 @@
 # changelog
 
+## 2020.08.24.1
+
+- Update `...mint-20-notes`.
+
 ## 2020.08.21.3
 
 - Remove old CL's merged here.

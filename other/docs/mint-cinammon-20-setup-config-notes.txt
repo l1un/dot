@@ -55,4 +55,5 @@
   ## ripgrep
   ## tmux (3.1x +)
   ## Texlive-latex-extra
+  ## unclutter `unclutter -idle 1 &` (startup, background process)
   ## zathura
