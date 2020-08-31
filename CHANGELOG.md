@@ -1,5 +1,10 @@
 # changelog
 
+## 2020.08.31.1
+
+- Update `...mint-20-notes`.
+- Speed crunch config.
+
 ## 2020.08.24.1
 
 - Update `...mint-20-notes`.
