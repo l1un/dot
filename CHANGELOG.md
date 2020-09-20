@@ -1,5 +1,10 @@
 # changelog
 
+## 2020.09.20.2
+
+- add cpp run command to `.vimrc`
+- add `vim.cpp` ftplugin
+
 ## 2020.08.31.1
 
 - Update `...mint-20-notes`.
