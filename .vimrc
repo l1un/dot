@@ -292,6 +292,16 @@ endfunction
 
 nnoremap <S-h> :call ToggleHiddenAll()<CR>
 
+" FUNCTION: run cpp ------------------------------------------------------
+
+" runs in split
+function! RunFileInCPP()
+    let input_file = expand('%')
+    exec ':w !echo; g++' input_file '&& ./a.out'
+endfunction
+
+noremap <Leader>rC :call RunFileInCPP()<CR>
+
 " FUNCTION: run node.js ---------------------------------------------------
 
 " runs in split, optionally use nodemon
