@@ -1,0 +1,94 @@
+" map before use (vimscript line by line)
+let mapleader = ','
+let maplocalleader = ',,'
+
+" SETTINGS: global, set ---------------------------------------------------
+
+" indent, tabs
+set expandtab
+set shiftwidth=2
+set softtabstop=2
+set tabstop=2
+
+" guide for 80 width
+set colorcolumn=80
+
+" hybrid numbers, gutter
+set number
+set numberwidth=1
+set relativenumber
+
+" full line highlight cursor
+set cursorline
+
+" search, case, highlight
+set hlsearch
+set incsearch
+set ignorecase
+
+" set statusline+=%#warningmsg#
+" set statusline+=%*
+" set laststatus=2
+" set statusline=%f " tail of filename
+
+" command line
+set showmode
+set ruler
+set laststatus=2
+" set showcmd
+set cmdheight=2
+
+" width, wrap
+set textwidth=0
+set wrap
+set linebreak
+set nolist " list disables linebreak
+
+" scroll, scrolling, speed
+set lazyredraw
+set regexpengine=1
+
+" MAP: shortcuts, remap ---------------------------------------------------
+
+" reverse exlusive linewise behavior when wrap is on.
+noremap j gj
+noremap k gk
+noremap gj j
+noremap gk k
+
+" new lines above, below, above and below, cursor static
+nnoremap <Leader>O O<Esc>j
+nnoremap <Leader>o o<Esc>k
+nnoremap <Leader>= o<Esc>kO<Esc>j
+
+" move current line up, down
+nnoremap <Leader>- dd<Esc>kkp<Esc>>
+nnoremap <Leader>_ ddp
+
+" uppercase word, insert, normal, cursor stays
+" inoremap <Leader>U <Esc>viw~ea
+nnoremap <C-u> m`viw~<C-o>
+
+" list buffers, buffer, prep entry
+nnoremap <Leader>bl :ls<CR>:b<Space>
+
+" toggle hls constantly
+nnoremap <Esc><Esc> :nohls<CR>
+
+"trim whitespace
+nnoremap <Leader>tw :%s/\s\+$//e<CR>
+
+" jump to EOL in insert
+inoremap <C-a> <Esc>$la
+
+" FILE: edit, source, files, dirs -----------------------------------------
+
+" .ideavimrc
+nnoremap <silent> <Leader>evc :e ~/.ideavimrc<CR>
+" source .ideavimrc
+nnoremap <Leader>sv :source ~/.ideavimrc<CR>
+
+" ACTIONS: IDE misc. ------------------------------------------------------
+:map <Leader>R :action Run<CR>
+:map <Leader>V :action Valgrind<CR>
+:map <Leader>D :action Debug<CR>
