@@ -1,5 +1,9 @@
 # changelog
 
+## 2020.09.30.1
+
+- Update `.ideavimrc`.
+
 ## 2020.09.26.1
 
 - Add `.ideavimrc` (for clion, idea, etc.)

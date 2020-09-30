@@ -2,55 +2,25 @@
 let mapleader = ','
 let maplocalleader = ',,'
 
-" SETTINGS: global, set ---------------------------------------------------
+" SET ---------------------------------------------------------------  set, let
 
-" indent, tabs
-set expandtab
-set shiftwidth=2
-set softtabstop=2
-set tabstop=2
-
-" guide for 80 width
-set colorcolumn=80
-
-" hybrid numbers, gutter
-set number
-set numberwidth=1
+" hybrid numbers
 set relativenumber
-
-" full line highlight cursor
-set cursorline
 
 " search, case, highlight
 set hlsearch
 set incsearch
 set ignorecase
 
-" set statusline+=%#warningmsg#
-" set statusline+=%*
-" set laststatus=2
-" set statusline=%f " tail of filename
+" ideajoin  <J> (prefix notation <S-Tab> generally used with special non-alpha)
+set ideajoin
 
-" command line
-set showmode
-set ruler
-set laststatus=2
-" set showcmd
-set cmdheight=2
+" MAP ------------------------------------------------------- noremap, inoremap
 
-" width, wrap
-set textwidth=0
-set wrap
-set linebreak
-set nolist " list disables linebreak
+" toggle number modes
+nnoremap <Leader>n :set relativenumber!<CR>
 
-" scroll, scrolling, speed
-set lazyredraw
-set regexpengine=1
-
-" MAP: shortcuts, remap ---------------------------------------------------
-
-" reverse exlusive linewise behavior when wrap is on.
+" reverse exclusive linewise behavior when wrap is on.
 noremap j gj
 noremap k gk
 noremap gj j
@@ -66,8 +36,8 @@ nnoremap <Leader>- dd<Esc>kkp<Esc>>
 nnoremap <Leader>_ ddp
 
 " uppercase word, insert, normal, cursor stays
-" inoremap <Leader>U <Esc>viw~ea
-nnoremap <C-u> m`viw~<C-o>
+inoremap <C-u> <Esc>viw~ea
+nnoremap <C-u> viw~e
 
 " list buffers, buffer, prep entry
 nnoremap <Leader>bl :ls<CR>:b<Space>
@@ -76,19 +46,23 @@ nnoremap <Leader>bl :ls<CR>:b<Space>
 nnoremap <Esc><Esc> :nohls<CR>
 
 "trim whitespace
-nnoremap <Leader>tw :%s/\s\+$//e<CR>
+nnoremap <Leader>tw :%s/\s\+$//e<CR>:echo " -> trailing whitespace removed"<CR>
 
 " jump to EOL in insert
 inoremap <C-a> <Esc>$la
 
-" FILE: edit, source, files, dirs -----------------------------------------
-
 " .ideavimrc
-nnoremap <silent> <Leader>evc :e ~/.ideavimrc<CR>
-" source .ideavimrc
-nnoremap <Leader>sv :source ~/.ideavimrc<CR>
+nnoremap <silent> <Leader>ev :e ~/.ideavimrc<CR>
 
-" ACTIONS: IDE misc. ------------------------------------------------------
-:map <Leader>R :action Run<CR>
-:map <Leader>V :action Valgrind<CR>
-:map <Leader>D :action Debug<CR>
+" source .ideavimrc
+nnoremap <Leader>sv :source ~/.ideavimrc<CR>:echo " -> source ~./ideavimrc"<CR>
+
+" ACTION ------------------------------------------------------ :map (IntelliJ)
+:map <Leader>r :action Run<CR>
+:map <Leader>v :action Valgrind<CR>
+:map <Leader>d :action Debug<CR>
+
+" PLUGIN ----------------------------------------------------------- (emulated)
+set commentary
+set surround
+set easymotion
