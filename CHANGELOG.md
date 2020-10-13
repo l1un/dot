@@ -1,5 +1,11 @@
 # changelog
 
+## 2020.10.13.1
+
+- Add spelling to `tex.vim`.
+- Update `.vimrc` noremap uppercase.
+- Update `.vimrc` markdown plugin.
+
 ## 2020.09.30.1
 
 - Update `.ideavimrc`.

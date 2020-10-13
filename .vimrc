@@ -1,7 +1,6 @@
 call plug#begin('~/.vim/plugged')
 
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
-" Plug 'w0rp/ale'
 Plug 'jiangmiao/auto-pairs'
 Plug 'itchyny/lightline.vim'
 Plug 'ap/vim-buftabline'
@@ -14,7 +13,7 @@ Plug 'tpope/vim-surround'
 Plug 'tpope/vim-vinegar'
 Plug 'christoomey/vim-tmux-navigator'
 Plug 'lervag/vimtex'
-Plug 'suan/vim-instant-markdown', { 'rtp': 'after' }
+Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install'  }
 Plug 'mattn/emmet-vim'
 Plug 'sheerun/vim-polyglot'
 Plug 'tommcdo/vim-lion'
@@ -118,7 +117,7 @@ nnoremap <Leader>_ ddp
 
 " uppercase word, insert, normal, cursor stays
 inoremap <C-u> <Esc>viw~ea
-nnoremap <C-u> m`viw~<C-o>
+nnoremap <C-u> viw~e
 
 " NOTE: clipboard support required, X11, vim-gtk
 " copy, paste, to, from, system clipboard
@@ -335,42 +334,6 @@ noremap <Leader>cP :call GetPythonComment()<CR>
 " DISABLED: set-keymap chromebook / gallium
 " nnoremap <Leader>sk :!set-keymap
 
-" PLUGIN: ale -------------------------------------------------------------
-
-" allow jsx in js files
-" https://jaxbot.me/articles/setting-up-vim-for-react-js-jsx-02-03-2015
-" let g:jsx_ext_required = 0
-
-" let g:ale_statusline_format = [ 'error', 'warning %d', '' ]
-
-" let g:ale_linters = {
-"     \           'sh': [ 'language_server', 'shellcheck' ],
-"     \          'css': [ 'stylelint', 'eslint' ],
-"     \          'pug': [ 'puglint', 'eslint' ],
-"     \          'tex': [ 'chktex' ],
-"     \          'vim': [ 'vint', 'ale_custom_linting_rules' ],
-"     \         'html': [ 'tidy', 'stylelint', 'alex' ],
-"     \     'markdown': [ 'remark-lint' ],
-"     \   'javascript': [ 'eslint', 'prettier', 'stylelint' ],
-"     \ }
-
-" Ale fixing
-" let g:ale_fixers = { 'javascript': [ 'eslint' ], }
-
-" hi link ALEErrorSign    Error
-" hi link ALEWarningSign  Warning
-
-" always show Ale gutter
-" let g:ale_sign_column_always = 0
-
-" ale fix eslint
-" nmap <Leader>af <Plug>(ale_fix)
-" read full error/warn message details
-" nnoremap <silent> <Leader>ad :ALEDetail<CR>
-" nmap <Leader>ad <Plug>(ale_detail)
-
-" let g:ale_sign_error = '--'
-" let g:ale_sign_warning = '--'
 
 " PLUGIN: lightline, buftabline -------------------------------------------
 
@@ -401,15 +364,6 @@ set showtabline=2
 let g:buftabline_numbers = 1
 " let g:buftabline_separators = 1
 
-" PLUGIN: instant markdown ------------------------------------------------
-
-" autoscroll toggle
-let g:instant_markdown_autoscroll = 1
-" autostart toggle
-let g:instant_markdown_autostart = 0
-
-" DISABLED: realtime toggle - if taxing system
-" let g:instant_markdown_slow = 1
 
 " PLUGIN: vimtex ----------------------------------------------------------
 
