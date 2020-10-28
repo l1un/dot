@@ -1,5 +1,9 @@
 # changelog
 
+## 2020.10.28.1
+
+- Add randpw() to `.bashrc`
+
 ## 2020.10.13.1
 
 - Add spelling to `tex.vim`.

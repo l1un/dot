@@ -182,6 +182,8 @@ surfrawDuckDuckGo() {
 
 # other ---------------------------------------------
 
+randpw(){ </dev/urandom tr -dc '12345!@#$%qwertQWERTasdfgASDFGzxcvbZXCVB' | head -c15; echo "";}
+
 # Gotham Shell
 # GOTHAM_SHELL="$HOME/.config/gotham/gotham.sh"
 # [[ -s $GOTHAM_SHELL  ]] && source $GOTHAM_SHELL
