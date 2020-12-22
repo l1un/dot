@@ -14,7 +14,7 @@ Plug 'tpope/vim-vinegar'
 Plug 'christoomey/vim-tmux-navigator'
 Plug 'lervag/vimtex'
 Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install'  }
-Plug 'mattn/emmet-vim'
+" Plug 'mattn/emmet-vim'
 Plug 'sheerun/vim-polyglot'
 Plug 'tommcdo/vim-lion'
 if has('nvim')
@@ -165,6 +165,9 @@ nnoremap <silent><Leader>bf :Lexplore<CR>
 
 " jump to EOL in insert
 inoremap <C-a> <C-o>$
+
+" select all
+nnoremap <Leader>a ggVG
 
 " FOLD: folding, settings, maps ------------------------------------------
 
@@ -384,7 +387,7 @@ let g:tex_conceal = '' " turn off internal LaTex syntax behaviour
 " PLUGIN: emmet -----------------------------------------------------------
 
 " leader .
-let g:user_emmet_leader_key=','
+" let g:user_emmet_leader_key=','
 
 " PLUGIN: vim-vinegar -----------------------------------------------------
 

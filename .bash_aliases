@@ -66,7 +66,7 @@ alias trw='$HOME/bin/tmux-rename-window'
 
 # copy dotfiles, echo message, TODO: fix/upate automation scripts.
 alias sdFiles='$HOME/bin/sync-dot-files \
-                    && cd "$HOME"/Projects/dot-config && git status'
+                    && cd "$HOME"/Projects/dot && git status'
 
 ## surfraw
 

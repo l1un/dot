@@ -1,6 +1,6 @@
 set foldmethod=marker
 setlocal spell spelllang=en_us
-set colorcolumn=100
+" set colorcolumn=100
 
 
 " TEST: vimtex clean on quit

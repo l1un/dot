@@ -1,11 +1,9 @@
 # changelog
 
-## 2020.12.21.2
+## 2020.12.21.3
 
+- Update "dot-config" to "dot" convention, `sync-dot-files`, `bash_aliases`.
 - Test 2.
-
-## 2020.12.21.1
-
 - Test.
 
 ## 2020.10.28.1

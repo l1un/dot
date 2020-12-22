@@ -2,8 +2,9 @@
 
 ## Name: sync-dot-files
 ## Created: 05.21.2019
-## Updated: Mon Apr 13 10:20:17 PDT 2020 [Change update prompt to yellow.]
-## Description: Synchronize latest system dot files to git repository keeping correct structure and files in corresponding directories.
+## Updated: Mon 21 Dec 2020 10:25:32 PM PST (change all "dot-config"" to "dot")
+## Description: Synchronize latest system dot files to git repository keeping
+##              correct structure and files in corresponding directories.
 ## TODO: Update to rysnc.
 ## TODO: Customize and add to Lineage, Gallium branches.
 
@@ -15,7 +16,7 @@ sync_dot_files() {
   # local red='\033[0;31m'
 
   ## 0. Lynx sync files (rsync test run)
-  rsync -va /etc/lynx/ "$HOME"/Projects/dot-config/etc/lynx/
+  rsync -va /etc/lynx/ "$HOME"/Projects/dot/etc/lynx/
 
 	## 1. Define source files and directories and prep.
 
@@ -74,11 +75,11 @@ sync_dot_files() {
 	## 2. Define destination paths for the repo directories.
 
 	# To essentially replicate system structure in repo
-	local repo_bin_dir="$HOME/Projects/dot-config/bin/"
-	local repo_dot_vim_dir="$HOME/Projects/dot-config/.vim/"
-	local repo_dot_config_dir="$HOME/Projects/dot-config/.config/"
-	local repo_gtk_dir="$HOME/Projects/dot-config/.config/gtk-3.0/"
-	local repo_root_dir="$HOME/Projects/dot-config/"
+	local repo_bin_dir="$HOME/Projects/dot/bin/"
+	local repo_dot_vim_dir="$HOME/Projects/dot/.vim/"
+	local repo_dot_config_dir="$HOME/Projects/dot/.config/"
+	local repo_gtk_dir="$HOME/Projects/dot/.config/gtk-3.0/"
+	local repo_root_dir="$HOME/Projects/dot/"
 
 	## 3. Loop and copy files and directories.
 
