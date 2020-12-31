@@ -1,9 +1,0 @@
-#!/bin/bash
-#### Name: change_bash_profile
-#### Date: 04.28.2019
-#### Description: quickly change profiles in ba sh using xdotool + nth profile arg
-
-change_bash_profile() {
-  # clearmodifiers for tmux, vim etc.
-  xdotool --clearmodifiers key Shift+F10 r $1
-}

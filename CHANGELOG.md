@@ -1,44 +1,48 @@
 # changelog
 
-## 2020.12.21.3
+## 2020.12.30.18.1
+
+- Update repo and script to only include `bin/sync-dot-files`.
+
+### 2020.12.21.3
 
 - Update "dot-config" to "dot" convention, `sync-dot-files`, `bash_aliases`.
 - Test 2.
 - Test.
 
-## 2020.10.28.1
+### 2020.10.28.1
 
 - Add randpw() to `.bashrc`
 
-## 2020.10.13.1
+### 2020.10.13.1
 
 - Add spelling to `tex.vim`.
 - Update `.vimrc` noremap uppercase.
 - Update `.vimrc` markdown plugin.
 
-## 2020.09.30.1
+### 2020.09.30.1
 
 - Update `.ideavimrc`.
 
-## 2020.09.26.1
+### 2020.09.26.1
 
 - Add `.ideavimrc` (for clion, idea, etc.)
 
-## 2020.09.20.2
+### 2020.09.20.2
 
 - add cpp run command to `.vimrc`
 - add `vim.cpp` ftplugin
 
-## 2020.08.31.1
+### 2020.08.31.1
 
 - Update `...mint-20-notes`.
 - Speed crunch config.
 
-## 2020.08.24.1
+### 2020.08.24.1
 
 - Update `...mint-20-notes`.
 
-## 2020.08.21.3
+### 2020.08.21.3
 
 - Remove old CL's merged here.
 - Remove `vim-ale` content now unused. (Coc)

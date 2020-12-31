@@ -2,7 +2,8 @@
 
 ## Name: sync-dot-files
 ## Created: 05.21.2019
-## Updated: Mon 21 Dec 2020 10:25:32 PM PST (change all "dot-config"" to "dot")
+## Updated: 2020.12.30.17:45 (dotw, update shell scripts sync to only include
+##          sync-dot-files)
 ## Description: Synchronize latest system dot files to git repository keeping
 ##              correct structure and files in corresponding directories.
 ## TODO: Update to rysnc.
@@ -15,8 +16,9 @@ sync_dot_files() {
   local yel='\033[0;33m'
   # local red='\033[0;31m'
 
-  ## 0. Lynx sync files (rsync test run)
+  ## 0. Rsync lynx, /bin/sync-dot-files.
   rsync -va /etc/lynx/ "$HOME"/Projects/dot/etc/lynx/
+  rsync -az "$HOME"/bin/sync-dot-files "$HOME"/Projects/dot/bin/
 
 	## 1. Define source files and directories and prep.
 
@@ -34,7 +36,6 @@ sync_dot_files() {
 	local source_gtk_css_file="$HOME/.config/gtk-3.0/gtk.css"
 
 	# Directories
-	local source_bin_dir="$HOME/bin/"
 
 	local source_devilspie2_dir="$HOME/./.config/devilspie2/"
 	local source_gnuplot_dir="$HOME/./.config/gnuplot/"
@@ -92,9 +93,6 @@ sync_dot_files() {
 	for each_dir in "${source_dot_config_dirs[@]}"; do
 		cp -r "$each_dir" "$repo_dot_config_dir" -v
 	done
-
-	# Sync system shell scripts to repo bin dir
-	cp -r "$source_bin_dir"/* "$repo_bin_dir" -v
 
 	# Sync system vim config files
 	# cp "$source_vim_config_dir"/* "$repo_dot_vim_dir"/config/

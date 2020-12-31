@@ -1,4 +1,0 @@
-nmcli radio all off
-nmcli radio all
-sudo systemctl stop bluetooth
-service bluetooth status | grep Bluetooth
