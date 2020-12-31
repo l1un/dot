@@ -1,7 +1,8 @@
 # changelog
 
-## 2020.12.30.18.1
+## 2020.12.30.18.2
 
+- Update `.bash_aliases` with `syncShellScripts`.
 - Update repo and script to only include `bin/sync-dot-files`.
 
 ### 2020.12.21.3

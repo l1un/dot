@@ -12,10 +12,10 @@ alias lla="find . -maxdepth 1 -printf '%p\t\n'"
 ## git ------------------------------------------------------------------
 
 # quick default add, commit, push
-alias gpQuick='git add . && git commit -m "Quick Push (via alias)." \
+alias gitPushQuick='git add . && git commit -m "Quick Push (via alias)." \
                     && git push'
-# quick verbose add, commit, push
-alias gpVerbose="git add . && git commit -v && git push"
+# push with message add, commit, push
+alias gitPushMsg="git add . && git commit -v && git push"
 
 ## edit/modify config files --------------------------------------------
 
@@ -57,16 +57,20 @@ alias cpFile='xclip -sel c <' # type filename after.
 ## shell ----------------------------------------------------------------
 
 # copy intellij idea projects/packages
-alias cpIdea='$HOME/bin/copy-idea-project'
+alias cpIdeaProject='$HOME/bin/copy-idea-project'
 
 # launch new custom tmux session
 alias tns='$HOME/bin/tmux-new-session'
 # rename current tmux window
 alias trw='$HOME/bin/tmux-rename-window'
 
-# copy dotfiles, echo message, TODO: fix/upate automation scripts.
-alias sdFiles='$HOME/bin/sync-dot-files \
+# sync dotfiles, echo message, TODO: fix/upate automation scripts.
+alias syncDotFiles='$HOME/bin/sync-dot-files \
                     && cd "$HOME"/Projects/dot && git status'
+
+# sync shell scripts
+alias syncShellScripts='$HOME/bin/sync-shell-scripts \
+                    && cd "$HOME"/Projects/sh && git status'
 
 ## surfraw
 
