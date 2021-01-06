@@ -1,7 +1,8 @@
 # changelog
 
-## 2021.01.05.2
+## 2021.01.05.3
 
+- Update Vim config for ssh.
 - Add `ssh/z.sh`.
 - Update `ftplugin/vim.cpp`.
 - Rename `.vim/colors/l1un.vim`.
