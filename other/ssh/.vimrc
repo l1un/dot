@@ -1,3 +1,19 @@
+ " call plug#begin('~/.vim/plugged')
+
+ " Plug 'jiangmiao/auto-pairs'
+ " Plug 'itchyny/lightline.vim'
+ " Plug 'junegunn/fzf'
+ " Plug 'junegunn/fzf.vim'
+ " Plug 'tpope/vim-commentary'
+ " Plug 'tpope/vim-fugitive'
+ " Plug 'tpope/vim-repeat'
+ " Plug 'tpope/vim-surround'
+ " Plug 'tpope/vim-vinegar'
+ " Plug 'sheerun/vim-polyglot'
+ " Plug 'tommcdo/vim-lion'
+
+ " call plug#end()
+
 " colors
 syntax on
 colorscheme llun
@@ -9,12 +25,12 @@ set relativenumber
 
 " indent, tabs
 set expandtab
-set shiftwidth=3
-set softtabstop=3
-set tabstop=3
+set shiftwidth=4
+set softtabstop=4
+set tabstop=4
 
-set textwidth=79
-set colorcolumn=79
+set textwidth=80
+set colorcolumn=80
 
 " full line highlight cursor
 set cursorline
@@ -67,8 +83,8 @@ nnoremap <C-u> m`viw~<C-o>
 
 " NOTE: clipboard support required, X11, vim-gtk
 " copy, paste, to, from, system clipboard
-vnoremap <Leader>y "+y:call EchoCustom('Copied to System Clipboard')<CR>
-nnoremap <Leader>p "+p:call EchoCustom('Pasted from System Clipboard')<CR>
+" vnoremap <Leader>y "+y:call EchoCustom('Copied to System Clipboard')<CR>
+" nnoremap <Leader>p "+p:call EchoCustom('Pasted from System Clipboard')<CR>
 
 " paste toggle, output state
 nnoremap <Leader>pt :set paste!<CR>:set paste?<CR>
@@ -150,6 +166,9 @@ set fillchars=fold:\
 
 " .vimrc (absolute for neovim)
 nnoremap <silent> <Leader>evc :e ~/.vimrc<CR>
+ " .source .vimrc
+ nnoremap <Leader>sv :source ~/.vimrc<CR>:redraw<CR>:nohls
+             \ <CR>:call EchoCustom(':so[urce] .vimrc')<CR>
 
 " FUNCTION: echo color status ---------------------------------------------
 
@@ -160,3 +179,11 @@ function! EchoCustom(msg)
     echohl None
 endfunction
 
+" FUNCTION: run cpp ------------------------------------------------------
+  " runs in split
+  function! RunFileInCPP()
+      let input_file = expand('%')
+          exec ':w !echo; g++' input_file '&& ./a.out'
+          endfunction
+
+noremap <Leader>rC :call RunFileInCPP()<CR>
