@@ -45,7 +45,7 @@ let maplocalleader = ',,'
 
 " custom theme @ .vim/colors
 syntax on
-colorscheme llun
+colorscheme l1un
 
 set encoding=utf-8
 scriptencoding utf-8

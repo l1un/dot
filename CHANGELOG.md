@@ -1,6 +1,11 @@
 # changelog
 
-## 2020.12.30.18.2
+## 2021.01.05.1
+
+- Rename `.vim/colors/l1un.vim`.
+- Update `other/ssh` with `.vim/colors/l1un.vim`.
+
+### 2020.12.30.2
 
 - Update `.bash_aliases` with `syncShellScripts`.
 - Update repo and script to only include `bin/sync-dot-files`.
