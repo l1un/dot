@@ -1,6 +1,10 @@
 # changelog
 
-## 2021.01.07.1
+## 2021.01.08.2
+
+- Quick update/tidy `.bashrc, .bash_alias, .vimrc`.
+
+### 2021.01.07.1
 
 - Update `.vimrc` - `iamcco/markdown-preview.nvim` config.
 

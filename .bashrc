@@ -147,12 +147,12 @@ clearVimViews() {
 }
 
 # show only <$num> dirs in prompt
-promptDirTrimNumber() {
+pTrim() {
   PROMPT_DIRTRIM=$1
 }
 
 # cd; ls -al
-cdList() {
+cdl() {
   cd "$@" || exit
   ls -al
 }

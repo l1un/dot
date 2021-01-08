@@ -24,9 +24,6 @@ else
   Plug 'roxma/nvim-yarp'
   Plug 'roxma/vim-hug-neovim-rpc'
 endif
-" DISABLED: plugins
-" Plug 'SirVer/ultisnips'
-" Plug 'honza/vim-snippets'
 
 call plug#end()
 
@@ -226,7 +223,9 @@ nnoremap <Leader>sv :source ~/.vimrc<CR>:redraw<CR>:nohls
 " clear view folder
 nnoremap <Leader>cv :!rm ~/.vim/view/*
 
-" FUNCTION: rename files --------------------------------------------------
+" FUNCTIONS: ---------------------------------------------------------------
+
+" rename files
 
 function! RenameFile()
     let old_name = expand('%')
@@ -240,7 +239,7 @@ endfunction
 
 noremap <Leader>n :call RenameFile()<CR>
 
-" FUNCTION: echo color status ---------------------------------------------
+" echo color status ---------------------------------------------
 
 " :so /usr/share/vim/vim81/syntax/hitest.vim
 function! EchoCustom(msg)
@@ -249,7 +248,7 @@ function! EchoCustom(msg)
     echohl None
 endfunction
 
-" FUNCTION: REPL (math, etc.) ---------------------------------------------
+" REPL (math, etc.) ---------------------------------------------
 
 function! Repl()
     while 1
@@ -269,7 +268,7 @@ endfunction
 
 nnoremap <Leader>rR :call Repl()<CR>
 
-" FUNCTION: hide status / commmands ---------------------------------------
+" hide status / commmands ---------------------------------------
 
 let s:hidden_all = 0
 
@@ -294,7 +293,7 @@ endfunction
 
 nnoremap <S-h> :call ToggleHiddenAll()<CR>
 
-" FUNCTION: run cpp ------------------------------------------------------
+" run cpp ------------------------------------------------------
 
 " runs in split
 function! RunFileInCPP()
@@ -304,7 +303,7 @@ endfunction
 
 noremap <Leader>rC :call RunFileInCPP()<CR>
 
-" FUNCTION: run node.js ---------------------------------------------------
+" run node.js ---------------------------------------------------
 
 " runs in split, optionally use nodemon
 function! RunFileInNode()
@@ -314,7 +313,7 @@ endfunction
 
 noremap <Leader>rN :call RunFileInNode()<CR>
 
-" FUNCTION: run python, get comment ---------------------------------------
+" run python, get comment ---------------------------------------
 
 " run python in split
 function! RunFileInPython()
@@ -338,7 +337,9 @@ noremap <Leader>cP :call GetPythonComment()<CR>
 " nnoremap <Leader>sk :!set-keymap
 
 
-" PLUGIN: lightline, buftabline -------------------------------------------
+" PLUGINS: -----------------------------------------------------------------
+"
+" lightline, buftabline
 
 let g:lightline = {
     \   'colorscheme': 'simpleblack',
@@ -367,8 +368,7 @@ set showtabline=2
 let g:buftabline_numbers = 1
 " let g:buftabline_separators = 1
 
-
-" PLUGIN: vimtex ----------------------------------------------------------
+" vimtex ----------------------------------------------------------
 
 let g:tex_flavor='latex'
 let g:vimtex_view_method='zathura'
@@ -384,19 +384,19 @@ let g:tex_conceal = '' " turn off internal LaTex syntax behaviour
 " set conceallevel=0
 " let g:tex_conceal='abdmg'
 
-" PLUGIN: emmet -----------------------------------------------------------
+" DISABLED: emmet -----------------------------------------------------------
 
 " leader .
 " let g:user_emmet_leader_key=','
 
-" PLUGIN: vim-vinegar -----------------------------------------------------
+" vim-vinegar -----------------------------------------------------
 
 " dot files hidden by default <gf> to show
 let g:netrw_list_hide = '\(^\|\s\s\)\zs\.\S\+'
 " closing netrw window / buffer
 let g:netrw_fastbrowse = 0
 
-" PLUGIN: fzf -------------------------------------------------------------
+" fzf -------------------------------------------------------------
 
 " let g:fzf_layout = { 'down': '~18%' }
 
@@ -409,25 +409,14 @@ nnoremap <Leader>ft :BTags<CR>
 nnoremap <Leader>fr :Rg<CR>
 nnoremap <Leader>fT :Tags<CR>
 
-" PLUGIN: Markdown Preview for (Neo)vim -----------------------------------
-
-" set to 1, nvim will open the preview window after entering the markdown buffer
-" default: 0
-let g:mkdp_auto_start = 1
+" Markdown Preview for (Neo)vim -----------------------------------
 
 " set to 1, the nvim will auto close current preview window when change
 " from markdown buffer to another buffer
 " default: 1
 let g:mkdp_auto_close = 1
 
-" set to 1, the vim will refresh markdown when save the buffer or
-" leave from insert mode, default 0 is auto refresh markdown as you edit or
-" move the cursor
-" default: 0
-let g:mkdp_refresh_slow = 0
-
-
-" PLUGIN: coc ------------------------------------------------------------
+" coc ------------------------------------------------------------
 
 " if hidden is not set, TextEdit might fail.
 set hidden
@@ -517,7 +506,6 @@ augroup end
 
 
 " DISABLED: settings for ultisnips
-
 " set directory
 " let g:UltiSnipsSnippetDir = $HOME."/.vim/ultisnips"
 " let g:UltiSnipsSnippetDirectories = [ '~/.vim/UltiSnips', 'UltiSnips' ]
