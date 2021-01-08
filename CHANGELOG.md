@@ -1,6 +1,10 @@
 # changelog
 
-## 2021.01.05.3
+## 2021.01.07.1
+
+- Update `.vimrc` - `iamcco/markdown-preview.nvim` config.
+
+### 2021.01.05.3
 
 - Update Vim config for ssh.
 - Add `ssh/z.sh`.
