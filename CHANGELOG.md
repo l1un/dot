@@ -1,7 +1,8 @@
 # changelog
 
-## 2021.01.08.2
+## 2021.01.08.3
 
+- Add some aliases similar to Gitlab, Codeberg configs.
 - Quick update/tidy `.bashrc, .bash_alias, .vimrc`.
 
 ### 2021.01.07.1
