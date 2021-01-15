@@ -61,6 +61,9 @@ set number
 set numberwidth=1
 set relativenumber
 
+" toggle number modes
+nnoremap <Leader>n :set relativenumber!<CR>
+
 " full line highlight cursor
 set cursorline
 
@@ -227,17 +230,17 @@ nnoremap <Leader>cv :!rm ~/.vim/view/*
 
 " rename files
 
-function! RenameFile()
-    let old_name = expand('%')
-    let new_name = input('New file name: ', expand('%'), 'file')
-    if new_name !=? '' && new_name != old_name
-        exec ':saveas ' . new_name
-        exec ':silent !rm ' . old_name
-        redraw!
-    endif
-endfunction
+" function! RenameFile()
+"     let old_name = expand('%')
+"     let new_name = input('New file name: ', expand('%'), 'file')
+"     if new_name !=? '' && new_name != old_name
+"         exec ':saveas ' . new_name
+"         exec ':silent !rm ' . old_name
+"         redraw!
+"     endif
+" endfunction
 
-noremap <Leader>n :call RenameFile()<CR>
+" noremap <Leader>n :call RenameFile()<CR>
 
 " echo color status ---------------------------------------------
 

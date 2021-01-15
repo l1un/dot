@@ -1,6 +1,10 @@
 # changelog
 
-## 2021.01.14.1
+## 2021.01.15.1
+
+- Update `.vimrc` `.ideavimrc` relative/num/toggle.
+
+### 2021.01.14.1
 
 - Fix typo/bug in `markdown.vim`.
 

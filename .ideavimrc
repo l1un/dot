@@ -5,6 +5,7 @@ let maplocalleader = ',,'
 " SET ---------------------------------------------------------------  set, let
 
 " hybrid numbers
+set number
 set relativenumber
 
 " search, case, highlight
@@ -19,12 +20,6 @@ set ideajoin
 
 " toggle number modes
 nnoremap <Leader>n :set relativenumber!<CR>
-
-" reverse exclusive linewise behavior when wrap is on.
-noremap j gj
-noremap k gk
-noremap gj j
-noremap gk k
 
 " new lines above, below, above and below, cursor static
 nnoremap <Leader>O O<Esc>j
@@ -61,6 +56,10 @@ nnoremap <Leader>sv :source ~/.ideavimrc<CR>:echo " -> source ~./ideavimrc"<CR>
 :map <Leader>r :action Run<CR>
 :map <Leader>v :action Valgrind<CR>
 :map <Leader>d :action Debug<CR>
+:map <Leader>y :action $Copy<CR>
+:map <Leader>p :action $Paste<CR>
+
+# Tips: https://www.jetbrains.com/pycharm/guide/tips/enable-ideavim/
 
 " PLUGIN ----------------------------------------------------------- (emulated)
 set commentary
