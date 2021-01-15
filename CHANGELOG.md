@@ -1,6 +1,10 @@
 # changelog
 
-## 2021.01.08.3
+## 2021.01.14.1
+
+- Fix typo/bug in `markdown.vim`.
+
+### 2021.01.08.3
 
 - Add some aliases similar to Gitlab, Codeberg configs.
 - Quick update/tidy `.bashrc, .bash_alias, .vimrc`.
