@@ -5,8 +5,8 @@ alias ....="cd ../../../"
 alias lsl="ls -alt | less"
 alias lla="find . -maxdepth 1 -printf '%p\t\n'"
 
-alias ghqp='git add . && git commit -m "Quick Push (via alias)." && git push'
-alias ghvp="git add . && git commit -v && git push"
+alias ghpq='git add . && git commit -m "Quick Push (via alias)." && git push'
+alias ghpv="git add . && git commit -v && git push"
 alias ghd="git diff"
 alias ghs="git status"
 alias ghl="git log"

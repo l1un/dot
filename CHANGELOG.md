@@ -1,6 +1,12 @@
 # changelog
 
-## 2021.01.15.1
+## 2021.01.20.1
+
+- Update `markdown.vim` with indent fixes etc.
+- SC auto.
+- Update `.bash_aliases` git push to intuitive.
+
+### 2021.01.15.1
 
 - Update `.vimrc` `.ideavimrc` relative/num/toggle.
 
