@@ -19,6 +19,9 @@ alias evt='vim $HOME/.vim/colors/llun.vim'
 alias ebc='vim $HOME/.bashrc'
 alias eba='vim $HOME/.bash_aliases'
 alias etc='vim $HOME/.tmux.conf'
+
+# copy date to clipboard
+alias cpd='date | xclip -selection c'
 # alias asn='$HOME/bin/add-sound-item'
 # copy file to clipboard without opening it.
 alias cpf='xclip -sel c <' # type filename after.

@@ -1,6 +1,10 @@
 # changelog
 
-## 2021.01.20.1
+## 2021.01.24.1
+- Add alias to copy date/timestamp using xclip `.bash_aliases`.
+- SC auto.
+
+### 2021.01.20.1
 
 - Update `markdown.vim` with indent fixes etc.
 - SC auto.
