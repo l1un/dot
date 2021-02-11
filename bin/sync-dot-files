@@ -2,12 +2,11 @@
 
 ## Name: sync-dot-files
 ## Created: 05.21.2019
-## Updated: 2020.12.30.17:45 (dotw, update shell scripts sync to only include
-##          sync-dot-files)
+## Updated: 2021.02.11.00:22: Add vim spell file, updating to rsync.
 ## Description: Synchronize latest system dot files to git repository keeping
 ##              correct structure and files in corresponding directories.
-## TODO: Update to rysnc.
-## TODO: Customize and add to Lineage, Gallium branches.
+## TODO: Continue update/refactor to rysnc.
+## TODO: Lineage, Gallium branches?
 
 sync_dot_files() {
 
@@ -16,9 +15,10 @@ sync_dot_files() {
   local yel='\033[0;33m'
   # local red='\033[0;31m'
 
-  ## 0. Rsync lynx, /bin/sync-dot-files.
+  ## 0. Update to rsync in-progress, to-refactor.
   rsync -va /etc/lynx/ "$HOME"/Projects/dot/etc/lynx/
   rsync -az "$HOME"/bin/sync-dot-files "$HOME"/Projects/dot/bin/
+  rsync -az "$HOME"/.vim/spell/en.utf-8-add "$HOME"/Projects/dot/.vim/spell
 
 	## 1. Define source files and directories and prep.
 

@@ -1,6 +1,14 @@
-# changelog
+# CHANGELOG
 
-## 2021.01.24.1
+> Automatically updated files/directories are not explicitly listed.
+
+## 2021.02.11.1
+
+- Add Vim `spellfile`.
+- Update `sync-dot-files`
+
+### 2021.01.24.1
+
 - Add alias to copy date/timestamp using xclip `.bash_aliases`.
 - SC auto.
 
