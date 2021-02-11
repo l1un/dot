@@ -116,31 +116,24 @@ if ! shopt -oq posix; then
   fi
 fi
 
-## adds ---------------------------------------------------------------------
-
+# Custom ---------------------------------------------------------------------
 export NPM_PACKAGES="/home/o12/.npm-packages"
 export NODE_PATH="$NPM_PACKAGES/lib/node_modules${NODE_PATH:+:$NODE_PATH}"
 export PATH="$NPM_PACKAGES/bin:$PATH"
 
 # Unset manpath so we can inherit from /etc/manpath via the `manpath`
 # command
-unset MANPATH  # delete if you already modified MANPATH elsewhere in your config
+unset MANPATH  # delete if already modified MANPATH elsewhere in config
 export MANPATH="$NPM_PACKAGES/share/man:$(manpath)"
 
 # scripts dir
 export PATH="$HOME/bin:$PATH"
-
-# termtosvg
-export PATH="/home/o12/.local/bin:$PATH"
-
 # yarn
 export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
-
 # firefox dev
 export PATH="/opt/firefox/firefox:$PATH"
 
-# functions -------------------------------------------
-
+# Functions ------------------------------------------------------------------
 # clear ~/.vim/views dir (common debug)
 clearVimViews() {
   rm "$HOME"/.vim/view/*
@@ -180,15 +173,11 @@ surfrawDuckDuckGo() {
   sr duckduckgo "$1"
 }
 
-# other ---------------------------------------------
+# Other ----------------------------------------------------------------------
+randpw(){ </dev/urandom tr -dc '12345!@#$%qwertQWERTasdfgASDFGzxcvbZXCVB'\
+  | head -c15; echo "";}
 
-randpw(){ </dev/urandom tr -dc '12345!@#$%qwertQWERTasdfgASDFGzxcvbZXCVB' | head -c15; echo "";}
-
-# Gotham Shell
-# GOTHAM_SHELL="$HOME/.config/gotham/gotham.sh"
-# [[ -s $GOTHAM_SHELL  ]] && source $GOTHAM_SHELL
-
-# vim default editor
+# Vim default editor
 export VISUAL=vim
 export EDITOR="$VISUAL"
 
@@ -198,7 +187,8 @@ set -o vi
 # via fzf install
 # change fzf to use ripgrep
 [ -f ~/.fzf.bash ] && source ~/.fzf.bash
-export FZF_DEFAULT_COMMAND='rg --files --no-ignore --hidden --follow -g "!{.git,node_modules}/*" 2> /dev/null'
+export FZF_DEFAULT_COMMAND='rg --files --no-ignore --hidden --follow -g'\
+' "!{.git,node_modules}/*" 2> /dev/null'
 export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
 
 # shortcuts to search and open using vim and nvim respectively
@@ -214,4 +204,5 @@ shopt -s extglob
 # added via Node Package Manager
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+  # This loads nvm bash_completion
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"

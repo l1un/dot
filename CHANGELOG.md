@@ -2,10 +2,10 @@
 
 > Automatically updated files/directories are not explicitly listed.
 
-## 2021.02.11.1
+## 2021.02.11.3
 
 - Add Vim `spellfile`.
-- Update `sync-dot-files`
+- Update `sync-dot-files` with rsync.
 
 ### 2021.01.24.1
 

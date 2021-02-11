@@ -2,111 +2,110 @@
 
 ## Name: sync-dot-files
 ## Created: 05.21.2019
-## Updated: 2021.02.11.00:22: Add vim spell file, updating to rsync.
+## Updated: 2021.02.11.02:39: Rsync updates/refactor, clean-up, cont.
 ## Description: Synchronize latest system dot files to git repository keeping
 ##              correct structure and files in corresponding directories.
-## TODO: Continue update/refactor to rysnc.
-## TODO: Lineage, Gallium branches?
+## TODO: Refactor paths/consts, improve reuse. Lineage, Gallium branches?
 
 sync_dot_files() {
 
   local def='\033[0m'
   local grn='\033[0;32m'
-  local yel='\033[0;33m'
-  # local red='\033[0;31m'
+  # local yel='\033[0;33m'
 
-  ## 0. Update to rsync in-progress, to-refactor.
-  rsync -va /etc/lynx/ "$HOME"/Projects/dot/etc/lynx/
-  rsync -az "$HOME"/bin/sync-dot-files "$HOME"/Projects/dot/bin/
-  rsync -az "$HOME"/.vim/spell/en.utf-8-add "$HOME"/Projects/dot/.vim/spell
+	# Sources -----------------------------------------------------------------
 
-	## 1. Define source files and directories and prep.
-
-	# Files
 	local source_bashrc_file="$HOME/.bashrc"
 	local source_bash_aliases_file="$HOME/.bash_aliases"
-	local source_emacs_file="$HOME/.emacs"
+	# local source_emacs_file="$HOME/.emacs"
 	# local source_eslint_file="$HOME/.eslintrc.js"
 	local source_latexmkrc_file="$HOME/.latexmkrc"
-	local source_lynxrc_file="$HOME/.lynxrc"
-	local source_tern_config_file="$HOME/.tern-config"
+	# local source_lynxrc_file="$HOME/.lynxrc"
+	# local source_tern_config_file="$HOME/.tern-config"
 	local source_tmux_conf_file="$HOME/.tmux.conf"
 	local source_vimrc_file="$HOME/.vimrc"
-	local source_vim_coc_settings_file="$HOME/.vim/coc-settings.json"
-	local source_gtk_css_file="$HOME/.config/gtk-3.0/gtk.css"
+	# local source_gtk_css_file="$HOME/.config/gtk-3.0/gtk.css"
 
-	# Directories
-
-	local source_devilspie2_dir="$HOME/./.config/devilspie2/"
-	local source_gnuplot_dir="$HOME/./.config/gnuplot/"
-	local source_htop_dir="$HOME/.config/htop/"
-	local source_speedcrunch_dir="$HOME/.config/SpeedCrunch/"
-	local source_terminator_dir="$HOME/.config/terminator/"
-	local source_zathura_dir="$HOME/.config/zathura/"
-
-	# local source_vim_config_dir="$HOME/.vim/config/"
-	local source_vim_colors_dir="$HOME/.vim/colors/"
-	local source_vim_ftplugin_dir="$HOME/.vim/ftplugin/"
-	# local source_vim_snippets_dir="$HOME/.vim/UltiSnips/"
-
-
-	# Array for system root files, they get added to repo root dir.
 	local source_root_dir_config_files=(
-		$source_bashrc_file
-		$source_bash_aliases_file
-    $source_emacs_file
+		"$source_bashrc_file"
+		"$source_bash_aliases_file"
+    # "$source_emacs_file"
 		# $source_eslint_file
-    $source_latexmkrc_file
-		$source_lynxrc_file
-		$source_tern_config_file
-		$source_tmux_conf_file
-		$source_vimrc_file
+    "$source_latexmkrc_file"
+		# "$source_lynxrc_file"
+		# "$source_tern_config_file"
+		"$source_tmux_conf_file"
+		"$source_vimrc_file"
 	)
 
-	# Array for .config directories, other dirs to get files from
-	local source_dot_config_dirs=(
-    $source_devilspie2_dir
-		$source_gnuplot_dir
-		$source_htop_dir
-		$source_speedcrunch_dir
-		$source_terminator_dir
-		$source_zathura_dir
-	)
+	# Destinations  ------------------------------------------------------------
 
-	## 2. Define destination paths for the repo directories.
-
-	# To essentially replicate system structure in repo
-	local repo_bin_dir="$HOME/Projects/dot/bin/"
-	local repo_dot_vim_dir="$HOME/Projects/dot/.vim/"
+	# local repo_bin_dir="$HOME/Projects/dot/bin/"
 	local repo_dot_config_dir="$HOME/Projects/dot/.config/"
-	local repo_gtk_dir="$HOME/Projects/dot/.config/gtk-3.0/"
+	# local repo_gtk_dir="$HOME/Projects/dot/.config/gtk-3.0/"
 	local repo_root_dir="$HOME/Projects/dot/"
 
-	## 3. Loop and copy files and directories.
+	# Path Helpers  ------------------------------------------------------------
 
-	# Sync system root config files
-	for each_file in "${source_root_dir_config_files[@]}"; do
-		cp  "$each_file" "$repo_root_dir" -v
-	done
+  # .config/<dirs>
+	local devilspie2_dir="devilspie2/"
+	local gnuplot_dir="gnuplot/"
+	local htop_dir="htop/"
+	local speedcrunch_dir="SpeedCrunch/"
+	local terminator_dir="terminator/"
+	local zathura_dir="zathura/"
 
-	# Sync system .config directories to repo directories
-	for each_dir in "${source_dot_config_dirs[@]}"; do
-		cp -r "$each_dir" "$repo_dot_config_dir" -v
-	done
+	local dot_config_dirs=(
+    "$devilspie2_dir"
+		"$gnuplot_dir"
+		"$htop_dir"
+		"$speedcrunch_dir"
+		"$terminator_dir"
+		"$zathura_dir"
+	)
 
-	# Sync system vim config files
-	# cp "$source_vim_config_dir"/* "$repo_dot_vim_dir"/config/
-	cp "$source_vim_colors_dir"/* "$repo_dot_vim_dir"/colors/ -v
-	cp "$source_vim_ftplugin_dir"/* "$repo_dot_vim_dir"/ftplugin/ -v
-	cp "$source_vim_coc_settings_file" "$repo_dot_vim_dir" -v
-	# cp "$source_vim_snippets_dir"/* "$repo_dot_vim_dir"/UltiSnips/
+  # .vim/<dirs>
+	local vim_colors_dir=".vim/colors/"
+	local vim_ftplugin_dir=".vim/ftplugin/"
+	local vim_spell_dir=".vim/spell/"
+
+	local dot_vim_dirs=(
+    "$vim_colors_dir"
+    "$vim_ftplugin_dir"
+    "$vim_spell_dir"
+	)
+
+
+  # Individual syncs ------------------------------------------------------
+
+  rsync -az /etc/lynx/ "$HOME"/Projects/dot/other/lynx
+  rsync -az "$HOME"/bin/sync-dot-files "$HOME"/Projects/dot/bin/
+  rsync -az "$HOME"/.config/nvim/coc-settings.json "$HOME"/Projects/dot/.config/nvim
 
 	# Sync system gtk css file
-	cp "$source_gtk_css_file" "$repo_gtk_dir" -v
+	# cp "$source_gtk_css_file" "$repo_gtk_dir" -v
+
+  # Loop and Sync ---------------------------------------------------------
+
+	# Applicable .<files> to dot/.<files>
+	for each_file in "${source_root_dir_config_files[@]}"; do
+		rsync -az "$each_file" "$repo_root_dir"
+	done
+
+	# Applicable .config/<dirs>/<files> to dot/.config/<dirs>/<files>.
+	for each_dir in "${dot_config_dirs[@]}"; do
+		rsync -az "$HOME"/.config/"$each_dir" "$repo_dot_config_dir""$each_dir"
+	done
+
+	# Applicable .vim/<dirs>/<files> to dot/.vim/<dirs>/<files>.
+	for each_dir in "${dot_vim_dirs[@]}"; do
+		rsync -az --exclude '*.spl' "$HOME"/"$each_dir" "$repo_root_dir"/"$each_dir"
+	done
 
   printf "\n$grn%s$def%s" "[∅] " "sync-dot-files completed."
   printf "\n$yel%s$def%s\n\n" "[∅] " "Update CHANGELOG before commit."
 
+  # vim CHANGELOG.md
 }
 
 sync_dot_files
