@@ -72,11 +72,6 @@ set hlsearch
 set incsearch
 set ignorecase
 
-" set statusline+=%#warningmsg#
-" set statusline+=%*
-" set laststatus=2
-" set statusline=%f " tail of filename
-
 " command line
 set showmode
 set ruler

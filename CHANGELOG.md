@@ -4,6 +4,9 @@
 
 ## 2021.02.11.3
 
+- Test updated `sync-dot-files`
+- Automated updates.
+- Clean-up `.bashrc`
 - Add Vim `spellfile`.
 - Update `sync-dot-files` with rsync.
 
